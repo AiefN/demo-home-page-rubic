@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 90" width="420" height="90" role="img" aria-label="Logo Rubicweb Digital Agency">
+  <defs>
+    <linearGradient id="rubicGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB800" />
+      <stop offset="100%" stop-color="#FF7A00" />
+    </linearGradient>
+    <linearGradient id="rubicGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#E05300" />
+    </linearGradient>
+    <linearGradient id="rubicGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#FFB800" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ribbon Symbol -->
+  <g transform="translate(15, 10)">
+    <!-- Base Ribbon Fold 1 -->
+    <polygon points="10,65 35,40 55,55 30,80" fill="url(#rubicGrad2)" opacity="0.9" />
+    <!-- Ribbon Fold 2 (Main Upward Loop) -->
+    <polygon points="30,80 55,55 45,15 20,40" fill="url(#rubicGrad1)" />
+    <!-- Ribbon Fold 3 (Top Fold) -->
+    <polygon points="20,40 45,15 70,25 45,50" fill="url(#rubicGrad3)" />
+    <!-- Ribbon Fold 4 (Right Wing) -->
+    <polygon points="45,50 70,25 75,50 50,75" fill="url(#rubicGrad1)" />
+    <!-- Center Accent Dot/Glow -->
+    <circle cx="45" cy="45" r="4" fill="#FFFFFF" opacity="0.8" />
+  </g>
+  
+  <!-- Brand Typography -->
+  <text x="105" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="1.5">RUBIC<tspan fill="#FFB800">WEB</tspan></text>
+  <text x="106" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA" letter-spacing="3.5">DIGITAL AGENCY &amp; ENGINEERING</text>
+</svg>
+

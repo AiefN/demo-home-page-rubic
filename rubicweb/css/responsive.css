@@ -1,0 +1,235 @@
+/* ==========================================================================
+   RUBICWEB RESPONSIVE ADAPTATIONS
+   Tested across 1440px, 1280px, 1024px, 768px, 390px, 375px
+   ========================================================================== */
+
+/* Laptop & Large Tablet (1024px - 1439px) */
+@media (max-width: 1439px) {
+  :root {
+    --container-padding: 28px;
+    --section-spacing: 100px;
+  }
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  :root {
+    --section-spacing: 80px;
+    --container-padding: 24px;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  }
+
+  .portfolio-interactive {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .preview-image-container {
+    height: 320px;
+  }
+
+  .rp-capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stats-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .stat-block:not(:last-child)::after {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* Mobile Devices (Below 768px) */
+@media (max-width: 767px) {
+  :root {
+    --section-spacing: 64px;
+    --container-padding: 20px;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.18;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.98rem;
+  }
+
+  /* Hero Section */
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* Terminal Card on Mobile */
+  .terminal-card {
+    border-radius: var(--radius-md);
+  }
+
+  .terminal-card-large {
+    border-radius: 18px;
+  }
+
+  .terminal-header {
+    padding: 12px 16px;
+  }
+
+  .terminal-header-large {
+    padding: 14px 20px;
+  }
+
+  .terminal-body {
+    padding: 24px 18px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    min-height: 160px;
+  }
+
+  .terminal-body-large {
+    padding: 32px 20px;
+    font-size: clamp(1.15rem, 4.4vw, 1.45rem);
+    line-height: 1.85;
+    min-height: 240px;
+  }
+
+  .hero-bottom-strip {
+    gap: 28px;
+    padding-top: 28px;
+  }
+
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-action-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Services Horizontal Row Collapse */
+  .service-row {
+    padding: 24px 16px;
+  }
+
+  .service-title-col {
+    gap: 12px;
+  }
+
+  .service-name {
+    font-size: 1.1rem;
+  }
+
+  /* Portfolio Mobile */
+  .portfolio-cat-btn {
+    padding: 16px 18px;
+  }
+
+  .cat-name {
+    font-size: 1.05rem;
+  }
+
+  .preview-image-container {
+    height: 240px;
+  }
+
+  .preview-info-body {
+    padding: 20px 18px;
+  }
+
+  .preview-title {
+    font-size: 1.4rem;
+  }
+
+  /* Stats Banner Mobile */
+  .stats-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stats-banner {
+    padding: 24px 18px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  /* Why Choose Rubicweb */
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-card {
+    padding: 24px 20px;
+  }
+
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .site-footer {
+    padding-bottom: 90px;
+  }
+
+  /* Floating Bottom Nav Hidden on Small Screen, use Mobile Drawer instead */
+  .floating-bottom-nav {
+    display: none !important;
+  }
+}
+
+/* Smallest Mobile (375px - 390px) */
+@media (max-width: 400px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.95rem;
+  }
+
+  .terminal-body {
+    font-size: 0.78rem;
+  }
+
+  .preview-image-container {
+    height: 200px;
+  }
+}
+
+/* Strict Protection against Horizontal Overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

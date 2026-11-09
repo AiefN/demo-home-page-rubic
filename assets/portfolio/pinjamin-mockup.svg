@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Mockup Proyek Pinjamin - Solusi Fintech dan P2P Lending">
+  <defs>
+    <linearGradient id="bgGradPinjamin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" />
+      <stop offset="100%" stop-color="#0E0E10" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB800" />
+      <stop offset="100%" stop-color="#FF7A00" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Frame Window -->
+  <rect x="0" y="0" width="800" height="480" rx="14" fill="#0B0B0C" stroke="#27272A" stroke-width="2" />
+  <rect x="0" y="0" width="800" height="42" rx="14" fill="#18181B" />
+  <rect x="0" y="28" width="800" height="14" fill="#18181B" />
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#EF4444" />
+  <circle cx="44" cy="21" r="6" fill="#F59E0B" />
+  <circle cx="64" cy="21" r="6" fill="#10B981" />
+
+  <!-- URL Bar -->
+  <rect x="100" y="10" width="400" height="22" rx="6" fill="#27272A" />
+  <text x="115" y="25" font-family="monospace" font-size="11" fill="#A1A1AA">https://pinjamin.co.id/dashboard/p2p-credit</text>
+
+  <!-- Status Tag -->
+  <rect x="630" y="10" width="150" height="22" rx="6" fill="#27272A" />
+  <text x="645" y="25" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFB800">FINTECH PLATFORM</text>
+
+  <!-- App Content Area -->
+  <g transform="translate(30, 60)">
+    <!-- Brand Header in Mockup -->
+    <text x="0" y="30" font-family="sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">PINJAMIN<tspan fill="#FFB800">.ID</tspan></text>
+    <text x="0" y="50" font-family="sans-serif" font-size="12" fill="#A1A1AA">Solusi Pendanaan Usaha Cepat &amp; Terverifikasi OJK</text>
+
+    <!-- Stat Cards -->
+    <g transform="translate(0, 75)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="230" height="100" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+      <text x="16" y="28" font-family="sans-serif" font-size="11" fill="#A1A1AA" font-weight="600">TOTAL PENYALURAN</text>
+      <text x="16" y="60" font-family="sans-serif" font-size="20" fill="#FFFFFF" font-weight="700">Rp 148,5 M</text>
+      <text x="16" y="84" font-family="sans-serif" font-size="11" fill="#10B981">▲ +24.8% Kuartal Ini</text>
+
+      <!-- Card 2 -->
+      <rect x="250" y="0" width="230" height="100" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+      <text x="266" y="28" font-family="sans-serif" font-size="11" fill="#A1A1AA" font-weight="600">TINGKAT KEBERHASILAN (TKB90)</text>
+      <text x="266" y="60" font-family="sans-serif" font-size="20" fill="#FFB800" font-weight="700">99,82%</text>
+      <text x="266" y="84" font-family="sans-serif" font-size="11" fill="#10B981">Status Risiko Rendah</text>
+
+      <!-- Card 3 -->
+      <rect x="500" y="0" width="230" height="100" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+      <text x="516" y="28" font-family="sans-serif" font-size="11" fill="#A1A1AA" font-weight="600">PEMINJAM AKTIF UMKM</text>
+      <text x="516" y="60" font-family="sans-serif" font-size="20" fill="#FFFFFF" font-weight="700">14.280+</text>
+      <text x="516" y="84" font-family="sans-serif" font-size="11" fill="#A1A1AA">Tersebar di 34 Provinsi</text>
+    </g>
+
+    <!-- Chart / Visual Graph -->
+    <g transform="translate(0, 195)">
+      <rect x="0" y="0" width="730" height="180" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+      <text x="20" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Tren Pertumbuhan Distribusi Pinjaman P2P</text>
+      
+      <!-- Grid Lines -->
+      <line x1="20" y1="60" x2="710" y2="60" stroke="#27272A" stroke-dasharray="4" />
+      <line x1="20" y1="100" x2="710" y2="100" stroke="#27272A" stroke-dasharray="4" />
+      <line x1="20" y1="140" x2="710" y2="140" stroke="#27272A" stroke-dasharray="4" />
+
+      <!-- Graph Bars -->
+      <rect x="50" y="110" width="35" height="40" rx="4" fill="#3F3F46" />
+      <rect x="120" y="95" width="35" height="55" rx="4" fill="#3F3F46" />
+      <rect x="190" y="80" width="35" height="70" rx="4" fill="#3F3F46" />
+      <rect x="260" y="70" width="35" height="80" rx="4" fill="#71717A" />
+      <rect x="330" y="60" width="35" height="90" rx="4" fill="#A1A1AA" />
+      <rect x="400" y="50" width="35" height="100" rx="4" fill="#FF7A00" />
+      <rect x="470" y="40" width="35" height="110" rx="4" fill="#FFB800" />
+      <rect x="540" y="30" width="35" height="120" rx="4" fill="url(#goldGrad)" />
+      <rect x="610" y="20" width="35" height="130" rx="4" fill="url(#goldGrad)" />
+
+      <!-- X-axis Labels -->
+      <text x="50" y="165" font-family="sans-serif" font-size="10" fill="#71717A">Q1</text>
+      <text x="190" y="165" font-family="sans-serif" font-size="10" fill="#71717A">Q2</text>
+      <text x="330" y="165" font-family="sans-serif" font-size="10" fill="#71717A">Q3</text>
+      <text x="470" y="165" font-family="sans-serif" font-size="10" fill="#FFB800">Q4</text>
+      <text x="610" y="165" font-family="sans-serif" font-size="10" fill="#FFB800">2026</text>
+    </g>
+  </g>
+</svg>
+
