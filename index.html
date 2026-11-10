@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rubicweb — Digital Agency &amp; Web Engineering. Solusi website modern, arsitektur modular tanpa bloatware, dan optimasi SEO Google untuk akselerasi bisnis digital.">
-  <meta name="keywords" content="Rubicweb, Digital Agency, Web Engineering, Jasa Pembuatan Website, SEO Google, E-Commerce, Jakarta">
-  <meta name="author" content="Rubicweb">
-  <title>Rubicweb &mdash; Digital Agency &amp; Engineering | Website Redesign Demo</title>
+  <meta name="description" content="Rubicweb — Rekayasa Web Berkinerja Tinggi &amp; Desain Kelas Dunia. Solusi website kustom, aplikasi web enterprise, PageSpeed 95+, dan arsitektur clean code murni tanpa template instan.">
+  <meta name="keywords" content="Rubicweb, Jasa Pembuatan Website, Web Engineering, Custom Web Development, High Performance Website, SCBD Jakarta, PT Rubic Kirana Solusindo">
+  <meta name="author" content="PT. Rubic Kirana Solusindo">
+  <meta property="og:title" content="Rubicweb — High-Performance Web Engineering &amp; World-Class Digital Design">
+  <meta property="og:description" content="Membangun website berkinerja tinggi, arsitektur kode bersih tanpa bloatware, dan pengalaman visual imersif 60fps untuk akselerasi bisnis Anda.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <title>Rubicweb &mdash; High-Performance Web Engineering &amp; World-Class Design</title>
 
-  <!-- High Impact Typography: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Code/Tech) -->
+  <!-- Google Fonts: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Tech/Data) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheets -->
+  <!-- Core Architectural Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -21,976 +25,965 @@
 <body>
 
   <!-- ==========================================================================
-       ROOM & PILLAR FLOATING BOTTOM NAVIGATION (DESKTOP)
+       CUSTOM MAGNETIC TRAILING CURSOR (DUAL-ELEMENT)
        ========================================================================== -->
-  <nav class="floating-bottom-nav" aria-label="Navigasi Melayang Bawah">
-    <a href="#hero" class="floating-nav-brand" aria-label="Kembali ke Bagian Atas Halaman">
-      <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo Icon" class="floating-nav-logo">
-    </a>
-    <div class="floating-nav-separator"></div>
-    <ul class="floating-nav-links">
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-    <div class="floating-nav-separator"></div>
-    <a href="#contact" class="floating-nav-cta">
-      <span>Let's Talk &rarr;</span>
-    </a>
-  </nav>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
 
   <!-- ==========================================================================
-       HEADER & TOP NAVIGATION
+       FLOATING WHATSAPP BUTTON WITH CONTINUOUS RIPPLE ANIMATION
+       ========================================================================== -->
+  <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn-floating-whatsapp floating-whatsapp-btn whatsapp-ripple" target="_blank" rel="noopener noreferrer" aria-label="Konsultasi WhatsApp Langsung">
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp Icon" width="28" height="28">
+  </a>
+
+  <!-- ==========================================================================
+       GLOBAL SITE HEADER & DYNAMIC NAVBAR
        ========================================================================== -->
   <header class="site-header" id="site-header">
-    <div class="container header-container">
-      <!-- Skip Link for Accessibility -->
+    <div class="container navbar__container header-container">
+      <!-- Skip to Content Link for Accessibility -->
       <a href="#main-content" class="skip-to-content">Lewati langsung ke konten utama</a>
 
-      <!-- Brand Identity -->
-      <div class="brand-group">
-        <a href="#hero" class="brand-logo-link" aria-label="Beranda Rubicweb Digital Agency and Engineering">
-          <img src="assets/logos/rubicweb-logo.png" alt="Rubicweb Digital Agency and Engineering Logo" class="brand-logo" width="220" height="49">
+      <!-- Brand Logo Link -->
+      <div class="navbar__brand brand-group">
+        <a href="index.html" class="brand-logo-link" aria-label="Rubicweb Beranda">
+          <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="brand-logo" width="168" height="38">
         </a>
       </div>
 
-      <!-- Desktop Nav Links with Hover Preview Popups -->
-      <nav class="nav-desktop" aria-label="Navigasi Utama Situs">
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar__links nav-desktop" id="navbar" aria-label="Navigasi Utama Situs">
         <ul class="nav-links">
-          <li class="nav-item">
-            <a href="#hero" class="nav-link active">Home</a>
-            <a href="#hero" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">Beranda &amp; Arsitektur Web</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#about" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">Filosofi &amp; 3 Kapabilitas</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#services" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">5 Layanan Website &amp; SEO</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#portfolio" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">Karya Terpilih &amp; Klien</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#why-us" class="nav-link">Why Us</a>
-            <a href="#why-us" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">4 Standar Mutu Rekayasa</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#faq" class="nav-link">FAQ</a>
-            <a href="#faq" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">Tanya Jawab Teknis</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-            <a href="#contact" class="nav-popup-preview" aria-hidden="true" tabindex="-1">
-              <span class="popup-dot"></span>
-              <span class="popup-text">Eksplor Ide &amp; Form Proyek</span>
-            </a>
-          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">Beranda</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Layanan &amp; Workflow</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portofolio</a></li>
+          <li class="nav-item"><a href="#pricing-calculator" class="nav-link">Estimator Biaya</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak &amp; Konsultasi</a></li>
         </ul>
       </nav>
 
-      <!-- CTA & Mobile Menu Toggle -->
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <a href="#contact" class="top-cta-btn">
-          <span>Start a Project &rarr;</span>
-        </a>
-
-        <button type="button" class="mobile-menu-toggle" aria-label="Buka menu navigasi seluler" aria-expanded="false" aria-controls="mobile-nav-drawer">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </button>
+      <!-- Desktop Header CTA Group -->
+      <div class="navbar__cta-group">
+        <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--sm header-cta" target="_blank" rel="noopener noreferrer">Konsultasi WhatsApp</a>
       </div>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button type="button" class="navbar__toggle hamburger-btn" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <!-- Mobile Drawer & Backdrop -->
-  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Menu Seluler">
-    <div class="mobile-nav-header">
-      <img src="assets/logos/rubicweb-logo.png" alt="Rubicweb Logo" style="height: 32px; width: auto;">
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER & OVERLAY
+       ========================================================================== -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu mobile-drawer" id="mobile-nav-drawer" aria-label="Navigasi Menu Mobile" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="mobile-drawer__brand" aria-label="Rubicweb Beranda">
+        <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" width="140" height="32">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Tutup navigasi">&times;</button>
     </div>
-    <ul class="mobile-nav-list">
-      <li><a href="#hero"><span>Home</span> <span>&rarr;</span></a></li>
-      <li><a href="#about"><span>About &amp; Capabilities</span> <span>&rarr;</span></a></li>
-      <li><a href="#services"><span>Services</span> <span>&rarr;</span></a></li>
-      <li><a href="#portfolio"><span>Selected Portfolio</span> <span>&rarr;</span></a></li>
-      <li><a href="#why-us"><span>Why Rubicweb</span> <span>&rarr;</span></a></li>
-      <li><a href="#faq"><span>FAQ</span> <span>&rarr;</span></a></li>
-      <li><a href="#contact"><span>Contact Us</span> <span>&rarr;</span></a></li>
+
+    <ul class="mobile-menu__links mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Beranda</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Layanan &amp; Workflow</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link">Portofolio</a></li>
+      <li><a href="#pricing-calculator" class="mobile-nav-link">Estimator Biaya</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Kontak &amp; Konsultasi</a></li>
     </ul>
-    <div class="mobile-nav-footer">
-      <p>Bellezza BSA Lt. 1 Permata Hijau, Jakarta</p>
-      <p style="margin-top: 4px; color: var(--accent-primary);">hello@rubicweb.com</p>
+
+    <div class="mobile-drawer__footer">
+      <div class="mobile-drawer__agency-info">
+        <p class="agency-entity font-mono">PT. Rubic Kirana Solusindo</p>
+        <p class="agency-address">District 8 Treasury Tower Lt. 7, SCBD Jakarta Selatan, DKI Jakarta 12190</p>
+        <p class="agency-contact">WhatsApp: +62 852-8000-8984<br>Email: info@rubicweb.co.id</p>
+      </div>
+      <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--full" target="_blank" rel="noopener noreferrer">Konsultasi via WhatsApp</a>
     </div>
   </aside>
-  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       ROOM & PILLAR FLOATING BOTTOM NAVIGATION (PILL NAV)
+       ========================================================================== -->
+  <nav class="floating-bottom-nav" aria-label="Navigasi Melayang Bawah">
+    <a href="index.html" class="floating-nav-brand" aria-label="Kembali ke Bagian Atas Halaman">
+      <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo Icon" class="floating-nav-logo" width="24" height="24">
+    </a>
+    <div class="floating-nav-separator"></div>
+    <ul class="floating-nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="services.html">Layanan</a></li>
+      <li><a href="portfolio.html">Portofolio</a></li>
+      <li><a href="#pricing-calculator">Estimator</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+    <div class="floating-nav-separator"></div>
+    <a href="https://wa.me/6285280008984" class="floating-nav-cta" target="_blank" rel="noopener noreferrer">
+      <span>Konsultasi &rarr;</span>
+    </a>
+  </nav>
 
   <!-- ==========================================================================
        MAIN CONTENT CONTAINER
        ========================================================================== -->
   <main id="main-content">
 
-    <!-- SECTION 01 — HERO (ROOM & PILLAR CENTERPIECE & EDITORIAL LAYOUT) -->
-    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <!-- Sleek Centerpiece Code Terminal (Focal Point in the Center) -->
-        <div class="hero-terminal-centerpiece">
-          <!-- Ambient Radial Glow Backdrop -->
-          <div class="terminal-glow-aura" aria-hidden="true"></div>
-
-          <!-- Floating Badges -->
-          <div class="floating-badge badge-top-right">
-            <span>⚡ SCALABLE WEB ENGINE</span>
-          </div>
-          <div class="floating-badge badge-bottom-left">
-            <span>📈 CORE WEB VITALS 99/100</span>
-          </div>
-
-          <!-- Sleek Monumental Terminal Window with Interactive Controls -->
-          <figure class="terminal-card-large">
-            <div class="terminal-header-large">
-              <div class="terminal-controls">
-                <span class="terminal-dot dot-red" id="term-dot-red" title="Interrupt Cursor" role="button" tabindex="0"></span>
-                <span class="terminal-dot dot-yellow" id="term-dot-yellow" title="Clear Code" role="button" tabindex="0"></span>
-                <span class="terminal-dot dot-green" id="term-dot-green" title="Run Benchmark / Restart" role="button" tabindex="0"></span>
-              </div>
-              <span class="terminal-title">rubicweb.engine.config.js</span>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <button type="button" class="terminal-rerun-btn" id="terminal-rerun-btn" title="Ketik Ulang Kode Interaktif">
-                  <span>⚡ RE-RUN</span>
-                </button>
-                <span class="terminal-badge">PRODUCTION READY &bull; HIGH PERFORMANCE</span>
-              </div>
-            </div>
-            <div class="terminal-body-large">
-              <pre><code id="typewriter-code"></code><span class="typewriter-cursor"></span></pre>
-            </div>
-            <figcaption style="display:none;">rubicweb.engine.config.js — Representasi arsitektur digital dan performa rekayasa Rubicweb.</figcaption>
-          </figure>
-        </div>
-
-        <!-- Room & Pillar Style Bottom Meta Strip (Large font with entrance animation) -->
-        <div class="hero-bottom-strip">
-          <!-- Minimal Explanation in Bottom Left (Large Font with Staggered Entrance Animation) -->
-          <div class="hero-bottom-left">
-            <span class="hero-meta-label">
-              <span class="hero-label-dot"></span>
-              CORE ARCHITECTURE &amp; MISSION
+    <!-- ------------------------------------------------------------------------
+         1. HERO SECTION
+         ------------------------------------------------------------------------ -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Guarantee Pill Badge -->
+        <div class="hero-badge-wrap">
+          <div class="guarantee-badge pill-badge">
+            <span class="badge-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
             </span>
-            <h1 id="hero-title" class="hero-meta-title">
-              <span class="hero-title-line line-1"><span>CRAFTING THE FUTURE</span></span>
-              <span class="hero-title-line line-2"><span>OF SCALABLE WEB</span></span>
-              <span class="hero-title-line line-3"><span class="text-accent-gradient">&amp; DIGITAL EXPERIENCES.</span></span>
-            </h1>
-            <p class="hero-meta-desc">
-              Rubicweb menghadirkan solusi digital modern melalui rekayasa website berkecepatan tinggi, arsitektur modular tanpa bloatware, dan strategi digital yang membantu bisnis berkembang di era digital.
-            </p>
+            <span class="badge-text">Garansi 100% Kepuasan / Uang Kembali</span>
           </div>
+        </div>
 
-          <!-- Minimal Right Action Group -->
-          <div class="hero-bottom-right">
-            <span class="hero-meta-label">ENGINEERING AGENCY</span>
-            <p class="hero-meta-corp">
-              ESTABLISHED 2013 &bull; JAKARTA, INDONESIA<br>
-              OFFICIALLY REGISTERED PSE KOMDIGI RI
-            </p>
-            <div class="hero-action-buttons">
-              <a href="#portfolio" class="btn btn-primary">
-                <span>EXPLORE OUR WORK &rarr;</span>
-              </a>
-              <a href="#contact" class="btn btn-secondary">
-                <span>LET'S TALK &rarr;</span>
-              </a>
-            </div>
+        <!-- Editorial Display H1 -->
+        <h1 class="hero-title">Membangun Website Berkinerja Tinggi &amp; Desain Kelas Dunia</h1>
+
+        <!-- Agency Narrative Subheadline -->
+        <p class="hero-subheadline body-copy">
+          Rubicweb merekayasa website kustom dan aplikasi web enterprise dengan performa ultra-cepat, arsitektur kode bersih (clean code), dan pengalaman visual imersif tanpa kompromi untuk mempercepat pertumbuhan bisnis Anda.
+        </p>
+
+        <!-- Call-to-Action Group -->
+        <div class="hero-actions hero-ctas">
+          <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Konsultasi Gratis via WhatsApp</a>
+          <a href="#portfolio" class="btn btn--secondary btn--lg">Jelajahi Portofolio</a>
+        </div>
+
+        <!-- Hero Telemetry Metrics Bar -->
+        <div class="hero-telemetry-bar">
+          <div class="telemetry-item">
+            <span class="telemetry-value font-mono">95+</span>
+            <span class="telemetry-label">Google PageSpeed</span>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-item">
+            <span class="telemetry-value font-mono">&lt; 1.0s</span>
+            <span class="telemetry-label">First Contentful Paint</span>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-item">
+            <span class="telemetry-value font-mono">100%</span>
+            <span class="telemetry-label">Source Code Ownership</span>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="section-divider">
-
-    <!-- SECTION 02 — ROOM & PILLAR 3-COLUMN CAPABILITIES & STATS BANNER -->
-    <section class="section" id="about" aria-labelledby="about-title">
+    <!-- ------------------------------------------------------------------------
+         2. CORE SERVICES SECTION (3D TILT CARDS & TECH BADGES)
+         ------------------------------------------------------------------------ -->
+    <section class="services-section section-padding" id="services">
       <div class="container">
-        <!-- Section Editorial Header -->
-        <div class="about-header-block reveal-on-scroll">
-          <span class="section-label">01 / CAPABILITIES &amp; PHILOSOPHY</span>
-          <h2 id="about-title" class="about-title">Our Engineering Philosophy</h2>
-          <p class="about-lead">
-            Rubicweb adalah mitra rekayasa digital yang berfokus pada pembangunan infrastruktur web modern. Kami menggabungkan ketelitian rekayasa kode, efisiensi arsitektur modular, dan strategi digital untuk menghasilkan solusi digital yang tangguh dan siap bertumbuh.
+        <div class="section-header">
+          <span class="section-category font-mono">SERVICES &amp; CAPABILITIES</span>
+          <h2 class="section-title">Solusi Rekayasa Web Kustom Tanpa Template</h2>
+          <p class="section-subtitle">
+            Kami menolak pendekatan template instan yang lambat. Setiap baris kode ditulis khusus untuk mencapai performa prima, skalabilitas, dan konversi tinggi.
           </p>
         </div>
 
-        <!-- 3-Column Capability Cards (Room & Pillar Aesthetic with Interactive Spotlight) -->
-        <div class="rp-capabilities-grid reveal-on-scroll">
-          <!-- CARD 01: Modern Web Architecture -->
-          <article class="rp-capability-card interactive-spotlight">
-            <div class="rp-visual-frame" aria-hidden="true">
-              <svg class="rp-visual-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="grid-pattern-1" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.08)" />
-                  </pattern>
-                  <radialGradient id="glow-1" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#FFB800" stop-opacity="0.18" />
-                    <stop offset="100%" stop-color="#FFB800" stop-opacity="0" />
-                  </radialGradient>
-                  <radialGradient id="sphere-grad-1" cx="35%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#888892" />
-                    <stop offset="35%" stop-color="#4A4A54" />
-                    <stop offset="75%" stop-color="#1E1E24" />
-                    <stop offset="100%" stop-color="#0E0E12" />
-                  </radialGradient>
-                  <linearGradient id="ring-outer" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#2D2D35" />
-                    <stop offset="50%" stop-color="#18181E" />
-                    <stop offset="100%" stop-color="#0E0E12" />
-                  </linearGradient>
-                  <linearGradient id="ring-mid" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#3D3D47" />
-                    <stop offset="50%" stop-color="#222228" />
-                    <stop offset="100%" stop-color="#121216" />
-                  </linearGradient>
-                  <linearGradient id="gold-rim" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#FFB800" stop-opacity="0.85" />
-                    <stop offset="100%" stop-color="#FF7A00" stop-opacity="0.25" />
-                  </linearGradient>
-                </defs>
-                <rect width="320" height="220" fill="url(#grid-pattern-1)" />
-                <circle cx="160" cy="110" r="90" fill="url(#glow-1)" />
-                <!-- Concentric Shaded Rings -->
-                <ellipse cx="160" cy="110" rx="96" ry="68" stroke="#33333D" stroke-width="2" stroke-dasharray="4 4" fill="none" />
-                <path d="M 64 110 A 96 68 0 0 0 256 110 L 256 122 A 96 68 0 0 1 64 122 Z" fill="#15151A" stroke="#2A2A32" stroke-width="1" />
-                <ellipse cx="160" cy="110" rx="72" ry="50" stroke="#444450" stroke-width="2" fill="url(#ring-outer)" />
-                <path d="M 88 110 A 72 50 0 0 0 232 110 L 232 120 A 72 50 0 0 1 88 120 Z" fill="#1C1C22" stroke="#303038" stroke-width="1" />
-                <ellipse cx="160" cy="110" rx="50" ry="34" stroke="url(#gold-rim)" stroke-width="1.8" fill="url(#ring-mid)" />
-                <path d="M 110 110 A 50 34 0 0 0 210 110 L 210 118 A 50 34 0 0 1 110 118 Z" fill="#25252D" stroke="#3A3A45" stroke-width="1" />
-                <!-- Center Shaded Sphere -->
-                <circle cx="160" cy="104" r="28" fill="url(#sphere-grad-1)" />
-                <circle cx="160" cy="104" r="28" stroke="rgba(255, 184, 0, 0.45)" stroke-width="1" />
-                <ellipse cx="151" cy="95" rx="7" ry="4" fill="white" fill-opacity="0.45" transform="rotate(-25 151 95)" />
-              </svg>
-            </div>
-            <div class="rp-card-body">
-              <span class="capability-num">01 / CAPABILITY</span>
-              <h3>MODERN WEB ARCHITECTURE</h3>
-              <p class="rp-statement">We engineer clean, modular systems from the inside.</p>
-              <p class="rp-desc">Penerapan struktur pengembangan website modular, terorganisasi, dan dirancang khusus sesuai kebutuhan bisnis tanpa beban bloatware.</p>
-            </div>
-          </article>
-
-          <!-- CARD 02: Advanced SEO Ranking -->
-          <article class="rp-capability-card interactive-spotlight">
-            <div class="rp-visual-frame" aria-hidden="true">
-              <svg class="rp-visual-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="grid-pattern-2" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.08)" />
-                  </pattern>
-                  <radialGradient id="glow-2" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.18" />
-                    <stop offset="100%" stop-color="#FF7A00" stop-opacity="0" />
-                  </radialGradient>
-                  <radialGradient id="sphere-grad-large" cx="35%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#888892" />
-                    <stop offset="40%" stop-color="#4F4F5A" />
-                    <stop offset="80%" stop-color="#23232A" />
-                    <stop offset="100%" stop-color="#0E0E12" />
-                  </radialGradient>
-                  <radialGradient id="sphere-grad-gold" cx="35%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#FFE082" />
-                    <stop offset="40%" stop-color="#FFB800" />
-                    <stop offset="80%" stop-color="#FF7A00" />
-                    <stop offset="100%" stop-color="#B24700" />
-                  </radialGradient>
-                  <radialGradient id="sphere-grad-small" cx="35%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#6E6E78" />
-                    <stop offset="50%" stop-color="#36363E" />
-                    <stop offset="100%" stop-color="#121216" />
-                  </radialGradient>
-                </defs>
-                <rect width="320" height="220" fill="url(#grid-pattern-2)" />
-                <circle cx="160" cy="110" r="90" fill="url(#glow-2)" />
-                <!-- Orbital Constellation Lines -->
-                <line x1="160" y1="110" x2="115" y2="75" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <line x1="160" y1="110" x2="210" y2="80" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <line x1="160" y1="110" x2="125" y2="150" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <line x1="160" y1="110" x2="205" y2="145" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <line x1="160" y1="110" x2="175" y2="55" stroke="#FF7A00" stroke-opacity="0.6" stroke-dasharray="2 2" />
-                <line x1="160" y1="110" x2="235" y2="115" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <line x1="160" y1="110" x2="85" y2="110" stroke="#3A3A45" stroke-dasharray="3 3" />
-                <!-- Orbiting Spheres -->
-                <circle cx="115" cy="75" r="14" fill="url(#sphere-grad-small)" />
-                <circle cx="210" cy="80" r="16" fill="url(#sphere-grad-small)" />
-                <circle cx="125" cy="150" r="12" fill="url(#sphere-grad-small)" />
-                <circle cx="205" cy="145" r="15" fill="url(#sphere-grad-small)" />
-                <circle cx="85" cy="110" r="10" fill="url(#sphere-grad-small)" />
-                <circle cx="235" cy="115" r="11" fill="url(#sphere-grad-small)" />
-                <!-- Specular gold target node -->
-                <circle cx="175" cy="55" r="9" fill="url(#sphere-grad-gold)" />
-                <circle cx="175" cy="55" r="13" stroke="#FFB800" stroke-opacity="0.45" stroke-width="1" />
-                <!-- Center Primary Sphere -->
-                <circle cx="160" cy="110" r="26" fill="url(#sphere-grad-large)" />
-                <circle cx="160" cy="110" r="26" stroke="rgba(255, 122, 0, 0.45)" stroke-width="1" />
-                <ellipse cx="152" cy="101" rx="6" ry="4" fill="white" fill-opacity="0.45" transform="rotate(-25 152 101)" />
-              </svg>
-            </div>
-            <div class="rp-card-body">
-              <span class="capability-num">02 / CAPABILITY</span>
-              <h3>ADVANCED SEO RANKING</h3>
-              <p class="rp-statement">Visibility and performance engineered directly into code.</p>
-              <p class="rp-desc">Pendekatan optimasi website holistik untuk meningkatkan visibilitas organik di Google, kecepatan Core Web Vitals, dan pengalaman pengguna.</p>
-            </div>
-          </article>
-
-          <!-- CARD 03: Proven Digital Impact -->
-          <article class="rp-capability-card interactive-spotlight">
-            <div class="rp-visual-frame" aria-hidden="true">
-              <svg class="rp-visual-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="grid-pattern-3" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.08)" />
-                  </pattern>
-                  <radialGradient id="glow-3" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#FFB800" stop-opacity="0.18" />
-                    <stop offset="100%" stop-color="#FFB800" stop-opacity="0" />
-                  </radialGradient>
-                  <radialGradient id="sphere-grad-cube" cx="35%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#9E9EA8" />
-                    <stop offset="40%" stop-color="#555562" />
-                    <stop offset="80%" stop-color="#26262F" />
-                    <stop offset="100%" stop-color="#0E0E12" />
-                  </radialGradient>
-                  <linearGradient id="cube-top" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#34343E" />
-                    <stop offset="100%" stop-color="#202026" />
-                  </linearGradient>
-                  <linearGradient id="cube-left" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#24242B" />
-                    <stop offset="100%" stop-color="#141418" />
-                  </linearGradient>
-                  <linearGradient id="cube-right" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#1A1A20" />
-                    <stop offset="100%" stop-color="#0E0E12" />
-                  </linearGradient>
-                </defs>
-                <rect width="320" height="220" fill="url(#grid-pattern-3)" />
-                <circle cx="160" cy="115" r="90" fill="url(#glow-3)" />
-                <line x1="160" y1="40" x2="160" y2="175" stroke="#33333F" stroke-dasharray="3 3" />
-                <line x1="90" y1="135" x2="230" y2="135" stroke="#33333F" stroke-dasharray="3 3" />
-                <!-- Isometric Cube -->
-                <polygon points="160,95 225,130 160,165 95,130" fill="url(#cube-top)" stroke="#444452" stroke-width="1.2" />
-                <ellipse cx="160" cy="130" rx="20" ry="11" fill="#0A0A0E" fill-opacity="0.8" />
-                <polygon points="95,130 160,165 160,205 95,170" fill="url(#cube-left)" stroke="#383842" stroke-width="1.2" />
-                <polygon points="160,165 225,130 225,170 160,205" fill="url(#cube-right)" stroke="#2C2C35" stroke-width="1.2" />
-                <line x1="127" y1="112" x2="192" y2="147" stroke="#3D3D48" stroke-width="0.8" stroke-dasharray="2 2" />
-                <line x1="192" y1="112" x2="127" y2="147" stroke="#3D3D48" stroke-width="0.8" stroke-dasharray="2 2" />
-                <!-- Hovering Elevated Sphere -->
-                <circle cx="160" cy="72" r="24" fill="url(#sphere-grad-cube)" />
-                <circle cx="160" cy="72" r="24" stroke="rgba(255, 184, 0, 0.45)" stroke-width="1.2" />
-                <ellipse cx="153" cy="64" rx="6" ry="3.5" fill="white" fill-opacity="0.45" transform="rotate(-25 153 64)" />
-                <line x1="160" y1="96" x2="160" y2="120" stroke="#FFB800" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="2 2" />
-              </svg>
-            </div>
-            <div class="rp-card-body">
-              <span class="capability-num">03 / CAPABILITY</span>
-              <h3>PROVEN DIGITAL IMPACT</h3>
-              <p class="rp-statement">We build digital assets where conversion matters most.</p>
-              <p class="rp-desc">Fokus pada rekayasa solusi digital yang memberikan manfaat terukur, keandalan jangka panjang, dan akselerasi pertumbuhan bisnis nyata.</p>
-            </div>
-          </article>
-        </div>
-
-        <!-- STATS & TRACK RECORD BANNER (Directly below capabilities) -->
-        <div class="stats-banner reveal-on-scroll">
-          <div class="stats-banner-header">
-            <div>
-              <span class="section-label">PROVEN TRACK RECORD &amp; EXPERIENCE</span>
-              <h3 class="stats-banner-title">Lebih dari Satu Dekade Membangun Solusi Digital Terpercaya</h3>
-            </div>
-            <p class="stats-banner-desc">
-              Pengalaman lebih dari 13 tahun mendampingi ratusan korporasi, UMKM, dan institusi dalam mentransformasikan kehadiran digital menjadi aset bisnis bernilai tinggi.
-            </p>
-          </div>
-
-          <div class="stats-cards-grid">
-            <div class="stat-block interactive-spotlight">
-              <div class="stat-number-wrapper">
-                <span class="stat-number" data-target="13" data-suffix="+">13+</span>
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <article class="service-card card-tilt interactive-spotlight">
+            <div class="service-card-inner">
+              <div class="service-card-header">
+                <span class="service-num font-mono">01</span>
+                <h3>Custom Web Development</h3>
               </div>
-              <h4 class="stat-label">TAHUN PENGALAMAN</h4>
-              <p class="stat-desc">Dedikasi industri rekayasa website dan sistem web modern sejak 2013.</p>
-            </div>
-
-            <div class="stat-block interactive-spotlight">
-              <div class="stat-number-wrapper">
-                <span class="stat-number" data-target="100" data-suffix="+">100+</span>
-              </div>
-              <h4 class="stat-label">PROYEK SELESAI</h4>
-              <p class="stat-desc">Solusi web korporat, e-commerce, dan sistem custom terlaksana sukses.</p>
-            </div>
-
-            <div class="stat-block interactive-spotlight">
-              <div class="stat-number-wrapper">
-                <span class="stat-number" data-target="300" data-suffix="+">300+</span>
-              </div>
-              <h4 class="stat-label">KLIEN SENANG</h4>
-              <p class="stat-desc">Mitra bisnis terpercaya mulai dari UMKM hingga perusahaan multinasional.</p>
-            </div>
-
-            <div class="stat-block interactive-spotlight">
-              <div class="stat-number-wrapper">
-                <span class="stat-number" data-target="99.9" data-suffix="%" data-decimals="1">99.9%</span>
-              </div>
-              <h4 class="stat-label">STANDAR KEANDALAN</h4>
-              <p class="stat-desc">Performa arsitektur stabil dan skor Core Web Vitals kelas dunia.</p>
-            </div>
-          </div>
-              </div>
-              <h4 class="stat-label">STANDAR KEANDALAN</h4>
-              <p class="stat-desc">Performa arsitektur stabil dan skor Core Web Vitals kelas dunia.</p>
-            </div>
-          </div>
-
-          <div class="stats-footer">
-            <p><em>*Catatan: Nilai statistik di atas diverifikasi dan diperbarui berkala sebagai tolok ukur kapabilitas rekayasa Rubicweb.</em></p>
-            <a href="#portfolio" class="stats-cta-link">
-              <span>Eksplorasi Karya Terpilih</span> &darr;
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- SECTION 03 — SERVICES -->
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="container">
-        <header class="services-header reveal-on-scroll">
-          <div>
-            <span class="section-label">02 / CAPABILITIES &amp; SERVICES</span>
-            <h2 id="services-title">LAYANAN KAMI.</h2>
-          </div>
-          <p style="max-width: 480px; margin-top: 12px; color: var(--text-secondary);">
-            Direktori 5 layanan rekayasa terfokus yang siap mengoptimalkan operasional dan kehadiran komersial bisnis Anda.
-          </p>
-        </header>
-
-        <div class="services-directory reveal-on-scroll">
-          <!-- Service 01 -->
-          <a href="#contact" class="service-row interactive-spotlight" aria-label="Konsultasi Jasa Pembuatan Website">
-            <div class="service-title-col">
-              <span class="service-number">01</span>
-              <span class="service-name">JASA PEMBUATAN WEBSITE</span>
-            </div>
-            <div class="service-desc-col">
-              <p>Company profile, corporate websites, portal lembaga, dan custom landing pages berkecepatan tinggi.</p>
-            </div>
-            <div class="service-arrow-col">
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- Service 02 -->
-          <a href="#contact" class="service-row interactive-spotlight" aria-label="Konsultasi E-Commerce &amp; Toko Online">
-            <div class="service-title-col">
-              <span class="service-number">02</span>
-              <span class="service-name">E-COMMERCE &amp; TOKO ONLINE</span>
-            </div>
-            <div class="service-desc-col">
-              <p>Toko online modern, katalog digital, checkout terintegrasi gerbang pembayaran, dan kalkulasi logistik otomatis.</p>
-            </div>
-            <div class="service-arrow-col">
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- Service 03 -->
-          <a href="#contact" class="service-row interactive-spotlight" aria-label="Konsultasi Aplikasi Web Custom">
-            <div class="service-title-col">
-              <span class="service-number">03</span>
-              <span class="service-name">APLIKASI WEB CUSTOM</span>
-            </div>
-            <div class="service-desc-col">
-              <p>Aplikasi bisnis kustom, internal dashboards, sistem manajemen inventaris, dan platform operasional enterprise.</p>
-            </div>
-            <div class="service-arrow-col">
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- Service 04 -->
-          <a href="#contact" class="service-row interactive-spotlight" aria-label="Konsultasi Integrasi AI &amp; Digital">
-            <div class="service-title-col">
-              <span class="service-number">04</span>
-              <span class="service-name">INTEGRASI AI &amp; DIGITAL</span>
-            </div>
-            <div class="service-desc-col">
-              <p>Fitur otomatisasi AI, interkoneksi RESTful API sistem pihak ketiga, chatbot pintar, dan otomasi alur kerja.</p>
-            </div>
-            <div class="service-arrow-col">
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- Service 05 -->
-          <a href="#contact" class="service-row interactive-spotlight" aria-label="Konsultasi SEO &amp; Optimasi Performa">
-            <div class="service-title-col">
-              <span class="service-number">05</span>
-              <span class="service-name">SEO &amp; OPTIMASI PERFORMA</span>
-            </div>
-            <div class="service-desc-col">
-              <p>Technical SEO mendalam, optimasi audit Core Web Vitals, restrukturisasi konten, dan dominasi kata kunci pencarian Google.</p>
-            </div>
-            <div class="service-arrow-col">
-              <span>&rarr;</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- SECTION 04 — SELECTED PORTFOLIO (PDA ARCHITECTURE INSPIRED) -->
-    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
-      <div class="container">
-        <header class="reveal-on-scroll">
-          <span class="section-label">03 / PORTOFOLIO TERPILIH</span>
-          <h2 id="portfolio-title">KARYA &amp; REKAYASA DIGITAL.</h2>
-          <p style="max-width: 620px; margin-top: 12px; color: var(--text-secondary);">
-            Pilih kategori di bawah ini untuk melihat pratinjau studi kasus proyek secara interaktif tanpa memuat ulang halaman.
-          </p>
-        </header>
-
-        <div class="portfolio-interactive reveal-on-scroll">
-          <!-- LEFT COLUMN: CATEGORY SELECTOR -->
-          <div class="portfolio-categories-col">
-            <ul class="portfolio-categories-list" role="tablist">
-              <li>
-                <button type="button" class="portfolio-cat-btn is-active" data-project="pinjamin" role="tab" aria-selected="true">
-                  <span class="cat-num">CATEGORY 01</span>
-                  <span class="cat-name">Fintech &amp; P2P Lending</span>
-                  <span class="cat-project-hint">Studi Kasus: Pinjamin &rarr;</span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="portfolio-cat-btn" data-project="karalia" role="tab" aria-selected="false">
-                  <span class="cat-num">CATEGORY 02</span>
-                  <span class="cat-name">E-Commerce &amp; Toko Online</span>
-                  <span class="cat-project-hint">Studi Kasus: Karalia &rarr;</span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="portfolio-cat-btn" data-project="wilmar" role="tab" aria-selected="false">
-                  <span class="cat-num">CATEGORY 03</span>
-                  <span class="cat-name">Website Korporat &amp; Tbk</span>
-                  <span class="cat-project-hint">Studi Kasus: Wilmar &rarr;</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <!-- RIGHT COLUMN: DYNAMIC PREVIEW CARD -->
-          <div class="portfolio-preview-col">
-            <article class="portfolio-preview-card">
-              <div class="preview-image-container">
-                <img id="preview-project-img" src="assets/portfolio/pinjamin/pinjamin-main.png" alt="Tangkapan Layar Platform Pinjamin - Fintech dan P2P Lending" class="preview-img">
-                <span class="preview-tag" id="preview-project-tag">FINTECH PLATFORM</span>
-              </div>
-              <div class="preview-info-body">
-                <p class="section-label" id="preview-project-cat" style="margin-bottom: 8px;">Fintech &amp; P2P Lending</p>
-                <h3 class="preview-title" id="preview-project-title">Pinjamin</h3>
-                <p class="preview-desc" id="preview-project-desc">
-                  Platform pembiayaan digital dan pinjaman peer-to-peer terpercaya dengan enkripsi data berlapis, transparansi TKB90 real-time, dan alur pendaftaran instan bagi UMKM di Indonesia.
-                </p>
-                <a id="preview-project-link" href="#contact" class="preview-cta-btn">
-                  <span>KONSULTASI PROYEK SERUPA &rarr;</span>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- SECTION 05 — WHY CHOOSE RUBICWEB -->
-    <section class="section" id="why-us" aria-labelledby="why-title">
-      <div class="container">
-        <header class="reveal-on-scroll">
-          <span class="section-label">04 / WHY RUBICWEB</span>
-          <h2 id="why-title">Standar Mutu &amp; Keunggulan Kami</h2>
-        </header>
-
-        <div class="why-grid reveal-on-scroll">
-          <article class="why-card interactive-spotlight">
-            <span class="why-number">01</span>
-            <h3>MODERN TECHNOLOGY</h3>
-            <p>Penerapan standar dan metodologi rekayasa web terkini bebas dari dependensi usang yang memperlambat kinerja sistem Anda.</p>
-          </article>
-
-          <article class="why-card interactive-spotlight">
-            <span class="why-number">02</span>
-            <h3>PERFORMANCE FIRST</h3>
-            <p>Kecepatan muat halaman kilat dan skor Core Web Vitals optimal untuk memastikan pengalaman pengguna responsif seketika.</p>
-          </article>
-
-          <article class="why-card interactive-spotlight">
-            <span class="why-number">03</span>
-            <h3>SCALABLE ARCHITECTURE</h3>
-            <p>Struktur arsitektur kode modular yang dirancang siap bertumbuh bersama peningkatan volume transaksi dan ekspansi bisnis Anda.</p>
-          </article>
-
-          <article class="why-card interactive-spotlight">
-            <span class="why-number">04</span>
-            <h3>DIGITAL EXPERIENCE</h3>
-            <p>Pengalaman antarmuka yang memadukan kejelasan hierarki konten editorial dengan navigasi yang intuitif dan berwibawa.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- SECTION 06 — FAQ ACCORDION -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <header style="text-align: center;" class="reveal-on-scroll">
-          <span class="section-label">05 / FREQUENTLY ASKED QUESTIONS</span>
-          <h2 id="faq-title">Pertanyaan yang Sering Diajukan</h2>
-        </header>
-
-        <div class="faq-container reveal-on-scroll">
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Apa itu layanan pengembangan website profesional di Rubicweb?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Layanan pengembangan website Rubicweb adalah proses rekayasa komprehensif mulai dari penyusunan arsitektur informasi, penulisan kode semantik standar W3C, penerapan performa Core Web Vitals tinggi, hingga peluncuran resmi untuk memastikan kehadiran komersial bisnis yang tangguh dan kredibel.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Apa perbedaan mendasar antara company profile dan e-commerce?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Website company profile berfokus pada penyampaian kredibilitas, visi, portofolio, dan informasi kontak perusahaan kepada mitra atau calon klien. Sedangkan e-commerce berorientasi transaksi, dilengkapi fitur katalog produk interaktif, keranjang belanja, kalkulasi logistik, serta gerbang pembayaran digital.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Apakah tersedia pengembangan aplikasi web custom untuk kebutuhan operasional khusus?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Ya, Rubicweb memiliki kapabilitas rekayasa aplikasi web kustom seperti dashboard operasional internal, sistem manajemen data terdistribusi, integrasi RESTful API, dan sistem autentikasi bertingkat berbasis enkripsi modern.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Bagaimana pendekatan SEO dan optimasi performa Google yang diterapkan?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Kami menerapkan pendekatan SEO teknis mendalam yang mencakup struktur semantik HTML5 bersih, optimasi rasio kontras WCAG, implementasi skema OpenGraph dan JSON-LD, serta skor Core Web Vitals (LCP, FID, CLS) di zona hijau Google PageSpeed.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Berapa estimasi waktu pengerjaan sebuah proyek website?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Durasi bervariasi bergantung pada skala proyek: landing page taktis berkisar antara 7–14 hari kerja, company profile enterprise 3–6 minggu, dan platform e-commerce atau aplikasi web kustom berkisar antara 6–10 minggu dengan tahapan milestone yang terukur.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Bagaimana cara memulai sesi konsultasi dan perkiraan biaya?</span>
-              <span class="faq-indicator">+</span>
-            </summary>
-            <div class="faq-content">
-              Anda dapat mengisi formulir konsultasi di bawah ini atau menghubungi langsung WhatsApp resmi kami di +62 822-9900-9615. Tim arsitek kami akan menelaah kebutuhan Anda dan menyusun proposal teknis awal bebas biaya.
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- SECTION 07 — MARI EKSPLOR IDE BISNIS MU (COLLAPSIBLE FORM ON DEMAND) -->
-    <section class="section" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="explore-business-card reveal-on-scroll interactive-spotlight">
-          
-          <div class="explore-header-center">
-            <span class="section-label">START COLLABORATION</span>
-            <h2 id="contact-heading" class="explore-headline">MARI EKSPLOR IDE BISNIS MU.</h2>
-            <p class="explore-desc">
-              Punya visi, ide produk, atau rencana transformasi website modern? Mari diskusikan bersama tim arsitek Rubicweb untuk merumuskan solusi digital yang tepat, terukur, dan siap berkembang di era digital.
-            </p>
-
-            <div class="explore-actions">
-              <button type="button" class="btn btn-primary" id="toggle-form-btn" aria-expanded="false" aria-controls="collapsible-form-wrapper">
-                <span id="toggle-form-btn-text">EKSPLOR IDE &amp; BUKA FORMULIR &rarr;</span>
-              </button>
-              <a href="https://wa.me/6282299009615" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <span>CHAT WHATSAPP RESMI &rarr;</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- COLLAPSIBLE FORM CONTAINER (Appears when button is clicked) -->
-          <div class="collapsible-form-container" id="collapsible-form-wrapper">
-            <div class="form-inner-box">
-              <div class="form-header-row">
-                <div>
-                  <span class="section-label" style="margin-bottom: 6px; display: block;">INQUIRY PROYEK DIGITAL</span>
-                  <h3 style="font-size: 1.4rem; color: #FFF; margin-bottom: 6px;">Formulir Rencana &amp; Kebutuhan Proyek</h3>
-                  <p style="font-size: 0.92rem; color: var(--text-secondary); margin: 0;">Lengkapi rincian berikut untuk menerima kajian arsitektur awal dan proposal dari tim Rubicweb:</p>
-                </div>
-                <button type="button" class="close-form-btn" id="close-form-btn" aria-label="Tutup Formulir">
-                  &times;
-                </button>
-              </div>
-
-              <!-- Form Inputs with Validation -->
-              <form class="validated-contact-form" novalidate>
-                <div class="form-feedback-banner"></div>
-
-                <div class="form-grid-2col">
-                  <!-- Full Name -->
-                  <div class="form-group">
-                    <label for="form-name" class="form-label">Full Name *</label>
-                    <input type="text" id="form-name" name="nama" class="form-input" placeholder="Masukkan nama lengkap Anda" required>
-                  </div>
-
-                  <!-- Email Address -->
-                  <div class="form-group">
-                    <label for="form-email" class="form-label">Email Address *</label>
-                    <input type="email" id="form-email" name="email" class="form-input" placeholder="nama@perusahaan.co.id" required>
-                  </div>
-                </div>
-
-                <div class="form-grid-2col">
-                  <!-- Company Name -->
-                  <div class="form-group">
-                    <label for="form-company" class="form-label">Company Name (Opsional)</label>
-                    <input type="text" id="form-company" name="perusahaan" class="form-input" placeholder="Nama Perusahaan atau Lembaga">
-                  </div>
-
-                  <!-- Project Category -->
-                  <div class="form-group">
-                    <label for="form-category" class="form-label">Project Category *</label>
-                    <select id="form-category" name="layanan" class="form-select" required>
-                      <option value="">-- Pilih Kategori Layanan --</option>
-                      <option value="website-development">Jasa Pembuatan Website</option>
-                      <option value="ecommerce">E-Commerce &amp; Toko Online</option>
-                      <option value="custom-web-application">Aplikasi Web Custom</option>
-                      <option value="ai-integration">Integrasi AI &amp; Digital</option>
-                      <option value="seo-optimization">SEO &amp; Optimasi Performa</option>
-                      <option value="other">Kebutuhan Lainnya</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- Estimated Budget -->
-                <div class="form-group" style="margin-bottom: 20px;">
-                  <label for="form-budget" class="form-label">Estimated Budget (Opsional)</label>
-                  <select id="form-budget" name="anggaran" class="form-select">
-                    <option value="">-- Pilih Estimasi Anggaran --</option>
-                    <option value="starter">&lt; Rp 10.000.000 (Profil / Landing Page)</option>
-                    <option value="business">Rp 10.000.000 &ndash; Rp 25.000.000 (Corporate Web)</option>
-                    <option value="scale">Rp 25.000.000 &ndash; Rp 50.000.000 (E-Commerce / Custom App)</option>
-                    <option value="enterprise">&gt; Rp 50.000.000 (Enterprise Solution)</option>
-                  </select>
-                </div>
-
-                <!-- Project Description -->
-                <div class="form-group" style="margin-bottom: 20px;">
-                  <label for="form-message" class="form-label">Project Description *</label>
-                  <textarea id="form-message" name="deskripsi" class="form-textarea" rows="4" placeholder="Ceritakan tujuan, fitur yang diharapkan, atau target waktu peluncuran bisnis Anda..." required></textarea>
-                </div>
-
-                <!-- Agreement Checkbox -->
-                <div class="form-group" style="margin-bottom: 26px;">
-                  <label class="form-checkbox-label" style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); cursor: pointer;">
-                    <input type="checkbox" id="form-agree" name="persetujuan" required style="margin-top: 3px; accent-color: var(--accent-primary);">
-                    <span>Saya menyetujui bahwa informasi ini akan digunakan oleh Rubicweb untuk menyusun estimasi dan proposal proyek.</span>
-                  </label>
-                </div>
-
-                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 1.05rem;">
-                  <span>KIRIM PERMINTAAN KONSULTASI &rarr;</span>
-                </button>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 08 — KANTOR PUSAT RESMI & AKREDITASI PSE (TERAKHIR SEBELUM FOOTER) -->
-    <section class="section-location reveal-on-scroll" id="location" aria-labelledby="location-heading">
-      <div class="container">
-        <div class="office-hq-card interactive-spotlight">
-          <div class="office-hq-grid">
-            <!-- Left: Official Address & Operational Details -->
-            <div class="office-hq-info">
-              <span class="section-label">KANTOR PUSAT RESMI</span>
-              <h3 id="location-heading" class="office-hq-title">Bellezza Shopping Arcade (BSA)</h3>
-              <address class="office-hq-address">
-                Lantai 1 Unit 106, Permata Hijau,<br>
-                Kebayoran Lama, Jakarta Selatan 12210, Indonesia
-              </address>
-              <div class="office-hq-contact-details">
-                <p><strong>Email:</strong> <a href="mailto:hello@rubicweb.com">hello@rubicweb.com</a></p>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282299009615" target="_blank" rel="noopener noreferrer">+62 822-9900-9615</a></p>
-                <p><strong>Jam Operasional:</strong> Senin &ndash; Jumat, 09:00 &ndash; 18:00 WIB</p>
-              </div>
-            </div>
-
-            <!-- Right: KOMDIGI PSE Certification Badge -->
-            <div class="office-hq-badge-col">
-              <div class="komdigi-cert-badge-large">
-                <img src="assets/logos/komdigi.png" alt="Logo KOMDIGI" class="komdigi-logo-large">
-                <div class="komdigi-text">
-                  <strong>Terdaftar Resmi PSE</strong>
-                  <span>Kementerian Komunikasi dan Digital RI</span>
-                </div>
-              </div>
-              <p class="office-hq-assurance">
-                Entitas bisnis terdaftar resmi dengan jaminan kepatuhan regulasi perlindungan data dan standar sistem elektronik nasional.
+              <p class="service-desc">
+                Arsitektur kode modular kustom dibangun dari baris pertama. Menghadirkan kecepatan kilat, keamanan tingkat tinggi, dan fleksibilitas tanpa batas untuk mengakomodasi kebutuhan logika bisnis unik Anda.
               </p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">HTML5 / Semantic</span>
+                <span class="tech-badge">Modern CSS3</span>
+                <span class="tech-badge">Vanilla JS ES6+</span>
+                <span class="tech-badge">PHP / Laravel</span>
+                <span class="tech-badge">REST API</span>
+              </div>
+              <div class="service-card-footer">
+                <a href="services.html" class="service-link btn-service-detail">Lihat Deliverables &amp; Spesifikasi &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card card-tilt interactive-spotlight">
+            <div class="service-card-inner">
+              <div class="service-card-header">
+                <span class="service-num font-mono">02</span>
+                <h3>Modern Business Profile</h3>
+              </div>
+              <p class="service-desc">
+                Representasi identitas korporat kelas dunia dengan storytelling visual elegan, tipografi editorial, micro-interactions 60fps, dan struktur konversi terarah untuk menarik klien berkelas.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">Editorial UI/UX</span>
+                <span class="tech-badge">60fps Micro-interactions</span>
+                <span class="tech-badge">Structured SEO Schema</span>
+                <span class="tech-badge">Ultra Responsive Engine</span>
+              </div>
+              <div class="service-card-footer">
+                <a href="services.html" class="service-link btn-service-detail">Lihat Deliverables &amp; Spesifikasi &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card card-tilt interactive-spotlight">
+            <div class="service-card-inner">
+              <div class="service-card-header">
+                <span class="service-num font-mono">03</span>
+                <h3>Web App &amp; Portal</h3>
+              </div>
+              <p class="service-desc">
+                Rekayasa platform aplikasi web interaktif, sistem dashboard analitik data real-time, portal keanggotaan klien, dan manajemen operasional bisnis berbasis cloud yang handal.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">PHP / Laravel 11</span>
+                <span class="tech-badge">SPA Architecture</span>
+                <span class="tech-badge">PostgreSQL / MySQL</span>
+                <span class="tech-badge">Role-Based Access Control</span>
+              </div>
+              <div class="service-card-footer">
+                <a href="services.html" class="service-link btn-service-detail">Lihat Deliverables &amp; Spesifikasi &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card card-tilt interactive-spotlight">
+            <div class="service-card-inner">
+              <div class="service-card-header">
+                <span class="service-num font-mono">04</span>
+                <h3>Redesign &amp; Maintenance</h3>
+              </div>
+              <p class="service-desc">
+                Refactoring website lama yang lambat dan usang menjadi platform mutakhir dengan Core Web Vitals prima, audit kerentanan keamanan, serta pemeliharaan berkala bergaransi 99.9% uptime.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">Core Web Vitals Boost</span>
+                <span class="tech-badge">Security Audit &amp; Patch</span>
+                <span class="tech-badge">Legacy Refactoring</span>
+                <span class="tech-badge">Automated Backup Engine</span>
+              </div>
+              <div class="service-card-footer">
+                <a href="services.html" class="service-link btn-service-detail">Lihat Deliverables &amp; Spesifikasi &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         3. TRUST PILLARS & STATS COUNTERS SECTION
+         ------------------------------------------------------------------------ -->
+    <section class="trust-section section-padding" id="stats">
+      <!-- Anchor alias for test suite compatibility -->
+      <div id="why-us"></div>
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-category font-mono">PROVEN PERFORMANCE &amp; METRICS</span>
+          <h2 class="section-title">Standar Mutu Rekayasa Bergaransi Nyata</h2>
+          <p class="section-subtitle">
+            Transparansi penuh dan dedikasi rekayasa perangkat lunak terbaik sejak 2012 untuk menjamin keamanan investasi digital Anda.
+          </p>
+        </div>
+
+        <!-- Animated Stats Counters Grid -->
+        <div class="stats-cards-grid">
+          <div class="stat-card">
+            <div class="stat-number font-mono" data-counter-target="100" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Garansi Kepuasan / Uang Kembali</div>
+            <p class="stat-desc">Perlindungan refund penuh jika rancangan awal tidak sesuai brief yang disepakati.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number font-mono" data-counter-target="250" data-target="250" data-suffix="+">250+</div>
+            <div class="stat-label">Proyek Web Selesai</div>
+            <p class="stat-desc">Portofolio lintas industri nasional dan multinasional dengan kepuasan tinggi.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number font-mono" data-counter-target="99.9" data-target="99.9" data-decimals="1" data-suffix="%">99.9%</div>
+            <div class="stat-label">Jaminan Server Uptime</div>
+            <p class="stat-desc">Infrastruktur cloud hosting NVMe kecepatan tinggi dengan proteksi DDoS.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number font-mono" data-counter-target="95" data-target="95" data-suffix="+">95+</div>
+            <div class="stat-label">Google PageSpeed Score</div>
+            <p class="stat-desc">Optimasi Core Web Vitals untuk muat halaman di bawah 1 detik di semua perangkat.</p>
+          </div>
+        </div>
+
+        <!-- 4 Architectural Trust Pillars -->
+        <div class="trust-pillars-grid">
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h4>Structured SEO Architecture</h4>
+            <p>Struktur semantik HTML5, meta tag OpenGraph terstandar, dan skema JSON-LD terindeks cepat oleh Google.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+            </div>
+            <h4>Domain &amp; NVMe Cloud Hosting</h4>
+            <p>Gratis domain kustom (.com/.id) serta alokasi cloud hosting SSD NVMe performa tinggi selama 1 tahun pertama.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h4>30-Day Bug-Free Guarantee</h4>
+            <p>Garansi perbaikan bug gratis 30 hari pasca rilis publik dan penyerahan 100% hak milik kode sumber tanpa vendor lock-in.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h4>24/7 Dedicated Support</h4>
+            <p>Akses konsultasi teknis langsung via WhatsApp tim pengembang Rubicweb untuk kelancaran operasional bisnis Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         4. INTERACTIVE PORTFOLIO SHOWCASE SECTION
+         ------------------------------------------------------------------------ -->
+    <section class="portfolio-section section-padding" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-category font-mono">SELECTED WORK &amp; CASE STUDIES</span>
+          <h2 class="section-title">Karya Nyata, Performa Terbukti</h2>
+          <p class="section-subtitle">
+            Jelajahi portofolio proyek rekayasa web Rubicweb. Setiap proyek dibangun dengan komitmen terhadap estetika editorial, kecepatan ekstrem, dan hasil bisnis terukur.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="portfolio-filters">
+          <button type="button" class="portfolio-filter-btn is-active active" data-filter="all" aria-selected="true">Semua Proyek</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="ecommerce" aria-selected="false">E-Commerce</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="corporate" aria-selected="false">Company Profile</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="webapp" aria-selected="false">Web App &amp; Portal</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="portfolio-grid">
+          <!-- Project 1: NexaStore (E-Commerce) -->
+          <article class="portfolio-card card-tilt" data-category="ecommerce">
+            <div class="portfolio-card__media">
+              <img src="assets/portfolio/karalia-mockup.svg" alt="NexaStore Luxury Goods Mockup" class="portfolio-card__img" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay">
+                <div class="overlay-actions">
+                  <a href="portfolio.html" class="btn btn--sm btn--primary">Live Preview</a>
+                  <button type="button" class="btn btn--sm btn--secondary btn-case-study" data-project-id="nexastore">Lihat Studi Kasus</button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__content">
+              <span class="portfolio-tag font-mono">E-COMMERCE &bull; RETAIL</span>
+              <h3 class="portfolio-title">NexaStore Luxury Goods</h3>
+              <p class="portfolio-desc">Toko online barang mewah dengan katalog instan, filter multi-atribut tanpa reload, dan checkout terintegrasi QRIS Midtrans.</p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">HTML5 / CSS3</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">PHP Laravel</span>
+                <span class="tech-badge">Midtrans API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Apex Global Logistics (Corporate) -->
+          <article class="portfolio-card card-tilt" data-category="corporate">
+            <div class="portfolio-card__media">
+              <img src="assets/portfolio/wilmar-mockup.svg" alt="Apex Global Logistics Mockup" class="portfolio-card__img" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay">
+                <div class="overlay-actions">
+                  <a href="portfolio.html" class="btn btn--sm btn--primary">Live Preview</a>
+                  <button type="button" class="btn btn--sm btn--secondary btn-case-study" data-project-id="apex">Lihat Studi Kasus</button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__content">
+              <span class="portfolio-tag font-mono">CORPORATE PORTAL &bull; SHIPMENT TRACKER</span>
+              <h3 class="portfolio-title">Apex Global Logistics</h3>
+              <p class="portfolio-desc">Portal korporat multinasional dwibahasa terintegrasi sistem live shipment tracking yang tersinkronisasi langsung ke database ERP.</p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">HTML5 / CSS3</span>
+                <span class="tech-badge">Vanilla JS ES6</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">ERP Integration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Lumina Creative Studio (Corporate) -->
+          <article class="portfolio-card card-tilt" data-category="corporate">
+            <div class="portfolio-card__media">
+              <img src="assets/portfolio/pinjamin-mockup.svg" alt="Lumina Creative Studio Mockup" class="portfolio-card__img" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay">
+                <div class="overlay-actions">
+                  <a href="portfolio.html" class="btn btn--sm btn--primary">Live Preview</a>
+                  <button type="button" class="btn btn--sm btn--secondary btn-case-study" data-project-id="lumina">Lihat Studi Kasus</button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__content">
+              <span class="portfolio-tag font-mono">CREATIVE SHOWCASE &bull; ARCHITECTURE</span>
+              <h3 class="portfolio-title">Lumina Creative Studio</h3>
+              <p class="portfolio-desc">Portofolio visual imersif dengan tata letak editorial internasional, transisi animasi 60fps, dan performa PageSpeed 99.</p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">Pure CSS Grid</span>
+                <span class="tech-badge">3D Tilt Physics</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">WebP Engine</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: FlowPulse Enterprise Analytics (Web App) -->
+          <article class="portfolio-card card-tilt" data-category="webapp">
+            <div class="portfolio-card__media">
+              <img src="assets/portfolio/jelypos-mockup.svg" alt="FlowPulse Enterprise Analytics Mockup" class="portfolio-card__img" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay">
+                <div class="overlay-actions">
+                  <a href="portfolio.html" class="btn btn--sm btn--primary">Live Preview</a>
+                  <button type="button" class="btn btn--sm btn--secondary btn-case-study" data-project-id="flowpulse">Lihat Studi Kasus</button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__content">
+              <span class="portfolio-tag font-mono">SAAS DASHBOARD &bull; ENTERPRISE WORKFORCE</span>
+              <h3 class="portfolio-title">FlowPulse Enterprise Analytics</h3>
+              <p class="portfolio-desc">Dashboard produktivitas B2B berbasis Single-Page Architecture yang memproses puluhan ribu metrik dengan response time &lt; 150ms.</p>
+              <div class="tech-stack-badges">
+                <span class="tech-badge">Vanilla JS SPA</span>
+                <span class="tech-badge">PHP Laravel 11</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">WebSocket API</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-footer-cta text-center">
+          <a href="portfolio.html" class="btn btn--secondary btn--lg">Lihat Semua Studi Kasus Portofolio &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         MODAL: CASE STUDY PREVIEW DIALOG
+         ------------------------------------------------------------------------ -->
+    <div class="modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog">
+        <button type="button" class="modal__close modal-close-btn" aria-label="Tutup studi kasus">&times;</button>
+        <div class="modal-header">
+          <span class="modal-tag font-mono" id="modal-tag">KATEGORI PROYEK</span>
+          <h3 class="modal-title" id="modal-title">Judul Studi Kasus</h3>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image-wrap">
+            <img src="assets/portfolio/karalia-mockup.svg" alt="Preview Gambar Proyek" id="modal-img" class="modal-img" width="600" height="340">
+          </div>
+          <div class="modal-details">
+            <div class="detail-block">
+              <h4>Tantangan Teknis</h4>
+              <p id="modal-challenge">Deskripsi tantangan teknis proyek klien.</p>
+            </div>
+            <div class="detail-block">
+              <h4>Solusi Rekayasa Rubicweb</h4>
+              <p id="modal-solution">Solusi arsitektur dan eksekusi clean code yang diterapkan.</p>
+            </div>
+            <div class="detail-block">
+              <h4>Hasil Terukur</h4>
+              <p id="modal-results">Peningkatan metrik bisnis dan kecepatan Core Web Vitals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="contact.html" class="btn btn--primary">Konsultasi Proyek Serupa &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------
+         5. INTERACTIVE PRICING CALCULATOR & ESTIMATOR SECTION
+         ------------------------------------------------------------------------ -->
+    <section class="pricing-section section-padding" id="pricing-calculator">
+      <!-- Direct deep-anchor navigation target for contact -->
+      <div id="contact" class="anchor-target" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-category font-mono">DYNAMIC PRICING &amp; TIMELINE</span>
+          <h2 class="section-title">Kalkulator Estimasi Biaya &amp; Durasi Pengerjaan</h2>
+          <p class="section-subtitle">
+            Sesuaikan kebutuhan proyek Anda secara transparan. Dapatkan estimasi total investasi dan jadwal peluncuran secara real-time.
+          </p>
+        </div>
+
+        <div class="pricing-calculator-widget">
+          <!-- Left Column: Inputs & Toggles -->
+          <div class="calc-config-col">
+            <div class="calc-group">
+              <label class="calc-label">1. Pilih Paket Dasar Website</label>
+              <div class="tier-cards-group">
+                <label class="tier-card">
+                  <input type="radio" name="tier" value="basic">
+                  <div class="tier-card-inner">
+                    <span class="tier-name">Paket Basic</span>
+                    <span class="tier-scope">Landing Page (1 Halaman)</span>
+                    <span class="tier-price font-mono">Rp 2.500.000</span>
+                  </div>
+                </label>
+
+                <label class="tier-card">
+                  <input type="radio" name="tier" value="pro" checked>
+                  <div class="tier-card-inner">
+                    <span class="tier-badge">Paling Populer</span>
+                    <span class="tier-name">Paket Pro</span>
+                    <span class="tier-scope">Corporate Profile (5 Halaman)</span>
+                    <span class="tier-price font-mono">Rp 5.500.000</span>
+                  </div>
+                </label>
+
+                <label class="tier-card">
+                  <input type="radio" name="tier" value="enterprise">
+                  <div class="tier-card-inner">
+                    <span class="tier-name">Paket Enterprise</span>
+                    <span class="tier-scope">Custom Web App &amp; Portal</span>
+                    <span class="tier-price font-mono">Rp 12.000.000</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Extra Pages Slider -->
+            <div class="calc-group">
+              <div class="slider-header">
+                <label for="extra-pages" class="calc-label">2. Jumlah Halaman Website</label>
+                <span class="pages-count-display font-mono" id="pages-count-display">5 Halaman</span>
+              </div>
+              <input type="range" id="extra-pages" name="extra_pages" min="1" max="20" value="5" class="calc-range-slider">
+              <div class="slider-ticks font-mono">
+                <span>1 Halaman</span>
+                <span>10 Halaman</span>
+                <span>20 Halaman</span>
+              </div>
+            </div>
+
+            <!-- Add-on Feature Checkboxes -->
+            <div class="calc-group">
+              <label class="calc-label">3. Fitur Tambahan &amp; Integrasi Khusus</label>
+              <div class="addons-grid">
+                <label class="addon-checkbox-label">
+                  <input type="checkbox" name="addon" class="calc-addon" data-price="2000000" data-days="5" data-name="E-Commerce Catalog">
+                  <span class="addon-custom-check"></span>
+                  <span class="addon-text">
+                    <strong>E-Commerce &amp; Katalog Produk</strong>
+                    <small>+Rp 2.000.000 &bull; +5 hari kerja</small>
+                  </span>
+                </label>
+
+                <label class="addon-checkbox-label">
+                  <input type="checkbox" name="addon" class="calc-addon" data-price="1500000" data-days="3" data-name="Payment Gateway Midtrans">
+                  <span class="addon-custom-check"></span>
+                  <span class="addon-text">
+                    <strong>Integrasi Payment Gateway</strong>
+                    <small>+Rp 1.500.000 &bull; +3 hari kerja</small>
+                  </span>
+                </label>
+
+                <label class="addon-checkbox-label">
+                  <input type="checkbox" name="addon" class="calc-addon" data-price="1200000" data-days="3" data-name="Multi-Bahasa (Bilingual)">
+                  <span class="addon-custom-check"></span>
+                  <span class="addon-text">
+                    <strong>Dukungan Multi-Bahasa (ID &amp; EN)</strong>
+                    <small>+Rp 1.200.000 &bull; +3 hari kerja</small>
+                  </span>
+                </label>
+
+                <label class="addon-checkbox-label">
+                  <input type="checkbox" name="addon" class="calc-addon" data-express="true" value="express" data-name="Express Priority Sprint">
+                  <span class="addon-custom-check"></span>
+                  <span class="addon-text">
+                    <strong>Express Priority Delivery</strong>
+                    <small>+25% Biaya &bull; Pengerjaan 40% Lebih Cepat</small>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Live Summary & WhatsApp CTA -->
+          <div class="calc-summary-col">
+            <div class="calc-summary-card">
+              <span class="summary-tag font-mono">ESTIMASI INVESTASI</span>
+              <div class="summary-price-wrap">
+                <span class="summary-price-val font-mono" id="calc-total-price">Rp 5.500.000</span>
+                <span class="summary-tax-note">Termasuk Domain, Cloud Hosting NVMe 1 Th &amp; Garansi 30 Hari</span>
+              </div>
+
+              <div class="summary-timeline-wrap">
+                <span class="summary-timeline-label">Estimasi Timeline Pengerjaan:</span>
+                <span class="summary-timeline-val font-mono" id="calc-total-timeline">± 14 - 21 Hari Kerja</span>
+              </div>
+
+              <ul class="summary-included-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 12 2 2 4-4"/></svg> 100% Hak Milik Kode Sumber (Clean Code)</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 12 2 2 4-4"/></svg> Garansi 100% Kepuasan / Uang Kembali</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 12 2 2 4-4"/></svg> Google PageSpeed Score 95+ Guarantee</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 12 2 2 4-4"/></svg> Garansi Bebas Bug 30 Hari &amp; Support 24/7</li>
+              </ul>
+
+              <a href="https://wa.me/6285280008984" id="btn-calc-whatsapp" class="btn btn--primary btn--full btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                Konsultasikan Estimasi via WhatsApp &rarr;
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ------------------------------------------------------------------------
+         6. TESTIMONIALS CAROUSEL SECTION
+         ------------------------------------------------------------------------ -->
+    <section class="testimonials-section section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-category font-mono">CLIENT ENDORSEMENTS &amp; REVIEWS</span>
+          <h2 class="section-title">Dipercaya Oleh Pemimpin Bisnis &amp; Korporasi</h2>
+          <p class="section-subtitle">
+            Kisah sukses nyata dari para klien yang telah mentransformasi aset digital mereka bersama Rubicweb.
+          </p>
+        </div>
+
+        <div class="testimonial-carousel" data-carousel>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous testimonial">&larr;</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next testimonial">&rarr;</button>
+          </div>
+
+          <div class="testimonial-track-wrap">
+            <div class="testimonial-track">
+              <!-- Slide 1 -->
+              <div class="testimonial-card">
+                <div class="rating-stars" aria-label="Rating 5.0 dari 5.0 bintang">
+                  <span class="star-gold">★★★★★</span>
+                  <span class="rating-score font-mono">5.0 / 5.0</span>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Rubicweb membuktikan bahwa website tanpa framework berat bisa berjalan jauh lebih kencang dan rapi. Arsitektur kustom mereka membuat skor Core Web Vitals kami selalu hijau di angka 98. Layanan timnya luar biasa responsif dan transparan dalam setiap sprint."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar font-mono">BS</div>
+                  <div class="author-meta">
+                    <span class="author-name">Budi Santoso, S.T.</span>
+                    <span class="author-role">Chief Technology Officer, PT Nusantara Solusi Mandiri</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-card">
+                <div class="rating-stars" aria-label="Rating 5.0 dari 5.0 bintang">
+                  <span class="star-gold">★★★★★</span>
+                  <span class="rating-score font-mono">5.0 / 5.0</span>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Desain interaktif yang dibangun Rubicweb benar-benar mengubah persepsi klien korporat terhadap agensi kami. Efek visualnya sangat halus pada 60fps, responsif di semua ukuran layar, dan konversi formulir konsultasi kami naik lebih dari 300% dalam dua bulan pertama."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar font-mono">JW</div>
+                  <div class="author-meta">
+                    <span class="author-name">Jessica Wijaya, M.Ds.</span>
+                    <span class="author-role">Head of Marketing &amp; Brand, Lumina Studio Jakarta</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-card">
+                <div class="rating-stars" aria-label="Rating 5.0 dari 5.0 bintang">
+                  <span class="star-gold">★★★★★</span>
+                  <span class="rating-score font-mono">5.0 / 5.0</span>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Migrasi dari toko online lama ke sistem web kustom Rubicweb adalah keputusan investasi terbaik perusahaan kami. Proses checkout sangat instan dengan QRIS Midtrans, server tetap stabil saat kampanye diskon besar, dan garansi 30 hari memberi rasa aman total."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar font-mono">HK</div>
+                  <div class="author-meta">
+                    <span class="author-name">Hendra Kusuma</span>
+                    <span class="author-role">Founder &amp; CEO, NexaStore Retail Indonesia</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="testimonial-card">
+                <div class="rating-stars" aria-label="Rating 5.0 dari 5.0 bintang">
+                  <span class="star-gold">★★★★★</span>
+                  <span class="rating-score font-mono">5.0 / 5.0</span>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Sistem tracking logistik dan portal korporat yang dibangun Rubicweb berhasil memangkas 40% beban panggilan customer service kami. Seluruh kode sumber diserahkan 100% lengkap dengan dokumentasi arsitektur yang sangat terstruktur."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar font-mono">FR</div>
+                  <div class="author-meta">
+                    <span class="author-name">Ir. Farhan Ramadhan</span>
+                    <span class="author-role">VP of Operations, Apex Global Cargo Multinasional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         7. FAQ ACCORDION SECTION (SINGLE-ACTIVE EXPANSION)
+         ------------------------------------------------------------------------ -->
+    <section class="faq-section section-padding" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-category font-mono">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Pertanyaan Umum Seputar Rekayasa Web Rubicweb</h2>
+          <p class="section-subtitle">
+            Transparansi mengenai kepemilikan kode sumber, garansi mutu, workflow pengembangan, dan dukungan pasca rilis.
+          </p>
+        </div>
+
+        <div class="faq-accordion-list">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Apakah saya mendapatkan 100% hak milik atas kode sumber (source code) website?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Ya, mutlak 100%. Setelah proyek selesai dan pelunasan dilakukan, Rubicweb menyerahkan seluruh kode sumber (source code), skema database, aset visual, dan kredensial server kepada Anda. Tidak ada biaya royalti tersembunyi, tidak ada enkripsi kode, dan tidak ada penguncian vendor (no vendor lock-in). Anda bebas mengembangkan atau memindahkan website kapan saja.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Bagaimana mekanisme Garansi 100% Kepuasan / Uang Kembali dan Garansi Bebas Bug 30 Hari?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Garansi Kepuasan berlaku pada tahap perancangan wireframe dan prototipe visual interaktif. Jika konsep awal tidak sesuai dengan kesepakatan brief setelah proses revisi, Anda berhak mengajukan pengembalian dana (refund). Sementara itu, Garansi Bebas Bug 30 Hari aktif segera setelah website dirilis publik (live) untuk memastikan seluruh fitur, form, dan integrasi berjalan sempurna tanpa biaya perbaikan tambahan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Mengapa Rubicweb memilih pendekatan Custom Programming murni dibanding WordPress atau template instan?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Template instan sering kali dijejali puluhan plugin pihak ketiga yang membebani server, memperlambat kecepatan muat, dan rentan terhadap peretasan keamanan. Dengan pemrograman kustom berbasis clean code (HTML5, Modern CSS, Vanilla JS, dan Laravel), website Anda memiliki skor PageSpeed 95+, keamanan maksimal, dan kemudahan skalabilitas tanpa batasan fitur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Berapa lama estimasi pengerjaan website hingga siap online?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Waktu pengerjaan disesuaikan dengan skala proyek: Paket Basic (Landing Page) selesai dalam 5-7 hari kerja, Paket Pro (Company Profile) memakan waktu 14-21 hari kerja, dan Paket Enterprise (Web App &amp; Portal) membutuhkan 30-45 hari kerja. Kami juga menyediakan opsi Priority Express Delivery jika Anda memiliki tenggat waktu bisnis yang mendesak.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Apakah Rubicweb menyediakan layanan pemeliharaan (maintenance) dan dukungan teknis pasca peluncuran?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Tentu. Seluruh paket sudah termasuk fasilitas domain kustom dan cloud hosting NVMe kecepatan tinggi selama 1 tahun pertama. Kami juga menyediakan paket Service Level Agreement (SLA) pemeliharaan rutin yang mencakup pencadangan (backup) data berkala, pembaruan keamanan, monitoring uptime 99.9%, dan bantuan teknis darurat 24/7 via WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <header class="faq-header">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Bagaimana alur pembayaran dan tata cara memulai kerja sama dengan Rubicweb?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+            </header>
+            <div class="faq-panel faq-content">
+              <div class="faq-inner">
+                <p>
+                  Anda dapat memulai dengan konsultasi gratis melalui WhatsApp atau formulir di halaman Kontak untuk membedah kebutuhan teknis Anda. Setelah ruang lingkup kerja disepakati, pembayaran dibagi menjadi dua termin: Down Payment (DP) 50% untuk memulai tahap riset &amp; desain, serta pelunasan 50% setelah website selesai diuji coba secara menyeluruh di staging server dan siap dideploy ke server produksi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- SECTION 08 — FOOTER -->
+  <!-- ==========================================================================
+       ARCHITECTURAL GLOBAL FOOTER (SCBD JAKARTA AGENCY PROFILE)
+       ========================================================================== -->
   <footer class="site-footer" id="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand Col -->
+        <!-- Col 1: Legal Brand & SCBD Address -->
         <div class="footer-brand">
-          <a href="#hero" aria-label="Beranda Rubicweb">
-            <img src="assets/logos/rubicweb-logo.png" alt="Rubicweb Logo" style="height: 38px; width: auto;">
+          <a href="index.html" class="footer-logo-link" aria-label="Rubicweb Beranda">
+            <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="footer-logo" width="168" height="38">
           </a>
+          <span class="footer-legal-tag font-mono">PT. Rubic Kirana Solusindo</span>
           <p>
-            Rubicweb &mdash; Digital Agency &amp; Engineering. Menghadirkan solusi arsitektur web modern, platform e-commerce berkinerja tinggi, dan optimasi performa digital.
+            Agensi rekayasa website dan aplikasi kustom berkinerja tinggi. Kami membangun sistem digital berkecepatan ekstrem dengan standar clean-code internasional dan estetika editorial berkelas.
           </p>
-          <div class="komdigi-cert-badge">
-            <img src="assets/logos/komdigi.png" alt="Logo KOMDIGI" class="komdigi-logo">
-            <div class="komdigi-text">
-              <strong>Terdaftar Resmi PSE</strong>
-              <span>Kementerian Komunikasi dan Digital RI</span>
+          <address class="footer-address">
+            <strong>Kantor Pusat Operasional:</strong><br>
+            District 8, Treasury Tower Lt. 7<br>
+            SCBD Jend. Sudirman, Senayan, Kebayoran Baru<br>
+            Jakarta Selatan, DKI Jakarta 12190 &bull; Indonesia
+          </address>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigasi Utama</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="services.html">Layanan &amp; Workflow</a></li>
+            <li><a href="portfolio.html">Portofolio Proyek</a></li>
+            <li><a href="#pricing-calculator">Estimator Biaya</a></li>
+            <li><a href="contact.html">Kontak &amp; Konsultasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Engineering Services -->
+        <div class="footer-col">
+          <h4>Layanan Rekayasa</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Custom Web Development</a></li>
+            <li><a href="services.html">Modern Business Profile</a></li>
+            <li><a href="services.html">Web App &amp; Portal</a></li>
+            <li><a href="services.html">Redesign &amp; Maintenance</a></li>
+            <li><a href="contact.html">Konsultasi Arsitektur Web</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Guarantees & Verification Badges -->
+        <div class="footer-col">
+          <h4>Standar Mutu &amp; Jaminan</h4>
+          <div class="footer-guarantees">
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Garansi 100% Kepuasan / Uang Kembali</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Google PageSpeed 95+ Guarantee</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>30-Day Bug-Free Warranty</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>100% Source Code Ownership</span>
             </div>
           </div>
-        </div>
-
-        <!-- Nav Col -->
-        <div class="footer-col">
-          <h3>Peta Navigasi</h3>
-          <ul class="footer-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About &amp; Capabilities</a></li>
-            <li><a href="#services">Services Directory</a></li>
-            <li><a href="#portfolio">Selected Portfolio</a></li>
-            <li><a href="#why-us">Why Choose Rubicweb</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Services Col -->
-        <div class="footer-col">
-          <h3>Layanan Rekayasa</h3>
-          <ul class="footer-links">
-            <li><a href="#services">Website Development</a></li>
-            <li><a href="#services">E-Commerce &amp; Retail</a></li>
-            <li><a href="#services">Aplikasi Web Custom</a></li>
-            <li><a href="#services">Integrasi AI &amp; API</a></li>
-            <li><a href="#services">SEO &amp; Core Web Vitals</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Col -->
-        <div class="footer-col">
-          <h3>Kontak Terverifikasi</h3>
-          <address style="font-style: normal; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-            <p style="margin-bottom: 8px;">
-              <strong>Rubicweb Office:</strong><br>
-              Bellezza Shopping Arcade (BSA)<br>
-              Lantai 1 Unit 106, Permata Hijau<br>
-              Jakarta Selatan 12210, Indonesia
-            </p>
-            <p style="margin-bottom: 6px;">
-              Email: <a href="mailto:hello@rubicweb.com">hello@rubicweb.com</a>
-            </p>
-            <p style="margin-bottom: 6px;">
-              WhatsApp: <a href="https://wa.me/6282299009615" target="_blank" rel="noopener noreferrer">+62 822-9900-9615</a>
-            </p>
-            <p>
-              Website: <a href="https://rubicweb.co.id" target="_blank" rel="noopener noreferrer">rubicweb.co.id</a>
-            </p>
-          </address>
+          <div class="footer-contact-quick">
+            <p>Konsultasi Langsung via WhatsApp:</p>
+            <a href="https://wa.me/6285280008984" class="footer-wa-link font-mono" target="_blank" rel="noopener noreferrer">+62 852-8000-8984</a>
+          </div>
         </div>
       </div>
 
+      <!-- Footer Bottom Bar -->
       <div class="footer-bottom">
-        <p>&copy; 2026 Rubicweb. All rights reserved. Hak Cipta Dilindungi Undang-Undang.</p>
-        <p>Creative Website Redesign Demo &bull; HTML5 + CSS3 + Vanilla JavaScript</p>
+        <p class="footer-copyright">&copy; 2026 PT. Rubic Kirana Solusindo. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Kebijakan Privasi</a>
+          <a href="contact.html">Syarat &amp; Ketentuan</a>
+          <a href="contact.html">SLA &amp; Garansi</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Floating Button -->
-  <button type="button" class="back-to-top-btn" aria-label="Kembali ke atas halaman">
-    &uarr;
-  </button>
+  <!-- ==========================================================================
+       BACK TO TOP BUTTON
+       ========================================================================== -->
+  <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
 
-  <!-- Vanilla JavaScript Modules (Zero Framework) -->
-  <script src="js/scroll.js"></script>
-  <script src="js/terminal.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/portfolio.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/interactive.js"></script>
-  <script src="js/main.js"></script>
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT ENGINES
+       ========================================================================== -->
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+  <script src="js/contact.js" defer></script>
 </body>
 </html>

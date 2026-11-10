@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Mockup Proyek JelyPOS - Cloud Point of Sale & Inventory SaaS Dashboard">
+  <defs>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d2fe71" />
+      <stop offset="100%" stop-color="#70b2b9" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2fe71" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#d2fe71" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Frame Window -->
+  <rect x="0" y="0" width="800" height="480" rx="14" fill="#111216" stroke="#24252c" stroke-width="2" />
+  <rect x="0" y="0" width="800" height="42" rx="14" fill="#181920" />
+  <rect x="0" y="28" width="800" height="14" fill="#181920" />
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#ff5f56" />
+  <circle cx="44" cy="21" r="6" fill="#ffbd2e" />
+  <circle cx="64" cy="21" r="6" fill="#27c93f" />
+
+  <!-- URL Bar -->
+  <rect x="100" y="10" width="400" height="22" rx="6" fill="#20222b" />
+  <text x="115" y="25" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a1a3af">https://jelypos.cloud/dashboard/live-analytics</text>
+
+  <!-- Status Tag -->
+  <rect x="620" y="10" width="160" height="22" rx="6" fill="#20222b" />
+  <text x="635" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#d2fe71">SAAS POS DASHBOARD</text>
+
+  <!-- App Content Area -->
+  <g transform="translate(30, 60)">
+    <!-- Sidebar Preview -->
+    <rect x="0" y="0" width="160" height="390" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+    <text x="16" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#f2f2f6">Jely<tspan fill="#d2fe71">POS</tspan></text>
+    <rect x="12" y="55" width="136" height="30" rx="6" fill="rgba(210, 254, 113, 0.12)" />
+    <text x="24" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#d2fe71">Analytics</text>
+    <text x="24" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Sales &amp; Orders</text>
+    <text x="24" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Inventory (SKU)</text>
+    <text x="24" y="184" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Multi-Outlet</text>
+    <text x="24" y="220" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Staff Access</text>
+
+    <!-- Main Content -->
+    <g transform="translate(180, 0)">
+      <!-- Top KPIs -->
+      <g transform="translate(0, 0)">
+        <!-- KPI 1 -->
+        <rect x="0" y="0" width="170" height="85" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+        <text x="16" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Gross Revenue</text>
+        <text x="16" y="55" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700" fill="#f2f2f6">Rp 184.2M</text>
+        <text x="16" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#d2fe71">+24.8% vs last mo</text>
+
+        <!-- KPI 2 -->
+        <rect x="185" y="0" width="170" height="85" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+        <text x="201" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Active Outlets</text>
+        <text x="201" y="55" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700" fill="#f2f2f6">42 Outlets</text>
+        <text x="201" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#70b2b9">Sync Latency &lt;45ms</text>
+
+        <!-- KPI 3 -->
+        <rect x="370" y="0" width="190" height="85" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+        <text x="386" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#a1a3af">Transactions / Sec</text>
+        <text x="386" y="55" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700" fill="#f2f2f6">1,820 TPS</text>
+        <text x="386" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#d2fe71">99.99% Availability</text>
+      </g>
+
+      <!-- Chart Card -->
+      <g transform="translate(0, 100)">
+        <rect x="0" y="0" width="560" height="170" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+        <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#f2f2f6">Transaction Volume &amp; Realtime Throughput</text>
+        <path d="M 20 135 Q 80 120, 140 90 T 260 95 T 380 60 T 480 40 L 540 30" fill="none" stroke="#d2fe71" stroke-width="2.5" />
+        <path d="M 20 135 Q 80 120, 140 90 T 260 95 T 380 60 T 480 40 L 540 30 L 540 150 L 20 150 Z" fill="url(#chartGrad)" />
+      </g>
+
+      <!-- Live Order Feed -->
+      <g transform="translate(0, 285)">
+        <rect x="0" y="0" width="560" height="105" rx="8" fill="#181920" stroke="#24252c" stroke-width="1" />
+        <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#f2f2f6">Recent High-Velocity Orders</text>
+        <text x="20" y="52" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a1a3af">#ORD-9821  Jakarta Selatan  Rp 420.000  •  PAID (QRIS Instant)</text>
+        <text x="20" y="72" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a1a3af">#ORD-9820  Surabaya Barat   Rp 1.250.000 •  PAID (Virtual Account)</text>
+        <text x="20" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a1a3af">#ORD-9819  Bandung Wetan    Rp 89.000   •  PAID (EDC Settlement)</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+{
+  "allPassed": true,
+  "results": [
+    {
+      "checkName": "Zero Console Errors on index.html",
+      "pass": true,
+      "details": "Found 0 errors: "
+    },
+    {
+      "checkName": "Zero External Script CDNs on index.html",
+      "pass": true,
+      "details": "External scripts: []"
+    },
+    {
+      "checkName": "Zero External CSS Frameworks on index.html",
+      "pass": true,
+      "details": "External styles: []"
+    },
+    {
+      "checkName": "Vanilla Global Window on index.html",
+      "pass": true,
+      "details": "Pollution status: {\"react\":false,\"vue\":false,\"jquery\":false,\"tailwind\":false}"
+    },
+    {
+      "checkName": "Zero Console Errors on services.html",
+      "pass": true,
+      "details": "Found 0 errors: "
+    },
+    {
+      "checkName": "Zero External Script CDNs on services.html",
+      "pass": true,
+      "details": "External scripts: []"
+    },
+    {
+      "checkName": "Zero External CSS Frameworks on services.html",
+      "pass": true,
+      "details": "External styles: []"
+    },
+    {
+      "checkName": "Vanilla Global Window on services.html",
+      "pass": true,
+      "details": "Pollution status: {\"react\":false,\"vue\":false,\"jquery\":false,\"tailwind\":false}"
+    },
+    {
+      "checkName": "Zero Console Errors on portfolio.html",
+      "pass": true,
+      "details": "Found 0 errors: "
+    },
+    {
+      "checkName": "Zero External Script CDNs on portfolio.html",
+      "pass": true,
+      "details": "External scripts: []"
+    },
+    {
+      "checkName": "Zero External CSS Frameworks on portfolio.html",
+      "pass": true,
+      "details": "External styles: []"
+    },
+    {
+      "checkName": "Vanilla Global Window on portfolio.html",
+      "pass": true,
+      "details": "Pollution status: {\"react\":false,\"vue\":false,\"jquery\":false,\"tailwind\":false}"
+    },
+    {
+      "checkName": "Zero Console Errors on contact.html",
+      "pass": true,
+      "details": "Found 0 errors: "
+    },
+    {
+      "checkName": "Zero External Script CDNs on contact.html",
+      "pass": true,
+      "details": "External scripts: []"
+    },
+    {
+      "checkName": "Zero External CSS Frameworks on contact.html",
+      "pass": true,
+      "details": "External styles: []"
+    },
+    {
+      "checkName": "Vanilla Global Window on contact.html",
+      "pass": true,
+      "details": "Pollution status: {\"react\":false,\"vue\":false,\"jquery\":false,\"tailwind\":false}"
+    },
+    {
+      "checkName": "Pricing Math Execution",
+      "pass": true,
+      "details": "[{\"step\":\"Pro default (5 pages)\",\"price\":\"Rp 5.500.000\",\"timeline\":\"± 18 - 22 Hari Kerja\",\"waHref\":\"https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20dengan%20Paket%20Pro%20(Business%20%26%20Corporate)%20(5%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%205.500.000%20(18%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut.\"},{\"step\":\"Basic (1 page)\",\"price\":\"Rp 2.500.000\",\"timeline\":\"± 7 - 11 Hari Kerja\",\"waHref\":\"https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20dengan%20Paket%20Basic%20(Landing%20Page)%20(1%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%202.500.000%20(7%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut.\"},{\"step\":\"Basic (3 pages)\",\"price\":\"Rp 3.200.000\",\"timeline\":\"± 8 - 12 Hari Kerja\",\"waHref\":\"https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20dengan%20Paket%20Basic%20(Landing%20Page)%20(3%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%203.200.000%20(8%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut.\"},{\"step\":\"Enterprise (10 pages)\",\"price\":\"Rp 12.000.000\",\"timeline\":\"± 35 - 39 Hari Kerja\",\"waHref\":\"https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20dengan%20Paket%20Enterprise%20(Custom%20Web%20App)%20(10%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%2012.000.000%20(35%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut.\"}]"
+    },
+    {
+      "checkName": "Pricing Math Value Accuracy",
+      "pass": true,
+      "details": "Pro=5.5M (true), Basic1=2.5M (true), Basic3=3.2M (true), Ent=12.0M (true)"
+    },
+    {
+      "checkName": "3D Tilt Dynamic Deflection",
+      "pass": true,
+      "details": "Quadrant 1 (rotX=6.04, rotY=5.99) vs Quadrant 3 (oppRotX=-5.96, oppRotY=-6.01)"
+    },
+    {
+      "checkName": "3D Tilt Mouseleave Reset",
+      "pass": true,
+      "details": "Leave transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
+    },
+    {
+      "checkName": "Cursor LERP Dynamic Interpolation",
+      "pass": true,
+      "details": "Dot: translate3d(500px, 300px, 0px), Follower 0ms: , Follower 100ms: translate3d(289.22px, 159.48px, 0px)"
+    },
+    {
+      "checkName": "Contact Form Inline Validation Logic",
+      "pass": true,
+      "details": "Email (invalid=true, valid=true), Phone (invalid=true, valid=true)"
+    }
+  ]
+}

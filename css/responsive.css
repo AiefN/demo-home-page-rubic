@@ -1,235 +1,574 @@
 /* ==========================================================================
-   RUBICWEB RESPONSIVE ADAPTATIONS
-   Tested across 1440px, 1280px, 1024px, 768px, 390px, 375px
+   RUBICWEB RESPONSIVE ADAPTATIONS & BREAKPOINTS (CSS3)
+   Fluid Breakpoints: 320px (Mobile), 768px (Tablet), 1024px (Laptop), 1440px+ (Ultra-wide)
+   Touch-Device Adaptations & Strict Zero-Horizontal-Overflow Guarantee
    ========================================================================== */
 
-/* Laptop & Large Tablet (1024px - 1439px) */
-@media (max-width: 1439px) {
+/* --------------------------------------------------------------------------
+   1. ULTRA-WIDE & LARGE DESKTOP (1440px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
   :root {
-    --container-padding: 28px;
-    --section-spacing: 100px;
+    --container-max: 1400px;
+    --gutter: 40px;
+    --section-spacing: 130px;
+  }
+
+  .hero-headline,
+  .hero-title {
+    font-size: clamp(3.75rem, 5.5vw, 5.75rem);
+    letter-spacing: -0.045em;
+  }
+
+  .services-grid,
+  .capabilities-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+
+  .stats-grid,
+  .telemetry-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
   }
 }
 
-/* Tablet (768px - 1023px) */
-@media (max-width: 1023px) {
+/* --------------------------------------------------------------------------
+   2. STANDARD DESKTOP & LAPTOP (1024px - 1439px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1439px) and (min-width: 1024px) {
   :root {
-    --section-spacing: 80px;
-    --container-padding: 24px;
+    --container-max: 1200px;
+    --gutter: 32px;
+    --section-spacing: 105px;
   }
 
-  .hero-headline {
-    font-size: clamp(2.4rem, 5.5vw, 3.8rem);
-  }
-
-  .portfolio-interactive {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
-  .preview-image-container {
-    height: 320px;
-  }
-
-  .rp-capabilities-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .stats-cards-grid {
+  .services-grid,
+  .capabilities-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
-  .stat-block:not(:last-child)::after {
+  .stats-grid,
+  .telemetry-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .calc-layout {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 28px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET & COMPACT DESKTOP (768px - 1023px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  :root {
+    --gutter: 24px;
+    --section-spacing: 85px;
+  }
+
+  /* Typography Fluid Fallback */
+  .hero-headline,
+  .hero-title {
+    font-size: clamp(2.6rem, 5.8vw, 3.8rem);
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  /* Grid Layouts: 4-col -> 2-col */
+  .services-grid,
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stats-grid,
+  .telemetry-grid,
+  .stats-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .trust-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Pricing Calculator */
+  .calc-layout,
+  .pricing-calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .consultation-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .calc-summary-card {
+    position: static;
+  }
+
+  /* Workflow Timeline on Tablet */
+  .workflow-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .timeline-step::after {
     display: none;
   }
 
+  /* Footer */
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-}
 
-/* Mobile Devices (Below 768px) */
-@media (max-width: 767px) {
-  :root {
-    --section-spacing: 64px;
-    --container-padding: 20px;
-  }
-
-  /* Typography */
-  h1 {
-    font-size: 2.2rem;
-    line-height: 1.18;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    line-height: 1.25;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.98rem;
-  }
-
-  /* Hero Section */
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-  }
-
-  /* Terminal Card on Mobile */
-  .terminal-card {
-    border-radius: var(--radius-md);
-  }
-
-  .terminal-card-large {
-    border-radius: 18px;
-  }
-
-  .terminal-header {
-    padding: 12px 16px;
-  }
-
-  .terminal-header-large {
-    padding: 14px 20px;
-  }
-
-  .terminal-body {
-    padding: 24px 18px;
-    font-size: 0.92rem;
-    line-height: 1.7;
-    min-height: 160px;
-  }
-
-  .terminal-body-large {
-    padding: 32px 20px;
-    font-size: clamp(1.15rem, 4.4vw, 1.45rem);
-    line-height: 1.85;
-    min-height: 240px;
-  }
-
-  .hero-bottom-strip {
-    gap: 28px;
-    padding-top: 28px;
-  }
-
-  .hero-action-buttons {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .hero-action-buttons .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Services Horizontal Row Collapse */
-  .service-row {
-    padding: 24px 16px;
-  }
-
-  .service-title-col {
-    gap: 12px;
-  }
-
-  .service-name {
-    font-size: 1.1rem;
-  }
-
-  /* Portfolio Mobile */
-  .portfolio-cat-btn {
-    padding: 16px 18px;
-  }
-
-  .cat-name {
-    font-size: 1.05rem;
-  }
-
-  .preview-image-container {
-    height: 240px;
-  }
-
-  .preview-info-body {
-    padding: 20px 18px;
-  }
-
-  .preview-title {
-    font-size: 1.4rem;
-  }
-
-  /* Stats Banner Mobile */
-  .stats-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .stats-banner {
-    padding: 24px 18px;
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
-  }
-
-  /* Why Choose Rubicweb */
-  .why-grid {
-    grid-template-columns: 1fr;
+  /* Navigation adjustments */
+  .nav-desktop .nav-links {
     gap: 16px;
   }
 
-  .why-card {
-    padding: 24px 20px;
+  .nav-link {
+    font-size: 0.88rem;
+    padding: 6px 10px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE DEVICES (Below 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --gutter: 18px;
+    --section-spacing: 65px;
   }
 
-  /* Footer Mobile */
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
+  /* Typography */
+  h1, .hero-headline, .hero-title {
+    font-size: clamp(2rem, 7.5vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
   }
 
-  .site-footer {
-    padding-bottom: 90px;
+  h2, .section-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.1rem);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
   }
 
-  /* Floating Bottom Nav Hidden on Small Screen, use Mobile Drawer instead */
+  h3, .card-title {
+    font-size: 1.25rem;
+  }
+
+  p, .body-copy {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Container Protection */
+  .container {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  /* Navigation: Hide Desktop, Expose Mobile Toggle */
+  .nav-desktop,
+  .navbar__links,
+  .navbar__cta-group {
+    display: none !important;
+  }
+
+  .navbar__toggle,
+  .hamburger-btn {
+    display: flex !important;
+  }
+
+  .site-header,
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .navbar--scrolled {
+    padding: 10px 0;
+  }
+
+  /* Floating Bottom Nav Hidden on Small Screen (use Mobile Drawer) */
   .floating-bottom-nav {
     display: none !important;
   }
-}
 
-/* Smallest Mobile (375px - 390px) */
-@media (max-width: 400px) {
-  :root {
-    --container-padding: 16px;
+  /* Hero Section Mobile */
+  .hero-content {
+    padding-top: 40px;
+    text-align: left;
   }
 
-  h1 {
-    font-size: 1.95rem;
+  .hero-actions,
+  .hero-ctas,
+  .hero-action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
   }
 
-  .terminal-body {
+  .hero-actions .btn,
+  .hero-ctas .btn,
+  .hero-action-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .guarantee-pill,
+  .badge-guarantee {
+    max-width: 100%;
     font-size: 0.78rem;
+    padding: 6px 12px;
   }
 
+  /* All Multi-Column Grids -> 1 Column */
+  .services-grid,
+  .capabilities-grid,
+  .stats-grid,
+  .telemetry-grid,
+  .stats-cards-grid,
+  .trust-pillars-grid,
+  .portfolio-grid,
+  .projects-grid,
+  .why-grid,
+  .footer-grid,
+  .calc-layout,
+  .pricing-calculator-grid,
+  .consultation-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .consultation-form-box,
+  .consultation-form-wrapper .form-container {
+    padding: 24px 18px !important;
+  }
+
+  .consultation-form-box .contact-form,
+  .consultation-form-wrapper .contact-form {
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* Service Cards Mobile */
+  .service-card,
+  .card-tilt {
+    padding: 24px 20px;
+  }
+
+  /* Stats Cards Mobile */
+  .stat-card,
+  .stat-block {
+    padding: 22px 18px;
+  }
+
+  .stat-number,
+  .stat-value {
+    font-size: 2.5rem;
+  }
+
+  /* Portfolio Category Filter Scrollable Track */
+  .portfolio-filters,
+  .filter-tabs {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .portfolio-filters::-webkit-scrollbar,
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn,
+  .portfolio-cat-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  /* Portfolio Card Image Height */
+  .portfolio-thumb,
   .preview-image-container {
-    height: 200px;
+    height: 220px;
+  }
+
+  /* Pricing Calculator Mobile */
+  .pricing-calculator,
+  .calc-card {
+    padding: 24px 18px !important;
+  }
+
+  .tier-options,
+  .tier-selector {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .calc-summary-card {
+    padding: 24px 18px;
+  }
+
+  #calc-total-price {
+    font-size: 1.85rem;
+  }
+
+  /* Testimonials Carousel Mobile */
+  .testimonial-carousel {
+    padding: 0 4px;
+  }
+
+  .testimonial-track {
+    max-width: none !important;
+  }
+
+  .testimonial-card,
+  .testimonial-slide {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 24px 18px;
+  }
+
+  .carousel-controls {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  /* FAQ Accordion Mobile */
+  .faq-header,
+  .accordion-header {
+    padding: 18px 16px;
+    font-size: 1rem;
+    gap: 12px;
+  }
+
+  .faq-inner,
+  .accordion-inner {
+    min-height: 0;
+    padding: 0 16px 0 16px;
+    font-size: 0.92rem;
+  }
+
+  .faq-item.is-active .faq-inner,
+  .faq-item.active .faq-inner,
+  .faq-item[aria-expanded="true"] .faq-inner,
+  .accordion-item.is-active .accordion-inner,
+  .accordion-item.active .accordion-inner,
+  .accordion-item[aria-expanded="true"] .accordion-inner {
+    padding-bottom: 18px;
+  }
+
+  /* Workflow Timeline Single Column Mobile */
+  .workflow-timeline {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-subtle);
+  }
+
+  .timeline-step {
+    padding: 20px 16px;
+  }
+
+  .timeline-step::after {
+    display: none;
+  }
+
+  /* Form Elements: Prevent iOS Auto-Zoom */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents auto-zoom in iOS Safari */
+    padding: 12px 14px;
+  }
+
+  /* Modal Dialog Fullscreen on Mobile */
+  .modal-container,
+  .modal-dialog {
+    width: 95%;
+    max-height: 88vh;
+    padding: 24px 18px;
+    margin: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  /* Floating WhatsApp Button Mobile */
+  .btn-floating-whatsapp {
+    bottom: 20px;
+    right: 16px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .btn-floating-whatsapp svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Footer Mobile */
+  .site-footer {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
   }
 }
 
-/* Strict Protection against Horizontal Overflow */
-html, body {
+/* --------------------------------------------------------------------------
+   5. ULTRA-COMPACT MOBILE (320px - 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  :root {
+    --gutter: 14px;
+    --section-spacing: 50px;
+  }
+
+  h1, .hero-headline, .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+
+  .stat-number,
+  .stat-value {
+    font-size: 2.15rem;
+  }
+
+  .portfolio-thumb,
+  .preview-image-container {
+    height: 185px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. TOUCH-DEVICE ACCESSIBILITY & HOVER DEGRADATION
+   Disables custom cursor, softens 3D tilt, ensures minimum 44px tap targets
+   -------------------------------------------------------------------------- */
+@media (hover: none) and (pointer: coarse) {
+  /* Hide Custom Cursor on Touch Devices */
+  .cursor-dot,
+  .cursor-follower,
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  /* Reset Default Cursor */
+  *, html, body, a, button, input, select, textarea {
+    cursor: auto !important;
+  }
+
+  /* Disable 3D Tilt on Touchscreen (fallback to clean active elevation) */
+  .card-tilt,
+  .interactive-card,
+  .service-card {
+    transform: none !important;
+  }
+
+  .card-tilt:active,
+  .interactive-card:active,
+  .service-card:active {
+    transform: scale(0.985) !important;
+  }
+
+  /* Touch Target Sizing (WCAG 2.1 Success Criterion 2.5.5) */
+  .btn,
+  .navbar__toggle,
+  .hamburger-btn,
+  .filter-btn,
+  .portfolio-cat-btn,
+  .faq-header,
+  .accordion-header,
+  .modal-close,
+  .carousel-btn,
+  .btn-floating-whatsapp {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Active states on touch */
+  .btn:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. ABSOLUTE HORIZONTAL OVERFLOW PREVENTION
+   -------------------------------------------------------------------------- */
+html,
+body {
+  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  max-width: 100%;
+}
+
+/* Exclude multi-card horizontal slider tracks from max-width clamping */
+.testimonial-track {
+  max-width: none !important;
+}
+
+img,
+svg,
+video,
+canvas {
+  height: auto;
+  max-width: 100%;
 }

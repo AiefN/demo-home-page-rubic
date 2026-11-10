@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Layanan &amp; Workflow Rekayasa Web Rubicweb — Solusi website kustom, modern business profile, web app enterprise, optimasi PageSpeed 95+, dan 6-stage development timeline berstandar global.">
+  <meta name="keywords" content="Layanan Rubicweb, Workflow Pembuatan Website, Custom Web Development, Company Profile, Web App, PageSpeed 95+, PT Rubic Kirana Solusindo, SCBD Jakarta">
+  <meta name="author" content="PT. Rubic Kirana Solusindo">
+  <meta property="og:title" content="Layanan Rekayasa Web &amp; 6-Stage Workflow &mdash; Rubicweb">
+  <meta property="og:description" content="Eksplorasi layanan rekayasa website clean-code murni, deliverables teknis komprehensif, dan metodologi 6-tahap dari riset hingga garansi 30 hari.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <title>Layanan &amp; Workflow Rekayasa Web &mdash; Rubicweb</title>
+
+  <!-- Google Fonts: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Tech/Data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Architectural Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CUSTOM MAGNETIC TRAILING CURSOR (DUAL-ELEMENT)
+       ========================================================================== -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON WITH CONTINUOUS RIPPLE ANIMATION
+       ========================================================================== -->
+  <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20layanan%20rekayasa%20website%20dan%20workflow." class="btn-floating-whatsapp floating-whatsapp-btn whatsapp-ripple" target="_blank" rel="noopener noreferrer" aria-label="Konsultasi WhatsApp Langsung">
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp Icon" width="28" height="28">
+  </a>
+
+  <!-- ==========================================================================
+       GLOBAL SITE HEADER & DYNAMIC NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar__container header-container">
+      <!-- Skip to Content Link for Accessibility -->
+      <a href="#main-content" class="skip-to-content">Lewati langsung ke konten utama</a>
+
+      <!-- Brand Logo Link -->
+      <div class="navbar__brand brand-group">
+        <a href="index.html" class="brand-logo-link" aria-label="Rubicweb Beranda">
+          <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="brand-logo" width="168" height="38">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar__links nav-desktop" id="navbar" aria-label="Navigasi Utama Situs">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link active">Layanan &amp; Workflow</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portofolio</a></li>
+          <li class="nav-item"><a href="contact.html#pricing-calculator" class="nav-link">Estimator Biaya</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak &amp; Konsultasi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header CTA Group -->
+      <div class="navbar__cta-group">
+        <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20layanan%20pembuatan%20website." class="btn btn--primary btn--sm header-cta" target="_blank" rel="noopener noreferrer">Konsultasi WhatsApp</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button type="button" class="navbar__toggle hamburger-btn" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER & OVERLAY
+       ========================================================================== -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu mobile-drawer" id="mobile-nav-drawer" aria-label="Navigasi Menu Mobile" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="mobile-drawer__brand" aria-label="Rubicweb Beranda">
+        <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" width="140" height="32">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Tutup navigasi">&times;</button>
+    </div>
+
+    <ul class="mobile-menu__links mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="services.html" class="mobile-nav-link active">Layanan &amp; Workflow</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link">Portofolio</a></li>
+      <li><a href="contact.html#pricing-calculator" class="mobile-nav-link">Estimator Biaya</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Kontak &amp; Konsultasi</a></li>
+    </ul>
+
+    <div class="mobile-drawer__footer">
+      <div class="mobile-drawer__agency-info">
+        <p class="agency-entity font-mono">PT. Rubic Kirana Solusindo</p>
+        <p class="agency-address">District 8 Treasury Tower Lt. 7, SCBD Jakarta Selatan, DKI Jakarta 12190</p>
+        <p class="agency-contact">WhatsApp: +62 852-8000-8984<br>Email: info@rubicweb.co.id</p>
+      </div>
+      <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20layanan%20pembuatan%20website." class="btn btn--primary btn--full" target="_blank" rel="noopener noreferrer">Konsultasi via WhatsApp</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       ROOM & PILLAR FLOATING BOTTOM NAVIGATION (DESKTOP)
+       ========================================================================== -->
+  <nav class="floating-bottom-nav" aria-label="Navigasi Melayang Bawah">
+    <a href="index.html" class="floating-nav-brand" aria-label="Kembali ke Beranda">
+      <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo Icon" class="floating-nav-logo" width="24" height="24">
+    </a>
+    <div class="floating-nav-separator"></div>
+    <ul class="floating-nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="services.html" class="active">Layanan</a></li>
+      <li><a href="portfolio.html">Portofolio</a></li>
+      <li><a href="contact.html#pricing-calculator">Estimator</a></li>
+    </ul>
+    <div class="floating-nav-separator"></div>
+    <a href="contact.html" class="floating-nav-cta">
+      <span>Konsultasi &rarr;</span>
+    </a>
+  </nav>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- PAGE HERO & BREADCRUMB -->
+    <section class="section page-hero-section" style="padding-top: 80px; padding-bottom: 40px;">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav" style="margin-bottom: 24px;">
+          <p class="breadcrumb-text font-mono" style="font-size: 0.85rem; color: var(--text-muted);">
+            <a href="index.html" style="color: var(--text-muted); text-decoration: none;">BERANDA</a> &raquo; 
+            <span style="color: var(--accent-primary);">LAYANAN &amp; WORKFLOW</span>
+          </p>
+        </nav>
+
+        <header class="page-header" style="max-width: 960px;">
+          <span class="section-category font-mono">ENGINEERING CAPABILITIES &amp; METHODOLOGY</span>
+          <h1 class="page-title" style="margin-top: 12px; margin-bottom: 20px;">
+            Rekayasa Perangkat Lunak Web Tanpa Kompromi
+          </h1>
+          <p class="page-subtitle" style="font-size: 1.25rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 32px;">
+            Dari arsitektur kode bersih berkecepatan PageSpeed 95+ hingga sistem portal enterprise skala penuh, Rubicweb merekayasa solusi web kustom dengan performa ultra-cepat, keamanan tingkat industri, dan arsitektur kode modular berstandar internasional.
+          </p>
+
+          <!-- Telemetry Guarantees Bar -->
+          <div class="hero-telemetry-bar" style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-primary);"></span>
+              <span>100% Clean Code Ownership</span>
+            </div>
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #25D366;"></span>
+              <span>Garansi 30 Hari Bebas Bug</span>
+            </div>
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-cyan);"></span>
+              <span>Google PageSpeed 95+ Guarantee</span>
+            </div>
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-coral);"></span>
+              <span>Garansi 100% Kepuasan / Uang Kembali</span>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4 CORE SERVICES DETAILED BREAKDOWN
+         ======================================================================== -->
+    <section class="section services-detail-section" id="services" style="padding-top: 40px; padding-bottom: 80px;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 48px;">
+          <span class="section-category font-mono">4 CORE REKAYASA WEB</span>
+          <h2 class="section-title">Solusi Rekayasa Berorientasi Kinerja Bisnis</h2>
+          <p class="section-subtitle">
+            Setiap layanan dirancang secara spesifik dengan metodologi custom programming murni tanpa template instan yang lambat, menghasilkan aset digital berkecepatan tinggi yang tahan uji.
+          </p>
+        </div>
+
+        <div class="services-breakdown-list" style="display: flex; flex-direction: column; gap: 40px;">
+
+          <!-- SERVICE 01: CUSTOM WEB DEVELOPMENT -->
+          <article class="service-detail-card card-tilt" id="custom-web-development" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="font-mono" style="color: var(--accent-primary); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;">SERVICE 01 &bull; CUSTOM ARCHITECTURE</span>
+                <h3 style="font-size: 1.85rem; color: var(--text-primary); margin-top: 6px; margin-bottom: 8px;">Custom Web Development</h3>
+                <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 16px;">
+                  Bebas dari Keterbatasan Template Siap Pakai &mdash; Kode Murni dari Baris Pertama
+                </p>
+              </div>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge">HTML5 / Semantic</span>
+                <span class="tech-badge">Modern CSS3</span>
+                <span class="tech-badge">Vanilla JS ES6+</span>
+                <span class="tech-badge">PHP / Laravel 11</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+              Kami menolak pendekatan template yang lambat dan penuh skrip mubazir. Arsitektur kode modular kustom dibangun dari baris pertama untuk mengakomodasi kebutuhan logika bisnis unik korporasi Anda, menghadirkan efisiensi konsumsi memori server, waktu muat di bawah 1 detik, dan fleksibilitas integrasi tanpa batas.
+            </p>
+
+            <h4 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 14px; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.05em;">
+              Lingkup Deliverables &amp; Output Teknis:
+            </h4>
+            <ul style="padding-left: 20px; margin-bottom: 28px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 10px; line-height: 1.6;">
+              <li><strong>100% Semantic Clean Source Code:</strong> Hak milik mutlak atas seluruh kode sumber tanpa biaya lisensi tahunan, enkripsi kode, atau vendor lock-in.</li>
+              <li><strong>Struktur Database Ternormalisasi:</strong> Skema relasi database teroptimasi dengan pengindeksan query cepat dan perlindungan transaksi ACID.</li>
+              <li><strong>Integrasi REST API Arsitektur Modular:</strong> Endpoint API aman untuk pertukaran data real-time, lengkap dengan dokumentasi teknis OpenAPI.</li>
+              <li><strong>Zero External Library Dependencies:</strong> Bebas dari framework bloated pihak ketiga, meminimalkan potensi kerentanan keamanan (*vulnerabilities*).</li>
+              <li><strong>Dokumentasi Arsitektur &amp; Panduan Pemeliharaan:</strong> Panduan menyeluruh bagi tim internal untuk mengelola atau mengembangkan sistem di masa depan.</li>
+            </ul>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+              <button type="button" class="btn btn--secondary btn-service-modal" data-service-id="custom-web">
+                Lihat Arsitektur Lengkap &rarr;
+              </button>
+              <a href="contact.html?package=custom-web" class="btn btn--primary">
+                Konsultasikan Kebutuhan Web Kustom &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 02: MODERN BUSINESS PROFILE -->
+          <article class="service-detail-card card-tilt" id="modern-business-profile" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="font-mono" style="color: var(--accent-primary); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;">SERVICE 02 &bull; CORPORATE AUTHORITY</span>
+                <h3 style="font-size: 1.85rem; color: var(--text-primary); margin-top: 6px; margin-bottom: 8px;">Modern Business Profile</h3>
+                <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 16px;">
+                  Membangun Otoritas &amp; Kepercayaan Korporat di Hadapan Klien Premium
+                </p>
+              </div>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge">Editorial UI/UX</span>
+                <span class="tech-badge">Micro-interactions 60fps</span>
+                <span class="tech-badge">Structured SEO Schema</span>
+                <span class="tech-badge">Ultra Responsive Engine</span>
+                <span class="tech-badge">NVMe Ready</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+              Website korporat adalah representasi prestise perusahaan Anda di hadapan mitra global, investor institusi, dan klien B2B kelas atas. Kami memadukan estetika visual editorial berkelas internasional dengan micro-interactions 60fps yang memikat dan copywriting terarah untuk mengonversi pengunjung menjadi prospek bisnis berkualitas.
+            </p>
+
+            <h4 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 14px; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.05em;">
+              Lingkup Deliverables &amp; Output Teknis:
+            </h4>
+            <ul style="padding-left: 20px; margin-bottom: 28px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 10px; line-height: 1.6;">
+              <li><strong>Desain Eksklusif Pixel-Perfect:</strong> Perancangan tata letak antarmuka eksklusif dari prototipe Figma beresolusi tinggi yang diimplementasikan presisi.</li>
+              <li><strong>Optimalisasi Skor Google PageSpeed 95+:</strong> Kecepatan muat kilat di bawah 1 detik untuk peringkat puncak hasil pencarian dan bounce rate minimal.</li>
+              <li><strong>Skema SEO Terstruktur (JSON-LD Microdata):</strong> Penandaan Organization, LocalBusiness, Breadcrumbs, dan OpenGraph metadata lengkap.</li>
+              <li><strong>Formulir Lead Generation dengan Validasi Instan:</strong> Penangkap kontak prospek dengan umpan balik visual real-time dan notifikasi WhatsApp langsung.</li>
+              <li><strong>Dukungan Bahasa Ganda (Bilingual ID/EN):</strong> Arsitektur konten dwibahasa siap pakai untuk menjangkau audiens domestik dan internasional.</li>
+            </ul>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+              <button type="button" class="btn btn--secondary btn-service-modal" data-service-id="business-profile">
+                Lihat Arsitektur Lengkap &rarr;
+              </button>
+              <a href="contact.html?package=pro" class="btn btn--primary">
+                Konsultasikan Website Profil Perusahaan &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 03: WEB APP & ENTERPRISE PORTAL -->
+          <article class="service-detail-card card-tilt" id="web-app-portal" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="font-mono" style="color: var(--accent-primary); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;">SERVICE 03 &bull; CLOUD SYSTEMS</span>
+                <h3 style="font-size: 1.85rem; color: var(--text-primary); margin-top: 6px; margin-bottom: 8px;">Web App &amp; Enterprise Portal</h3>
+                <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 16px;">
+                  Otomasi Alur Kerja, Manajemen Data Real-Time &amp; Skalabilitas Cloud
+                </p>
+              </div>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge">PHP / Laravel 11</span>
+                <span class="tech-badge">SPA Architecture</span>
+                <span class="tech-badge">PostgreSQL / MySQL</span>
+                <span class="tech-badge">Role-Based Access (RBAC)</span>
+                <span class="tech-badge">JWT Security</span>
+                <span class="tech-badge">WebSocket API</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+              Dari dasbor analitik produktivitas operasional internal hingga platform SaaS publik yang melayani puluhan ribu pengguna simultan, kami merekayasa aplikasi web dengan arsitektur Single-Page modern, sesi terenkripsi, hak akses multi-peran, dan komunikasi data dua arah real-time yang tangguh.
+            </p>
+
+            <h4 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 14px; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.05em;">
+              Lingkup Deliverables &amp; Output Teknis:
+            </h4>
+            <ul style="padding-left: 20px; margin-bottom: 28px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 10px; line-height: 1.6;">
+              <li><strong>Manajemen Hak Akses Multi-Peran (RBAC):</strong> Kontrol otorisasi bertingkat untuk Super Admin, Manajer Operasional, Staf, dan Klien Eksternal.</li>
+              <li><strong>Interactive Real-Time Dashboard:</strong> Visualisasi grafik analitik responsif dengan latency render di bawah 150 milidetik.</li>
+              <li><strong>Integrasi Webhook &amp; Payment Gateway:</strong> Otomasi verifikasi pembayaran digital (Midtrans, Xendit, QRIS, Virtual Account 5 Bank Nasional).</li>
+              <li><strong>Pencatatan Audit Trail &amp; Enkripsi Data:</strong> Riwayat aktivitas pengguna terenkripsi untuk memenuhi standar audit kepatuhan keamanan data.</li>
+              <li><strong>Arsitektur Siap Skalabilitas Auto-Scaling:</strong> Desain arsitektur cloud modular yang siap menangani lonjakan trafik tanpa kendala server down.</li>
+            </ul>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+              <button type="button" class="btn btn--secondary btn-service-modal" data-service-id="web-app">
+                Lihat Arsitektur Lengkap &rarr;
+              </button>
+              <a href="contact.html?package=enterprise" class="btn btn--primary">
+                Konsultasikan Aplikasi Web &amp; Portal &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 04: REDESIGN & PERFORMANCE MAINTENANCE -->
+          <article class="service-detail-card card-tilt" id="redesign-maintenance" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px; position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="font-mono" style="color: var(--accent-primary); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;">SERVICE 04 &bull; PERFORMANCE &amp; SLA</span>
+                <h3 style="font-size: 1.85rem; color: var(--text-primary); margin-top: 6px; margin-bottom: 8px;">Redesign &amp; Performance Maintenance</h3>
+                <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 16px;">
+                  Modernisasi Aset Digital Lama, Audit Kerentanan &amp; SLA Uptime 99.9%
+                </p>
+              </div>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge">Core Web Vitals Boost</span>
+                <span class="tech-badge">Security Audit &amp; Patch</span>
+                <span class="tech-badge">Legacy Refactoring</span>
+                <span class="tech-badge">Automated Backup Engine</span>
+                <span class="tech-badge">24/7 Monitoring</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+              Website yang lambat, rentan disusupi, atau sering tidak bisa diakses secara langsung merusak kredibilitas dan omzet perusahaan. Kami merefaktor kode lama yang usang, menutup celah kerentanan (SQLi, XSS, CSRF), mengoptimalkan Core Web Vitals, dan menyediakan proteksi pemeliharaan rutin dengan Service Level Agreement (SLA) bergaransi.
+            </p>
+
+            <h4 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 14px; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.05em;">
+              Lingkup Deliverables &amp; Output Teknis:
+            </h4>
+            <ul style="padding-left: 20px; margin-bottom: 28px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 10px; line-height: 1.6;">
+              <li><strong>Peningkatan Skor Core Web Vitals ke Kategori Hijau (95+):</strong> Pembersihan file CSS/JS render-blocking dan kompresi gambar adaptif WebP.</li>
+              <li><strong>Audit Keamanan Komprehensif:</strong> Identifikasi kerentanan dan penambalan celah keamanan sistem serta penerapan HTTPS TLS 1.3.</li>
+              <li><strong>Sistem Pencadangan (Backup) Otomatis Harian:</strong> Pencadangan data berkala terenkripsi ke media cloud terpisah untuk penanggulangan bencana (*disaster recovery*).</li>
+              <li><strong>Pemantauan Waktu Aktif Server 24/7/365:</strong> Notifikasi dini dan respons darurat teknis cepat jika terjadi anomali trafik atau beban berlebih.</li>
+              <li><strong>SLA Pemeliharaan Teknis Bergaransi:</strong> Kontrak layanan pemeliharaan berkala mencakup revisi minor, update patch, dan konsultasi strategi sistem.</li>
+            </ul>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+              <button type="button" class="btn btn--secondary btn-service-modal" data-service-id="redesign-maintenance">
+                Lihat Arsitektur Lengkap &rarr;
+              </button>
+              <a href="contact.html?package=redesign-maintenance" class="btn btn--primary">
+                Konsultasikan Redesain &amp; Audit &rarr;
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6-STAGE DEVELOPMENT WORKFLOW TIMELINE
+         ======================================================================== -->
+    <section class="section workflow-section" id="workflow" style="padding-top: 60px; padding-bottom: 100px; background: var(--bg-primary);">
+      <div class="container">
+        <div class="section-header" style="max-width: 860px; margin-bottom: 56px;">
+          <span class="section-category font-mono">DEVELOPMENT METHODOLOGY &amp; SPRINT TIMELINE</span>
+          <h2 class="section-title">6-Stage Development Workflow</h2>
+          <p class="section-subtitle">
+            Metodologi rekayasa terstruktur dari konseptual awal hingga peluncuran operasional skala penuh dan jaminan purna jual. Setiap tahap memiliki deliverable yang jelas dan terukur.
+          </p>
+        </div>
+
+        <!-- 6-Stage Timeline Visual Grid Container -->
+        <div class="workflow-timeline" id="workflow-timeline">
+
+          <!-- STAGE 01: DISCOVERY & STRATEGY -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">01</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              DURASI: 2 - 4 HARI KERJA
+            </span>
+            <h3 class="step-title">Discovery &amp; Requirements Analysis</h3>
+            <p class="step-desc">
+              Memahami model bisnis, target audiens, analisis kompetitor, pemetaan arsitektur informasi, dan pemilihan tumpukan teknologi (tech stack) paling efisien.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 1:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Dokumen Spesifikasi Kebutuhan Proyek (SRS)</li>
+              <li>Peta Situs &amp; Arsitektur Informasi (Sitemap)</li>
+              <li>Validasi Tech Stack &amp; Skema Database Awal</li>
+            </ul>
+          </div>
+
+          <!-- STAGE 02: UI/UX WIREFRAMING -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">02</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              DURASI: 5 - 10 HARI KERJA
+            </span>
+            <h3 class="step-title">UI/UX Wireframing &amp; Design System</h3>
+            <p class="step-desc">
+              Eksplorasi tata letak editorial, tipografi neo-grotesque, micro-interactions 60fps, dan prototipe interaktif high-fidelity di Figma beresolusi tinggi.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 2:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Wireframe lengkap Desktop &amp; Mobile</li>
+              <li>Master Design System (Tokens warna, tipografi, grid)</li>
+              <li>Prototipe Interaktif &amp; Asset Visual Guidelines</li>
+            </ul>
+          </div>
+
+          <!-- STAGE 03: CUSTOM CODING -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">03</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              DURASI: 10 - 25 HARI KERJA
+            </span>
+            <h3 class="step-title">Custom Clean Coding &amp; API Engineering</h3>
+            <p class="step-desc">
+              Penulisan kode semantik modular (HTML5/CSS3/Vanilla JS) dan logika backend (PHP/Laravel) yang bersih, teruji, dan bebas ketergantungan library pihak ketiga.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 3:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Frontend modular 60fps tanpa framework bloat</li>
+              <li>Arsitektur RESTful API &amp; Database ternormalisasi</li>
+              <li>Integrasi modul payment gateway &amp; webhook</li>
+            </ul>
+          </div>
+
+          <!-- STAGE 04: QA TESTING & AUDIT -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">04</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              DURASI: 3 - 7 HARI KERJA
+            </span>
+            <h3 class="step-title">QA Testing, Security Audit &amp; Performance Tuning</h3>
+            <p class="step-desc">
+              Pengujian kompatibilitas lintas browser (Chrome, Safari, Firefox, Edge), responsivitas 320px-2560px, sanitasi input formulir, dan audit Core Web Vitals.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 4:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Laporan pengujian Google PageSpeed 95+</li>
+              <li>Audit celah keamanan (CSRF, XSS, sanitasi input)</li>
+              <li>Zero-defect sign-off dan verifikasi validasi form</li>
+            </ul>
+          </div>
+
+          <!-- STAGE 05: DEPLOYMENT & DNS -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">05</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              DURASI: 1 - 2 HARI KERJA
+            </span>
+            <h3 class="step-title">Deployment, Cloud Infrastructure &amp; DNS Setup</h3>
+            <p class="step-desc">
+              Migrasi sistem ke cloud hosting SSD NVMe performa tinggi, setup sertifikat keamanan SSL TLS 1.3, konfigurasi DNS Cloudflare, dan indexing mesin pencari.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 5:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Website live dan online pada domain utama (.com/.id)</li>
+              <li>Konfigurasi SSL HTTPS &amp; proteksi DNS Cloudflare</li>
+              <li>Verifikasi Google Search Console &amp; Sitemap XML</li>
+            </ul>
+          </div>
+
+          <!-- STAGE 06: MAINTENANCE & WARRANTY -->
+          <div class="timeline-step workflow-step card-tilt">
+            <span class="step-number font-mono">06</span>
+            <span class="step-tag font-mono" style="display: inline-block; background: rgba(210, 254, 113, 0.12); color: var(--accent-primary); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.75rem; margin-bottom: 12px; font-weight: 600;">
+              STATUS: ONGOING / BERKELANJUTAN
+            </span>
+            <h3 class="step-title">Maintenance, SLA &amp; 30-Day Bug-Free Warranty</h3>
+            <p class="step-desc">
+              Aktivasi garansi bebas bug 30 hari tanpa biaya tambahan, pemantauan stabilitas server 24/7, pencadangan database harian, dan dukungan teknis darurat.
+            </p>
+            <h4 style="font-size: 0.85rem; color: var(--text-primary); margin-top: 16px; margin-bottom: 8px; font-family: var(--font-mono); text-transform: uppercase;">
+              Deliverables Tahap 6:
+            </h4>
+            <ul style="padding-left: 18px; color: var(--text-secondary); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; line-height: 1.5;">
+              <li>Jaminan bebas bug 30 hari pasca rilis produksi</li>
+              <li>Laporan uptime bulanan 99.9% &amp; update patch keamanan</li>
+              <li>Jalur prioritas konsultasi teknis via WhatsApp tim engineer</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PAGE CTA SECTION
+         ======================================================================== -->
+    <section class="section page-cta-section" style="padding-top: 60px; padding-bottom: 80px; background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <span class="section-category font-mono">MULAI PROYEK ANDA</span>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px; margin-bottom: 16px;">
+          Siap Membangun Website Berkinerja Tinggi?
+        </h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;">
+          Diskusikan kebutuhan arsitektur sistem digital bisnis Anda bersama tim teknis Rubicweb. Kami siap memberikan konsultasi arsitektur gratis dan penawaran transparan.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20tertarik%20konsultasi%20pembuatan%20website%20kustom." class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            Konsultasi WhatsApp Sekarang &rarr;
+          </a>
+          <a href="contact.html" class="btn btn--secondary">
+            Isi Formulir Brief Proyek
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SERVICE DETAIL CLICK-TO-EXPAND MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="service-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="service-modal-close" aria-label="Tutup rincian layanan">&times;</button>
+      <div class="modal-header" style="margin-bottom: 20px;">
+        <span class="modal-tag font-mono" id="service-modal-tag" style="color: var(--accent-primary); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;"></span>
+        <h3 class="modal-title" id="service-modal-title" style="font-size: 1.6rem; color: var(--text-primary); margin-top: 6px;"></h3>
+      </div>
+      <div class="modal-body">
+        <p id="service-modal-desc" style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;"></p>
+        <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 12px; font-family: var(--font-mono); text-transform: uppercase;">Lingkup Deliverables &amp; Arsitektur:</h4>
+        <ul id="service-modal-deliverables" style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; line-height: 1.6;"></ul>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn--primary" id="service-modal-cta">Konsultasikan Layanan Ini &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case study modal container for compatibility with interactions.js -->
+  <div class="modal-overlay" id="case-study-modal" aria-hidden="true" role="dialog" aria-modal="true" style="display: none;">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close modal__close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag font-mono" id="modal-tag"></span>
+        <h3 class="modal-title" id="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-challenge"></p>
+        <p id="modal-solution"></p>
+        <p id="modal-results"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL GLOBAL FOOTER (SCBD JAKARTA AGENCY PROFILE)
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Legal Brand & SCBD Address -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Rubicweb Beranda">
+            <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="footer-logo" width="168" height="38">
+          </a>
+          <span class="footer-legal-tag font-mono">PT. Rubic Kirana Solusindo</span>
+          <p>
+            Agensi rekayasa website dan aplikasi kustom berkinerja tinggi. Kami membangun sistem digital berkecepatan ekstrem dengan standar clean-code internasional dan estetika editorial berkelas.
+          </p>
+          <address class="footer-address">
+            <strong>Kantor Pusat Operasional:</strong><br>
+            District 8, Treasury Tower Lt. 7<br>
+            SCBD Jend. Sudirman, Senayan, Kebayoran Baru<br>
+            Jakarta Selatan, DKI Jakarta 12190 &bull; Indonesia
+          </address>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigasi Utama</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="services.html">Layanan &amp; Workflow</a></li>
+            <li><a href="portfolio.html">Portofolio Proyek</a></li>
+            <li><a href="contact.html#pricing-calculator">Estimator Biaya</a></li>
+            <li><a href="contact.html">Kontak &amp; Konsultasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Engineering Services -->
+        <div class="footer-col">
+          <h4>Layanan Rekayasa</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-web-development">Custom Web Development</a></li>
+            <li><a href="services.html#modern-business-profile">Modern Business Profile</a></li>
+            <li><a href="services.html#web-app-portal">Web App &amp; Portal</a></li>
+            <li><a href="services.html#redesign-maintenance">Redesign &amp; Maintenance</a></li>
+            <li><a href="contact.html">Konsultasi Arsitektur Web</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Guarantees & Verification Badges -->
+        <div class="footer-col">
+          <h4>Standar Mutu &amp; Jaminan</h4>
+          <div class="footer-guarantees">
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Garansi 100% Kepuasan / Uang Kembali</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Google PageSpeed 95+ Guarantee</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>30-Day Bug-Free Warranty</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>100% Source Code Ownership</span>
+            </div>
+          </div>
+          <div class="footer-contact-quick">
+            <p>Konsultasi Langsung via WhatsApp:</p>
+            <a href="https://wa.me/6285280008984" class="footer-wa-link font-mono" target="_blank" rel="noopener noreferrer">+62 852-8000-8984</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 PT. Rubic Kirana Solusindo. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Kebijakan Privasi</a>
+          <a href="contact.html">Syarat &amp; Ketentuan</a>
+          <a href="contact.html">SLA &amp; Garansi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BACK TO TOP BUTTON
+       ========================================================================== -->
+  <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT ENGINES
+       ========================================================================== -->
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

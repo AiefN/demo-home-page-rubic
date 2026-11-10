@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Rekayasa Web Rubicweb — Studi kasus nyata proyek E-Commerce, Corporate Profile, dan Web App dengan pembuktian PageSpeed 95+, arsitektur kode bersih, dan hasil bisnis terukur.">
+  <meta name="keywords" content="Portofolio Rubicweb, Studi Kasus Website, E-Commerce, Web App, Company Profile, PageSpeed 95+, PT Rubic Kirana Solusindo, SCBD Jakarta">
+  <meta name="author" content="PT. Rubic Kirana Solusindo">
+  <meta property="og:title" content="Portofolio Proyek &amp; Studi Kasus &mdash; Rubicweb">
+  <meta property="og:description" content="Eksplorasi karya nyata rekayasa web Rubicweb lintas kategori: E-Commerce, Portal Korporat, dan SaaS Dashboard dengan arsitektur kode bersih.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <title>Portofolio Proyek &amp; Studi Kasus Rekayasa Web &mdash; Rubicweb</title>
+
+  <!-- Google Fonts: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Tech/Data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Architectural Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CUSTOM MAGNETIC TRAILING CURSOR (DUAL-ELEMENT)
+       ========================================================================== -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON WITH CONTINUOUS RIPPLE ANIMATION
+       ========================================================================== -->
+  <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20tertarik%20konsultasi%20proyek%20setelah%20melihat%20portofolio." class="btn-floating-whatsapp floating-whatsapp-btn whatsapp-ripple" target="_blank" rel="noopener noreferrer" aria-label="Konsultasi WhatsApp Langsung">
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp Icon" width="28" height="28">
+  </a>
+
+  <!-- ==========================================================================
+       GLOBAL SITE HEADER & DYNAMIC NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar__container header-container">
+      <!-- Skip to Content Link for Accessibility -->
+      <a href="#main-content" class="skip-to-content">Lewati langsung ke konten utama</a>
+
+      <!-- Brand Logo Link -->
+      <div class="navbar__brand brand-group">
+        <a href="index.html" class="brand-logo-link" aria-label="Rubicweb Beranda">
+          <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="brand-logo" width="168" height="38">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar__links nav-desktop" id="navbar" aria-label="Navigasi Utama Situs">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Layanan &amp; Workflow</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portofolio</a></li>
+          <li class="nav-item"><a href="contact.html#pricing-calculator" class="nav-link">Estimator Biaya</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak &amp; Konsultasi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header CTA Group -->
+      <div class="navbar__cta-group">
+        <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--sm header-cta" target="_blank" rel="noopener noreferrer">Konsultasi WhatsApp</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button type="button" class="navbar__toggle hamburger-btn" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER & OVERLAY
+       ========================================================================== -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu mobile-drawer" id="mobile-nav-drawer" aria-label="Navigasi Menu Mobile" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="mobile-drawer__brand" aria-label="Rubicweb Beranda">
+        <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" width="140" height="32">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Tutup navigasi">&times;</button>
+    </div>
+
+    <ul class="mobile-menu__links mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Layanan &amp; Workflow</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link active">Portofolio</a></li>
+      <li><a href="contact.html#pricing-calculator" class="mobile-nav-link">Estimator Biaya</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Kontak &amp; Konsultasi</a></li>
+    </ul>
+
+    <div class="mobile-drawer__footer">
+      <div class="mobile-drawer__agency-info">
+        <p class="agency-entity font-mono">PT. Rubic Kirana Solusindo</p>
+        <p class="agency-address">District 8 Treasury Tower Lt. 7, SCBD Jakarta Selatan, DKI Jakarta 12190</p>
+        <p class="agency-contact">WhatsApp: +62 852-8000-8984<br>Email: info@rubicweb.co.id</p>
+      </div>
+      <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--full" target="_blank" rel="noopener noreferrer">Konsultasi via WhatsApp</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       ROOM & PILLAR FLOATING BOTTOM NAVIGATION (DESKTOP)
+       ========================================================================== -->
+  <nav class="floating-bottom-nav" aria-label="Navigasi Melayang Bawah">
+    <a href="index.html" class="floating-nav-brand" aria-label="Kembali ke Beranda">
+      <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo Icon" class="floating-nav-logo" width="24" height="24">
+    </a>
+    <div class="floating-nav-separator"></div>
+    <ul class="floating-nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="services.html">Layanan</a></li>
+      <li><a href="portfolio.html" class="active">Portofolio</a></li>
+      <li><a href="contact.html#pricing-calculator">Estimator</a></li>
+    </ul>
+    <div class="floating-nav-separator"></div>
+    <a href="contact.html" class="floating-nav-cta">
+      <span>Konsultasi &rarr;</span>
+    </a>
+  </nav>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- PAGE HERO & BREADCRUMB -->
+    <section class="section page-hero-section" style="padding-top: 80px; padding-bottom: 40px;">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav" style="margin-bottom: 24px;">
+          <p class="breadcrumb-text font-mono" style="font-size: 0.85rem; color: var(--text-muted);">
+            <a href="index.html" style="color: var(--text-muted); text-decoration: none;">BERANDA</a> &raquo; 
+            <span style="color: var(--accent-primary);">PORTOFOLIO PROYEK</span>
+          </p>
+        </nav>
+
+        <header class="page-header" style="max-width: 960px;">
+          <span class="section-category font-mono">SELECTED WORK &amp; VERIFIED CASE STUDIES</span>
+          <h1 class="page-title" style="margin-top: 12px; margin-bottom: 20px;">
+            Karya Nyata, Performa Terbukti
+          </h1>
+          <p class="page-subtitle" style="font-size: 1.25rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 32px;">
+            Jelajahi portofolio proyek rekayasa web Rubicweb. Setiap proyek dibangun dengan komitmen terhadap estetika editorial kelas dunia, kecepatan ekstrem PageSpeed 95+, dan dampak pertumbuhan bisnis yang nyata.
+          </p>
+
+          <!-- Metrics Highlights Bar -->
+          <div class="hero-telemetry-bar" style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-primary);"></span>
+              <span>250+ Proyek Web Selesai</span>
+            </div>
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #25D366;"></span>
+              <span>3.2x Rata-rata Pertumbuhan Konversi</span>
+            </div>
+            <div class="telemetry-pill font-mono" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-cyan);"></span>
+              <span>99.9% Jaminan Server Uptime</span>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FILTERABLE PORTFOLIO SHOWCASE SECTION
+         ======================================================================== -->
+    <section class="section portfolio-section" id="portfolio" style="padding-top: 40px; padding-bottom: 100px;">
+      <div class="container">
+
+        <!-- Category Filter Tabs -->
+        <div class="portfolio-filters filter-tabs" role="tablist" aria-label="Filter Kategori Proyek">
+          <button type="button" class="filter-btn portfolio-filter-btn is-active active" data-filter="all" role="tab" aria-selected="true">
+            Semua Proyek
+          </button>
+          <button type="button" class="filter-btn portfolio-filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">
+            E-Commerce
+          </button>
+          <button type="button" class="filter-btn portfolio-filter-btn" data-filter="corporate" role="tab" aria-selected="false">
+            Company Profile
+          </button>
+          <button type="button" class="filter-btn portfolio-filter-btn" data-filter="webapp" role="tab" aria-selected="false">
+            Web App &amp; Portal
+          </button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="portfolio-grid projects-grid">
+
+          <!-- PROJECT 1: NEXASTORE (E-COMMERCE) -->
+          <article class="portfolio-card card-tilt" data-category="ecommerce">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/karalia-mockup.svg" alt="NexaStore Luxury Goods Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="nexastore">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20NexaStore." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">E-COMMERCE &bull; LUXURY RETAIL</span>
+              <h3 class="portfolio-title">NexaStore Luxury Goods</h3>
+              <p class="portfolio-desc">
+                Toko online ritel fashion premium independen dengan katalog instan, filter produk multi-atribut tanpa reload halaman, dan integrasi pembayaran otomatis Midtrans API (QRIS &amp; Virtual Account).
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">HTML5 / CSS3</span>
+                <span class="tech-badge">Vanilla JS ES6</span>
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">Midtrans API</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">PageSpeed: 98/100 &bull; +3.2x Konversi</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="nexastore" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: APEX GLOBAL LOGISTICS (CORPORATE) -->
+          <article class="portfolio-card card-tilt" data-category="corporate">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/wilmar-mockup.svg" alt="Apex Global Logistics Corporate Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="apex">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20Apex%20Global." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">COMPANY PROFILE &bull; SHIPMENT TRACKER</span>
+              <h3 class="portfolio-title">Apex Global Logistics</h3>
+              <p class="portfolio-desc">
+                Portal korporat multinasional dwibahasa terintegrasi modul pelacak resi kargo real-time yang berkomunikasi langsung dengan basis data ERP logistik internal dan proteksi DDoS Cloudflare.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">Semantic HTML5</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">ERP Integration</span>
+                <span class="tech-badge">Cloudflare</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">-40% CS Call Load &bull; 15k Kueri/Hari</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="apex" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: LUMINA CREATIVE STUDIO (CORPORATE) -->
+          <article class="portfolio-card card-tilt" data-category="corporate">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/pinjamin-mockup.svg" alt="Lumina Creative Studio Architecture Showcase" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="lumina">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20Lumina%20Studio." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">COMPANY PROFILE &bull; ARCHITECTURE</span>
+              <h3 class="portfolio-title">Lumina Creative Studio</h3>
+              <p class="portfolio-desc">
+                Portofolio visual imersif bergaya editorial internasional dengan transisi animasi 60fps, 3D perspective card physics, dan adaptive WebP image source sets tanpa kompromi performa.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">CSS Grid 3D</span>
+                <span class="tech-badge">3D Physics Tilt</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">Adaptive WebP</span>
+                <span class="tech-badge">Figma-to-Code</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">PageSpeed 99 &bull; +240% Inquiries</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="lumina" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: FLOWPULSE ENTERPRISE ANALYTICS (WEB APP) -->
+          <article class="portfolio-card card-tilt" data-category="webapp">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/jelypos-mockup.svg" alt="FlowPulse SaaS Dashboard Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="flowpulse">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20FlowPulse." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">WEB APP &bull; SAAS DASHBOARD</span>
+              <h3 class="portfolio-title">FlowPulse Enterprise Analytics</h3>
+              <p class="portfolio-desc">
+                Dashboard analitik produktivitas tenaga kerja berbasis Single-Page Architecture yang mampu memproses puluhan ribu baris metrik data tugas dengan latency render di bawah 150 milidetik.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">Vanilla JS SPA</span>
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">WebSocket API</span>
+                <span class="tech-badge">JWT Auth</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">&lt; 150ms Latency &bull; 50k Users</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="flowpulse" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: KARALIA JEWELRY (E-COMMERCE) -->
+          <article class="portfolio-card card-tilt" data-category="ecommerce">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/karalia-mockup.svg" alt="Karalia Jewelry Store Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="karalia">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20Karalia." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">E-COMMERCE &bull; GOLD &amp; JEWELRY</span>
+              <h3 class="portfolio-title">Karalia Luxury Jewelry</h3>
+              <p class="portfolio-desc">
+                Etalase ritel perhiasan modern berkecepatan tinggi dengan pembaruan harga emas harian real-time, alur transaksi ringkas 2 langkah, dan skor Core Web Vitals sempurna 99/100.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">HTML5 / CSS3</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">PHP Laravel</span>
+                <span class="tech-badge">Payment Gateway</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">Core Web Vitals 99 &bull; +210% Omzet</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="karalia" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: PINJAMIN FINTECH PLATFORM (WEB APP) -->
+          <article class="portfolio-card card-tilt" data-category="webapp">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/pinjamin-mockup.svg" alt="Pinjamin Fintech Portal Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="pinjamin">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20Pinjamin." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">WEB APP &bull; FINTECH &amp; P2P</span>
+              <h3 class="portfolio-title">Pinjamin Fintech Platform</h3>
+              <p class="portfolio-desc">
+                Portal keuangan digital dengan transparansi TKB90 real-time, enkripsi data nasabah sensitif berlapis, dan alur pendaftaran pembiayaan UMKM instan tanpa gesekan.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">Security AES-256</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">OJK Standard</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">50k+ Pengajuan &bull; 99.99% Uptime</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="pinjamin" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7: WILMAR AGRIBUSINESS (CORPORATE) -->
+          <article class="portfolio-card card-tilt" data-category="corporate">
+            <div class="portfolio-thumb preview-image-container">
+              <img src="assets/portfolio/wilmar-mockup.svg" alt="Wilmar Corporate Agribusiness Portal Mockup" width="600" height="380" loading="lazy">
+              <div class="portfolio-card__overlay" style="position: absolute; inset: 0; background: rgba(17, 18, 22, 0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s ease;">
+                <button type="button" class="btn btn--sm btn--primary btn-case-study" data-project-id="wilmar">
+                  Lihat Studi Kasus
+                </button>
+                <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20tanya%20proyek%20serupa%20Wilmar." class="btn btn--sm btn--secondary" target="_blank" rel="noopener noreferrer">
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat-tag font-mono">COMPANY PROFILE &bull; ENTERPRISE &amp; TBK</span>
+              <h3 class="portfolio-title">Wilmar Agribusiness Corporate</h3>
+              <p class="portfolio-desc">
+                Portal korporat skala konglomerasi agribisnis terbuka dengan repositori publikasi laporan keuangan tahunan terindeks, hubungan investor multibahasa, dan keterbukaan inisiatif ESG.
+              </p>
+              <div class="tech-stack-badges" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="tech-badge">Semantic HTML5</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">Structured SEO</span>
+                <span class="tech-badge">Multi-Language</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--accent-primary);">Peringkat #1 SEO &bull; Bounce &lt; 25%</span>
+                <button type="button" class="btn btn--link btn-case-study" data-project-id="wilmar" style="font-size: 0.85rem; color: var(--text-primary); cursor: pointer; background: none; border: none; font-weight: 600;">
+                  Detail Kasus &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PAGE CTA SECTION
+         ======================================================================== -->
+    <section class="section page-cta-section" style="padding-top: 60px; padding-bottom: 80px; background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <span class="section-category font-mono">KONSULTASI GRATIS</span>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px; margin-bottom: 16px;">
+          Ingin Membangun Proyek dengan Standar Ini?
+        </h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;">
+          Kami siap membantu perusahaan Anda bertransformasi dengan website berkecepatan ekstrem, tampilan visual mewah, dan garansi kepuasan penuh 100%.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20tertarik%20konsultasi%20pembuatan%20website%20kustom%20setelah%20melihat%20portofolio." class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            Konsultasi WhatsApp Sekarang &rarr;
+          </a>
+          <a href="contact.html" class="btn btn--secondary">
+            Isi Formulir Penawaran
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       ACCESSIBLE CASE STUDY DETAIL MODAL POPUP
+       ========================================================================== -->
+  <div class="modal-overlay" id="case-study-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="display: none;">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close modal__close" id="modal-close-btn" aria-label="Tutup pratinjau studi kasus">&times;</button>
+      
+      <div class="modal-header" style="margin-bottom: 24px;">
+        <span class="modal-tag font-mono" id="modal-tag" style="color: var(--accent-primary); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;"></span>
+        <h3 class="modal-title" id="modal-title" style="font-size: 1.8rem; color: var(--text-primary); margin-top: 8px; margin-bottom: 6px;"></h3>
+        <p class="font-mono" id="modal-client" style="font-size: 0.88rem; color: var(--text-muted);"></p>
+      </div>
+
+      <div class="modal-media" style="margin-bottom: 24px; border-radius: var(--radius-md); overflow: hidden; background: var(--bg-tertiary); border: 1px solid var(--border-subtle); max-height: 280px;">
+        <img id="modal-img" src="assets/portfolio/karalia-mockup.svg" alt="Tangkapan Layar Proyek" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 20px;">
+        <div>
+          <h4 style="font-size: 0.95rem; color: var(--accent-coral); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 6px;">
+            Tantangan Teknis Awal:
+          </h4>
+          <p id="modal-challenge" style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;"></p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 6px;">
+            Solusi Rekayasa Rubicweb:
+          </h4>
+          <p id="modal-solution" style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;"></p>
+        </div>
+
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 18px 20px;">
+          <h4 style="font-size: 0.95rem; color: var(--accent-primary); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 6px;">
+            Hasil Bisnis Terukur (Verified Metrics):
+          </h4>
+          <p id="modal-results" style="color: var(--text-primary); font-weight: 600; line-height: 1.7; font-size: 0.95rem;"></p>
+        </div>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px;">
+          <a href="#" class="btn btn--primary" id="modal-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+            Diskusikan Proyek Serupa via WhatsApp &rarr;
+          </a>
+          <a href="contact.html" class="btn btn--secondary">
+            Buka Estimator Biaya
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL GLOBAL FOOTER (SCBD JAKARTA AGENCY PROFILE)
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Legal Brand & SCBD Address -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Rubicweb Beranda">
+            <img src="assets/logos/rubicweb-logo.svg" alt="Rubicweb Logo" class="footer-logo" width="168" height="38">
+          </a>
+          <span class="footer-legal-tag font-mono">PT. Rubic Kirana Solusindo</span>
+          <p>
+            Agensi rekayasa website dan aplikasi kustom berkinerja tinggi. Kami membangun sistem digital berkecepatan ekstrem dengan standar clean-code internasional dan estetika editorial berkelas.
+          </p>
+          <address class="footer-address">
+            <strong>Kantor Pusat Operasional:</strong><br>
+            District 8, Treasury Tower Lt. 7<br>
+            SCBD Jend. Sudirman, Senayan, Kebayoran Baru<br>
+            Jakarta Selatan, DKI Jakarta 12190 &bull; Indonesia
+          </address>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigasi Utama</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="services.html">Layanan &amp; Workflow</a></li>
+            <li><a href="portfolio.html">Portofolio Proyek</a></li>
+            <li><a href="contact.html#pricing-calculator">Estimator Biaya</a></li>
+            <li><a href="contact.html">Kontak &amp; Konsultasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Engineering Services -->
+        <div class="footer-col">
+          <h4>Layanan Rekayasa</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-web-development">Custom Web Development</a></li>
+            <li><a href="services.html#modern-business-profile">Modern Business Profile</a></li>
+            <li><a href="services.html#web-app-portal">Web App &amp; Portal</a></li>
+            <li><a href="services.html#redesign-maintenance">Redesign &amp; Maintenance</a></li>
+            <li><a href="contact.html">Konsultasi Arsitektur Web</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Guarantees & Verification Badges -->
+        <div class="footer-col">
+          <h4>Standar Mutu &amp; Jaminan</h4>
+          <div class="footer-guarantees">
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Garansi 100% Kepuasan / Uang Kembali</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>Google PageSpeed 95+ Guarantee</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>30-Day Bug-Free Warranty</span>
+            </div>
+            <div class="footer-guarantee-pill">
+              <span class="pill-dot"></span>
+              <span>100% Source Code Ownership</span>
+            </div>
+          </div>
+          <div class="footer-contact-quick">
+            <p>Konsultasi Langsung via WhatsApp:</p>
+            <a href="https://wa.me/6285280008984" class="footer-wa-link font-mono" target="_blank" rel="noopener noreferrer">+62 852-8000-8984</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 PT. Rubic Kirana Solusindo. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Kebijakan Privasi</a>
+          <a href="contact.html">Syarat &amp; Ketentuan</a>
+          <a href="contact.html">SLA &amp; Garansi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BACK TO TOP BUTTON
+       ========================================================================== -->
+  <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT ENGINES
+       ========================================================================== -->
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>
