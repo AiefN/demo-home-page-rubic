@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T11:13:06.172Z",
+  "timestamp": "2026-11-11T08:36:43.461Z",
   "summary": {
     "total": 80,
     "passed": 80,
@@ -20,7 +20,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 251
         }
       },
       {
@@ -36,7 +36,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 291
         }
       },
       {
@@ -52,7 +52,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 346
         }
       },
       {
@@ -68,7 +68,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 721
         }
       },
       {
@@ -84,7 +84,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 934.5
         }
       },
       {
@@ -100,7 +100,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 1142.5
         }
       },
       {
@@ -116,7 +116,7 @@
           "overflowCount": 0,
           "overflowSamples": [],
           "calcRight": null,
-          "formRight": null
+          "formRight": 1702.5
         }
       },
       {
@@ -344,14 +344,14 @@
         }
       },
       {
-        "testName": "contact.html @ 280px viewport (scrollWidth=274px, innerWidth=280px)",
+        "testName": "contact.html @ 280px viewport (scrollWidth=265px, innerWidth=280px)",
         "passed": true,
         "details": {
           "page": "/contact.html",
           "viewportWidth": 280,
           "innerW": 280,
           "clientW": 265,
-          "scrollW": 274,
+          "scrollW": 265,
           "hasHorizontalScroll": false,
           "overflowCount": 0,
           "overflowSamples": [],
@@ -403,8 +403,8 @@
           "hasHorizontalScroll": false,
           "overflowCount": 0,
           "overflowSamples": [],
-          "calcRight": 729,
-          "formRight": 729
+          "calcRight": 721,
+          "formRight": 721
         }
       },
       {
@@ -435,8 +435,8 @@
           "hasHorizontalScroll": false,
           "overflowCount": 0,
           "overflowSamples": [],
-          "calcRight": 1372.5,
-          "formRight": 756.5
+          "calcRight": 1320.5,
+          "formRight": 751.296875
         }
       },
       {
@@ -451,8 +451,8 @@
           "hasHorizontalScroll": false,
           "overflowCount": 0,
           "overflowSamples": [],
-          "calcRight": 1932.5,
-          "formRight": 1316.5
+          "calcRight": 1880.5,
+          "formRight": 1311.296875
         }
       }
     ],
@@ -527,7 +527,7 @@
         "passed": true,
         "details": {
           "menuOpened": true,
-          "servicesHref": "services.html"
+          "servicesHref": "#services"
         }
       }
     ],

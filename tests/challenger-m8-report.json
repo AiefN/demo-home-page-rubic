@@ -1,0 +1,461 @@
+{
+  "timestamp": "2026-11-11T08:36:11.758Z",
+  "summary": {
+    "total": 32,
+    "passed": 32,
+    "failed": 0
+  },
+  "suites": {
+    "CardTilt": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Target .hero-showcase-card.corporate-profile-card.card-tilt exists and has non-zero size",
+          "passed": true,
+          "details": {
+            "width": 493,
+            "height": 696.703125
+          }
+        },
+        {
+          "testName": "Tilt point [Top-Left Corner] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Top-Left Corner",
+            "transform": "perspective(1000px) rotateX(9.96deg) rotateY(-9.94deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.96,
+            "rotY": -9.94,
+            "mouseX": "1.5px",
+            "mouseY": "1.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Top-Right Corner] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Top-Right Corner",
+            "transform": "perspective(1000px) rotateX(9.96deg) rotateY(9.9deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.96,
+            "rotY": 9.9,
+            "mouseX": "490.5px",
+            "mouseY": "1.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Bottom-Left Corner] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Bottom-Left Corner",
+            "transform": "perspective(1000px) rotateX(-9.93deg) rotateY(-9.94deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.93,
+            "rotY": -9.94,
+            "mouseX": "1.5px",
+            "mouseY": "694.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Bottom-Right Corner] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Bottom-Right Corner",
+            "transform": "perspective(1000px) rotateX(-9.93deg) rotateY(9.9deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.93,
+            "rotY": 9.9,
+            "mouseX": "490.5px",
+            "mouseY": "694.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Dead Center] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Dead Center",
+            "transform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 0,
+            "rotY": 0,
+            "mouseX": "246.5px",
+            "mouseY": "348.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Extreme Left-Top Out-of-Bounds] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Extreme Left-Top Out-of-Bounds",
+            "transform": "perspective(1000px) rotateX(10deg) rotateY(-10deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 10,
+            "rotY": -10,
+            "mouseX": "-10817.5px",
+            "mouseY": "-10170.7px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Tilt point [Extreme Right-Bottom Out-of-Bounds] perspective & rotation clamped <= 10°",
+          "passed": true,
+          "details": {
+            "name": "Extreme Right-Bottom Out-of-Bounds",
+            "transform": "perspective(1000px) rotateX(-10deg) rotateY(10deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -10,
+            "rotY": 10,
+            "mouseX": "10491.5px",
+            "mouseY": "10695.3px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "signValid": true
+          }
+        },
+        {
+          "testName": "Mouseleave smoothly resets tilt to 0deg and --glow-opacity to 0",
+          "passed": true,
+          "details": {
+            "resetTransform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
+            "resetGlow": "0",
+            "resetTransition": "transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        }
+      ]
+    },
+    "PerfBudget": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Backdrop-filter is eliminated on .corporate-profile-card to prevent GPU rasterization stalls",
+          "passed": true,
+          "details": {
+            "backdropFilter": "none"
+          }
+        },
+        {
+          "testName": "RAF 60-frame stress benchmark maintains 60fps budget (avg: 18.48ms <= 20ms, max: 33.40ms)",
+          "passed": true,
+          "details": {
+            "backdropFilter": "none",
+            "avgDelta": 18.48363636363636,
+            "maxDelta": 33.39999999999998,
+            "sampleCount": 55
+          }
+        }
+      ]
+    },
+    "AnchorNav": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "html { scroll-behavior: smooth } is declared",
+          "passed": true,
+          "details": {
+            "scrollBehavior": "smooth"
+          }
+        },
+        {
+          "testName": "All target sections have scroll-margin-top: 100px declared",
+          "passed": true,
+          "details": {
+            "hero": "100px",
+            "services": "100px",
+            "portfolio": "100px",
+            "pricing-calculator": "100px",
+            "contact": "100px"
+          }
+        },
+        {
+          "testName": "Click nav link '.site-header .nav-links a[href=\"#services\"]' scrolls without occluding #services (clearance: 218.5px)",
+          "passed": true,
+          "details": {
+            "scrollY": 886,
+            "headerBottom": 0,
+            "headingTop": 218.515625,
+            "sectionTop": 94.109375,
+            "clearance": 218.515625,
+            "noOcclusion": true,
+            "hash": "#services"
+          }
+        },
+        {
+          "testName": "Click nav link '.site-header .nav-links a[href=\"#portfolio\"]' scrolls without occluding #portfolio (clearance: 202.8px)",
+          "passed": true,
+          "details": {
+            "scrollY": 2830,
+            "headerBottom": 0,
+            "headingTop": 202.8125,
+            "sectionTop": 78.40625,
+            "clearance": 202.8125,
+            "noOcclusion": true,
+            "hash": "#portfolio"
+          }
+        },
+        {
+          "testName": "Click nav link '.site-header .nav-links a[href=\"#pricing-calculator\"]' scrolls without occluding #pricing-calculator (clearance: 202.1px)",
+          "passed": true,
+          "details": {
+            "scrollY": 4639,
+            "headerBottom": 0,
+            "headingTop": 202.125,
+            "sectionTop": 77.71875,
+            "clearance": 202.125,
+            "noOcclusion": true,
+            "hash": "#pricing-calculator"
+          }
+        },
+        {
+          "testName": "Click nav link '.site-header .nav-links a[href=\"#contact\"]' scrolls without occluding #contact (clearance: 202.6px)",
+          "passed": true,
+          "details": {
+            "scrollY": 7205,
+            "headerBottom": 0,
+            "headingTop": 202.5625,
+            "sectionTop": 78.15625,
+            "clearance": 202.5625,
+            "noOcclusion": true,
+            "hash": "#contact"
+          }
+        },
+        {
+          "testName": "Click nav link '.site-header .nav-links a[href=\"#hero\"]' scrolls without occluding #hero (clearance: 78.6px)",
+          "passed": true,
+          "details": {
+            "scrollY": 0,
+            "headerBottom": 93.859375,
+            "headingTop": 172.484375,
+            "sectionTop": 0,
+            "clearance": 78.625,
+            "noOcclusion": true,
+            "hash": "#hero"
+          }
+        }
+      ]
+    },
+    "MobileDrawer": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Toggle opens drawer with aria-expanded=\"true\" and locks body scroll",
+          "passed": true,
+          "details": {
+            "isOpenAfterClick": true,
+            "ariaExpanded": "true",
+            "bodyScrollLocked": true,
+            "isClosedAfterAnchor": true,
+            "ariaCollapsed": "false",
+            "bodyScrollRestored": true,
+            "scrollY": 2576,
+            "portfolioTop": 93.859375,
+            "portfolioVisible": true
+          }
+        },
+        {
+          "testName": "Clicking drawer link (#portfolio) closes drawer, restores body scroll, and scrolls smoothly",
+          "passed": true,
+          "details": {
+            "isOpenAfterClick": true,
+            "ariaExpanded": "true",
+            "bodyScrollLocked": true,
+            "isClosedAfterAnchor": true,
+            "ariaCollapsed": "false",
+            "bodyScrollRestored": true,
+            "scrollY": 2576,
+            "portfolioTop": 93.859375,
+            "portfolioVisible": true
+          }
+        },
+        {
+          "testName": "Clicking drawer link (#contact) closes drawer and scrolls to consultation section",
+          "passed": true,
+          "details": {
+            "isClosed": true,
+            "scrollY": 7112,
+            "contactTop": 78.40625,
+            "contactVisible": true
+          }
+        }
+      ]
+    },
+    "ScrollSpy": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Initial state (scrollY=0) marks #hero as active",
+          "passed": true,
+          "details": {
+            "activeHref": "#hero"
+          }
+        },
+        {
+          "testName": "Scrolling to #services dynamically activates '#services' in header nav",
+          "passed": true,
+          "details": {
+            "scrollY": 820,
+            "activeLinks": [
+              "#services"
+            ],
+            "isMatch": true
+          }
+        },
+        {
+          "testName": "Scrolling to #portfolio dynamically activates '#portfolio' in header nav",
+          "passed": true,
+          "details": {
+            "scrollY": 2590,
+            "activeLinks": [
+              "#portfolio"
+            ],
+            "isMatch": true
+          }
+        },
+        {
+          "testName": "Scrolling to #pricing-calculator dynamically activates '#pricing-calculator' in header nav",
+          "passed": true,
+          "details": {
+            "scrollY": 4441,
+            "activeLinks": [
+              "#pricing-calculator"
+            ],
+            "isMatch": true
+          }
+        },
+        {
+          "testName": "Scrolling to #contact dynamically activates '#contact' in header nav",
+          "passed": true,
+          "details": {
+            "scrollY": 7110,
+            "activeLinks": [
+              "#contact"
+            ],
+            "isMatch": true
+          }
+        },
+        {
+          "testName": "50 rapid scroll jumps execute safely without race conditions or multiple active links",
+          "passed": true,
+          "details": {
+            "activeLinksCount": 1,
+            "hasSingleOrZeroActive": true
+          }
+        }
+      ]
+    },
+    "CorpCardContent": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Official Legal Entity (PT RUBIC KIRANA SOLUSINDO, EST. 2020, VERIFIED AGENCY) rendered",
+          "passed": true,
+          "details": {
+            "entityNamePresent": true,
+            "estRegPresent": true,
+            "verifiedBadgePresent": true,
+            "pulseDotPresent": true,
+            "monogramPresent": true,
+            "allGuaranteesPresent": true,
+            "guarantees": {
+              "g1": true,
+              "g2": true,
+              "g3": true,
+              "g4": true,
+              "g5": true
+            },
+            "metricsRibbonPresent": true,
+            "locationPresent": true,
+            "hasNoInnerNativeFooter": true
+          }
+        },
+        {
+          "testName": "All 5 Core Guarantees with descriptions rendered in card body",
+          "passed": true,
+          "details": {
+            "g1": true,
+            "g2": true,
+            "g3": true,
+            "g4": true,
+            "g5": true
+          }
+        },
+        {
+          "testName": "Obsidian metrics ribbon rendered with 100% Garansi, 95+ PageSpeed, 250+ Proyek Nasional",
+          "passed": true,
+          "details": {
+            "entityNamePresent": true,
+            "estRegPresent": true,
+            "verifiedBadgePresent": true,
+            "pulseDotPresent": true,
+            "monogramPresent": true,
+            "allGuaranteesPresent": true,
+            "guarantees": {
+              "g1": true,
+              "g2": true,
+              "g3": true,
+              "g4": true,
+              "g5": true
+            },
+            "metricsRibbonPresent": true,
+            "locationPresent": true,
+            "hasNoInnerNativeFooter": true
+          }
+        },
+        {
+          "testName": "District 8 Treasury Tower SCBD Jakarta footprint rendered",
+          "passed": true,
+          "details": {
+            "entityNamePresent": true,
+            "estRegPresent": true,
+            "verifiedBadgePresent": true,
+            "pulseDotPresent": true,
+            "monogramPresent": true,
+            "allGuaranteesPresent": true,
+            "guarantees": {
+              "g1": true,
+              "g2": true,
+              "g3": true,
+              "g4": true,
+              "g5": true
+            },
+            "metricsRibbonPresent": true,
+            "locationPresent": true,
+            "hasNoInnerNativeFooter": true
+          }
+        },
+        {
+          "testName": "Hero card footer uses non-footer container (no collision with global site-footer selector)",
+          "passed": true,
+          "details": {
+            "hasInnerNativeFooter": false
+          }
+        }
+      ]
+    }
+  },
+  "consoleErrors": [],
+  "verdict": "APPROVE"
+}

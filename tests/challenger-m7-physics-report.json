@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T07:21:40.022Z",
+  "timestamp": "2026-11-11T08:34:46.700Z",
   "summary": {
     "total": 57,
     "passed": 57,
@@ -67,10 +67,10 @@
               },
               {
                 "delay": 150,
-                "transform": "translate3d(322.35px, 416.21px, 0px)",
-                "fx": 322.35,
-                "fy": 416.21,
-                "dist": 43.66104213140131
+                "transform": "translate3d(317.08px, 409.77px, 0px)",
+                "fx": 317.08,
+                "fy": 409.77,
+                "dist": 51.98249032126108
               },
               {
                 "delay": 300,
@@ -117,10 +117,10 @@
               },
               {
                 "delay": 150,
-                "transform": "translate3d(322.35px, 416.21px, 0px)",
-                "fx": 322.35,
-                "fy": 416.21,
-                "dist": 43.66104213140131
+                "transform": "translate3d(317.08px, 409.77px, 0px)",
+                "fx": 317.08,
+                "fy": 409.77,
+                "dist": 51.98249032126108
               },
               {
                 "delay": 300,
@@ -168,15 +168,15 @@
       "passed": true,
       "checks": [
         {
-          "testName": "Tilt [Top-Left Corner] clamped <= 10° (rotX=9.82°, rotY=-9.82°)",
+          "testName": "Tilt [Top-Left Corner] clamped <= 10° (rotX=9.88°, rotY=-9.82°)",
           "passed": true,
           "details": {
             "name": "Top-Left Corner",
-            "transform": "perspective(1000px) rotateX(9.82deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
-            "rotX": 9.82,
+            "transform": "perspective(1000px) rotateX(9.88deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.88,
             "rotY": -9.82,
             "mouseX": "4.5px",
-            "mouseY": "4.0px",
+            "mouseY": "4.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -186,15 +186,15 @@
           }
         },
         {
-          "testName": "Tilt [Top-Right Corner] clamped <= 10° (rotX=9.82°, rotY=9.78°)",
+          "testName": "Tilt [Top-Right Corner] clamped <= 10° (rotX=9.88°, rotY=9.78°)",
           "passed": true,
           "details": {
             "name": "Top-Right Corner",
-            "transform": "perspective(1000px) rotateX(9.82deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
-            "rotX": 9.82,
+            "transform": "perspective(1000px) rotateX(9.88deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.88,
             "rotY": 9.78,
             "mouseX": "487.5px",
-            "mouseY": "4.0px",
+            "mouseY": "4.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -204,15 +204,15 @@
           }
         },
         {
-          "testName": "Tilt [Bottom-Left Corner] clamped <= 10° (rotX=-9.78°, rotY=-9.82°)",
+          "testName": "Tilt [Bottom-Left Corner] clamped <= 10° (rotX=-9.84°, rotY=-9.82°)",
           "passed": true,
           "details": {
             "name": "Bottom-Left Corner",
-            "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
-            "rotX": -9.78,
+            "transform": "perspective(1000px) rotateX(-9.84deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.84,
             "rotY": -9.82,
             "mouseX": "4.5px",
-            "mouseY": "455.0px",
+            "mouseY": "691.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -222,15 +222,15 @@
           }
         },
         {
-          "testName": "Tilt [Bottom-Right Corner] clamped <= 10° (rotX=-9.78°, rotY=9.78°)",
+          "testName": "Tilt [Bottom-Right Corner] clamped <= 10° (rotX=-9.84°, rotY=9.78°)",
           "passed": true,
           "details": {
             "name": "Bottom-Right Corner",
-            "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
-            "rotX": -9.78,
+            "transform": "perspective(1000px) rotateX(-9.84deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.84,
             "rotY": 9.78,
             "mouseX": "487.5px",
-            "mouseY": "455.0px",
+            "mouseY": "691.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -248,7 +248,7 @@
             "rotX": 0,
             "rotY": 0,
             "mouseX": "246.5px",
-            "mouseY": "230.0px",
+            "mouseY": "348.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -266,7 +266,7 @@
             "rotX": 10,
             "rotY": -10,
             "mouseX": "-1818.5px",
-            "mouseY": "-1290.0px",
+            "mouseY": "-1171.7px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -284,7 +284,7 @@
             "rotX": -10,
             "rotY": 10,
             "mouseX": "2992.5px",
-            "mouseY": "2960.0px",
+            "mouseY": "3196.3px",
             "glowOpacity": "1",
             "clamped": true,
             "hasPerspective": true,
@@ -298,7 +298,7 @@
           "passed": true,
           "details": {
             "mouseX": "4.5px",
-            "mouseY": "4.0px"
+            "mouseY": "4.3px"
           }
         },
         {
@@ -315,11 +315,11 @@
             "results": [
               {
                 "name": "Top-Left Corner",
-                "transform": "perspective(1000px) rotateX(9.82deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
-                "rotX": 9.82,
+                "transform": "perspective(1000px) rotateX(9.88deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 9.88,
                 "rotY": -9.82,
                 "mouseX": "4.5px",
-                "mouseY": "4.0px",
+                "mouseY": "4.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -329,11 +329,11 @@
               },
               {
                 "name": "Top-Right Corner",
-                "transform": "perspective(1000px) rotateX(9.82deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
-                "rotX": 9.82,
+                "transform": "perspective(1000px) rotateX(9.88deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 9.88,
                 "rotY": 9.78,
                 "mouseX": "487.5px",
-                "mouseY": "4.0px",
+                "mouseY": "4.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -343,11 +343,11 @@
               },
               {
                 "name": "Bottom-Left Corner",
-                "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
-                "rotX": -9.78,
+                "transform": "perspective(1000px) rotateX(-9.84deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": -9.84,
                 "rotY": -9.82,
                 "mouseX": "4.5px",
-                "mouseY": "455.0px",
+                "mouseY": "691.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -357,11 +357,11 @@
               },
               {
                 "name": "Bottom-Right Corner",
-                "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
-                "rotX": -9.78,
+                "transform": "perspective(1000px) rotateX(-9.84deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": -9.84,
                 "rotY": 9.78,
                 "mouseX": "487.5px",
-                "mouseY": "455.0px",
+                "mouseY": "691.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -375,7 +375,7 @@
                 "rotX": 0,
                 "rotY": 0,
                 "mouseX": "246.5px",
-                "mouseY": "230.0px",
+                "mouseY": "348.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -389,7 +389,7 @@
                 "rotX": 10,
                 "rotY": -10,
                 "mouseX": "-1818.5px",
-                "mouseY": "-1290.0px",
+                "mouseY": "-1171.7px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -403,7 +403,7 @@
                 "rotX": -10,
                 "rotY": 10,
                 "mouseX": "2992.5px",
-                "mouseY": "2960.0px",
+                "mouseY": "3196.3px",
                 "glowOpacity": "1",
                 "clamped": true,
                 "hasPerspective": true,
@@ -579,7 +579,7 @@
             "targetAria": true,
             "contentHeight": 49.875,
             "rotated45": true,
-            "iconTransform": "matrix(0.708803, 0.705406, -0.705406, 0.708803, 0, 0)"
+            "iconTransform": "matrix(0.7088, 0.70541, -0.70541, 0.7088, 0, 0)"
           }
         },
         {
@@ -592,7 +592,7 @@
             "targetAria": true,
             "contentHeight": 49.578125,
             "rotated45": true,
-            "iconTransform": "matrix(0.711061, 0.70313, -0.70313, 0.711061, 0, 0)"
+            "iconTransform": "matrix(0.711056, 0.703136, -0.703136, 0.711056, 0, 0)"
           }
         },
         {
@@ -605,7 +605,7 @@
             "targetAria": true,
             "contentHeight": 49.875,
             "rotated45": true,
-            "iconTransform": "matrix(0.708797, 0.705413, -0.705413, 0.708797, 0, 0)"
+            "iconTransform": "matrix(0.708793, 0.705416, -0.705416, 0.708793, 0, 0)"
           }
         },
         {
@@ -616,9 +616,9 @@
             "openCount": 1,
             "targetOpen": true,
             "targetAria": true,
-            "contentHeight": 49.578125,
+            "contentHeight": 49.875,
             "rotated45": true,
-            "iconTransform": "matrix(0.711051, 0.703141, -0.703141, 0.711051, 0, 0)"
+            "iconTransform": "matrix(0.708802, 0.705407, -0.705407, 0.708802, 0, 0)"
           }
         },
         {
@@ -631,7 +631,7 @@
             "targetAria": true,
             "contentHeight": 49.875,
             "rotated45": true,
-            "iconTransform": "matrix(0.708794, 0.705416, -0.705416, 0.708794, 0, 0)"
+            "iconTransform": "matrix(0.708797, 0.705412, -0.705412, 0.708797, 0, 0)"
           }
         },
         {
@@ -644,7 +644,7 @@
             "targetAria": true,
             "contentHeight": 49.875,
             "rotated45": true,
-            "iconTransform": "matrix(0.708799, 0.70541, -0.70541, 0.708799, 0, 0)"
+            "iconTransform": "matrix(0.708792, 0.705418, -0.705418, 0.708792, 0, 0)"
           }
         },
         {
@@ -829,10 +829,10 @@
           }
         },
         {
-          "testName": "RAF 60-frame benchmark runs at ~60fps (avg 16.67ms, max 16.8ms)",
+          "testName": "RAF 60-frame benchmark runs at ~60fps (avg 16.66ms, max 16.8ms)",
           "passed": true,
           "details": {
-            "avgDeltaMs": 16.67,
+            "avgDeltaMs": 16.66,
             "maxDeltaMs": 16.8,
             "approxFps": 60,
             "totalFrames": 60
@@ -899,7 +899,7 @@
   },
   "consoleErrors": [],
   "fpsTelemetry": {
-    "avgDeltaMs": 16.67,
+    "avgDeltaMs": 16.66,
     "maxDeltaMs": 16.8,
     "approxFps": 60,
     "totalFrames": 60

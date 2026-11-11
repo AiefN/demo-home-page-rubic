@@ -21,6 +21,7 @@
     initNavigation();
     initFloatingBottomNav();
     initSmoothAnchors();
+    initScrollSpy();
     initBackToTop();
   }
 
@@ -211,6 +212,23 @@
         const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
+
+          // Close mobile drawer if open without jumping viewport
+          const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer');
+          if (drawer && (drawer.classList.contains('is-open') || drawer.classList.contains('active'))) {
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            const toggleBtn = document.querySelector('.navbar__toggle');
+            drawer.classList.remove('is-open', 'active', 'open');
+            if (overlay) overlay.classList.remove('is-open', 'is-active');
+            if (toggleBtn) {
+              toggleBtn.classList.remove('is-open', 'navbar__toggle--active', 'is-active');
+              toggleBtn.setAttribute('aria-expanded', 'false');
+            }
+            drawer.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('no-scroll');
+            document.body.style.overflow = '';
+          }
+
           const header = document.querySelector('.site-header') || document.querySelector('.navbar');
           const headerOffset = header ? header.offsetHeight : 70;
           const targetOffset = target.getBoundingClientRect().top + window.scrollY - headerOffset;
@@ -223,9 +241,85 @@
           if (history.pushState) {
             history.pushState(null, '', href);
           }
+
+          // Instantly highlight target link
+          updateActiveLink(href);
         }
       });
     });
+  }
+
+  /* --------------------------------------------------------------------------
+   * SCROLL SPY ENGINE (Active Navigation Link Highlighting)
+   * -------------------------------------------------------------------------- */
+  let currentActiveId = '';
+  function updateActiveLink(activeId) {
+    if (!activeId) return;
+    const cleanId = activeId.replace(/^#/, '');
+    if (currentActiveId === cleanId) return;
+    currentActiveId = cleanId;
+
+    const navSelectors = [
+      '.site-header .nav-links a',
+      '.mobile-menu__links a',
+      '.floating-bottom-nav .floating-nav-links a'
+    ];
+
+    navSelectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(link => {
+        const href = link.getAttribute('href') || '';
+        const linkTarget = href.replace(/^.*#/, '');
+        if (linkTarget === cleanId || (cleanId === 'pricing' && linkTarget === 'pricing-calculator') || (cleanId === 'pricing-calculator' && linkTarget === 'pricing')) {
+          link.classList.add('active', 'is-active');
+        } else if (href.startsWith('#') || href.includes('index.html#')) {
+          link.classList.remove('active', 'is-active');
+        }
+      });
+    });
+  }
+
+  function initScrollSpy() {
+    const trackedSections = [
+      document.getElementById('hero'),
+      document.getElementById('services'),
+      document.getElementById('portfolio'),
+      document.getElementById('pricing-calculator'),
+      document.getElementById('contact')
+    ].filter(Boolean);
+
+    if (!trackedSections.length) return;
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            updateActiveLink('#' + entry.target.id);
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: [0, 0.2, 0.5]
+      });
+
+      trackedSections.forEach(section => observer.observe(section));
+    }
+
+    // Scroll boundary fallback (handles top of page and bottom of page) with RAF throttling
+    let scrollSpyTicking = false;
+    window.addEventListener('scroll', function () {
+      if (!scrollSpyTicking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY < 120) {
+            updateActiveLink('#hero');
+          } else if ((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 60)) {
+            updateActiveLink('#contact');
+          }
+          scrollSpyTicking = false;
+        });
+        scrollSpyTicking = true;
+      }
+    }, { passive: true });
   }
 
   /* --------------------------------------------------------------------------

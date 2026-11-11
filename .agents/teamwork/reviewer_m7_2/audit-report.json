@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T07:22:22.661Z",
+  "timestamp": "2026-11-11T08:35:18.464Z",
   "viewportsTested": 6,
   "pagesTested": 4,
   "matrixResults": [
@@ -13,48 +13,7 @@
         "clientWidth": 320,
         "innerWidth": 320,
         "overflow": 0,
-        "rogueElements": [
-          {
-            "tag": "div",
-            "id": "",
-            "class": "calc-config-col",
-            "left": 33,
-            "right": 369,
-            "width": 336
-          },
-          {
-            "tag": "div",
-            "id": "",
-            "class": "calc-group",
-            "left": 33,
-            "right": 369,
-            "width": 336
-          },
-          {
-            "tag": "label",
-            "id": "",
-            "class": "calc-label",
-            "left": 33,
-            "right": 369,
-            "width": 336
-          },
-          {
-            "tag": "div",
-            "id": "",
-            "class": "tier-cards-group tier-selector tier-options",
-            "left": 33,
-            "right": 369,
-            "width": 336
-          },
-          {
-            "tag": "label",
-            "id": "",
-            "class": "tier-card",
-            "left": 33,
-            "right": 369,
-            "width": 336
-          }
-        ]
+        "rogueElements": []
       },
       "pass": true
     },
@@ -550,21 +509,7 @@
     "minVerticalClearance": 316,
     "overlappingHeadings": []
   },
-  "minorObservations": [
-    {
-      "page": "index.html",
-      "viewport": 320,
-      "count": 5,
-      "sample": {
-        "tag": "div",
-        "id": "",
-        "class": "calc-config-col",
-        "left": 33,
-        "right": 369,
-        "width": 336
-      }
-    }
-  ],
+  "minorObservations": [],
   "screenshotsCaptured": [],
   "allPassed": true,
   "failures": []

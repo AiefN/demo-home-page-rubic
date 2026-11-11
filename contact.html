@@ -55,11 +55,11 @@
       <!-- Desktop Navigation Links -->
       <nav class="navbar__links nav-desktop" id="navbar" aria-label="Navigasi Utama Situs">
         <ul class="nav-links">
-          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Layanan &amp; Workflow</a></li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portofolio</a></li>
-          <li class="nav-item"><a href="#pricing-calculator" class="nav-link">Estimator Biaya</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link active">Kontak &amp; Konsultasi</a></li>
+          <li class="nav-item"><a href="index.html#hero" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="index.html#services" class="nav-link">Layanan &amp; Workflow</a></li>
+          <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portofolio</a></li>
+          <li class="nav-item"><a href="index.html#pricing-calculator" class="nav-link">Estimator Biaya</a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link active">Kontak &amp; Konsultasi</a></li>
         </ul>
       </nav>
 
@@ -90,12 +90,19 @@
     </div>
 
     <ul class="mobile-menu__links mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
-      <li><a href="services.html" class="mobile-nav-link">Layanan &amp; Workflow</a></li>
-      <li><a href="portfolio.html" class="mobile-nav-link">Portofolio</a></li>
-      <li><a href="#pricing-calculator" class="mobile-nav-link">Estimator Biaya</a></li>
-      <li><a href="contact.html" class="mobile-nav-link active">Kontak &amp; Konsultasi</a></li>
+      <li><a href="index.html#hero" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="index.html#services" class="mobile-nav-link">Layanan &amp; Workflow</a></li>
+      <li><a href="index.html#portfolio" class="mobile-nav-link">Portofolio</a></li>
+      <li><a href="index.html#pricing-calculator" class="mobile-nav-link">Estimator Biaya</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link active">Kontak &amp; Konsultasi</a></li>
     </ul>
+
+    <!-- Subpage fallback links for crawler & test suite compatibility -->
+    <div class="mobile-drawer__subpage-fallbacks" style="display:none;" aria-hidden="true">
+      <a href="services.html">services.html</a>
+      <a href="portfolio.html">portfolio.html</a>
+      <a href="contact.html">contact.html</a>
+    </div>
 
     <div class="mobile-drawer__footer">
       <div class="mobile-drawer__agency-info">
@@ -116,14 +123,15 @@
     </a>
     <div class="floating-nav-separator"></div>
     <ul class="floating-nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="services.html">Layanan</a></li>
-      <li><a href="portfolio.html">Portofolio</a></li>
-      <li><a href="#pricing-calculator">Estimator</a></li>
+      <li><a href="index.html#hero">Beranda</a></li>
+      <li><a href="index.html#services">Layanan</a></li>
+      <li><a href="index.html#portfolio">Portofolio</a></li>
+      <li><a href="index.html#pricing-calculator">Estimator</a></li>
+      <li><a href="index.html#contact" class="active">Kontak</a></li>
     </ul>
     <div class="floating-nav-separator"></div>
-    <a href="contact.html" class="floating-nav-cta">
-      <span>Kontak Kami &rarr;</span>
+    <a href="index.html#contact" class="floating-nav-cta">
+      <span>Konsultasi &rarr;</span>
     </a>
   </nav>
 

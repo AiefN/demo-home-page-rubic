@@ -1,0 +1,628 @@
+{
+  "timestamp": "2026-11-11T08:36:03.600Z",
+  "summary": {
+    "total": 42,
+    "passed": 42,
+    "failed": 0
+  },
+  "sections": {
+    "1. Multi-Page Invariants & Deep Nav Transition": [
+      {
+        "testName": "Page index.html returns HTTP 200, valid DOM, 0 console errors",
+        "passed": true,
+        "details": {
+          "page": "index.html",
+          "pageInfo": {
+            "title": "Rubicweb — High-Performance Web Engineering & World-Class Design",
+            "readyState": "complete",
+            "hasHeader": true,
+            "hasFooter": true,
+            "bodyChildCount": 14
+          },
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Page services.html returns HTTP 200, valid DOM, 0 console errors",
+        "passed": true,
+        "details": {
+          "page": "services.html",
+          "pageInfo": {
+            "title": "Layanan & Workflow Rekayasa Web — Rubicweb",
+            "readyState": "complete",
+            "hasHeader": true,
+            "hasFooter": true,
+            "bodyChildCount": 14
+          },
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Page portfolio.html returns HTTP 200, valid DOM, 0 console errors",
+        "passed": true,
+        "details": {
+          "page": "portfolio.html",
+          "pageInfo": {
+            "title": "Portofolio Proyek & Studi Kasus Rekayasa Web — Rubicweb",
+            "readyState": "complete",
+            "hasHeader": true,
+            "hasFooter": true,
+            "bodyChildCount": 14
+          },
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Page contact.html returns HTTP 200, valid DOM, 0 console errors",
+        "passed": true,
+        "details": {
+          "page": "contact.html",
+          "pageInfo": {
+            "title": "Kontak & Konsultasi Rekayasa Web — Rubicweb",
+            "readyState": "complete",
+            "hasHeader": true,
+            "hasFooter": true,
+            "bodyChildCount": 13
+          },
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "In-page anchor targets exist (#hero, #services, #portfolio, #pricing-calculator, #contact)",
+        "passed": true,
+        "details": {
+          "hero": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "services": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "portfolio": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "pricing-calculator": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "contact": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          }
+        }
+      },
+      {
+        "testName": "All anchor sections have scroll-margin-top >= 80px clearance",
+        "passed": true,
+        "details": {
+          "hero": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "services": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "portfolio": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "pricing-calculator": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          },
+          "contact": {
+            "exists": true,
+            "tagName": "SECTION",
+            "scrollMarginTop": "100px"
+          }
+        }
+      },
+      {
+        "testName": "Header desktop nav links use in-page anchors (#services, #portfolio, #contact)",
+        "passed": true,
+        "details": [
+          {
+            "text": "Beranda",
+            "href": "#hero"
+          },
+          {
+            "text": "Layanan & Workflow",
+            "href": "#services"
+          },
+          {
+            "text": "Portofolio",
+            "href": "#portfolio"
+          },
+          {
+            "text": "Estimator Biaya",
+            "href": "#pricing-calculator"
+          },
+          {
+            "text": "Kontak & Konsultasi",
+            "href": "#contact"
+          }
+        ]
+      },
+      {
+        "testName": "Mobile drawer nav links use in-page anchors",
+        "passed": true,
+        "details": [
+          {
+            "text": "",
+            "href": "index.html"
+          },
+          {
+            "text": "Beranda",
+            "href": "#hero"
+          },
+          {
+            "text": "Layanan & Workflow",
+            "href": "#services"
+          },
+          {
+            "text": "Portofolio",
+            "href": "#portfolio"
+          },
+          {
+            "text": "Estimator Biaya",
+            "href": "#pricing-calculator"
+          },
+          {
+            "text": "Kontak & Konsultasi",
+            "href": "#contact"
+          },
+          {
+            "text": "services.html",
+            "href": "services.html"
+          },
+          {
+            "text": "portfolio.html",
+            "href": "portfolio.html"
+          },
+          {
+            "text": "contact.html",
+            "href": "contact.html"
+          },
+          {
+            "text": "Konsultasi via WhatsApp",
+            "href": "https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi."
+          }
+        ]
+      },
+      {
+        "testName": "Subpage services.html header & nav links point back to index.html#...",
+        "passed": true,
+        "details": {
+          "hasIndexServices": true,
+          "hasIndexContact": true,
+          "allLinks": [
+            "index.html#hero",
+            "index.html#services",
+            "index.html#portfolio",
+            "index.html#pricing-calculator",
+            "index.html#contact",
+            "index.html",
+            "index.html#hero",
+            "index.html#services",
+            "index.html#portfolio",
+            "index.html#pricing-calculator",
+            "index.html#contact",
+            "services.html",
+            "portfolio.html",
+            "contact.html",
+            "https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20layanan%20pembuatan%20website."
+          ]
+        }
+      }
+    ],
+    "2. In-Page #contact Form Validation & WhatsApp Integration": [
+      {
+        "testName": "Dedicated #contact consultation form elements fully rendered on index.html",
+        "passed": true,
+        "details": {
+          "sectionExists": true,
+          "formExists": true,
+          "hasName": true,
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasPackage": true,
+          "hasMessage": true,
+          "hasSubmit": true
+        }
+      },
+      {
+        "testName": "Empty form submit triggers validation on required fields and focuses #name",
+        "passed": true,
+        "details": {
+          "activeElementId": "name",
+          "nameInvalid": true,
+          "emailInvalid": true,
+          "phoneInvalid": true,
+          "messageInvalid": true,
+          "errorNameVisible": true,
+          "errorEmailVisible": true,
+          "errorPhoneVisible": true,
+          "errorMessageVisible": true
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"bad@\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "bad@",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"no-domain\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "no-domain",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"user spaces@domain.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "user spaces@domain.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"@nodomain.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "@nodomain.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"user@.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "user@.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"user@domain..com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "user@domain..com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected on index.html: \"<script>alert(1)</script>@test.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "<script>alert(1)</script>@test.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Valid email accepted on index.html: \"client@rubicweb.co.id\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "client@rubicweb.co.id",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid email accepted on index.html: \"john.doe+engineering@subdomain.tech.io\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "john.doe+engineering@subdomain.tech.io",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid email accepted on index.html: \"founder@enterprise-system.id\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "v": "founder@enterprise-system.id",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"0712345678\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "0712345678",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"0801234567\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "0801234567",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"08123\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "08123",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"08123456789012345\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "08123456789012345",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"+18005550199\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "+18005550199",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"08123abc456\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "08123abc456",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"' OR 1=1 --\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "' OR 1=1 --",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected on index.html: \"<script>081234567890</script>\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "<script>081234567890</script>",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Valid Indonesian phone accepted on index.html: \"+628123456789\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "+628123456789",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian phone accepted on index.html: \"6281234567890\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "6281234567890",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian phone accepted on index.html: \"08123456789\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "08123456789",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian phone accepted on index.html: \"+62 812 3456 7890\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "+62 812 3456 7890",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian phone accepted on index.html: \"0856-7890-1234\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "v": "0856-7890-1234",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Form submission generates formatted WhatsApp URI (wa.me/6285280008984) with brief details",
+        "passed": true,
+        "details": {
+          "openedUrl": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20Rian%20Hidayat%20(PT%20Solusi%20Finansial%20Indonesia).%20Saya%20ingin%20berkonsultasi%20mengenai%20Paket%20Enterprise%20%E2%80%94%20Custom%20Web%20App%20%26%20Portal%20(Mulai%20Rp%2012%20Jt).%20Ringkasan%20kebutuhan%3A%20Kami%20membutuhkan%20portal%20web%20corporate%20perbankan%20terintegrasi%20REST%20API%20%26%20ISO%2027001.",
+          "decodedMessage": "Halo Rubicweb, saya Rian Hidayat (PT Solusi Finansial Indonesia). Saya ingin berkonsultasi mengenai Paket Enterprise — Custom Web App & Portal (Mulai Rp 12 Jt). Ringkasan kebutuhan: Kami membutuhkan portal web corporate perbankan terintegrasi REST API & ISO 27001.",
+          "bannerVisible": true,
+          "bannerLink": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20Rian%20Hidayat%20(PT%20Solusi%20Finansial%20Indonesia).%20Saya%20ingin%20berkonsultasi%20mengenai%20Paket%20Enterprise%20%E2%80%94%20Custom%20Web%20App%20%26%20Portal%20(Mulai%20Rp%2012%20Jt).%20Ringkasan%20kebutuhan%3A%20Kami%20membutuhkan%20portal%20web%20corporate%20perbankan%20terintegrasi%20REST%20API%20%26%20ISO%2027001."
+        }
+      }
+    ],
+    "3. Package Bidirectional Sync": [
+      {
+        "testName": "Selecting \"Paket Basic\" in calculator synchronizes #package dropdown in consultation form",
+        "passed": true,
+        "details": {
+          "radioChecked": true,
+          "selectValue": "Paket Basic — Landing Page (Mulai Rp 2.5 Jt)"
+        }
+      },
+      {
+        "testName": "Selecting \"Paket Enterprise\" in calculator synchronizes #package dropdown in consultation form",
+        "passed": true,
+        "details": {
+          "radioChecked": true,
+          "selectValue": "Paket Enterprise — Custom Web App & Portal (Mulai Rp 12 Jt)"
+        }
+      },
+      {
+        "testName": "Selecting \"Paket Basic\" in #package dropdown synchronizes calculator tier radio button",
+        "passed": true,
+        "details": {
+          "selectValue": "Paket Basic — Landing Page (Mulai Rp 2.5 Jt)",
+          "basicChecked": true,
+          "proChecked": false,
+          "enterpriseChecked": false
+        }
+      }
+    ],
+    "4. Hero Corporate Profile Card": [
+      {
+        "testName": "Corporate card contains PT Rubic Kirana Solusindo branding, legal status, and SCBD Jakarta address",
+        "passed": true,
+        "details": {
+          "hasCompanyName": true,
+          "hasLegalEntity": true,
+          "hasGuarantee100": true,
+          "hasSourceCode": true,
+          "has250Projects": true,
+          "hasCoreWebVitals": true,
+          "hasBugFree": true,
+          "hasSCBDAddress": true,
+          "transformStyle": "perspective(1000px) rotateX(-6deg) rotateY(5.96deg) scale3d(1.02, 1.02, 1.02)",
+          "hasTransform": true
+        }
+      },
+      {
+        "testName": "Corporate card contains all 5 executive guarantees and performance metrics",
+        "passed": true,
+        "details": {
+          "hasCompanyName": true,
+          "hasLegalEntity": true,
+          "hasGuarantee100": true,
+          "hasSourceCode": true,
+          "has250Projects": true,
+          "hasCoreWebVitals": true,
+          "hasBugFree": true,
+          "hasSCBDAddress": true,
+          "transformStyle": "perspective(1000px) rotateX(-6deg) rotateY(5.96deg) scale3d(1.02, 1.02, 1.02)",
+          "hasTransform": true
+        }
+      },
+      {
+        "testName": "Corporate card executes smooth 3D perspective tilt without GPU rasterization stalls",
+        "passed": true,
+        "details": {
+          "transform": "perspective(1000px) rotateX(-6deg) rotateY(5.96deg) scale3d(1.02, 1.02, 1.02)"
+        }
+      }
+    ],
+    "5. Console Integrity": [
+      {
+        "testName": "Zero unhandled exceptions or console.error calls across entire challenge suite",
+        "passed": true,
+        "details": {
+          "errors": []
+        }
+      }
+    ]
+  },
+  "consoleErrors": [],
+  "verdict": "APPROVE"
+}

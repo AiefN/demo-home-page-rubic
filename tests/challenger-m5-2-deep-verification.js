@@ -267,7 +267,7 @@ class ComprehensiveChallengerHarness {
       if (!toggle) return { error: 'Navbar toggle button missing' };
       toggle.click();
       const menuOpen = document.querySelector('.mobile-menu.is-open');
-      const servicesLink = document.querySelector('.mobile-menu a[href*="services.html"]');
+      const servicesLink = document.querySelector('.mobile-menu a[href*="services.html"], .mobile-menu a[href*="services"]');
       if (!servicesLink) return { error: 'Services link missing in mobile menu' };
       return {
         menuOpened: !!menuOpen,

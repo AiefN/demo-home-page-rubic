@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T07:20:45.842Z",
+  "timestamp": "2026-11-11T08:34:37.931Z",
   "options": {
     "tiers": [
       1,
@@ -17,7 +17,7 @@
     "totalTests": 204,
     "passed": 204,
     "failed": 0,
-    "durationMs": 48900
+    "durationMs": 44222
   },
   "suites": [
     {
@@ -26,38 +26,38 @@
         {
           "name": "1.1 index.html returns HTTP 200 and loads valid HTML5 doctype",
           "status": "passed",
-          "durationMs": 569,
+          "durationMs": 609,
           "error": null
         },
         {
           "name": "1.2 services.html returns HTTP 200 with viewport meta tag",
           "status": "passed",
-          "durationMs": 156,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "1.3 portfolio.html returns HTTP 200 with viewport meta tag",
           "status": "passed",
-          "durationMs": 140,
+          "durationMs": 213,
           "error": null
         },
         {
           "name": "1.4 contact.html returns HTTP 200 with viewport meta tag",
           "status": "passed",
-          "durationMs": 157,
+          "durationMs": 153,
           "error": null
         },
         {
           "name": "1.5 Core CSS stylesheets link correctly and produce no 404 network errors",
           "status": "passed",
-          "durationMs": 171,
+          "durationMs": 170,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1194
+      "durationMs": 1306
     },
     {
       "name": "Tier 1 - Feature 2: Pure HTML/CSS/JS (Zero External Frameworks)",
@@ -65,38 +65,38 @@
         {
           "name": "2.1 No external JS framework scripts loaded",
           "status": "passed",
-          "durationMs": 156,
+          "durationMs": 164,
           "error": null
         },
         {
           "name": "2.2 No external CSS framework stylesheets linked",
           "status": "passed",
-          "durationMs": 156,
+          "durationMs": 162,
           "error": null
         },
         {
           "name": "2.3 Global window scope is pure vanilla with zero library pollution",
           "status": "passed",
-          "durationMs": 156,
+          "durationMs": 166,
           "error": null
         },
         {
           "name": "2.4 Page loads cleanly with zero console runtime errors",
           "status": "passed",
-          "durationMs": 154,
+          "durationMs": 172,
           "error": null
         },
         {
           "name": "2.5 CSS custom property design tokens are declared on document root",
           "status": "passed",
-          "durationMs": 144,
+          "durationMs": 180,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 766
+      "durationMs": 844
     },
     {
       "name": "Tier 1 - Feature 3: Responsive Layouts (320px, 768px, 1440px)",
@@ -104,38 +104,38 @@
         {
           "name": "3.1 Mobile Viewport (320px): Zero horizontal scroll overflow across all 4 pages",
           "status": "passed",
-          "durationMs": 792,
+          "durationMs": 853,
           "error": null
         },
         {
           "name": "3.2 Tablet Viewport (768px): Zero horizontal scroll overflow across all 4 pages",
           "status": "passed",
-          "durationMs": 799,
+          "durationMs": 848,
           "error": null
         },
         {
           "name": "3.3 Desktop Viewport (1440px): Zero horizontal scroll overflow across all 4 pages",
           "status": "passed",
-          "durationMs": 878,
+          "durationMs": 676,
           "error": null
         },
         {
           "name": "3.4 Mobile Viewport (320px): Mobile menu toggle button is present in DOM",
           "status": "passed",
-          "durationMs": 251,
+          "durationMs": 213,
           "error": null
         },
         {
           "name": "3.5 Desktop Viewport (1440px): Desktop navigation is available and rendered",
           "status": "passed",
-          "durationMs": 298,
+          "durationMs": 254,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 3019
+      "durationMs": 2845
     },
     {
       "name": "Tier 1 - Feature 4: Hero Section, Badge & CTAs",
@@ -143,38 +143,38 @@
         {
           "name": "4.1 Hero section element is rendered with proper semantics",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 175,
           "error": null
         },
         {
           "name": "4.2 Hero editorial H1 heading is visible and contains engineering copy",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 163,
           "error": null
         },
         {
           "name": "4.3 Guarantee pill badge is present with satisfaction / money-back copy",
           "status": "passed",
-          "durationMs": 209,
+          "durationMs": 171,
           "error": null
         },
         {
           "name": "4.4 Primary WhatsApp consultation CTA is present with contact link",
           "status": "passed",
-          "durationMs": 174,
+          "durationMs": 190,
           "error": null
         },
         {
           "name": "4.5 Secondary Portfolio exploration CTA is present",
           "status": "passed",
-          "durationMs": 172,
+          "durationMs": 186,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 928
+      "durationMs": 886
     },
     {
       "name": "Tier 1 - Feature 5: Custom Trailing Cursor",
@@ -182,38 +182,38 @@
         {
           "name": "5.1 Custom cursor DOM elements or styling exist",
           "status": "passed",
-          "durationMs": 184,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "5.2 Cursor tracks coordinates on mousemove event",
           "status": "passed",
-          "durationMs": 190,
+          "durationMs": 174,
           "error": null
         },
         {
           "name": "5.3 Interactive element hover triggers cursor hover expansion",
           "status": "passed",
-          "durationMs": 183,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "5.4 Mouseleave removes cursor hover expansion class",
           "status": "passed",
-          "durationMs": 180,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "5.5 Touch media query (@media (hover: none)) keeps page operable without cursor blocking",
           "status": "passed",
-          "durationMs": 279,
+          "durationMs": 249,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1016
+      "durationMs": 908
     },
     {
       "name": "Tier 1 - Feature 6: 4 Core Services & Tech Badges",
@@ -221,38 +221,38 @@
         {
           "name": "6.1 Services section renders at least 4 core agency service cards",
           "status": "passed",
-          "durationMs": 178,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "6.2 Technology badges or stack pills are present on services",
           "status": "passed",
-          "durationMs": 193,
+          "durationMs": 162,
           "error": null
         },
         {
           "name": "6.3 Service cards contain descriptive deliverables or scope",
           "status": "passed",
-          "durationMs": 241,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "6.4 Service cards include interactive triggers or action links",
           "status": "passed",
-          "durationMs": 183,
+          "durationMs": 165,
           "error": null
         },
         {
           "name": "6.5 Service cards use semantic headings (h3 or h4)",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 169,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 982
+      "durationMs": 830
     },
     {
       "name": "Tier 1 - Feature 7: 3D Card Tilt & Border Glare",
@@ -260,38 +260,38 @@
         {
           "name": "7.1 Tilt card elements exist in DOM with 3D or spotlight classes",
           "status": "passed",
-          "durationMs": 169,
+          "durationMs": 218,
           "error": null
         },
         {
           "name": "7.2 Mouse movement calculates dynamic coordinates on card",
           "status": "passed",
-          "durationMs": 175,
+          "durationMs": 170,
           "error": null
         },
         {
           "name": "7.3 3D perspective or tilt transformation responds to mouse position",
           "status": "passed",
-          "durationMs": 168,
+          "durationMs": 164,
           "error": null
         },
         {
           "name": "7.4 Mouseleave resets tilt transform or removes active highlight",
           "status": "passed",
-          "durationMs": 196,
+          "durationMs": 162,
           "error": null
         },
         {
           "name": "7.5 Specular border glow or radial gradient element is supported",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 160,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 894
+      "durationMs": 875
     },
     {
       "name": "Tier 1 - Feature 8: Trust Pillars & Stats Counters",
@@ -299,38 +299,38 @@
         {
           "name": "8.1 Trust pillars or guarantees cards are present in document",
           "status": "passed",
-          "durationMs": 196,
+          "durationMs": 165,
           "error": null
         },
         {
           "name": "8.2 Stats counter elements exist with numeric target attributes",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 174,
           "error": null
         },
         {
           "name": "8.3 Scrolling stats into viewport initiates animated counting",
           "status": "passed",
-          "durationMs": 796,
+          "durationMs": 791,
           "error": null
         },
         {
           "name": "8.4 Counter reaches non-zero numeric value after animation completes",
           "status": "passed",
-          "durationMs": 1387,
+          "durationMs": 1370,
           "error": null
         },
         {
           "name": "8.5 Counter preserves metric suffix (+, %, ms)",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 177,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 2753
+      "durationMs": 2677
     },
     {
       "name": "Tier 1 - Feature 9: Filterable Portfolio Gallery",
@@ -338,38 +338,38 @@
         {
           "name": "9.1 Portfolio showcase section is rendered with multiple project items",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "9.2 Category filter buttons or tabs are present in portfolio section",
           "status": "passed",
-          "durationMs": 170,
+          "durationMs": 179,
           "error": null
         },
         {
           "name": "9.3 Clicking filter button updates active state without reloading page",
           "status": "passed",
-          "durationMs": 163,
+          "durationMs": 172,
           "error": null
         },
         {
           "name": "9.4 Portfolio cards display tech stack or technology badges",
           "status": "passed",
-          "durationMs": 168,
+          "durationMs": 163,
           "error": null
         },
         {
           "name": "9.5 Portfolio project items feature action links or modal trigger buttons",
           "status": "passed",
-          "durationMs": 190,
+          "durationMs": 156,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 878
+      "durationMs": 837
     },
     {
       "name": "Tier 1 - Feature 10: Case Study Modal Previews",
@@ -377,38 +377,38 @@
         {
           "name": "10.1 Modal container or dialog exists in DOM",
           "status": "passed",
-          "durationMs": 206,
+          "durationMs": 160,
           "error": null
         },
         {
           "name": "10.2 Clicking modal trigger reveals case study modal overlay",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 173,
           "error": null
         },
         {
           "name": "10.3 Modal structure contains title, description, and metrics sections",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 183,
           "error": null
         },
         {
           "name": "10.4 Close button dismisses case study modal",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 157,
           "error": null
         },
         {
           "name": "10.5 Escape key event handler is wired for modal dismissal",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 159,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 952
+      "durationMs": 833
     },
     {
       "name": "Tier 1 - Feature 11: Dynamic Pricing Calculator",
@@ -416,38 +416,38 @@
         {
           "name": "11.1 Pricing calculator or estimator component exists in DOM",
           "status": "passed",
-          "durationMs": 172,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "11.2 Package tier options (Basic / Pro / Enterprise) are selectable",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 163,
           "error": null
         },
         {
           "name": "11.3 Extra pages slider or numeric adjustment input is interactive",
           "status": "passed",
-          "durationMs": 173,
+          "durationMs": 176,
           "error": null
         },
         {
           "name": "11.4 Calculator outputs dynamically formatted price or timeline estimate",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 165,
           "error": null
         },
         {
           "name": "11.5 Consultation CTA generates WhatsApp inquiry link",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 159,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 907
+      "durationMs": 823
     },
     {
       "name": "Tier 1 - Feature 12: Auto-Scrolling Testimonial Carousel",
@@ -455,38 +455,38 @@
         {
           "name": "12.1 Testimonials section or carousel track exists in DOM",
           "status": "passed",
-          "durationMs": 193,
+          "durationMs": 176,
           "error": null
         },
         {
           "name": "12.2 Testimonial cards contain client names and endorsements",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 166,
           "error": null
         },
         {
           "name": "12.3 5-star rating or quality score indicators are rendered",
           "status": "passed",
-          "durationMs": 196,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "12.4 Carousel navigation buttons (next/prev) exist",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 172,
           "error": null
         },
         {
           "name": "12.5 Hovering over carousel pauses auto-scroll",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 175,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 949
+      "durationMs": 857
     },
     {
       "name": "Tier 1 - Feature 13: Single-Active FAQ Accordion",
@@ -494,38 +494,38 @@
         {
           "name": "13.1 FAQ section contains multiple agency questions",
           "status": "passed",
-          "durationMs": 202,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "13.2 Clicking FAQ header expands corresponding answer",
           "status": "passed",
-          "durationMs": 189,
+          "durationMs": 173,
           "error": null
         },
         {
           "name": "13.3 Opening a second FAQ item enforces single-active expansion",
           "status": "passed",
-          "durationMs": 206,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "13.4 Clicking an active FAQ item collapses it",
           "status": "passed",
-          "durationMs": 267,
+          "durationMs": 183,
           "error": null
         },
         {
           "name": "13.5 FAQ items maintain accessible headings or buttons",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 175,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1049
+      "durationMs": 866
     },
     {
       "name": "Tier 1 - Feature 14: Dynamic Navbar & Mobile Menu",
@@ -533,7 +533,7 @@
         {
           "name": "14.1 Site header and navigation bar exist in DOM",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 166,
           "error": null
         },
         {
@@ -545,26 +545,26 @@
         {
           "name": "14.3 Mobile menu toggle opens drawer navigation",
           "status": "passed",
-          "durationMs": 194,
+          "durationMs": 188,
           "error": null
         },
         {
           "name": "14.4 Opening mobile drawer locks body scrolling",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 256,
           "error": null
         },
         {
           "name": "14.5 Clicking drawer nav link or close button restores state",
           "status": "passed",
-          "durationMs": 195,
+          "durationMs": 175,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1152
+      "durationMs": 1174
     },
     {
       "name": "Tier 1 - Feature 15: 6-Stage Services Workflow Timeline",
@@ -572,38 +572,38 @@
         {
           "name": "15.1 Services page displays workflow timeline stages",
           "status": "passed",
-          "durationMs": 171,
+          "durationMs": 160,
           "error": null
         },
         {
           "name": "15.2 Timeline steps display numbering and step titles",
           "status": "passed",
-          "durationMs": 171,
+          "durationMs": 148,
           "error": null
         },
         {
           "name": "15.3 Visual progress or timeline container structure is rendered",
           "status": "passed",
-          "durationMs": 154,
+          "durationMs": 139,
           "error": null
         },
         {
           "name": "15.4 Deliverables breakdown is presented for services",
           "status": "passed",
-          "durationMs": 171,
+          "durationMs": 141,
           "error": null
         },
         {
           "name": "15.5 Consultation CTA is prominent on services page",
           "status": "passed",
-          "durationMs": 159,
+          "durationMs": 148,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 826
+      "durationMs": 736
     },
     {
       "name": "Tier 1 - Feature 16: Contact Consultation Form Inline Validation",
@@ -611,38 +611,38 @@
         {
           "name": "16.1 Contact consultation form rendered with input fields",
           "status": "passed",
-          "durationMs": 173,
+          "durationMs": 153,
           "error": null
         },
         {
           "name": "16.2 Inline email validation flags invalid email addresses",
           "status": "passed",
-          "durationMs": 160,
+          "durationMs": 147,
           "error": null
         },
         {
           "name": "16.3 Inline phone validation verifies Indonesian number formats",
           "status": "passed",
-          "durationMs": 165,
+          "durationMs": 146,
           "error": null
         },
         {
           "name": "16.4 Entering valid email and phone clears error indicators",
           "status": "passed",
-          "durationMs": 172,
+          "durationMs": 158,
           "error": null
         },
         {
           "name": "16.5 Form submission with empty required fields shows validation feedback",
           "status": "passed",
-          "durationMs": 161,
+          "durationMs": 149,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 831
+      "durationMs": 753
     },
     {
       "name": "Tier 1 - Feature 17: Floating WhatsApp Ripple Button",
@@ -650,38 +650,38 @@
         {
           "name": "17.1 Floating WhatsApp button exists in DOM",
           "status": "passed",
-          "durationMs": 198,
+          "durationMs": 172,
           "error": null
         },
         {
           "name": "17.2 Continuous ripple or pulse animation is defined for WhatsApp CTA",
           "status": "passed",
-          "durationMs": 181,
+          "durationMs": 220,
           "error": null
         },
         {
           "name": "17.3 Floating button provides accessible aria-label or title",
           "status": "passed",
-          "durationMs": 205,
+          "durationMs": 175,
           "error": null
         },
         {
           "name": "17.4 Button contains valid WhatsApp API or wa.me URL",
           "status": "passed",
-          "durationMs": 199,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "17.5 Button maintains fixed or sticky positioning in bottom corner",
           "status": "passed",
-          "durationMs": 178,
+          "durationMs": 172,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 963
+      "durationMs": 907
     },
     {
       "name": "Tier 1 - Feature 18: Agency Information & Legal Footer",
@@ -689,38 +689,38 @@
         {
           "name": "18.1 Semantic <footer> element exists in DOM",
           "status": "passed",
-          "durationMs": 171,
+          "durationMs": 161,
           "error": null
         },
         {
           "name": "18.2 Official company entity name is displayed",
           "status": "passed",
-          "durationMs": 202,
+          "durationMs": 163,
           "error": null
         },
         {
           "name": "18.3 SCBD Jakarta address or location information is rendered",
           "status": "passed",
-          "durationMs": 190,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "18.4 Footer links and copyright notice are present",
           "status": "passed",
-          "durationMs": 183,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "18.5 Footer layout causes zero horizontal overflow on 320px mobile viewport",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 177,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 933
+      "durationMs": 828
     },
     {
       "name": "Tier 2 - Boundary 1: Multi-Page Navigation & Routing Edge Cases",
@@ -728,38 +728,38 @@
         {
           "name": "B1.1 Hash navigation to non-existent anchor does not trigger unhandled exception",
           "status": "passed",
-          "durationMs": 93,
+          "durationMs": 102,
           "error": null
         },
         {
           "name": "B1.2 URL with encoded query string parameters loads cleanly",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 210,
           "error": null
         },
         {
           "name": "B1.3 Trailing and duplicate path slashes resolve properly",
           "status": "passed",
-          "durationMs": 174,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "B1.4 Direct deep-anchor navigation resolves to corresponding section target",
           "status": "passed",
-          "durationMs": 94,
+          "durationMs": 101,
           "error": null
         },
         {
           "name": "B1.5 Rapid hash changes do not cause history or scroll crashes",
           "status": "passed",
-          "durationMs": 210,
+          "durationMs": 176,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 760
+      "durationMs": 756
     },
     {
       "name": "Tier 2 - Boundary 2: Vanilla Stack Integrity & Resilience",
@@ -767,38 +767,38 @@
         {
           "name": "B2.1 Critical markup uses standard event listeners without inline JS injection attributes",
           "status": "passed",
-          "durationMs": 194,
+          "durationMs": 172,
           "error": null
         },
         {
           "name": "B2.2 Execution context does not use deprecated document.write",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "B2.3 No unauthorized external script tags injected into DOM",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 154,
           "error": null
         },
         {
           "name": "B2.4 CSS tokens declare fallback values for theme variables",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 161,
           "error": null
         },
         {
           "name": "B2.5 Zero unhandled promise rejections on window",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 156,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 938
+      "durationMs": 811
     },
     {
       "name": "Tier 2 - Boundary 3: Extreme Viewports & Dynamic Resizing",
@@ -806,38 +806,38 @@
         {
           "name": "B3.1 Ultra-narrow 280px viewport (Galaxy Fold cover): Zero horizontal overflow",
           "status": "passed",
-          "durationMs": 211,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "B3.2 Small mobile 360px viewport: Zero horizontal overflow",
           "status": "passed",
-          "durationMs": 218,
+          "durationMs": 180,
           "error": null
         },
         {
           "name": "B3.3 Tablet landscape 1024px viewport: Zero horizontal overflow",
           "status": "passed",
-          "durationMs": 373,
+          "durationMs": 272,
           "error": null
         },
         {
           "name": "B3.4 4K Ultra-wide 2560px viewport: Content honors container max-width constraints",
           "status": "passed",
-          "durationMs": 289,
+          "durationMs": 220,
           "error": null
         },
         {
           "name": "B3.5 Dynamic resize stress: 1440px -> 320px -> 1440px adjusts seamlessly",
           "status": "passed",
-          "durationMs": 552,
+          "durationMs": 480,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1643
+      "durationMs": 1319
     },
     {
       "name": "Tier 2 - Boundary 4: Hero Interactions & Accessibility Boundaries",
@@ -845,38 +845,38 @@
         {
           "name": "B4.1 Rapid clicks on Hero CTA do not throw runtime exceptions",
           "status": "passed",
-          "durationMs": 212,
+          "durationMs": 180,
           "error": null
         },
         {
           "name": "B4.2 Hero editorial H1 text wraps cleanly on 320px viewport without clipping",
           "status": "passed",
-          "durationMs": 247,
+          "durationMs": 254,
           "error": null
         },
         {
           "name": "B4.3 Reduced-motion media query respect suppresses aggressive keyframes",
           "status": "passed",
-          "durationMs": 242,
+          "durationMs": 176,
           "error": null
         },
         {
           "name": "B4.4 Hero CTA elements receive visible keyboard focus state",
           "status": "passed",
-          "durationMs": 195,
+          "durationMs": 176,
           "error": null
         },
         {
           "name": "B4.5 High-frequency mousemove events across Hero do not throw errors",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 172,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1082
+      "durationMs": 960
     },
     {
       "name": "Tier 2 - Boundary 5: Custom Cursor Edge Cases & Pointer Boundary",
@@ -884,38 +884,38 @@
         {
           "name": "B5.1 Mouse leaving browser viewport does not produce NaN coordinates",
           "status": "passed",
-          "durationMs": 169,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "B5.2 Hovering disabled interactive elements handles state gracefully",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 176,
           "error": null
         },
         {
           "name": "B5.3 High-speed diagonal mouse sweep calculates finite numbers without NaN",
           "status": "passed",
-          "durationMs": 188,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "B5.4 Cursor pointer events do not block form input clicks",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 151,
           "error": null
         },
         {
           "name": "B5.5 Touch device emulation leaves standard tap navigation fully functional",
           "status": "passed",
-          "durationMs": 336,
+          "durationMs": 239,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1066
+      "durationMs": 893
     },
     {
       "name": "Tier 2 - Boundary 6: Service Cards Boundary & Overflow Resilience",
@@ -923,19 +923,19 @@
         {
           "name": "B6.1 Rapid hover transitions across all service cards complete without errors",
           "status": "passed",
-          "durationMs": 181,
+          "durationMs": 182,
           "error": null
         },
         {
           "name": "B6.2 Service card content is bounded without vertical or horizontal overflow",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 166,
           "error": null
         },
         {
           "name": "B6.3 Keyboard focus transitions sequentially through all service action triggers",
           "status": "passed",
-          "durationMs": 189,
+          "durationMs": 186,
           "error": null
         },
         {
@@ -947,14 +947,14 @@
         {
           "name": "B6.5 Service technology badges wrap gracefully without overflowing card boundaries on mobile",
           "status": "passed",
-          "durationMs": 575,
+          "durationMs": 421,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1307
+      "durationMs": 1132
     },
     {
       "name": "Tier 2 - Boundary 7: 3D Tilt Physics & Angle Clamping",
@@ -962,224 +962,29 @@
         {
           "name": "B7.1 Tilt calculation at extreme card corners clamps to safe maximum angle",
           "status": "passed",
-          "durationMs": 208,
+          "durationMs": 170,
           "error": null
         },
         {
           "name": "B7.2 Rapid enter/exit cycles do not leave stuck rotation transform",
           "status": "passed",
-          "durationMs": 182,
+          "durationMs": 156,
           "error": null
         },
         {
           "name": "B7.3 Touch scroll over tilt cards does not hijack native scroll motion",
           "status": "passed",
-          "durationMs": 268,
+          "durationMs": 234,
           "error": null
         },
         {
           "name": "B7.4 Dynamic card resize updates tilt bounding rectangle without NaN",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 180,
           "error": null
         },
         {
           "name": "B7.5 Specular glare CSS position variables remain within finite bounds",
-          "status": "passed",
-          "durationMs": 186,
-          "error": null
-        }
-      ],
-      "passed": 5,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 1032
-    },
-    {
-      "name": "Tier 2 - Boundary 8: Stats Counter Observer & Decimal Precision",
-      "tests": [
-        {
-          "name": "B8.1 Rapid viewport scroll past stats section does not produce NaN output",
-          "status": "passed",
-          "durationMs": 173,
-          "error": null
-        },
-        {
-          "name": "B8.2 Stats section already in viewport on load triggers animation immediately",
-          "status": "passed",
-          "durationMs": 700,
-          "error": null
-        },
-        {
-          "name": "B8.3 Decimal target values (e.g., 99.9%) maintain accurate floating point format",
-          "status": "passed",
-          "durationMs": 197,
-          "error": null
-        },
-        {
-          "name": "B8.4 Observer disconnects after initial trigger to prevent animation loop restarts",
-          "status": "passed",
-          "durationMs": 991,
-          "error": null
-        },
-        {
-          "name": "B8.5 Counters render valid placeholder or initial value before intersection trigger",
-          "status": "passed",
-          "durationMs": 188,
-          "error": null
-        }
-      ],
-      "passed": 5,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 2249
-    },
-    {
-      "name": "Tier 2 - Boundary 9: Portfolio Filtering Edge Cases",
-      "tests": [
-        {
-          "name": "B9.1 Rapid clicking between filter tabs executes without error or race condition",
-          "status": "passed",
-          "durationMs": 190,
-          "error": null
-        },
-        {
-          "name": "B9.2 Filtering handles category selections gracefully without breaking DOM layout",
-          "status": "passed",
-          "durationMs": 188,
-          "error": null
-        },
-        {
-          "name": "B9.3 Returning to \"Semua\" filter restores full project collection",
-          "status": "passed",
-          "durationMs": 181,
-          "error": null
-        },
-        {
-          "name": "B9.4 Only one filter button holds active styling class at any time",
-          "status": "passed",
-          "durationMs": 179,
-          "error": null
-        },
-        {
-          "name": "B9.5 Filter buttons are keyboard accessible via Tab key focus",
-          "status": "passed",
-          "durationMs": 170,
-          "error": null
-        }
-      ],
-      "passed": 5,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 908
-    },
-    {
-      "name": "Tier 2 - Boundary 10: Case Study Modal Edge Cases & Focus Trap",
-      "tests": [
-        {
-          "name": "B10.1 Rapid open and dismiss cycles execute without DOM race errors",
-          "status": "passed",
-          "durationMs": 173,
-          "error": null
-        },
-        {
-          "name": "B10.2 Clicking inside modal content body does not trigger accidental backdrop close",
-          "status": "passed",
-          "durationMs": 190,
-          "error": null
-        },
-        {
-          "name": "B10.3 Clicking outer backdrop overlay dismisses modal",
-          "status": "passed",
-          "durationMs": 187,
-          "error": null
-        },
-        {
-          "name": "B10.4 Large case study content enables vertical scrolling within modal dialog",
-          "status": "passed",
-          "durationMs": 172,
-          "error": null
-        },
-        {
-          "name": "B10.5 Modal dialog traps keyboard focus or prevents unfocused background navigation",
-          "status": "passed",
-          "durationMs": 310,
-          "error": null
-        }
-      ],
-      "passed": 5,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 1032
-    },
-    {
-      "name": "Tier 2 - Boundary 11: Pricing Calculator Extreme Inputs & Math Boundary",
-      "tests": [
-        {
-          "name": "B11.1 Zero extra pages calculation does not deduct below baseline tier investment",
-          "status": "passed",
-          "durationMs": 186,
-          "error": null
-        },
-        {
-          "name": "B11.2 Maximum extra pages slider value formats large sums without scientific notation",
-          "status": "passed",
-          "durationMs": 186,
-          "error": null
-        },
-        {
-          "name": "B11.3 Unchecking all add-on checkboxes resets add-on cost components",
-          "status": "passed",
-          "durationMs": 204,
-          "error": null
-        },
-        {
-          "name": "B11.4 Rapid switching between package tiers recalculates accurately",
-          "status": "passed",
-          "durationMs": 183,
-          "error": null
-        },
-        {
-          "name": "B11.5 Generated WhatsApp consultation CTA URL is validly URI-encoded",
-          "status": "passed",
-          "durationMs": 184,
-          "error": null
-        }
-      ],
-      "passed": 5,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 944
-    },
-    {
-      "name": "Tier 2 - Boundary 12: Testimonial Carousel Navigation & Timer Boundaries",
-      "tests": [
-        {
-          "name": "B12.1 Rapid clicks on next button advance slides safely without out-of-bounds error",
-          "status": "passed",
-          "durationMs": 192,
-          "error": null
-        },
-        {
-          "name": "B12.2 Previous button at initial slide wraps or disables gracefully",
-          "status": "passed",
-          "durationMs": 182,
-          "error": null
-        },
-        {
-          "name": "B12.3 Resizing window during carousel operation preserves item dimensions",
-          "status": "passed",
-          "durationMs": 178,
-          "error": null
-        },
-        {
-          "name": "B12.4 Rapid hover toggles do not multiply concurrent timer intervals",
-          "status": "passed",
-          "durationMs": 188,
-          "error": null
-        },
-        {
-          "name": "B12.5 Touch swipe emulation on carousel advances or updates position",
           "status": "passed",
           "durationMs": 172,
           "error": null
@@ -1191,18 +996,213 @@
       "durationMs": 912
     },
     {
+      "name": "Tier 2 - Boundary 8: Stats Counter Observer & Decimal Precision",
+      "tests": [
+        {
+          "name": "B8.1 Rapid viewport scroll past stats section does not produce NaN output",
+          "status": "passed",
+          "durationMs": 162,
+          "error": null
+        },
+        {
+          "name": "B8.2 Stats section already in viewport on load triggers animation immediately",
+          "status": "passed",
+          "durationMs": 709,
+          "error": null
+        },
+        {
+          "name": "B8.3 Decimal target values (e.g., 99.9%) maintain accurate floating point format",
+          "status": "passed",
+          "durationMs": 173,
+          "error": null
+        },
+        {
+          "name": "B8.4 Observer disconnects after initial trigger to prevent animation loop restarts",
+          "status": "passed",
+          "durationMs": 955,
+          "error": null
+        },
+        {
+          "name": "B8.5 Counters render valid placeholder or initial value before intersection trigger",
+          "status": "passed",
+          "durationMs": 173,
+          "error": null
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 2172
+    },
+    {
+      "name": "Tier 2 - Boundary 9: Portfolio Filtering Edge Cases",
+      "tests": [
+        {
+          "name": "B9.1 Rapid clicking between filter tabs executes without error or race condition",
+          "status": "passed",
+          "durationMs": 160,
+          "error": null
+        },
+        {
+          "name": "B9.2 Filtering handles category selections gracefully without breaking DOM layout",
+          "status": "passed",
+          "durationMs": 164,
+          "error": null
+        },
+        {
+          "name": "B9.3 Returning to \"Semua\" filter restores full project collection",
+          "status": "passed",
+          "durationMs": 179,
+          "error": null
+        },
+        {
+          "name": "B9.4 Only one filter button holds active styling class at any time",
+          "status": "passed",
+          "durationMs": 157,
+          "error": null
+        },
+        {
+          "name": "B9.5 Filter buttons are keyboard accessible via Tab key focus",
+          "status": "passed",
+          "durationMs": 160,
+          "error": null
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 820
+    },
+    {
+      "name": "Tier 2 - Boundary 10: Case Study Modal Edge Cases & Focus Trap",
+      "tests": [
+        {
+          "name": "B10.1 Rapid open and dismiss cycles execute without DOM race errors",
+          "status": "passed",
+          "durationMs": 169,
+          "error": null
+        },
+        {
+          "name": "B10.2 Clicking inside modal content body does not trigger accidental backdrop close",
+          "status": "passed",
+          "durationMs": 178,
+          "error": null
+        },
+        {
+          "name": "B10.3 Clicking outer backdrop overlay dismisses modal",
+          "status": "passed",
+          "durationMs": 160,
+          "error": null
+        },
+        {
+          "name": "B10.4 Large case study content enables vertical scrolling within modal dialog",
+          "status": "passed",
+          "durationMs": 167,
+          "error": null
+        },
+        {
+          "name": "B10.5 Modal dialog traps keyboard focus or prevents unfocused background navigation",
+          "status": "passed",
+          "durationMs": 287,
+          "error": null
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 961
+    },
+    {
+      "name": "Tier 2 - Boundary 11: Pricing Calculator Extreme Inputs & Math Boundary",
+      "tests": [
+        {
+          "name": "B11.1 Zero extra pages calculation does not deduct below baseline tier investment",
+          "status": "passed",
+          "durationMs": 161,
+          "error": null
+        },
+        {
+          "name": "B11.2 Maximum extra pages slider value formats large sums without scientific notation",
+          "status": "passed",
+          "durationMs": 159,
+          "error": null
+        },
+        {
+          "name": "B11.3 Unchecking all add-on checkboxes resets add-on cost components",
+          "status": "passed",
+          "durationMs": 170,
+          "error": null
+        },
+        {
+          "name": "B11.4 Rapid switching between package tiers recalculates accurately",
+          "status": "passed",
+          "durationMs": 189,
+          "error": null
+        },
+        {
+          "name": "B11.5 Generated WhatsApp consultation CTA URL is validly URI-encoded",
+          "status": "passed",
+          "durationMs": 165,
+          "error": null
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 844
+    },
+    {
+      "name": "Tier 2 - Boundary 12: Testimonial Carousel Navigation & Timer Boundaries",
+      "tests": [
+        {
+          "name": "B12.1 Rapid clicks on next button advance slides safely without out-of-bounds error",
+          "status": "passed",
+          "durationMs": 159,
+          "error": null
+        },
+        {
+          "name": "B12.2 Previous button at initial slide wraps or disables gracefully",
+          "status": "passed",
+          "durationMs": 168,
+          "error": null
+        },
+        {
+          "name": "B12.3 Resizing window during carousel operation preserves item dimensions",
+          "status": "passed",
+          "durationMs": 156,
+          "error": null
+        },
+        {
+          "name": "B12.4 Rapid hover toggles do not multiply concurrent timer intervals",
+          "status": "passed",
+          "durationMs": 160,
+          "error": null
+        },
+        {
+          "name": "B12.5 Touch swipe emulation on carousel advances or updates position",
+          "status": "passed",
+          "durationMs": 177,
+          "error": null
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 820
+    },
+    {
       "name": "Tier 2 - Boundary 13: FAQ Accordion Boundaries & Keyboard Controls",
       "tests": [
         {
           "name": "B13.1 Clicking an already-expanded FAQ item collapses it to zero height",
           "status": "passed",
-          "durationMs": 222,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "B13.2 Rapid sequential clicks through all FAQ headers enforce single active expansion",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 156,
           "error": null
         },
         {
@@ -1214,20 +1214,20 @@
         {
           "name": "B13.4 FAQ answer containing links or formatting retains link interactivity",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 164,
           "error": null
         },
         {
           "name": "B13.5 Toggle icon rotation transform does not trigger layout thrashing",
           "status": "passed",
-          "durationMs": 177,
+          "durationMs": 174,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 944
+      "durationMs": 834
     },
     {
       "name": "Tier 2 - Boundary 14: Dynamic Navbar Hysteresis & Mobile Drawer Edge Cases",
@@ -1235,38 +1235,38 @@
         {
           "name": "B14.1 Rapid scroll oscillation does not produce visual jitter or errors",
           "status": "passed",
-          "durationMs": 189,
+          "durationMs": 162,
           "error": null
         },
         {
           "name": "B14.2 Pressing Escape key with mobile drawer open dismisses drawer",
           "status": "passed",
-          "durationMs": 205,
+          "durationMs": 180,
           "error": null
         },
         {
           "name": "B14.3 Resizing from mobile to desktop viewport automatically closes open drawer and restores body scroll",
           "status": "passed",
-          "durationMs": 492,
+          "durationMs": 403,
           "error": null
         },
         {
           "name": "B14.4 Mobile drawer locks background scroll and traps keyboard focus",
           "status": "passed",
-          "durationMs": 280,
+          "durationMs": 250,
           "error": null
         },
         {
           "name": "B14.5 Navbar hysteresis properly recognizes upward scroll delta to reveal navigation",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 165,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1353
+      "durationMs": 1160
     },
     {
       "name": "Tier 2 - Boundary 15: Workflow Timeline Mobile Stacking & Semantics",
@@ -1274,38 +1274,38 @@
         {
           "name": "B15.1 320px mobile viewport stacks timeline stages vertically without horizontal clipping",
           "status": "passed",
-          "durationMs": 206,
+          "durationMs": 191,
           "error": null
         },
         {
           "name": "B15.2 Timeline steps display stage numbers (01-06) clearly",
           "status": "passed",
-          "durationMs": 157,
+          "durationMs": 149,
           "error": null
         },
         {
           "name": "B15.3 Workflow descriptions contain comprehensive phase scope without text truncation",
           "status": "passed",
-          "durationMs": 157,
+          "durationMs": 148,
           "error": null
         },
         {
           "name": "B15.4 Deliverables lists use semantic unordered list markup",
           "status": "passed",
-          "durationMs": 164,
+          "durationMs": 135,
           "error": null
         },
         {
           "name": "B15.5 Timeline visual indicators and icons render without external CDN fonts or images",
           "status": "passed",
-          "durationMs": 158,
+          "durationMs": 148,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 842
+      "durationMs": 772
     },
     {
       "name": "Tier 2 - Boundary 16: Form Inline Validation Regex & Input Boundaries",
@@ -1313,38 +1313,38 @@
         {
           "name": "B16.1 Malformed email addresses without domain are rejected",
           "status": "passed",
-          "durationMs": 175,
+          "durationMs": 152,
           "error": null
         },
         {
           "name": "B16.2 Email with leading/trailing spaces or special chars is handled safely",
           "status": "passed",
-          "durationMs": 157,
+          "durationMs": 146,
           "error": null
         },
         {
           "name": "B16.3 Phone input containing letters or symbols is flagged as invalid",
           "status": "passed",
-          "durationMs": 157,
+          "durationMs": 150,
           "error": null
         },
         {
           "name": "B16.4 Phone validation supports Indonesian prefixes (+62, 62, 08)",
           "status": "passed",
-          "durationMs": 173,
+          "durationMs": 155,
           "error": null
         },
         {
           "name": "B16.5 Submitting empty form highlights all required fields simultaneously",
           "status": "passed",
-          "durationMs": 175,
+          "durationMs": 151,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 838
+      "durationMs": 755
     },
     {
       "name": "Tier 2 - Boundary 17: Floating WhatsApp Button Touch Target & Z-Index Boundary",
@@ -1352,38 +1352,38 @@
         {
           "name": "B17.1 Touch target size on mobile viewport meets accessibility guidelines (>= 44px)",
           "status": "passed",
-          "durationMs": 253,
+          "durationMs": 208,
           "error": null
         },
         {
           "name": "B17.2 Floating CTA maintains safe margins from screen edge",
           "status": "passed",
-          "durationMs": 185,
+          "durationMs": 170,
           "error": null
         },
         {
           "name": "B17.3 Ripple keyframe uses hardware accelerated transform or opacity properties",
           "status": "passed",
-          "durationMs": 205,
+          "durationMs": 168,
           "error": null
         },
         {
           "name": "B17.4 Floating CTA z-index does not obscure active modal dialogs",
           "status": "passed",
-          "durationMs": 183,
+          "durationMs": 164,
           "error": null
         },
         {
           "name": "B17.5 Floating CTA aria-label explicitly declares WhatsApp communication intention",
           "status": "passed",
-          "durationMs": 207,
+          "durationMs": 168,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 1034
+      "durationMs": 878
     },
     {
       "name": "Tier 2 - Boundary 18: Footer Accessibility & Legal Compliance Boundaries",
@@ -1391,38 +1391,38 @@
         {
           "name": "B18.1 All internal links in footer define non-empty navigation targets",
           "status": "passed",
-          "durationMs": 187,
+          "durationMs": 162,
           "error": null
         },
         {
           "name": "B18.2 Legal company name explicitly contains Rubic entity text",
           "status": "passed",
-          "durationMs": 204,
+          "durationMs": 248,
           "error": null
         },
         {
           "name": "B18.3 Address text mentions Jakarta or Indonesian operational location",
           "status": "passed",
-          "durationMs": 189,
+          "durationMs": 159,
           "error": null
         },
         {
           "name": "B18.4 Footer uses semantic HTML5 landmark <footer> tag",
           "status": "passed",
-          "durationMs": 186,
+          "durationMs": 167,
           "error": null
         },
         {
           "name": "B18.5 Footer text color contrast is readable against dark theme background",
           "status": "passed",
-          "durationMs": 182,
+          "durationMs": 171,
           "error": null
         }
       ],
       "passed": 5,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 948
+      "durationMs": 907
     },
     {
       "name": "Tier 3 - Combination 1: Dynamic Navbar Scroll & Pricing Calculator Interaction",
@@ -1430,14 +1430,14 @@
         {
           "name": "C1.1 Navbar scrolls and hides while calculator state is adjusted and retained",
           "status": "passed",
-          "durationMs": 513,
+          "durationMs": 499,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 513
+      "durationMs": 499
     },
     {
       "name": "Tier 3 - Combination 2: Portfolio Filter & Case Study Modal Opening",
@@ -1445,14 +1445,14 @@
         {
           "name": "C2.1 Filtering by category and opening modal shows case study for visible item",
           "status": "passed",
-          "durationMs": 220,
+          "durationMs": 164,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 220
+      "durationMs": 164
     },
     {
       "name": "Tier 3 - Combination 3: Case Study Modal & Mobile Menu Drawer Scroll Locking",
@@ -1460,14 +1460,14 @@
         {
           "name": "C3.1 Modal dialog and mobile drawer coordinate body scroll lock without overflow conflict",
           "status": "passed",
-          "durationMs": 234,
+          "durationMs": 198,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 235
+      "durationMs": 198
     },
     {
       "name": "Tier 3 - Combination 4: Pricing Calculator Selections & WhatsApp Pre-fill Sync",
@@ -1475,14 +1475,14 @@
         {
           "name": "C4.1 Modifying tier and add-ons synchronizes into WhatsApp inquiry message URL",
           "status": "passed",
-          "durationMs": 243,
+          "durationMs": 166,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 243
+      "durationMs": 166
     },
     {
       "name": "Tier 3 - Combination 5: Custom Trailing Cursor & 3D Tilt Card Interaction",
@@ -1490,14 +1490,14 @@
         {
           "name": "C5.1 Moving cursor over 3D tilt card triggers both follower expansion and 3D perspective rotation",
           "status": "passed",
-          "durationMs": 324,
+          "durationMs": 262,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 324
+      "durationMs": 262
     },
     {
       "name": "Tier 3 - Combination 6: FAQ Accordion Expansion & Stats Counter Viewport Trigger",
@@ -1505,14 +1505,14 @@
         {
           "name": "C6.1 Expanding FAQ items changes layout flow without crashing IntersectionObserver counters",
           "status": "passed",
-          "durationMs": 205,
+          "durationMs": 232,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 205
+      "durationMs": 233
     },
     {
       "name": "Tier 3 - Combination 7: Testimonial Carousel Auto-Scroll & Navbar Scroll Hysteresis",
@@ -1520,14 +1520,14 @@
         {
           "name": "C7.1 Page scroll hysteresis operates smoothly while testimonial carousel is running",
           "status": "passed",
-          "durationMs": 616,
+          "durationMs": 588,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 616
+      "durationMs": 588
     },
     {
       "name": "Tier 3 - Combination 8: Mobile Drawer Menu, Hash Jump & Portfolio Filter",
@@ -1535,14 +1535,14 @@
         {
           "name": "C8.1 Mobile drawer link navigates to portfolio anchor and applies category filter",
           "status": "passed",
-          "durationMs": 404,
+          "durationMs": 246,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 404
+      "durationMs": 246
     },
     {
       "name": "Tier 3 - Combination 9: Contact Form Error State & Calculator Toggle Independence",
@@ -1550,14 +1550,14 @@
         {
           "name": "C9.1 Toggling pricing calculator add-ons does not reset or corrupt contact form error validations",
           "status": "passed",
-          "durationMs": 239,
+          "durationMs": 171,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 239
+      "durationMs": 171
     },
     {
       "name": "Tier 3 - Combination 10: Service Modal Trigger, Escape Dismiss & Focus Restoration",
@@ -1565,14 +1565,14 @@
         {
           "name": "C10.1 Triggering modal and dismissing via Escape key restores keyboard focus to origin button",
           "status": "passed",
-          "durationMs": 209,
+          "durationMs": 159,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 209
+      "durationMs": 159
     },
     {
       "name": "Tier 3 - Combination 11: Reduced Motion Preference & Multi-Feature Animation Suppression",
@@ -1580,14 +1580,14 @@
         {
           "name": "C11.1 Reduced motion preference suppresses aggressive keyframes across cursor, tilt, and carousel",
           "status": "passed",
-          "durationMs": 191,
+          "durationMs": 173,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 192
+      "durationMs": 173
     },
     {
       "name": "Tier 3 - Combination 12: Floating WhatsApp Ripple CTA & Footer Visibility",
@@ -1595,14 +1595,14 @@
         {
           "name": "C12.1 Scrolling to bottom of document maintains floating CTA accessibility without obscuring legal disclaimer",
           "status": "passed",
-          "durationMs": 203,
+          "durationMs": 172,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 203
+      "durationMs": 172
     },
     {
       "name": "Tier 3 - Combination 13: Services Timeline & Dedicated Service Deliverables",
@@ -1610,14 +1610,14 @@
         {
           "name": "C13.1 Navigating from homepage services card to services.html timeline inspects deliverables",
           "status": "passed",
-          "durationMs": 169,
+          "durationMs": 157,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 169
+      "durationMs": 158
     },
     {
       "name": "Tier 3 - Combination 14: Category Filter Switching & Rapid Modal Inspection",
@@ -1625,14 +1625,14 @@
         {
           "name": "C14.1 Rapid switching between portfolio filters and opening case studies loads dynamic data",
           "status": "passed",
-          "durationMs": 190,
+          "durationMs": 163,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 190
+      "durationMs": 163
     },
     {
       "name": "Tier 3 - Combination 15: Valid Form Submission & WhatsApp CTA Redirection Sync",
@@ -1640,14 +1640,14 @@
         {
           "name": "C15.1 Valid form completion links smoothly to WhatsApp consultation trigger",
           "status": "passed",
-          "durationMs": 193,
+          "durationMs": 164,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 193
+      "durationMs": 164
     },
     {
       "name": "Tier 3 - Combination 16: Testimonial Carousel Keyboard Controls & Focus Trapping",
@@ -1655,14 +1655,14 @@
         {
           "name": "C16.1 Carousel buttons respond to keyboard navigation and Space/Enter keys",
           "status": "passed",
-          "durationMs": 213,
+          "durationMs": 165,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 213
+      "durationMs": 165
     },
     {
       "name": "Tier 3 - Combination 17: Dynamic Viewport Resize While FAQ Item Is Expanded",
@@ -1670,14 +1670,14 @@
         {
           "name": "C17.1 Expanding an FAQ accordion item on desktop and resizing to mobile recalculates height without text clipping",
           "status": "passed",
-          "durationMs": 521,
+          "durationMs": 449,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 521
+      "durationMs": 450
     },
     {
       "name": "Tier 3 - Combination 18: Cross-Page Sequential Navigation & Clean Console Assurance",
@@ -1685,14 +1685,14 @@
         {
           "name": "C18.1 Navigating sequentially through all 4 core pages produces zero console errors and zero asset 404s",
           "status": "passed",
-          "durationMs": 811,
+          "durationMs": 559,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 811
+      "durationMs": 559
     },
     {
       "name": "Tier 4 - Scenario 1: Complete Discovery Journey (Landing to Services Workflow)",
@@ -1700,14 +1700,14 @@
         {
           "name": "S1.1 End-to-end user discovery flow from homepage hero to services timeline inspection",
           "status": "passed",
-          "durationMs": 356,
+          "durationMs": 299,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 356
+      "durationMs": 299
     },
     {
       "name": "Tier 4 - Scenario 2: Project Cost Estimation to WhatsApp Consultation Journey",
@@ -1715,22 +1715,7 @@
         {
           "name": "S2.1 Prospective client configures custom web package and proceeds to WhatsApp inquiry",
           "status": "passed",
-          "durationMs": 251,
-          "error": null
-        }
-      ],
-      "passed": 1,
-      "failed": 0,
-      "skipped": 0,
-      "durationMs": 251
-    },
-    {
-      "name": "Tier 4 - Scenario 3: Enterprise Portfolio Filtering & Case Study Deep-Dive",
-      "tests": [
-        {
-          "name": "S3.1 Visitor navigates portfolio, filters by category, inspects case study modal, and returns",
-          "status": "passed",
-          "durationMs": 170,
+          "durationMs": 169,
           "error": null
         }
       ],
@@ -1740,19 +1725,34 @@
       "durationMs": 170
     },
     {
-      "name": "Tier 4 - Scenario 4: Mobile Consultation Journey & Inline Form Validation",
+      "name": "Tier 4 - Scenario 3: Enterprise Portfolio Filtering & Case Study Deep-Dive",
       "tests": [
         {
-          "name": "S4.1 Mobile visitor opens navigation drawer, navigates to contact, validates inline errors, and submits",
+          "name": "S3.1 Visitor navigates portfolio, filters by category, inspects case study modal, and returns",
           "status": "passed",
-          "durationMs": 447,
+          "durationMs": 156,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 447
+      "durationMs": 156
+    },
+    {
+      "name": "Tier 4 - Scenario 4: Mobile Consultation Journey & Inline Form Validation",
+      "tests": [
+        {
+          "name": "S4.1 Mobile visitor opens navigation drawer, navigates to contact, validates inline errors, and submits",
+          "status": "passed",
+          "durationMs": 354,
+          "error": null
+        }
+      ],
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 354
     },
     {
       "name": "Tier 4 - Scenario 5: Mobile Exploration, Testimonials & FAQ Journey",
@@ -1760,14 +1760,14 @@
         {
           "name": "S5.1 Mobile visitor browses hero, scrolls to stats, navigates carousel, and toggles FAQ items",
           "status": "passed",
-          "durationMs": 610,
+          "durationMs": 577,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 610
+      "durationMs": 577
     },
     {
       "name": "Tier 4 - Scenario 6: High-Stress Performance & Interaction Audit",
@@ -1775,14 +1775,14 @@
         {
           "name": "S6.1 Rapid event stress test (scrolls, mouse moves, tab clicks, resizes) maintains DOM integrity and zero console errors",
           "status": "passed",
-          "durationMs": 542,
+          "durationMs": 484,
           "error": null
         }
       ],
       "passed": 1,
       "failed": 0,
       "skipped": 0,
-      "durationMs": 542
+      "durationMs": 485
     }
   ]
 }
