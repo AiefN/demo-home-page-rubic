@@ -47,8 +47,8 @@
 
   /* Hairlines, Dividers & Structural Borders */
   --border-hairline: rgba(242, 242, 246, 0.08); /* 1px structural grid lines */
-  --border-subtle: rgba(242, 242, 246, 0.14);   /* Default card borders */
-  --border-hover: rgba(210, 254, 113, 0.40);    /* Card hover state */
+  --border-subtle: rgba(242, 242, 246, 0.12);   /* Default card borders */
+  --border-hover: rgba(210, 254, 113, 0.35);    /* Card hover state */
   --border-focus: rgba(210, 254, 113, 0.75);    /* Form focus & active state */
   --border-accent: rgba(210, 254, 113, 0.50);
 
@@ -87,6 +87,8 @@
   --shadow-glow: 0 0 32px rgba(210, 254, 113, 0.25);
   --shadow-subtle: var(--shadow-sm);
   --shadow-elevated: var(--shadow-md);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-card-hover: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 24px rgba(210, 254, 113, 0.10);
 
   /* Backdrop Blur */
   --blur-nav: blur(16px);
@@ -112,11 +114,12 @@
   --radius-full: 9999px;
 
   /* Layout Containers */
-  --container-max: 1320px;
+  --container-max: 1280px;
   --max-width: var(--container-max);
   --gutter: clamp(1.25rem, 3.5vw, 2.5rem);
   --container-padding: var(--gutter);
-  --section-spacing: clamp(65px, 7vw, 110px);
+  --section-spacing: clamp(70px, 8vw, 120px);
+  --section-spacing-sm: clamp(40px, 5vw, 64px);
 }
 
 /* --------------------------------------------------------------------------
@@ -308,10 +311,19 @@ code, kbd, samp, pre {
 .container-sm { max-width: 960px; }
 .container-lg { max-width: 1440px; }
 
-.section {
+.section,
+.section-padding,
+.services-section,
+.trust-section,
+.portfolio-section,
+.pricing-section,
+.testimonials-section,
+.faq-section {
   padding-top: var(--section-spacing);
   padding-bottom: var(--section-spacing);
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-header {
@@ -1033,6 +1045,16 @@ code, kbd, samp, pre {
 /* --------------------------------------------------------------------------
    8. 3D CARD PERSPECTIVE TILT & SPECULAR GLARE
    -------------------------------------------------------------------------- */
+/* --- SERVICES & CAPABILITIES GRID --- */
+.services-grid,
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .card-tilt-container,
 .perspective-container {
   perspective: 1000px;
@@ -1052,6 +1074,85 @@ code, kbd, samp, pre {
               border-color 0.3s ease,
               box-shadow 0.3s ease;
   overflow: hidden;
+}
+
+.service-card,
+.interactive-spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 32px 26px;
+  background: linear-gradient(175deg, rgba(26, 28, 36, 0.75) 0%, rgba(17, 18, 22, 0.95) 100%);
+  border: 1px solid var(--border-hairline);
+  box-shadow: var(--shadow-card);
+  box-sizing: border-box;
+}
+
+.service-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.service-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.service-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-xs);
+  color: var(--accent-primary);
+  letter-spacing: var(--tracking-widest);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.service-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.service-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.tech-stack-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.service-card-footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.service-link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--transition-fast);
+}
+
+.service-link:hover {
+  gap: 10px;
 }
 
 .card-tilt:hover,
@@ -1220,17 +1321,20 @@ code, kbd, samp, pre {
   margin-top: 48px;
 }
 
-.trust-pillar-card {
-  background-color: var(--bg-tertiary);
-  border: 1px solid var(--border-subtle);
+.trust-pillar-card,
+.trust-card {
+  background: linear-gradient(165deg, rgba(28, 30, 39, 0.6) 0%, rgba(18, 19, 25, 0.9) 100%);
+  border: 1px solid var(--border-hairline);
   border-radius: var(--radius-md);
-  padding: 28px 22px;
-  transition: all var(--transition-fast);
+  padding: 28px 24px;
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.trust-pillar-card:hover {
-  border-color: rgba(210, 254, 113, 0.35);
-  transform: translateY(-4px);
+.trust-pillar-card:hover,
+.trust-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(210, 254, 113, 0.08);
+  transform: translateY(-3px);
 }
 
 /* --------------------------------------------------------------------------
@@ -1288,16 +1392,17 @@ code, kbd, samp, pre {
 }
 
 .portfolio-card {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
+  background: linear-gradient(165deg, rgba(24, 25, 32, 0.8) 0%, rgba(17, 18, 22, 0.95) 100%);
+  border: 1px solid var(--border-hairline);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .portfolio-card:hover {
-  border-color: rgba(210, 254, 113, 0.45);
-  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
 }
 
 .portfolio-thumb,
@@ -2272,4 +2377,115 @@ button.faq-header,
 .footer-bottom-links {
   display: flex;
   gap: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   17. SUBPAGE ARCHITECTURAL HEADER SYSTEM & UTILITIES
+   -------------------------------------------------------------------------- */
+.page-hero-section {
+  padding-top: clamp(90px, 9vw, 120px);
+  padding-bottom: clamp(36px, 4vw, 54px);
+  position: relative;
+  border-bottom: 1px solid var(--border-hairline);
+  background: linear-gradient(180deg, rgba(22, 23, 29, 0.5) 0%, rgba(17, 18, 22, 0) 100%);
+}
+
+.breadcrumb-nav {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-text {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-muted);
+}
+
+.breadcrumb-text a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-text a:hover {
+  color: var(--accent-primary);
+}
+
+.page-header {
+  max-width: 860px;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tightest);
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.page-subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+
+.page-telemetry-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.page-telemetry-pill,
+.telemetry-pill {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-hairline);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color var(--transition-fast);
+}
+
+.page-telemetry-pill:hover,
+.telemetry-pill:hover {
+  border-color: rgba(210, 254, 113, 0.3);
+}
+
+.page-telemetry-pill .pill-dot,
+.telemetry-pill span:first-child:empty {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.contact-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.channel-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.channel-card:hover {
+  border-color: rgba(210, 254, 113, 0.35);
+  transform: translateY(-2px);
 }

@@ -1,0 +1,3521 @@
+{
+  "hero": [
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 7,
+      "code": "const hero = document.querySelector('#hero, .hero-section');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 14,
+      "code": "expect(heroInfo.exists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 15,
+      "code": "expect(heroInfo.tagName).toBe('section');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 21,
+      "code": "const h1 = document.querySelector('#hero h1, .hero-section h1');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 22,
+      "code": "return h1 ? h1.textContent.trim().toLowerCase() : '';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 31,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 32,
+      "code": "return text.includes('garansi') || text.includes('kepuasan') || text.includes('100%');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 35,
+      "code": "expect(hasGuarantee).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 41,
+      "code": "const ctas = Array.from(document.querySelectorAll('#hero a, .hero-section a'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 43,
+      "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 44,
+      "code": "const text = a.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 45,
+      "code": "return href.includes('wa.me') || href.includes('whatsapp') || href.includes('#contact') || text.includes('konsultasi') || text.includes('whatsapp');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 49,
+      "code": "expect(hasWaCta).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 55,
+      "code": "const ctas = Array.from(document.querySelectorAll('#hero a, .hero-section a'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 57,
+      "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 58,
+      "code": "const text = a.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 59,
+      "code": "return href.includes('portfolio') || href.includes('#portfolio') || text.includes('portofolio') || text.includes('portfolio');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 63,
+      "code": "expect(hasPortfolioCta).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-03-extreme-viewports.test.js",
+      "line": 42,
+      "code": "const main = document.querySelector('main, .container, #hero');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 7,
+      "code": "const cta = document.querySelector('#hero a, .hero-section a');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 12,
+      "code": "return cta.getAttribute('href') !== null;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 15,
+      "code": "expect(result).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 16,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 24,
+      "code": "const h1 = document.querySelector('#hero h1, .hero-section h1');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 30,
+      "code": "expect(withinBounds).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 43,
+      "code": "expect(reducedHonored).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 50,
+      "code": "const cta = document.querySelector('#hero a, .hero-section a');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 56,
+      "code": "expect(focusable).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 62,
+      "code": "const hero = document.querySelector('#hero, .hero-section');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 72,
+      "code": "const badge = hero.querySelector('.hero-badge-wrap, .hero-telemetry-bar');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 73,
+      "code": "return badge ? badge.style.transform.includes('translate3d') : true;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 76,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "line": 77,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "services": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 105,
+      "code": "const card = document.querySelector('.card-tilt, .service-card');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 570,
+      "code": "const modal = document.querySelector('#service-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 173,
+      "code": "const deliverableItems = Array.from(document.querySelectorAll('#service-modal-deliverables li')).map(li => li.textContent.trim());"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 198,
+      "code": "const items = document.querySelectorAll('#service-modal-deliverables li').length;"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 41,
+      "code": "const card = document.querySelector('.card-tilt, .service-card');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 7,
+      "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services .card-tilt, #services article, #services .grid-col');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 17,
+      "code": "const badges = document.querySelectorAll('#services .tech-badge, #services .badge, #services .tag, #services [data-tech], #services span');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 18,
+      "code": "const texts = Array.from(badges).map(b => b.textContent.toLowerCase());"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 19,
+      "code": "return texts.some(t => t.includes('html') || t.includes('laravel') || t.includes('php') || t.includes('api') || t.includes('css') || t.includes('js') || t.includes('react'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 22,
+      "code": "expect(techBadges).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 28,
+      "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 29,
+      "code": "return Array.from(cards).every(c => c.textContent.trim().length > 30);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 32,
+      "code": "expect(hasDescriptions).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 38,
+      "code": "const triggers = document.querySelectorAll('#services a, #services button');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 42,
+      "code": "expect(hasTriggers).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 48,
+      "code": "const headings = document.querySelectorAll('#services h3, #services h4');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "line": 52,
+      "code": "expect(hasHeadings).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "line": 7,
+      "code": "const cards = document.querySelectorAll('.card-tilt, .interactive-spotlight, [data-tilt], .service-card, .portfolio-card');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "line": 17,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "line": 38,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "line": 56,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "line": 69,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 7,
+      "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 16,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 17,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 23,
+      "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 29,
+      "code": "expect(bounded).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 35,
+      "code": "const triggers = document.querySelectorAll('#services a, #services button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 40,
+      "code": "expect(focusable).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 46,
+      "code": "const trigger = document.querySelector('#services a, #services button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 51,
+      "code": "const dialogs = document.querySelectorAll('.modal.is-open, dialog[open]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 55,
+      "code": "expect(noDuplicates).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 63,
+      "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "line": 67,
+      "code": "expect(badgesBounded).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "line": 7,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "line": 37,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "line": 56,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "line": 69,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "line": 82,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-05-cursor-tilt.test.js",
+      "line": 9,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 8,
+      "code": "const trigger = document.querySelector('.btn-service-modal, #services a, #services button, .btn-case-study, [data-modal-target]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 9,
+      "code": "const modal = document.querySelector('#service-modal, #case-study-modal');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 17,
+      "code": "const opened = modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'false';"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 22,
+      "code": "const closed = !modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'true';"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 33,
+      "code": "expect(result.success).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 34,
+      "code": "expect(result.opened).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 35,
+      "code": "expect(result.closed).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 36,
+      "code": "expect(result.focusRestored).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 37,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 8,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 13,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 14,
+      "code": "return (text.includes('workflow') || text.includes('tahap') || text.includes('alur')) &&"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 15,
+      "code": "(text.includes('layanan') || text.includes('service') || text.includes('deliverable'));"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 18,
+      "code": "expect(hasTimelineAndServices).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 19,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 12,
+      "code": "const link = document.querySelector('a[href*=\"services\"], a[href=\"#services\"], nav a:nth-child(3)');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 18,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    }
+  ],
+  "trustStats": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 182,
+      "code": "const items = Array.from(document.querySelectorAll('.stat-number'));"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 184,
+      "code": "target: el.getAttribute('data-counter-target'),"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 193,
+      "code": "const items = Array.from(document.querySelectorAll('.stat-number'));"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 195,
+      "code": "target: el.getAttribute('data-counter-target'),"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 128,
+      "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 130,
+      "code": "target: s.getAttribute('data-counter-target'),"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 154,
+      "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 167,
+      "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 169,
+      "code": "target: s.getAttribute('data-counter-target'),"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 218,
+      "code": "const first = document.querySelector('.stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 7,
+      "code": "const el = document.querySelector('#why-us, .trust-section, #guarantee, .guarantees, #about');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 11,
+      "code": "expect(hasTrustSection).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 17,
+      "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 18,
+      "code": "return Array.from(counters).map(c => c.getAttribute('data-counter-target') || c.getAttribute('data-target') || c.textContent.trim());"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 27,
+      "code": "const statsSection = document.querySelector('.stats-cards-grid, #why-us, [data-counter-target], [data-target]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 37,
+      "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 38,
+      "code": "return el ? el.textContent.trim() : '';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 47,
+      "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 55,
+      "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 57,
+      "code": "const match = el.textContent.match(/\\d+/);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 67,
+      "code": "const els = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 68,
+      "code": "const text = Array.from(els).map(e => e.textContent + (e.getAttribute('data-suffix') || '')).join(' ');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 69,
+      "code": "return text.includes('%') || text.includes('+') || text.includes('ms');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "line": 72,
+      "code": "expect(hasSuffix).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 11,
+      "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 12,
+      "code": "return Array.from(counters).every(c => !c.textContent.includes('NaN'));"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 15,
+      "code": "expect(noNan).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 23,
+      "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 24,
+      "code": "return el ? el.textContent.trim().length > 0 : false;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 27,
+      "code": "expect(counterActive).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 33,
+      "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 35,
+      "code": "const text = Array.from(counters).map(c => c.textContent).join(' ');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 36,
+      "code": "return text.includes('.') || text.includes('99.9');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 39,
+      "code": "expect(decimalFormatted).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 48,
+      "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 50,
+      "code": "const beforeVals = Array.from(counters).map(c => c.textContent);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 54,
+      "code": "const afterVals = Array.from(counters).map(c => c.textContent);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 58,
+      "code": "expect(stable).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 59,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 65,
+      "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 66,
+      "code": "return Array.from(counters).every(c => !c.textContent.includes('undefined') && !c.textContent.includes('null'));"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "line": 69,
+      "code": "expect(validInitial).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 8,
+      "code": "const faqTrigger = document.querySelector('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 12,
+      "code": "const stats = document.querySelector('#why-us, .stats-cards-grid, [data-counter-target], [data-target]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 19,
+      "code": "expect(handled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 20,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "portfolio": [
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 419,
+      "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 420,
+      "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 426,
+      "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 445,
+      "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 492,
+      "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 506,
+      "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 507,
+      "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 508,
+      "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 538,
+      "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 539,
+      "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 540,
+      "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 350,
+      "code": "const triggers = Array.from(document.querySelectorAll('.btn-case-study, [data-project-id]'));"
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 354,
+      "code": "const projId = btn.getAttribute('data-project-id') || btn.getAttribute('data-case-study');"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 417,
+      "code": "const modalBtn = c.querySelector('.btn-case-study, [data-project-id]');"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 421,
+      "code": "projectId: modalBtn ? modalBtn.getAttribute('data-project-id') : null,"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 460,
+      "code": "const trigger = document.querySelector(`.btn-case-study[data-project-id=\"${pid}\"]`);"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 543,
+      "code": "const trigger = document.querySelector('.btn-case-study');"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 590,
+      "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]');"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 628,
+      "code": "const trigger = document.querySelector('.btn-case-study');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "line": 59,
+      "code": "return href.includes('portfolio') || href.includes('#portfolio') || text.includes('portofolio') || text.includes('portfolio');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 7,
+      "code": "const items = document.querySelectorAll('#portfolio .portfolio-card, #portfolio [data-category], #portfolio .project-card, #portfolio article');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 17,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn, #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 27,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 31,
+      "code": "btns[1].getAttribute('aria-selected') === 'true';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 34,
+      "code": "expect(filterToggled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 40,
+      "code": "const tags = document.querySelectorAll('#portfolio .tech-badge, #portfolio .tag, #portfolio .badge, #portfolio [data-tech], #portfolio span');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 44,
+      "code": "expect(hasTechStack).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 50,
+      "code": "const actions = document.querySelectorAll('#portfolio a, #portfolio button, #portfolio .btn-case-study, #portfolio [data-modal-target]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "line": 54,
+      "code": "expect(hasActions).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 8,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal, .case-study-modal');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 17,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal, .case-study-modal');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 27,
+      "code": "const btn = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button, #portfolio a.btn');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 36,
+      "code": "const btn = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button, #portfolio a.btn');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 38,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 47,
+      "code": "let modal = await driver.evaluate(() => document.querySelector('#case-study-modal, .modal, dialog, #project-modal'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 53,
+      "code": "const m = document.querySelector('#case-study-modal, .modal, dialog, #project-modal');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 63,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 66,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "line": 81,
+      "code": "const modal = document.querySelector('#case-study-modal.is-open, .modal.active');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 7,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 15,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 16,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 22,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 29,
+      "code": "expect(layoutIntact).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 35,
+      "code": "const allBtn = document.querySelector('#portfolio [data-filter=\"all\"], #portfolio [data-filter=\"*\"], #portfolio .filter-btn:first-child');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 39,
+      "code": "const visibleItems = document.querySelectorAll('#portfolio .portfolio-card:not([style*=\"display: none\"]), #portfolio article');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 43,
+      "code": "expect(allRestored).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 49,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 52,
+      "code": "const activeBtns = document.querySelectorAll('#portfolio [data-filter].active, #portfolio .portfolio-filter-btn.active');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 56,
+      "code": "expect(singleActive).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 62,
+      "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "line": 68,
+      "code": "expect(tabAccessible).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 7,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 14,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 25,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 31,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 41,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 44,
+      "code": "const overlay = document.querySelector('#case-study-modal, .modal-overlay');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 47,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 69,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "line": 74,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-17-floating-cta-boundaries.test.js",
+      "line": 53,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-02-filter-modal.test.js",
+      "line": 9,
+      "code": "const filterBtn = document.querySelector('#portfolio [data-filter]:not([data-filter=\"all\"]), #portfolio .filter-btn');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-02-filter-modal.test.js",
+      "line": 13,
+      "code": "const trigger = document.querySelector('#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-02-filter-modal.test.js",
+      "line": 16,
+      "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 10,
+      "code": "const modalTrigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 18,
+      "code": "const filterBtn = document.querySelector('#portfolio [data-filter], #portfolio .filter-btn');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 8,
+      "code": "const trigger = document.querySelector('.btn-service-modal, #services a, #services button, .btn-case-study, [data-modal-target]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "line": 9,
+      "code": "const modal = document.querySelector('#service-modal, #case-study-modal');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-14-filter-rapid-modals.test.js",
+      "line": 8,
+      "code": "const filters = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-14-filter-rapid-modals.test.js",
+      "line": 11,
+      "code": "const trigger = document.querySelector('#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "line": 9,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "line": 15,
+      "code": "const filterBtn = document.querySelector('[data-filter]:not([data-filter=\"all\"]), .filter-btn');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "line": 21,
+      "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], button');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "line": 32,
+      "code": "const allBtn = document.querySelector('[data-filter=\"all\"], [data-filter=\"*\"], .filter-btn');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "line": 36,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "line": 28,
+      "code": "const filters = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn');"
+    }
+  ],
+  "pricing": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 228,
+      "code": "const tierInputs = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 229,
+      "code": "const slider = calcSection.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 236,
+      "code": "const tRadio = tierInputs.find(t => t.value === tierVal);"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 152,
+      "code": "const tierCards = Array.from(calc.querySelectorAll('.tier-card'));"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 164,
+      "code": "const slider = calc.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 217,
+      "code": "const basicRadio = document.querySelector('input[name=\"tier\"][value=\"basic\"]');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 222,
+      "code": "const slider = document.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 237,
+      "code": "const slider = document.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 249,
+      "code": "const entRadio = document.querySelector('input[name=\"tier\"][value=\"enterprise\"]');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 254,
+      "code": "const slider = document.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 292,
+      "code": "const basicRadio = document.querySelector('input[name=\"tier\"][value=\"basic\"]');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 79,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.getElementById('pricing') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 80,
+      "code": "const widget = document.querySelector('.pricing-calculator-widget, .calc-layout');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 81,
+      "code": "const tierGroup = document.querySelector('.tier-cards-group, .tier-selector, .tier-options');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 82,
+      "code": "const cards = Array.from(document.querySelectorAll('.tier-card'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 90,
+      "code": "const radio = c.querySelector('input[type=\"radio\"]');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 91,
+      "code": "const inner = c.querySelector('.tier-card-inner');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 299,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 300,
+      "code": "const tierRadios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 301,
+      "code": "const slider = calcSection.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 302,
+      "code": "const sliderDisplay = calcSection.querySelector('#pages-count-display');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 303,
+      "code": "const addons = Array.from(calcSection.querySelectorAll('input[name=\"addon\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 304,
+      "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 305,
+      "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 306,
+      "code": "const waBtn = calcSection.querySelector('#btn-calc-whatsapp');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 309,
+      "code": "const targetRadio = tierRadios.find(r => r.value === scenario.tier);"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 323,
+      "code": "const isExp = cb.value === 'express' || cb.getAttribute('data-express') === 'true';"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 324,
+      "code": "const name = cb.getAttribute('data-name') || cb.value;"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 328,
+      "code": "const shouldCheck = scenario.addons.some(a => name.toLowerCase().includes(a.toLowerCase()));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 337,
+      "code": "sliderDisplayText: sliderDisplay ? sliderDisplay.textContent : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 338,
+      "code": "priceText: priceDisplay ? priceDisplay.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 339,
+      "code": "timeText: timeDisplay ? timeDisplay.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 348,
+      "code": "assert(execResult.timeText && execResult.timeText.includes(String(sc.expectedDaysMin)),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 350,
+      "code": "assert(execResult.waHref && decodeURIComponent(execResult.waHref).includes(sc.expectedPrice),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 364,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 365,
+      "code": "const cards = Array.from(calcSection.querySelectorAll('.tier-card'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 366,
+      "code": "const radios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 367,
+      "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 397,
+      "code": "priceText: priceDisplay ? priceDisplay.textContent : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 428,
+      "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 429,
+      "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 430,
+      "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 434,
+      "code": "const questionSpan = btn.querySelector('.faq-question');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 436,
+      "code": "const iconSpan = btn.querySelector('.faq-icon');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 442,
+      "code": "type: btn.getAttribute('type'),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 454,
+      "code": "text: questionSpan ? questionSpan.textContent.trim().slice(0, 35) + '...' : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 459,
+      "code": "text: iconSpan ? iconSpan.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 474,
+      "code": "const isNotUserAgentGray = !info.backgroundColor.includes('240, 240, 240');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 479,
+      "code": "const isLightTextColor = info.color === 'rgb(242, 242, 246)' || info.color.includes('242, 242, 246') || info.color === 'rgba(242, 242, 246, 1)';"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 498,
+      "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 499,
+      "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 500,
+      "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 511,
+      "code": "const content = item.querySelector('.faq-content, .faq-panel');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 512,
+      "code": "const icon = item.querySelector('.faq-icon');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 520,
+      "code": "btnAriaExpanded: btn.getAttribute('aria-expanded'),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 545,
+      "code": "targetState.iconTransform.includes('0.7071') ||"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 546,
+      "code": "targetState.iconTransform.includes('matrix')"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 559,
+      "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 565,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 578,
+      "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 579,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 592,
+      "code": "const ariaExpandedItems = triggers.filter(btn => btn.getAttribute('aria-expanded') === 'true');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 616,
+      "code": "const trigger = document.querySelectorAll('.faq-trigger')[0];"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 617,
+      "code": "const item = document.querySelectorAll('.faq-item')[0];"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 236,
+      "code": "const calc = document.querySelector('.pricing-calculator');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 239,
+      "code": "const tierRadios = Array.from(calc.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 240,
+      "code": "const slider = calc.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 248,
+      "code": "const radio = tierRadios.find(r => r.value === tierName);"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 331,
+      "code": "const basicSelectedAfterSync = tierRadios.find(r => r.value === 'basic')?.checked;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 7,
+      "code": "const calc = document.querySelector('#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator, form.calculator');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 8,
+      "code": "return !!calc || document.body.textContent.toLowerCase().includes('kalkulator') || document.body.textContent.toLowerCase().includes('estimasi');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 11,
+      "code": "expect(calcExists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 17,
+      "code": "const inputs = document.querySelectorAll('input[name=\"tier\"], input[name=\"package\"], select[name=\"tier\"], .tier-card, .package-option');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 18,
+      "code": "return inputs.length >= 1 || document.body.textContent.toLowerCase().includes('paket');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 21,
+      "code": "expect(hasTiers).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 27,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 31,
+      "code": "const display = document.querySelector('#pages-count-display, .pages-count');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 32,
+      "code": "return display ? display.textContent.includes('8') : slider.value === '8';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 35,
+      "code": "expect(hasSlider).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 41,
+      "code": "const priceEl = document.querySelector('#calc-total-price, .total-price, #total-cost, [data-calc-price]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 42,
+      "code": "const timeEl = document.querySelector('#calc-total-timeline, .total-timeline, #total-timeline, [data-calc-time]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 43,
+      "code": "return !!(priceEl || timeEl) || document.body.textContent.includes('Rp');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 46,
+      "code": "expect(hasOutputs).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 52,
+      "code": "const links = Array.from(document.querySelectorAll('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], a.btn-whatsapp, #btn-calc-whatsapp'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 56,
+      "code": "expect(hasWhatsAppCta).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 7,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 12,
+      "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 14,
+      "code": "const priceText = priceEl.textContent.replace(/[^0-9]/g, '');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 19,
+      "code": "expect(validBase).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 25,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 30,
+      "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 32,
+      "code": "return !priceEl.textContent.includes('e+');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 35,
+      "code": "expect(formatted).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 41,
+      "code": "const addons = document.querySelectorAll('input[name=\"addon\"], input[type=\"checkbox\"]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 47,
+      "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 48,
+      "code": "return priceEl ? priceEl.textContent.trim().length > 0 : false;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 51,
+      "code": "expect(reset).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 57,
+      "code": "const tiers = document.querySelectorAll('input[name=\"tier\"]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 63,
+      "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 64,
+      "code": "return priceEl ? priceEl.textContent.trim().length > 0 : false;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 67,
+      "code": "expect(switched).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 68,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 74,
+      "code": "const link = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 76,
+      "code": "const href = link.getAttribute('href') || '';"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 79,
+      "code": "return href.length > 0 && !href.includes('NaN');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "line": 85,
+      "code": "expect(validUri).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 9,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 25,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 26,
+      "code": "return slider ? slider.value === '12' : true;"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 29,
+      "code": "expect(sliderValueRetained).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 30,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "line": 9,
+      "code": "const proRadio = document.querySelector('input[name=\"tier\"][value*=\"pro\" i]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "line": 16,
+      "code": "const addon = document.querySelector('input[name=\"addon\"], input[type=\"checkbox\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "line": 22,
+      "code": "const waLink = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "line": 26,
+      "code": "expect(linkReflected).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "line": 27,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 9,
+      "code": "const email = document.querySelector('input[type=\"email\"], #email');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 17,
+      "code": "const addon = document.querySelector('input[name=\"addon\"], input[type=\"checkbox\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 25,
+      "code": "expect(isolated).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 26,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 10,
+      "code": "const calc = document.querySelector('#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 17,
+      "code": "const proRadio = document.querySelector('input[name=\"tier\"][value*=\"pro\" i]');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 26,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 35,
+      "code": "const checkboxes = document.querySelectorAll('input[name=\"addon\"], input[type=\"checkbox\"]');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 46,
+      "code": "const link = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 50,
+      "code": "expect(validOutcome).toBe(true);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "line": 51,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "testimonials": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 330,
+      "code": "const track = document.querySelector('.testimonial-track');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 347,
+      "code": "const track = document.querySelector('.testimonial-track');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 358,
+      "code": "const container = document.querySelector('.testimonial-carousel');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 376,
+      "code": "const container = document.querySelector('.testimonial-carousel');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 394,
+      "code": "const container = document.querySelector('.testimonial-carousel');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 372,
+      "code": "const carousel = document.querySelector('.testimonial-carousel');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 376,
+      "code": "const track = carousel.querySelector('.testimonial-track');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 7,
+      "code": "const el = document.querySelector('#testimonials, .testimonial-carousel, .testimonials, .testimonial-track, #reviews, [data-carousel]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 8,
+      "code": "return !!el || document.body.textContent.toLowerCase().includes('klien') || document.body.textContent.toLowerCase().includes('testimoni');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 11,
+      "code": "expect(hasTestimonials).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 17,
+      "code": "const cards = document.querySelectorAll('.testimonial-card, .testimonial-item, .review-card, [data-slide]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 18,
+      "code": "return cards.length >= 1 || document.body.textContent.includes('PT') || document.body.textContent.includes('Founder');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 21,
+      "code": "expect(hasClientCards).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 27,
+      "code": "const text = document.body.textContent;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 28,
+      "code": "const stars = document.querySelectorAll('.rating, .stars, .star, [data-rating]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 29,
+      "code": "return stars.length >= 1 || text.includes('★') || text.includes('5.0') || text.includes('Rating');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 32,
+      "code": "expect(hasRatings).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 38,
+      "code": "const prev = document.querySelector('.carousel-btn--prev, .carousel-prev, [data-prev], [aria-label*=\"prev\" i]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 39,
+      "code": "const next = document.querySelector('.carousel-btn--next, .carousel-next, [data-next], [aria-label*=\"next\" i]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 43,
+      "code": "expect(hasControls).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 49,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "line": 58,
+      "code": "expect(hoverHandled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 7,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 8,
+      "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 16,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 17,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 23,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 24,
+      "code": "const prevBtn = document.querySelector('.carousel-btn--prev, .carousel-prev, [data-prev]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 30,
+      "code": "expect(handled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 37,
+      "code": "const track = document.querySelector('.testimonial-track, .testimonial-carousel');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 41,
+      "code": "expect(resized).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 47,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 56,
+      "code": "expect(timersIntact).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 57,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 65,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 76,
+      "code": "expect(swipeHandled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-07-carousel-hysteresis.test.js",
+      "line": 14,
+      "code": "expect(errors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 8,
+      "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 9,
+      "code": "const track = document.querySelector('.testimonial-track, .carousel-track');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 33,
+      "code": "expect(result.success).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 34,
+      "code": "expect(result.isFocused).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 35,
+      "code": "expect(result.transformChanged).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "line": 36,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "faq": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 454,
+      "code": "const triggers = document.querySelectorAll('.faq-trigger');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 482,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 484,
+      "code": "const panel = item.querySelector('.faq-panel');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 485,
+      "code": "const trigger = item.querySelector('.faq-trigger');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 500,
+      "code": "const trigger1 = document.querySelectorAll('.faq-trigger')[1];"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 507,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 509,
+      "code": "const panel = item.querySelector('.faq-panel');"
+    },
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 510,
+      "code": "const trigger = item.querySelector('.faq-trigger');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 79,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.getElementById('pricing') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 80,
+      "code": "const widget = document.querySelector('.pricing-calculator-widget, .calc-layout');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 81,
+      "code": "const tierGroup = document.querySelector('.tier-cards-group, .tier-selector, .tier-options');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 82,
+      "code": "const cards = Array.from(document.querySelectorAll('.tier-card'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 90,
+      "code": "const radio = c.querySelector('input[type=\"radio\"]');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 91,
+      "code": "const inner = c.querySelector('.tier-card-inner');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 299,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 300,
+      "code": "const tierRadios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 301,
+      "code": "const slider = calcSection.querySelector('#extra-pages');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 302,
+      "code": "const sliderDisplay = calcSection.querySelector('#pages-count-display');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 303,
+      "code": "const addons = Array.from(calcSection.querySelectorAll('input[name=\"addon\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 304,
+      "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 305,
+      "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 306,
+      "code": "const waBtn = calcSection.querySelector('#btn-calc-whatsapp');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 309,
+      "code": "const targetRadio = tierRadios.find(r => r.value === scenario.tier);"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 323,
+      "code": "const isExp = cb.value === 'express' || cb.getAttribute('data-express') === 'true';"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 324,
+      "code": "const name = cb.getAttribute('data-name') || cb.value;"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 328,
+      "code": "const shouldCheck = scenario.addons.some(a => name.toLowerCase().includes(a.toLowerCase()));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 337,
+      "code": "sliderDisplayText: sliderDisplay ? sliderDisplay.textContent : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 338,
+      "code": "priceText: priceDisplay ? priceDisplay.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 339,
+      "code": "timeText: timeDisplay ? timeDisplay.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 348,
+      "code": "assert(execResult.timeText && execResult.timeText.includes(String(sc.expectedDaysMin)),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 350,
+      "code": "assert(execResult.waHref && decodeURIComponent(execResult.waHref).includes(sc.expectedPrice),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 364,
+      "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 365,
+      "code": "const cards = Array.from(calcSection.querySelectorAll('.tier-card'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 366,
+      "code": "const radios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 367,
+      "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 397,
+      "code": "priceText: priceDisplay ? priceDisplay.textContent : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 428,
+      "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 429,
+      "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 430,
+      "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 434,
+      "code": "const questionSpan = btn.querySelector('.faq-question');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 436,
+      "code": "const iconSpan = btn.querySelector('.faq-icon');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 442,
+      "code": "type: btn.getAttribute('type'),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 454,
+      "code": "text: questionSpan ? questionSpan.textContent.trim().slice(0, 35) + '...' : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 459,
+      "code": "text: iconSpan ? iconSpan.textContent.trim() : null,"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 474,
+      "code": "const isNotUserAgentGray = !info.backgroundColor.includes('240, 240, 240');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 479,
+      "code": "const isLightTextColor = info.color === 'rgb(242, 242, 246)' || info.color.includes('242, 242, 246') || info.color === 'rgba(242, 242, 246, 1)';"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 498,
+      "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 499,
+      "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 500,
+      "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 511,
+      "code": "const content = item.querySelector('.faq-content, .faq-panel');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 512,
+      "code": "const icon = item.querySelector('.faq-icon');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 520,
+      "code": "btnAriaExpanded: btn.getAttribute('aria-expanded'),"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 545,
+      "code": "targetState.iconTransform.includes('0.7071') ||"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 546,
+      "code": "targetState.iconTransform.includes('matrix')"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 559,
+      "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 565,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 578,
+      "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 579,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 592,
+      "code": "const ariaExpandedItems = triggers.filter(btn => btn.getAttribute('aria-expanded') === 'true');"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 616,
+      "code": "const trigger = document.querySelectorAll('.faq-trigger')[0];"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 617,
+      "code": "const item = document.querySelectorAll('.faq-item')[0];"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 462,
+      "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 463,
+      "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 502,
+      "code": "const triggers = document.querySelectorAll('.faq-trigger');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 530,
+      "code": "const item0 = document.querySelectorAll('.faq-item')[0];"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 531,
+      "code": "const trigger = item0.querySelector('.faq-trigger');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 532,
+      "code": "const panel = item0.querySelector('.faq-panel');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 7,
+      "code": "const items = document.querySelectorAll('#faq .faq-item, #faq details, #faq .accordion-item');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 17,
+      "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button, #faq summary');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 21,
+      "code": "return item ? (item.classList.contains('active') && trigger.getAttribute('aria-expanded') === 'true') : false;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 24,
+      "code": "expect(expanded).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 30,
+      "code": "const triggers = document.querySelectorAll('#faq .faq-trigger, #faq .faq-header button');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 34,
+      "code": "const activeItems = document.querySelectorAll('#faq .faq-item.active, #faq .faq-item.is-open');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 38,
+      "code": "expect(singleActive).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 44,
+      "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 49,
+      "code": "return item ? (!item.classList.contains('active') && trigger.getAttribute('aria-expanded') === 'false') : false;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 52,
+      "code": "expect(collapsed).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 58,
+      "code": "const headers = document.querySelectorAll('#faq h3, #faq h4, #faq button, #faq summary');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "line": 62,
+      "code": "expect(accessible).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 7,
+      "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button, #faq summary');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 15,
+      "code": "expect(collapsed).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 21,
+      "code": "const triggers = document.querySelectorAll('#faq .faq-trigger, #faq .faq-header button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 24,
+      "code": "const activeItems = document.querySelectorAll('#faq .faq-item.active, #faq .faq-item.is-open');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 28,
+      "code": "expect(singleOpen).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 34,
+      "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 42,
+      "code": "expect(keyboardWorked).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 48,
+      "code": "const answers = document.querySelectorAll('#faq .faq-answer, #faq .faq-content, #faq p');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 52,
+      "code": "expect(linksIntact).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 58,
+      "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 65,
+      "code": "expect(noThrashing).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "line": 66,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 8,
+      "code": "const faqTrigger = document.querySelector('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 12,
+      "code": "const stats = document.querySelector('#why-us, .stats-cards-grid, [data-counter-target], [data-target]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 19,
+      "code": "expect(handled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "line": 20,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-17-viewport-resize-active-faq.test.js",
+      "line": 10,
+      "code": "const trigger = document.querySelector('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-17-viewport-resize-active-faq.test.js",
+      "line": 22,
+      "code": "expect(noOverflow).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-17-viewport-resize-active-faq.test.js",
+      "line": 23,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "line": 15,
+      "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "line": 28,
+      "code": "const triggers = document.querySelectorAll('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "line": 37,
+      "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "line": 41,
+      "code": "expect(waExists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "line": 42,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "navbarDrawer": [
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 236,
+      "code": "const header = document.querySelector('header, .site-header, nav, #navbar');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 266,
+      "code": "const toggle = document.querySelector('.navbar__toggle');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 269,
+      "code": "const menuOpen = document.querySelector('.mobile-menu.is-open');"
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 270,
+      "code": "const servicesLink = document.querySelector('.mobile-menu a[href*=\"services.html\"]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-03-responsive-layout.test.js",
+      "line": 70,
+      "code": "const btn = document.querySelector('.navbar__toggle, .menu-toggle, .mobile-toggle, [aria-label*=\"menu\" i], [aria-label*=\"navigasi\" i]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-03-responsive-layout.test.js",
+      "line": 82,
+      "code": "const navLinks = document.querySelectorAll('header nav a, .floating-bottom-nav a, .navbar a');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 7,
+      "code": "const header = document.querySelector('header, .site-header, .navbar, nav');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 11,
+      "code": "expect(hasNav).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 20,
+      "code": "const nav = document.querySelector('header, .site-header, .navbar, .floating-bottom-nav');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 25,
+      "code": "expect(scrollClassAdded).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 33,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle, [aria-label*=\"menu\" i]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 36,
+      "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 40,
+      "code": "expect(drawerOpened).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 48,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 53,
+      "code": "return bodyClass.includes('no-scroll') || overflow === 'hidden' || document.body.style.overflow === 'hidden';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 56,
+      "code": "expect(scrollLocked).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 64,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 68,
+      "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "line": 73,
+      "code": "expect(restored).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 7,
+      "code": "expect(errors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 15,
+      "code": "expect(errors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 21,
+      "code": "expect(docLoaded).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 30,
+      "code": "expect(targetExists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 42,
+      "code": "expect(stable).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "line": 44,
+      "code": "expect(errors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 7,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 8,
+      "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 16,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 17,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 23,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 24,
+      "code": "const prevBtn = document.querySelector('.carousel-btn--prev, .carousel-prev, [data-prev]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 30,
+      "code": "expect(handled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 37,
+      "code": "const track = document.querySelector('.testimonial-track, .testimonial-carousel');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 41,
+      "code": "expect(resized).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 47,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 56,
+      "code": "expect(timersIntact).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 57,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 65,
+      "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "line": 76,
+      "code": "expect(swipeHandled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 14,
+      "code": "expect(survived).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 15,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 23,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 26,
+      "code": "const drawer = document.querySelector('.mobile-menu.is-open, #mobile-nav-drawer.active');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 30,
+      "code": "expect(closedOnEscape).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 38,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 48,
+      "code": "return !bodyClass.includes('no-scroll');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 51,
+      "code": "expect(restored).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 59,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 62,
+      "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 69,
+      "code": "expect(trapped).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 79,
+      "code": "const nav = document.querySelector('header, .site-header, .navbar');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "line": 83,
+      "code": "expect(revealed).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 9,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 25,
+      "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 26,
+      "code": "return slider ? slider.value === '12' : true;"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 29,
+      "code": "expect(sliderValueRetained).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "line": 30,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 10,
+      "code": "const modalTrigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 14,
+      "code": "const closeBtn = document.querySelector('.modal__close, .modal-close, [data-close]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 18,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 27,
+      "code": "expect(noConflict).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "line": 28,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 10,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 14,
+      "code": "const portfolioLink = document.querySelector('.mobile-menu a[href*=\"portfolio\"], .nav-drawer a[href*=\"portfolio\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 18,
+      "code": "const filterBtn = document.querySelector('#portfolio [data-filter], #portfolio .filter-btn');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 24,
+      "code": "expect(navigatedAndFiltered).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "line": 25,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 8,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 13,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 14,
+      "code": "return (text.includes('workflow') || text.includes('tahap') || text.includes('alur')) &&"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 15,
+      "code": "(text.includes('layanan') || text.includes('service') || text.includes('deliverable'));"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 18,
+      "code": "expect(hasTimelineAndServices).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 19,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-04-mobile-consultation.test.js",
+      "line": 11,
+      "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+    }
+  ],
+  "footer": [
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "line": 237,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 7,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 11,
+      "code": "expect(hasFooter).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 17,
+      "code": "const text = document.querySelector('footer, .site-footer')?.textContent || '';"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 18,
+      "code": "return text.includes('Rubic') || text.includes('PT');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 21,
+      "code": "expect(hasEntity).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 27,
+      "code": "const text = document.body.textContent;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 28,
+      "code": "return text.includes('Jakarta') || text.includes('SCBD') || text.includes('Indonesia') || text.includes('Lokasi');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 31,
+      "code": "expect(hasLocation).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 37,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 39,
+      "code": "const links = footer.querySelectorAll('a');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 40,
+      "code": "const text = footer.textContent;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 41,
+      "code": "return links.length >= 2 || text.includes('©') || text.includes('Copyright') || text.includes('All rights');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 44,
+      "code": "expect(footerMeta).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 52,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "line": 57,
+      "code": "expect(noOverflow).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 7,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 9,
+      "code": "const links = Array.from(footer.querySelectorAll('a'));"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 11,
+      "code": "const href = a.getAttribute('href');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 16,
+      "code": "expect(validLinks).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 22,
+      "code": "const text = document.body.textContent;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 23,
+      "code": "return text.includes('Rubic') || text.includes('Solusindo');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 26,
+      "code": "expect(hasLegalEntity).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 32,
+      "code": "const text = document.body.textContent;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 33,
+      "code": "return text.includes('Jakarta') || text.includes('Indonesia') || text.includes('SCBD');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 36,
+      "code": "expect(hasAddress).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 42,
+      "code": "const footer = document.querySelector('footer');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 46,
+      "code": "expect(hasSemanticFooter).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 52,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 54,
+      "code": "const p = footer.querySelector('p, span, a');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "line": 60,
+      "code": "expect(readable).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 13,
+      "code": "const footer = document.querySelector('footer, .site-footer');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 14,
+      "code": "const waBtn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, [href*=\"wa.me\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 35,
+      "code": "expect(result.success).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 36,
+      "code": "expect(result.footerVisible).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 37,
+      "code": "expect(result.waVisible).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 38,
+      "code": "expect(result.waFixed).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "line": 39,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "contactForm": [
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 477,
+      "code": "const form = document.querySelector('.consultation-form, .contact-form, #contact-form');"
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 478,
+      "code": "const nameInput = form.querySelector('#name, input[name=\"name\"], input[name=\"nama\"], #form-name');"
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "line": 479,
+      "code": "const emailInput = form.querySelector('#email, input[type=\"email\"], input[name=\"email\"], #form-email');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 7,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 15,
+      "code": "const inputs = document.querySelectorAll('form input, form textarea, form select');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 25,
+      "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 31,
+      "code": "const errEl = document.querySelector('.error-message, .form-feedback, .error, [role=\"alert\"]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 32,
+      "code": "return hasErrorClass || (errEl && errEl.textContent.trim().length > 0) || emailInput.validity.valid === false;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 35,
+      "code": "expect(errorFlagged).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 41,
+      "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 49,
+      "code": "expect(phoneValidated).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 55,
+      "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 63,
+      "code": "expect(validCleared).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 69,
+      "code": "const form = document.querySelector('form#contact-form, form');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 71,
+      "code": "const submitBtn = form.querySelector('button[type=\"submit\"], input[type=\"submit\"], .btn-submit');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 74,
+      "code": "const errors = form.querySelectorAll('.is-invalid, .error, .invalid, [aria-invalid=\"true\"]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "line": 78,
+      "code": "expect(feedbackShown).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 7,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 15,
+      "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 26,
+      "code": "expect(rejected).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 32,
+      "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 40,
+      "code": "expect(handled).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 46,
+      "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 54,
+      "code": "expect(rejectedLetters).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 60,
+      "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 71,
+      "code": "expect(prefixesSupported).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 77,
+      "code": "const form = document.querySelector('form#contact-form, form');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 80,
+      "code": "const invalidInputs = form.querySelectorAll('.is-invalid, .error, .invalid, [aria-invalid=\"true\"]');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "line": 84,
+      "code": "expect(submitted).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 9,
+      "code": "const email = document.querySelector('input[type=\"email\"], #email');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 17,
+      "code": "const addon = document.querySelector('input[name=\"addon\"], input[type=\"checkbox\"]');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 25,
+      "code": "expect(isolated).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "line": 26,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 8,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 13,
+      "code": "const nameInput = document.querySelector('input[name=\"name\"], #name, #form-name');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 14,
+      "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 15,
+      "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 21,
+      "code": "const submitBtn = document.querySelector('form button[type=\"submit\"], form input[type=\"submit\"], .btn-submit');"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 27,
+      "code": "expect(formSubmitted).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "line": 28,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-04-mobile-consultation.test.js",
+      "line": 31,
+      "code": "const name = document.querySelector('#name, input[name=\"name\"], #form-name');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-04-mobile-consultation.test.js",
+      "line": 32,
+      "code": "const email = document.querySelector('#email, input[type=\"email\"], #form-email');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "line": 28,
+      "code": "const filters = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "line": 46,
+      "code": "expect(consoleErrors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "line": 50,
+      "code": "return document.body && document.body.children.length >= 2 && !document.body.innerHTML.includes('NaN');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "line": 52,
+      "code": "expect(docHealthy).toBe(true);"
+    }
+  ],
+  "servicesPage": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "line": 232,
+      "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 178,
+      "code": "const timeDisplay = calc.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 228,
+      "code": "const time = document.querySelector('#calc-total-timeline').textContent.trim();"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 233,
+      "code": "assert(testBasicBaseline.time.includes('7'), `Basic baseline timeline = 7 days (Actual: ${testBasicBaseline.time})`);"
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "line": 270,
+      "code": "const time = document.querySelector('#calc-total-timeline').textContent.trim();"
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "line": 305,
+      "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "line": 158,
+      "code": "const steps = Array.from(container.querySelectorAll('.timeline-step, .workflow-step'));"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 243,
+      "code": "const timelineDisplay = calc.querySelector('#calc-total-timeline');"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 269,
+      "code": "timelineText: timelineDisplay ? timelineDisplay.textContent.trim() : '',"
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "line": 352,
+      "code": "const daysOk = test.expectedDaysString ? test.timelineText.includes(test.expectedDaysString) : true;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "line": 42,
+      "code": "const timeEl = document.querySelector('#calc-total-timeline, .total-timeline, #total-timeline, [data-calc-time]');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 7,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 15,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 17,
+      "code": "return stages.filter(s => text.includes(s)).length >= 2;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 20,
+      "code": "expect(hasTimeline).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 26,
+      "code": "const steps = document.querySelectorAll('.workflow-step, .timeline-step, .process-step, .step-item, .stage-item, ol li, .timeline li');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 27,
+      "code": "return steps.length >= 3 || document.body.textContent.includes('01') || document.body.textContent.includes('Tahap');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 30,
+      "code": "expect(stepCount).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 36,
+      "code": "const c = document.querySelector('.workflow-timeline, .timeline, .process-grid, .steps-container, .workflow-container, #workflow');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 37,
+      "code": "return !!c || document.querySelectorAll('section').length >= 2;"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 40,
+      "code": "expect(containerExists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 46,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 47,
+      "code": "return text.includes('deliverable') || text.includes('fitur') || text.includes('fasilitas') || text.includes('output') || text.includes('lingkup');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 50,
+      "code": "expect(hasDeliverables).toBe(true);"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 56,
+      "code": "const links = Array.from(document.querySelectorAll('a'));"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 58,
+      "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 59,
+      "code": "const text = a.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 60,
+      "code": "return href.includes('contact') || href.includes('wa.me') || href.includes('whatsapp') || text.includes('konsultasi') || text.includes('mulai');"
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "line": 64,
+      "code": "expect(hasCta).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 7,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 20,
+      "code": "expect(noOverflow).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 26,
+      "code": "const text = document.body.textContent;"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 27,
+      "code": "return text.includes('01') || text.includes('1') || text.includes('Tahap');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 30,
+      "code": "expect(hasNumbers).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 36,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 37,
+      "code": "return text.includes('wireframe') || text.includes('desain') || text.includes('testing') || text.includes('deploy');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 40,
+      "code": "expect(hasScope).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 46,
+      "code": "const lists = document.querySelectorAll('ul, ol');"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 50,
+      "code": "expect(hasSemanticLists).toBe(true);"
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "line": 56,
+      "code": "expect(networkErrors.length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 8,
+      "code": "if (!title || title.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 13,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 14,
+      "code": "return (text.includes('workflow') || text.includes('tahap') || text.includes('alur')) &&"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 15,
+      "code": "(text.includes('layanan') || text.includes('service') || text.includes('deliverable'));"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 18,
+      "code": "expect(hasTimelineAndServices).toBe(true);"
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "line": 19,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 8,
+      "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 12,
+      "code": "const link = document.querySelector('a[href*=\"services\"], a[href=\"#services\"], nav a:nth-child(3)');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 13,
+      "code": "return link ? link.getAttribute('href') : null;"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 18,
+      "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 29,
+      "code": "if (!sTitle || sTitle.includes('404')) {"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 35,
+      "code": "const text = document.body.textContent.toLowerCase();"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 36,
+      "code": "return text.includes('workflow') || text.includes('tahap') || text.includes('alur') || text.includes('proses');"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 38,
+      "code": "expect(timelineInspected).toBe(true);"
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "line": 41,
+      "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+    }
+  ],
+  "portfolioPage": [],
+  "cursorTilt": []
+}

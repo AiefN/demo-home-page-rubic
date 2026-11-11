@@ -1,0 +1,238 @@
+{
+  "timestamp": "2026-11-11T07:22:12.450Z",
+  "cardinality": {
+    "index": {
+      "tierCount": 3,
+      "faqCount": 6,
+      "serviceCount": 4,
+      "serviceLengths": [
+        {
+          "tag": "Custom Web Development",
+          "length": 429,
+          "text": "01\n                Custom Web Development\n              \n   ..."
+        },
+        {
+          "tag": "Modern Business Profile",
+          "length": 424,
+          "text": "02\n                Modern Business Profile\n              \n  ..."
+        },
+        {
+          "tag": "Web App & Portal",
+          "length": 408,
+          "text": "03\n                Web App & Portal\n              \n         ..."
+        },
+        {
+          "tag": "Redesign & Maintenance",
+          "length": 423,
+          "text": "04\n                Redesign & Maintenance\n              \n   ..."
+        }
+      ],
+      "allServicesAbove30": true
+    },
+    "services": {
+      "tiltCount": 10,
+      "workflowCount": 6,
+      "stepNumbers": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06"
+      ]
+    },
+    "portfolio": {
+      "cardCount": 7,
+      "tiltCount": 7,
+      "catCounts": {
+        "all": 7,
+        "ecommerce": 2,
+        "corporate": 3,
+        "webapp": 2
+      }
+    }
+  },
+  "pricingStress": {
+    "totalCycles": 30,
+    "nanCount": 0,
+    "formatGlitchCount": 0,
+    "mathMismatchCount": 0,
+    "sampleLogs": [
+      {
+        "cycle": 1,
+        "tier": "basic",
+        "pages": 3,
+        "addons": [
+          "Payment Gateway",
+          "Express"
+        ],
+        "renderedPrice": "Rp 5.875.000",
+        "renderedTimeline": "± 7 - 11 Hari Kerja",
+        "expectedFormatted": "Rp 5.875.000",
+        "match": true
+      },
+      {
+        "cycle": 2,
+        "tier": "pro",
+        "pages": 6,
+        "addons": [
+          "E-Commerce",
+          "Multi-Bahasa"
+        ],
+        "renderedPrice": "Rp 9.050.000",
+        "renderedTimeline": "± 27 - 31 Hari Kerja",
+        "expectedFormatted": "Rp 9.050.000",
+        "match": true
+      },
+      {
+        "cycle": 3,
+        "tier": "enterprise",
+        "pages": 9,
+        "addons": [],
+        "renderedPrice": "Rp 12.000.000",
+        "renderedTimeline": "± 35 - 39 Hari Kerja",
+        "expectedFormatted": "Rp 12.000.000",
+        "match": true
+      },
+      {
+        "cycle": 4,
+        "tier": "basic",
+        "pages": 12,
+        "addons": [
+          "E-Commerce",
+          "Payment Gateway"
+        ],
+        "renderedPrice": "Rp 9.850.000",
+        "renderedTimeline": "± 21 - 25 Hari Kerja",
+        "expectedFormatted": "Rp 9.850.000",
+        "match": true
+      },
+      {
+        "cycle": 5,
+        "tier": "pro",
+        "pages": 15,
+        "addons": [],
+        "renderedPrice": "Rp 9.000.000",
+        "renderedTimeline": "± 23 - 27 Hari Kerja",
+        "expectedFormatted": "Rp 9.000.000",
+        "match": true
+      },
+      {
+        "cycle": 6,
+        "tier": "enterprise",
+        "pages": 18,
+        "addons": [
+          "E-Commerce",
+          "Multi-Bahasa",
+          "Express"
+        ],
+        "renderedPrice": "Rp 24.000.000",
+        "renderedTimeline": "± 28 - 32 Hari Kerja",
+        "expectedFormatted": "Rp 24.000.000",
+        "match": true
+      }
+    ]
+  },
+  "modalLifecycles": {
+    "testCloseButton": {
+      "openDisplay": "flex",
+      "openAria": "false",
+      "openBodyNoScroll": true,
+      "openTitle": "NexaStore Luxury Goods",
+      "closedDisplay": "none",
+      "closedAria": "true",
+      "closedBodyNoScroll": false
+    },
+    "testEscapeKey": {
+      "openDisplay": "flex",
+      "closedDisplay": "none",
+      "closedAria": "true",
+      "closedBodyNoScroll": false
+    },
+    "testBackdropClick": {
+      "openDisplay": "flex",
+      "closedDisplay": "none",
+      "closedAria": "true",
+      "closedBodyNoScroll": false
+    },
+    "serviceModalTest": {
+      "openDisplay": "flex",
+      "openAria": "false",
+      "openScroll": true,
+      "closedDisplay": "none",
+      "closedAria": "true",
+      "closedScroll": false
+    }
+  },
+  "contactValidation": {
+    "emptySubmitResult": {
+      "errName": "Nama lengkap wajib diisi minimal 3 karakter.",
+      "errEmail": "Alamat email wajib diisi.",
+      "errPhone": "Nomor WhatsApp wajib diisi.",
+      "errMessage": "Mohon deskripsikan kebutuhan proyek minimal 10 karakter.",
+      "activeElementId": "name"
+    },
+    "malformedInputsResult": {
+      "errName": "Nama lengkap wajib diisi minimal 3 karakter.",
+      "errEmail": "Alamat email tidak valid (contoh: info@perusahaan.co.id).",
+      "errPhone": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit).",
+      "errMessage": "Mohon deskripsikan kebutuhan proyek minimal 10 karakter."
+    },
+    "validSubmitResult": {
+      "bannerVisible": true,
+      "bannerRole": "status",
+      "waUrl": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20PT%20Rubic%20Engineering%20Client%20(Global%20Technology%20PT).%20Saya%20ingin%20berkonsultasi%20mengenai%20Paket%20Basic%20%E2%80%94%20Landing%20Page%20(Mulai%20Rp%202.5%20Jt).%20Ringkasan%20kebutuhan%3A%20Kami%20membutuhkan%20rekayasa%20web%20kustom%20dengan%20standar%20clean%20code%20dan%20PageSpeed%2095%2B.",
+      "errorsCleared": true
+    }
+  },
+  "textBrevity": {
+    "pages": {
+      "index.html": {
+        "beforeWords": 1637,
+        "afterWords": 1204,
+        "wordReductionPct": "26.5%",
+        "beforeChars": 11969,
+        "afterChars": 8486,
+        "charReductionPct": "29.1%"
+      },
+      "services.html": {
+        "beforeWords": 1307,
+        "afterWords": 915,
+        "wordReductionPct": "30.0%",
+        "beforeChars": 10164,
+        "afterChars": 6908,
+        "charReductionPct": "32.0%"
+      },
+      "portfolio.html": {
+        "beforeWords": 633,
+        "afterWords": 534,
+        "wordReductionPct": "15.6%",
+        "beforeChars": 4727,
+        "afterChars": 3916,
+        "charReductionPct": "17.2%"
+      },
+      "contact.html": {
+        "beforeWords": 644,
+        "afterWords": 557,
+        "wordReductionPct": "13.5%",
+        "beforeChars": 4678,
+        "afterChars": 4046,
+        "charReductionPct": "13.5%"
+      }
+    },
+    "grandTotal": {
+      "beforeWords": 4221,
+      "afterWords": 3210,
+      "wordsCut": 1011,
+      "totalWordReductionPct": "24.0%",
+      "beforeChars": 31538,
+      "afterChars": 23356,
+      "charsCut": 8182,
+      "totalCharReductionPct": "25.9%"
+    }
+  },
+  "totalAsserts": 64,
+  "passedAsserts": 64,
+  "failedAsserts": 0,
+  "verdict": "APPROVE"
+}

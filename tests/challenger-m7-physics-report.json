@@ -1,0 +1,908 @@
+{
+  "timestamp": "2026-11-11T07:21:40.022Z",
+  "summary": {
+    "total": 57,
+    "passed": 57,
+    "failed": 0
+  },
+  "suites": {
+    "CustomCursor": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Cursor dot and follower DOM elements exist",
+          "passed": true,
+          "details": {
+            "dotPresent": true,
+            "followerPresent": true,
+            "dotPointerEvents": "none",
+            "followerPointerEvents": "none",
+            "dotAriaHidden": "true",
+            "followerAriaHidden": "true"
+          }
+        },
+        {
+          "testName": "Cursor elements have pointer-events: none",
+          "passed": true,
+          "details": {
+            "dotPresent": true,
+            "followerPresent": true,
+            "dotPointerEvents": "none",
+            "followerPointerEvents": "none",
+            "dotAriaHidden": "true",
+            "followerAriaHidden": "true"
+          }
+        },
+        {
+          "testName": "Cursor elements have aria-hidden=\"true\"",
+          "passed": true,
+          "details": {
+            "dotPresent": true,
+            "followerPresent": true,
+            "dotPointerEvents": "none",
+            "followerPointerEvents": "none",
+            "dotAriaHidden": "true",
+            "followerAriaHidden": "true"
+          }
+        },
+        {
+          "testName": "Cursor dot translates instantly to (350, 450)",
+          "passed": true,
+          "details": {
+            "instantDotTransform": "translate3d(350px, 450px, 0px)",
+            "samples": [
+              {
+                "delay": 25,
+                "transform": "translate3d(-28px, -12px, 0px)",
+                "fx": -28,
+                "fy": -12,
+                "dist": 596.9321569491797
+              },
+              {
+                "delay": 75,
+                "transform": "translate3d(191.92px, 256.79px, 0px)",
+                "fx": 191.92,
+                "fy": 256.79,
+                "dist": 249.63851966393327
+              },
+              {
+                "delay": 150,
+                "transform": "translate3d(322.35px, 416.21px, 0px)",
+                "fx": 322.35,
+                "fy": 416.21,
+                "dist": 43.66104213140131
+              },
+              {
+                "delay": 300,
+                "transform": "translate3d(348.8px, 448.53px, 0px)",
+                "fx": 348.8,
+                "fy": 448.53,
+                "dist": 1.8976037521042302
+              },
+              {
+                "delay": 600,
+                "transform": "translate3d(349.97px, 449.96px, 0px)",
+                "fx": 349.97,
+                "fy": 449.96,
+                "dist": 0.05
+              }
+            ]
+          }
+        },
+        {
+          "testName": "Follower converges via LERP within 5px of target (dist=0.05px)",
+          "passed": true,
+          "details": {
+            "finalSample": {
+              "delay": 600,
+              "transform": "translate3d(349.97px, 449.96px, 0px)",
+              "fx": 349.97,
+              "fy": 449.96,
+              "dist": 0.05
+            },
+            "allSamples": [
+              {
+                "delay": 25,
+                "transform": "translate3d(-28px, -12px, 0px)",
+                "fx": -28,
+                "fy": -12,
+                "dist": 596.9321569491797
+              },
+              {
+                "delay": 75,
+                "transform": "translate3d(191.92px, 256.79px, 0px)",
+                "fx": 191.92,
+                "fy": 256.79,
+                "dist": 249.63851966393327
+              },
+              {
+                "delay": 150,
+                "transform": "translate3d(322.35px, 416.21px, 0px)",
+                "fx": 322.35,
+                "fy": 416.21,
+                "dist": 43.66104213140131
+              },
+              {
+                "delay": 300,
+                "transform": "translate3d(348.8px, 448.53px, 0px)",
+                "fx": 348.8,
+                "fy": 448.53,
+                "dist": 1.8976037521042302
+              },
+              {
+                "delay": 600,
+                "transform": "translate3d(349.97px, 449.96px, 0px)",
+                "fx": 349.97,
+                "fy": 449.96,
+                "dist": 0.05
+              }
+            ]
+          }
+        },
+        {
+          "testName": "Follower ring expands (.cursor-hover) on interactive hover",
+          "passed": true,
+          "details": {
+            "hasHoverOn": true,
+            "hasHoverOff": true
+          }
+        },
+        {
+          "testName": "Follower ring resets when leaving interactive element",
+          "passed": true,
+          "details": {
+            "hasHoverOn": true,
+            "hasHoverOff": true
+          }
+        },
+        {
+          "testName": "Cursor suppression rule exists for touch devices (@media pointer: coarse / hover: none)",
+          "passed": true,
+          "details": {
+            "foundCoarseRule": true
+          }
+        }
+      ]
+    },
+    "CardTilt": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Tilt [Top-Left Corner] clamped <= 10° (rotX=9.82°, rotY=-9.82°)",
+          "passed": true,
+          "details": {
+            "name": "Top-Left Corner",
+            "transform": "perspective(1000px) rotateX(9.82deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.82,
+            "rotY": -9.82,
+            "mouseX": "4.5px",
+            "mouseY": "4.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Top-Right Corner] clamped <= 10° (rotX=9.82°, rotY=9.78°)",
+          "passed": true,
+          "details": {
+            "name": "Top-Right Corner",
+            "transform": "perspective(1000px) rotateX(9.82deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 9.82,
+            "rotY": 9.78,
+            "mouseX": "487.5px",
+            "mouseY": "4.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Bottom-Left Corner] clamped <= 10° (rotX=-9.78°, rotY=-9.82°)",
+          "passed": true,
+          "details": {
+            "name": "Bottom-Left Corner",
+            "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.78,
+            "rotY": -9.82,
+            "mouseX": "4.5px",
+            "mouseY": "455.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Bottom-Right Corner] clamped <= 10° (rotX=-9.78°, rotY=9.78°)",
+          "passed": true,
+          "details": {
+            "name": "Bottom-Right Corner",
+            "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -9.78,
+            "rotY": 9.78,
+            "mouseX": "487.5px",
+            "mouseY": "455.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Dead Center] clamped <= 10° (rotX=0°, rotY=0°)",
+          "passed": true,
+          "details": {
+            "name": "Dead Center",
+            "transform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 0,
+            "rotY": 0,
+            "mouseX": "246.5px",
+            "mouseY": "230.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Extreme Negative Out-of-Bounds] clamped <= 10° (rotX=10°, rotY=-10°)",
+          "passed": true,
+          "details": {
+            "name": "Extreme Negative Out-of-Bounds",
+            "transform": "perspective(1000px) rotateX(10deg) rotateY(-10deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": 10,
+            "rotY": -10,
+            "mouseX": "-1818.5px",
+            "mouseY": "-1290.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": false,
+            "rotYSignOk": true
+          }
+        },
+        {
+          "testName": "Tilt [Extreme Positive Out-of-Bounds] clamped <= 10° (rotX=-10°, rotY=10°)",
+          "passed": true,
+          "details": {
+            "name": "Extreme Positive Out-of-Bounds",
+            "transform": "perspective(1000px) rotateX(-10deg) rotateY(10deg) scale3d(1.02, 1.02, 1.02)",
+            "rotX": -10,
+            "rotY": 10,
+            "mouseX": "2992.5px",
+            "mouseY": "2960.0px",
+            "glowOpacity": "1",
+            "clamped": true,
+            "hasPerspective": true,
+            "hasScale": true,
+            "rotXSignOk": true,
+            "rotYSignOk": false
+          }
+        },
+        {
+          "testName": "Dynamic CSS variables --mouse-x and --mouse-y set on mousemove",
+          "passed": true,
+          "details": {
+            "mouseX": "4.5px",
+            "mouseY": "4.0px"
+          }
+        },
+        {
+          "testName": "CSS var --glow-opacity set to 1 during active tilt hover",
+          "passed": true,
+          "details": {
+            "glowOpacity": "1"
+          }
+        },
+        {
+          "testName": "Mouseleave smoothly resets tilt to 0deg and --glow-opacity to 0",
+          "passed": true,
+          "details": {
+            "results": [
+              {
+                "name": "Top-Left Corner",
+                "transform": "perspective(1000px) rotateX(9.82deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 9.82,
+                "rotY": -9.82,
+                "mouseX": "4.5px",
+                "mouseY": "4.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Top-Right Corner",
+                "transform": "perspective(1000px) rotateX(9.82deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 9.82,
+                "rotY": 9.78,
+                "mouseX": "487.5px",
+                "mouseY": "4.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Bottom-Left Corner",
+                "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": -9.78,
+                "rotY": -9.82,
+                "mouseX": "4.5px",
+                "mouseY": "455.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Bottom-Right Corner",
+                "transform": "perspective(1000px) rotateX(-9.78deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": -9.78,
+                "rotY": 9.78,
+                "mouseX": "487.5px",
+                "mouseY": "455.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Dead Center",
+                "transform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 0,
+                "rotY": 0,
+                "mouseX": "246.5px",
+                "mouseY": "230.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Extreme Negative Out-of-Bounds",
+                "transform": "perspective(1000px) rotateX(10deg) rotateY(-10deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": 10,
+                "rotY": -10,
+                "mouseX": "-1818.5px",
+                "mouseY": "-1290.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": false,
+                "rotYSignOk": true
+              },
+              {
+                "name": "Extreme Positive Out-of-Bounds",
+                "transform": "perspective(1000px) rotateX(-10deg) rotateY(10deg) scale3d(1.02, 1.02, 1.02)",
+                "rotX": -10,
+                "rotY": 10,
+                "mouseX": "2992.5px",
+                "mouseY": "2960.0px",
+                "glowOpacity": "1",
+                "clamped": true,
+                "hasPerspective": true,
+                "hasScale": true,
+                "rotXSignOk": true,
+                "rotYSignOk": false
+              }
+            ],
+            "resetTransform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
+            "resetTransition": "transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+            "resetGlowOpacity": "0"
+          }
+        }
+      ]
+    },
+    "StatsCounters": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Stats counters detected on index.html",
+          "passed": true,
+          "details": [
+            {
+              "text": "100%",
+              "target": "100",
+              "hasAnimated": false
+            },
+            {
+              "text": "250+",
+              "target": "250",
+              "hasAnimated": false
+            },
+            {
+              "text": "99.9%",
+              "target": "99.9",
+              "hasAnimated": false
+            },
+            {
+              "text": "95+",
+              "target": "95",
+              "hasAnimated": false
+            }
+          ]
+        },
+        {
+          "testName": "Target value \"100%\" reached with \"%\" suffix",
+          "passed": true,
+          "details": {
+            "values": [
+              "100%",
+              "250+",
+              "99.9%",
+              "95+"
+            ]
+          }
+        },
+        {
+          "testName": "Target value \"250+\" reached with \"+\" suffix",
+          "passed": true,
+          "details": {
+            "values": [
+              "100%",
+              "250+",
+              "99.9%",
+              "95+"
+            ]
+          }
+        },
+        {
+          "testName": "Target value \"99.9%\" reached with 1 decimal and \"%\" suffix",
+          "passed": true,
+          "details": {
+            "values": [
+              "100%",
+              "250+",
+              "99.9%",
+              "95+"
+            ]
+          }
+        },
+        {
+          "testName": "Target value \"95+\" reached with \"+\" suffix",
+          "passed": true,
+          "details": {
+            "values": [
+              "100%",
+              "250+",
+              "99.9%",
+              "95+"
+            ]
+          }
+        },
+        {
+          "testName": "Re-intersection immunity: values retained without resetting to 0",
+          "passed": true,
+          "details": {
+            "retriggerCheck": [
+              "100%",
+              "250+",
+              "99.9%",
+              "95+"
+            ]
+          }
+        }
+      ]
+    },
+    "TestimonialCarousel": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Next button advances slide immediately (0 -> 1)",
+          "passed": true,
+          "details": {
+            "initialIndex": 0,
+            "afterNextIndex": 1,
+            "afterPrevIndex": 0
+          }
+        },
+        {
+          "testName": "Prev button reverses slide immediately (1 -> 0)",
+          "passed": true,
+          "details": {
+            "initialIndex": 0,
+            "afterNextIndex": 1,
+            "afterPrevIndex": 0
+          }
+        },
+        {
+          "testName": "Autoplay paused for 5.2s during mouseenter hover",
+          "passed": true,
+          "details": {
+            "indexAtHoverStart": 0,
+            "indexAfterHoverWait": 0
+          }
+        },
+        {
+          "testName": "Autoplay resumed automatically after mouseleave",
+          "passed": true,
+          "details": {
+            "currentIndex": 1
+          }
+        },
+        {
+          "testName": "Touch swipe gesture (ΔX=-100px) navigates to next slide",
+          "passed": true,
+          "details": {
+            "beforeSwipeIndex": 1,
+            "afterSwipeLeftIndex": 2,
+            "afterJitterIndex": 2
+          }
+        },
+        {
+          "testName": "Sub-threshold touch jitter (ΔX=+15px) ignored without jumping",
+          "passed": true,
+          "details": {
+            "beforeSwipeIndex": 1,
+            "afterSwipeLeftIndex": 2,
+            "afterJitterIndex": 2
+          }
+        }
+      ]
+    },
+    "FaqAccordion": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "FAQ Item #1 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 0,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.875,
+            "rotated45": true,
+            "iconTransform": "matrix(0.708803, 0.705406, -0.705406, 0.708803, 0, 0)"
+          }
+        },
+        {
+          "testName": "FAQ Item #2 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 1,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.578125,
+            "rotated45": true,
+            "iconTransform": "matrix(0.711061, 0.70313, -0.70313, 0.711061, 0, 0)"
+          }
+        },
+        {
+          "testName": "FAQ Item #3 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 2,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.875,
+            "rotated45": true,
+            "iconTransform": "matrix(0.708797, 0.705413, -0.705413, 0.708797, 0, 0)"
+          }
+        },
+        {
+          "testName": "FAQ Item #4 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 3,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.578125,
+            "rotated45": true,
+            "iconTransform": "matrix(0.711051, 0.703141, -0.703141, 0.711051, 0, 0)"
+          }
+        },
+        {
+          "testName": "FAQ Item #5 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 4,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.875,
+            "rotated45": true,
+            "iconTransform": "matrix(0.708794, 0.705416, -0.705416, 0.708794, 0, 0)"
+          }
+        },
+        {
+          "testName": "FAQ Item #6 expands with 45° icon rotation & strictly 1 item active",
+          "passed": true,
+          "details": {
+            "index": 5,
+            "openCount": 1,
+            "targetOpen": true,
+            "targetAria": true,
+            "contentHeight": 49.875,
+            "rotated45": true,
+            "iconTransform": "matrix(0.708799, 0.70541, -0.70541, 0.708799, 0, 0)"
+          }
+        },
+        {
+          "testName": "Clicking active FAQ item collapses it (0 active items remaining)",
+          "passed": true,
+          "details": {
+            "activeCount": 0
+          }
+        },
+        {
+          "testName": "Enter key expands and collapses focused FAQ trigger",
+          "passed": true,
+          "details": {
+            "openAfterEnter": true,
+            "closedAfterEnter2": true,
+            "openAfterSpace": true,
+            "closedAfterSpace2": true
+          }
+        },
+        {
+          "testName": "Space key expands and collapses focused FAQ trigger",
+          "passed": true,
+          "details": {
+            "openAfterEnter": true,
+            "closedAfterEnter2": true,
+            "openAfterSpace": true,
+            "closedAfterSpace2": true
+          }
+        }
+      ]
+    },
+    "NavbarHysteresis": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Navbar adds .navbar--scrolled at scrollY > 40",
+          "passed": true,
+          "details": {
+            "initialScrolled": false,
+            "initialHidden": false,
+            "scrolledAt60": true,
+            "headerFilter": "blur(16px)",
+            "hiddenAt250": true,
+            "hiddenAfterScrollUp": false,
+            "dockHiddenAt650": true,
+            "dockRevealedAt610": true,
+            "resetScrolled": false
+          }
+        },
+        {
+          "testName": "Navbar hides (.navbar--hidden) on downward scroll past 120px",
+          "passed": true,
+          "details": {
+            "initialScrolled": false,
+            "initialHidden": false,
+            "scrolledAt60": true,
+            "headerFilter": "blur(16px)",
+            "hiddenAt250": true,
+            "hiddenAfterScrollUp": false,
+            "dockHiddenAt650": true,
+            "dockRevealedAt610": true,
+            "resetScrolled": false
+          }
+        },
+        {
+          "testName": "Navbar reveals (removes .navbar--hidden) on upward scroll",
+          "passed": true,
+          "details": {
+            "initialScrolled": false,
+            "initialHidden": false,
+            "scrolledAt60": true,
+            "headerFilter": "blur(16px)",
+            "hiddenAt250": true,
+            "hiddenAfterScrollUp": false,
+            "dockHiddenAt650": true,
+            "dockRevealedAt610": true,
+            "resetScrolled": false
+          }
+        },
+        {
+          "testName": "Floating bottom dock implements scroll hysteresis hide/show",
+          "passed": true,
+          "details": {
+            "initialScrolled": false,
+            "initialHidden": false,
+            "scrolledAt60": true,
+            "headerFilter": "blur(16px)",
+            "hiddenAt250": true,
+            "hiddenAfterScrollUp": false,
+            "dockHiddenAt650": true,
+            "dockRevealedAt610": true,
+            "resetScrolled": false
+          }
+        },
+        {
+          "testName": "Navbar resets .navbar--scrolled when scrolling back to 0",
+          "passed": true,
+          "details": {
+            "initialScrolled": false,
+            "initialHidden": false,
+            "scrolledAt60": true,
+            "headerFilter": "blur(16px)",
+            "hiddenAt250": true,
+            "hiddenAfterScrollUp": false,
+            "dockHiddenAt650": true,
+            "dockRevealedAt610": true,
+            "resetScrolled": false
+          }
+        }
+      ]
+    },
+    "MobileDrawer": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Mobile drawer opens with aria-expanded=\"true\" and locks body scroll",
+          "passed": true,
+          "details": {
+            "drawerIsOpen": true,
+            "ariaExpandedOn": true,
+            "bodyScrollLocked": true,
+            "drawerIsClosed": true,
+            "ariaExpandedOff": true,
+            "bodyScrollRestored": true,
+            "closedViaEscape": true
+          }
+        },
+        {
+          "testName": "Mobile drawer closes and restores body scroll",
+          "passed": true,
+          "details": {
+            "drawerIsOpen": true,
+            "ariaExpandedOn": true,
+            "bodyScrollLocked": true,
+            "drawerIsClosed": true,
+            "ariaExpandedOff": true,
+            "bodyScrollRestored": true,
+            "closedViaEscape": true
+          }
+        },
+        {
+          "testName": "Mobile drawer dismisses cleanly via Escape keypress",
+          "passed": true,
+          "details": {
+            "drawerIsOpen": true,
+            "ariaExpandedOn": true,
+            "bodyScrollLocked": true,
+            "drawerIsClosed": true,
+            "ariaExpandedOff": true,
+            "bodyScrollRestored": true,
+            "closedViaEscape": true
+          }
+        }
+      ]
+    },
+    "RapidStress": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "Rapid FAQ burst (50 clicks) leaves strictly <= 1 active item (got 1)",
+          "passed": true,
+          "details": {
+            "openCount": 1
+          }
+        },
+        {
+          "testName": "Rapid carousel button hammering maintains valid transform and finite slide index",
+          "passed": true,
+          "details": {
+            "transform": "translateX(-1244px)",
+            "isValidTransform": true,
+            "validIndex": true,
+            "currentIndex": 2
+          }
+        },
+        {
+          "testName": "100 high-speed mousemoves strictly preserve <= 10° clamping and 0 NaNs",
+          "passed": true,
+          "details": {
+            "allClamped": true,
+            "zeroNaN": true
+          }
+        },
+        {
+          "testName": "RAF 60-frame benchmark runs at ~60fps (avg 16.67ms, max 16.8ms)",
+          "passed": true,
+          "details": {
+            "avgDeltaMs": 16.67,
+            "maxDeltaMs": 16.8,
+            "approxFps": 60,
+            "totalFrames": 60
+          }
+        }
+      ]
+    },
+    "Subpages": {
+      "passed": true,
+      "checks": [
+        {
+          "testName": "services.html loads clean with scripts & tilt cards (count: 10)",
+          "passed": true,
+          "details": {
+            "title": "Layanan & Workflow Rekayasa Web — Rubicweb",
+            "tiltCardsCount": 10,
+            "hasMainJs": true,
+            "hasInteractionsJs": true
+          }
+        },
+        {
+          "testName": "services.html produces zero console errors",
+          "passed": true,
+          "details": {
+            "errors": []
+          }
+        },
+        {
+          "testName": "portfolio.html loads clean with scripts & tilt cards (count: 7)",
+          "passed": true,
+          "details": {
+            "title": "Portofolio Proyek & Studi Kasus Rekayasa Web — Rubicweb",
+            "tiltCardsCount": 7,
+            "hasMainJs": true,
+            "hasInteractionsJs": true
+          }
+        },
+        {
+          "testName": "portfolio.html produces zero console errors",
+          "passed": true,
+          "details": {
+            "errors": []
+          }
+        },
+        {
+          "testName": "contact.html loads clean with scripts & tilt cards (count: 7)",
+          "passed": true,
+          "details": {
+            "title": "Kontak & Konsultasi Rekayasa Web — Rubicweb",
+            "tiltCardsCount": 7,
+            "hasMainJs": true,
+            "hasInteractionsJs": true
+          }
+        },
+        {
+          "testName": "contact.html produces zero console errors",
+          "passed": true,
+          "details": {
+            "errors": []
+          }
+        }
+      ]
+    }
+  },
+  "consoleErrors": [],
+  "fpsTelemetry": {
+    "avgDeltaMs": 16.67,
+    "maxDeltaMs": 16.8,
+    "approxFps": 60,
+    "totalFrames": 60
+  },
+  "verdict": "APPROVE"
+}

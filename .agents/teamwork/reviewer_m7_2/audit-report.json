@@ -1,0 +1,571 @@
+{
+  "timestamp": "2026-11-11T07:22:22.661Z",
+  "viewportsTested": 6,
+  "pagesTested": 4,
+  "matrixResults": [
+    {
+      "page": "index.html",
+      "viewport": "Ultra-Compact Mobile",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "innerWidth": 320,
+        "overflow": 0,
+        "rogueElements": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "calc-config-col",
+            "left": 33,
+            "right": 369,
+            "width": 336
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "calc-group",
+            "left": 33,
+            "right": 369,
+            "width": 336
+          },
+          {
+            "tag": "label",
+            "id": "",
+            "class": "calc-label",
+            "left": 33,
+            "right": 369,
+            "width": 336
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "tier-cards-group tier-selector tier-options",
+            "left": 33,
+            "right": 369,
+            "width": 336
+          },
+          {
+            "tag": "label",
+            "id": "",
+            "class": "tier-card",
+            "left": 33,
+            "right": 369,
+            "width": 336
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "viewport": "Standard Mobile",
+      "width": 375,
+      "height": 667,
+      "metrics": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "innerWidth": 375,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "viewport": "Tablet Portrait",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "innerWidth": 768,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "viewport": "Laptop / Tablet Landscape",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "scrollWidth": 1009,
+        "clientWidth": 1009,
+        "innerWidth": 1024,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "viewport": "Desktop Standard",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "viewport": "Wide Desktop FHD",
+      "width": 1920,
+      "height": 1080,
+      "metrics": {
+        "scrollWidth": 1905,
+        "clientWidth": 1905,
+        "innerWidth": 1920,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Ultra-Compact Mobile",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "innerWidth": 320,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Standard Mobile",
+      "width": 375,
+      "height": 667,
+      "metrics": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "innerWidth": 375,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Tablet Portrait",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "innerWidth": 768,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Laptop / Tablet Landscape",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "scrollWidth": 1009,
+        "clientWidth": 1009,
+        "innerWidth": 1024,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Desktop Standard",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "Wide Desktop FHD",
+      "width": 1920,
+      "height": 1080,
+      "metrics": {
+        "scrollWidth": 1905,
+        "clientWidth": 1905,
+        "innerWidth": 1920,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Ultra-Compact Mobile",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "innerWidth": 320,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Standard Mobile",
+      "width": 375,
+      "height": 667,
+      "metrics": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "innerWidth": 375,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Tablet Portrait",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "innerWidth": 768,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Laptop / Tablet Landscape",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "scrollWidth": 1009,
+        "clientWidth": 1009,
+        "innerWidth": 1024,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Desktop Standard",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "Wide Desktop FHD",
+      "width": 1920,
+      "height": 1080,
+      "metrics": {
+        "scrollWidth": 1905,
+        "clientWidth": 1905,
+        "innerWidth": 1920,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Ultra-Compact Mobile",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "innerWidth": 320,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Standard Mobile",
+      "width": 375,
+      "height": 667,
+      "metrics": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "innerWidth": 375,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Tablet Portrait",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "innerWidth": 768,
+        "overflow": 0,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Laptop / Tablet Landscape",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "scrollWidth": 1009,
+        "clientWidth": 1009,
+        "innerWidth": 1024,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Desktop Standard",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    },
+    {
+      "page": "contact.html",
+      "viewport": "Wide Desktop FHD",
+      "width": 1920,
+      "height": 1080,
+      "metrics": {
+        "scrollWidth": 1905,
+        "clientWidth": 1905,
+        "innerWidth": 1920,
+        "overflow": -15,
+        "rogueElements": []
+      },
+      "pass": true
+    }
+  ],
+  "spacingAndBalance": {
+    "sections": {
+      "services": {
+        "paddingTop": "120px",
+        "paddingBottom": "120px",
+        "paddingTopNum": 120,
+        "paddingBottomNum": 120,
+        "height": 891
+      },
+      "portfolio": {
+        "paddingTop": "120px",
+        "paddingBottom": "120px",
+        "paddingTopNum": 120,
+        "paddingBottomNum": 120,
+        "height": 1869
+      },
+      "pricing-calculator": {
+        "paddingTop": "120px",
+        "paddingBottom": "120px",
+        "paddingTopNum": 120,
+        "paddingBottomNum": 120,
+        "height": 1004
+      },
+      "testimonials": {
+        "paddingTop": "120px",
+        "paddingBottom": "120px",
+        "paddingTopNum": 120,
+        "paddingBottomNum": 120,
+        "height": 766
+      },
+      "faq": {
+        "paddingTop": "120px",
+        "paddingBottom": "120px",
+        "paddingTopNum": 120,
+        "paddingBottomNum": 120,
+        "height": 900
+      }
+    },
+    "servicesGrid": {
+      "display": "grid",
+      "gridTemplateColumns": "283px 283px 283px 283px",
+      "gap": "28px",
+      "cardCount": 4,
+      "cardRects": [
+        {
+          "index": 0,
+          "width": 283,
+          "height": 460,
+          "top": 1212,
+          "left": 105,
+          "right": 388,
+          "bottom": 1671
+        },
+        {
+          "index": 1,
+          "width": 283,
+          "height": 460,
+          "top": 1212,
+          "left": 416,
+          "right": 699,
+          "bottom": 1671
+        },
+        {
+          "index": 2,
+          "width": 283,
+          "height": 460,
+          "top": 1212,
+          "left": 727,
+          "right": 1010,
+          "bottom": 1671
+        },
+        {
+          "index": 3,
+          "width": 283,
+          "height": 460,
+          "top": 1212,
+          "left": 1038,
+          "right": 1321,
+          "bottom": 1671
+        }
+      ]
+    },
+    "hero": {
+      "viewportWidth": 1440,
+      "docClientWidth": 1425,
+      "containerWidth": 1280,
+      "containerLeft": 72.5,
+      "containerRight": 1352.5,
+      "leftMargin": 72.5,
+      "rightMargin": 72.5
+    }
+  },
+  "typographyAndMinimalism": {
+    "copyMetrics": {
+      "heroSubLength": 94,
+      "heroSubText": "Rekayasa website kustom dan aplikasi enterprise dengan kode bersih dan performa PageSpeed 95+.",
+      "serviceDescsLengths": [
+        99,
+        90,
+        89,
+        89
+      ],
+      "serviceDescsTexts": [
+        "Arsitektur kode modular kustom untuk kecepatan kilat, keamanan tinggi, dan logika bisnis fleksibel.",
+        "Profil korporat bereputasi tinggi dengan tipografi editorial dan micro-interactions 60fps.",
+        "Platform web interaktif, dashboard data real-time, dan portal operasional berbasis cloud.",
+        "Refactoring website usang menjadi modern dengan Core Web Vitals 95+ dan SLA uptime 99.9%."
+      ],
+      "faqAnswersLengths": [
+        113,
+        137,
+        140,
+        141,
+        138,
+        132
+      ],
+      "faqAnswersTexts": [
+        "Ya. Seluruh kode sumber, database, dan aset diserahkan 100% tanpa enkripsi, royalti tahunan, atau vendor lock-in.",
+        "Garansi Kepuasan berlaku pada fase desain awal; refund penuh jika tidak sesuai brief. Garansi Bebas Bug aktif 30 hari pasca rilis publik.",
+        "Kode kustom murni bebas dari plugin berat pihak ketiga. Hasilnya adalah skor PageSpeed 95+, keamanan maksimal, dan skalabilitas tanpa batas.",
+        "Paket Basic selesai 5-7 hari, Paket Pro 14-21 hari, dan Enterprise 30-45 hari kerja. Opsi Express Priority tersedia untuk kebutuhan mendesak.",
+        "Ya. Seluruh paket mencakup domain dan hosting NVMe 1 tahun pertama, ditambah opsi SLA pemeliharaan rutin, backup harian, dan support 24/7.",
+        "Kerja sama dimulai dari konsultasi gratis dan brief. Pembayaran dibagi 2 termin: DP 50% di awal dan pelunasan 50% saat serah terima."
+      ],
+      "testimonialQuotesLengths": [
+        156,
+        147,
+        152,
+        138
+      ]
+    },
+    "subpages": {
+      "services.html": {
+        "hasHeroSection": true,
+        "hasBreadcrumb": true,
+        "breadcrumbHtml": "<a href=\"index.html\">BERANDA</a> » \n            <span>LAYANAN &amp; WORKFLOW</span>",
+        "pageTitle": "Layanan & Metodologi Web",
+        "pageSubtitle": "Solusi website kustom dan portal enterprise dengan kode bersih, PageSpeed 95+, dan arsitektur modular.",
+        "telemetryCount": 4,
+        "channelCount": 0
+      },
+      "portfolio.html": {
+        "hasHeroSection": true,
+        "hasBreadcrumb": true,
+        "breadcrumbHtml": "<a href=\"index.html\">BERANDA</a> » \n            <span>PORTOFOLIO PROYEK</span>",
+        "pageTitle": "Karya Terpilih",
+        "pageSubtitle": "Koleksi proyek rekayasa web dengan standar PageSpeed 95+ dan hasil bisnis terukur.",
+        "telemetryCount": 3,
+        "channelCount": 0
+      },
+      "contact.html": {
+        "hasHeroSection": true,
+        "hasBreadcrumb": true,
+        "breadcrumbHtml": "<a href=\"index.html\">BERANDA</a> » \n            <span>KONTAK &amp; KONSULTASI</span>",
+        "pageTitle": "Konsultasi & Estimasi Biaya",
+        "pageSubtitle": "Diskusikan kebutuhan proyek Anda untuk mendapatkan analisis arsitektur dan penawaran transparan.",
+        "telemetryCount": 0,
+        "channelCount": 3
+      }
+    }
+  },
+  "dockClearance": {
+    "dockTop": 834,
+    "dockBottom": 876,
+    "dockHeight": 42,
+    "windowHeight": 900,
+    "minVerticalClearance": 316,
+    "overlappingHeadings": []
+  },
+  "minorObservations": [
+    {
+      "page": "index.html",
+      "viewport": 320,
+      "count": 5,
+      "sample": {
+        "tag": "div",
+        "id": "",
+        "class": "calc-config-col",
+        "left": 33,
+        "right": 369,
+        "width": 336
+      }
+    }
+  ],
+  "screenshotsCaptured": [],
+  "allPassed": true,
+  "failures": []
+}

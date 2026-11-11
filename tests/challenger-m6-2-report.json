@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T13:00:21.996Z",
+  "timestamp": "2026-11-11T07:21:14.535Z",
   "baseUrl": "http://127.0.0.1:8123",
   "verdict": "APPROVE",
   "pricingCalculator": {
@@ -17,10 +17,10 @@
             "value": "basic",
             "rect": {
               "x": 146,
-              "y": 4672,
-              "top": 4672,
+              "y": 4933,
+              "top": 4933,
               "right": 363,
-              "bottom": 4826,
+              "bottom": 5088,
               "left": 146,
               "width": 217,
               "height": 154
@@ -39,10 +39,10 @@
             "value": "pro",
             "rect": {
               "x": 379,
-              "y": 4672,
-              "top": 4672,
+              "y": 4933,
+              "top": 4933,
               "right": 596,
-              "bottom": 4826,
+              "bottom": 5088,
               "left": 379,
               "width": 217,
               "height": 154
@@ -61,10 +61,10 @@
             "value": "enterprise",
             "rect": {
               "x": 612,
-              "y": 4672,
-              "top": 4672,
+              "y": 4933,
+              "top": 4933,
               "right": 829,
-              "bottom": 4826,
+              "bottom": 5088,
               "left": 612,
               "width": 217,
               "height": 154
@@ -84,21 +84,21 @@
             "i": 0,
             "j": 1,
             "xOverlap": 0,
-            "yOverlap": 154,
+            "yOverlap": 155,
             "overlapArea": 0
           },
           {
             "i": 0,
             "j": 2,
             "xOverlap": 0,
-            "yOverlap": 154,
+            "yOverlap": 155,
             "overlapArea": 0
           },
           {
             "i": 1,
             "j": 2,
             "xOverlap": 0,
-            "yOverlap": 154,
+            "yOverlap": 155,
             "overlapArea": 0
           }
         ],
@@ -117,10 +117,10 @@
             "value": "basic",
             "rect": {
               "x": 73,
-              "y": 4982,
-              "top": 4982,
+              "y": 5325,
+              "top": 5325,
               "right": 265,
-              "bottom": 5154,
+              "bottom": 5497,
               "left": 73,
               "width": 192,
               "height": 172
@@ -139,10 +139,10 @@
             "value": "pro",
             "rect": {
               "x": 281,
-              "y": 4982,
-              "top": 4982,
+              "y": 5325,
+              "top": 5325,
               "right": 472,
-              "bottom": 5154,
+              "bottom": 5497,
               "left": 281,
               "width": 192,
               "height": 172
@@ -161,10 +161,10 @@
             "value": "enterprise",
             "rect": {
               "x": 488,
-              "y": 4982,
-              "top": 4982,
+              "y": 5325,
+              "top": 5325,
               "right": 680,
-              "bottom": 5154,
+              "bottom": 5497,
               "left": 488,
               "width": 192,
               "height": 172
@@ -217,10 +217,10 @@
             "value": "basic",
             "rect": {
               "x": 33,
-              "y": 7390,
-              "top": 7390,
+              "y": 7879,
+              "top": 7879,
               "right": 369,
-              "bottom": 7515,
+              "bottom": 8004,
               "left": 33,
               "width": 336,
               "height": 125
@@ -239,10 +239,10 @@
             "value": "pro",
             "rect": {
               "x": 33,
-              "y": 7527,
-              "top": 7527,
+              "y": 8016,
+              "top": 8016,
               "right": 369,
-              "bottom": 7681,
+              "bottom": 8170,
               "left": 33,
               "width": 336,
               "height": 154
@@ -261,10 +261,10 @@
             "value": "enterprise",
             "rect": {
               "x": 33,
-              "y": 7693,
-              "top": 7693,
+              "y": 8182,
+              "top": 8182,
               "right": 369,
-              "bottom": 7818,
+              "bottom": 8307,
               "left": 33,
               "width": 336,
               "height": 125
@@ -376,17 +376,17 @@
     "rapidBurstStress": {
       "burstRounds": 60,
       "checkedRadiosCount": 1,
-      "finalCheckedTier": "basic",
+      "finalCheckedTier": "pro",
       "activeCardsCount": 1,
-      "priceText": "Rp 2.500.000",
+      "priceText": "Rp 5.500.000",
       "radiosState": [
         {
           "value": "basic",
-          "checked": true
+          "checked": false
         },
         {
           "value": "pro",
-          "checked": false
+          "checked": true
         },
         {
           "value": "enterprise",
@@ -558,8 +558,8 @@
             "index": 0,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           },
           {
@@ -619,8 +619,8 @@
             "index": 1,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           },
           {
@@ -674,14 +674,14 @@
             "btnAriaExpanded": "false",
             "contentHeight": 0,
             "gridTemplateRows": "0px",
-            "iconTransform": "matrix(1, 7.21331e-09, -7.21331e-09, 1, 0, 0)"
+            "iconTransform": "none"
           },
           {
             "index": 2,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           },
           {
@@ -735,14 +735,14 @@
             "btnAriaExpanded": "false",
             "contentHeight": 0,
             "gridTemplateRows": "0px",
-            "iconTransform": "none"
+            "iconTransform": "matrix(1, 1.80321e-09, -1.80321e-09, 1, 0, 0)"
           },
           {
             "index": 3,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           },
           {
@@ -796,14 +796,14 @@
             "btnAriaExpanded": "false",
             "contentHeight": 0,
             "gridTemplateRows": "0px",
-            "iconTransform": "matrix(1, 1.77059e-08, -1.77059e-08, 1, 0, 0)"
+            "iconTransform": "none"
           },
           {
             "index": 4,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           },
           {
@@ -863,8 +863,8 @@
             "index": 5,
             "isActiveClass": true,
             "btnAriaExpanded": "true",
-            "contentHeight": 102,
-            "gridTemplateRows": "102.328px",
+            "contentHeight": 50,
+            "gridTemplateRows": "50.1094px",
             "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
           }
         ]

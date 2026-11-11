@@ -1,0 +1,4540 @@
+[
+  {
+    "file": "tests\\adversarial-m5-verification.js",
+    "checks": [
+      {
+        "lineNum": 34,
+        "code": "const dot = document.querySelector('.cursor-dot');"
+      },
+      {
+        "lineNum": 35,
+        "code": "const follower = document.querySelector('.cursor-follower');"
+      },
+      {
+        "lineNum": 57,
+        "code": "const follower = document.querySelector('.cursor-follower');"
+      },
+      {
+        "lineNum": 58,
+        "code": "const dot = document.querySelector('.cursor-dot');"
+      },
+      {
+        "lineNum": 61,
+        "code": "const btn = document.querySelector('.btn--primary');"
+      },
+      {
+        "lineNum": 81,
+        "code": "const matchTransform = cursorLerp.followerTransformAfterLerp.match(/translate3d\\(([\\d.-]+)px,\\s*([\\d.-]+)px/);"
+      },
+      {
+        "lineNum": 105,
+        "code": "const card = document.querySelector('.card-tilt, .service-card');"
+      },
+      {
+        "lineNum": 142,
+        "code": "const rotMatch = tiltData.transformActive ? tiltData.transformActive.match(/rotateX\\(([\\d.-]+)deg\\)\\s+rotateY\\(([\\d.-]+)deg\\)/) : null;"
+      },
+      {
+        "lineNum": 149,
+        "code": "const resetCubic = tiltData.transitionLeave && tiltData.transitionLeave.includes('cubic-bezier(0.16, 1, 0.3, 1)');"
+      },
+      {
+        "lineNum": 182,
+        "code": "const items = Array.from(document.querySelectorAll('.stat-number'));"
+      },
+      {
+        "lineNum": 184,
+        "code": "target: el.getAttribute('data-counter-target'),"
+      },
+      {
+        "lineNum": 185,
+        "code": "currentText: el.textContent.trim()"
+      },
+      {
+        "lineNum": 193,
+        "code": "const items = Array.from(document.querySelectorAll('.stat-number'));"
+      },
+      {
+        "lineNum": 195,
+        "code": "target: el.getAttribute('data-counter-target'),"
+      },
+      {
+        "lineNum": 196,
+        "code": "finalText: el.textContent.trim(),"
+      },
+      {
+        "lineNum": 197,
+        "code": "suffix: el.getAttribute('data-suffix') || ''"
+      },
+      {
+        "lineNum": 228,
+        "code": "const tierInputs = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+      },
+      {
+        "lineNum": 229,
+        "code": "const slider = calcSection.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 230,
+        "code": "const addons = Array.from(calcSection.querySelectorAll('input[name=\"addon\"]'));"
+      },
+      {
+        "lineNum": 231,
+        "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+      },
+      {
+        "lineNum": 232,
+        "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+      },
+      {
+        "lineNum": 233,
+        "code": "const waBtn = calcSection.querySelector('#btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 236,
+        "code": "const tRadio = tierInputs.find(t => t.value === tierVal);"
+      },
+      {
+        "lineNum": 246,
+        "code": "const isExp = cb.value === 'express' || cb.getAttribute('data-express') === 'true';"
+      },
+      {
+        "lineNum": 250,
+        "code": "cb.checked = addonIndices.includes(idx);"
+      },
+      {
+        "lineNum": 260,
+        "code": "price: priceDisplay.textContent,"
+      },
+      {
+        "lineNum": 261,
+        "code": "time: timeDisplay.textContent,"
+      },
+      {
+        "lineNum": 269,
+        "code": "price: priceDisplay.textContent,"
+      },
+      {
+        "lineNum": 270,
+        "code": "time: timeDisplay.textContent,"
+      },
+      {
+        "lineNum": 285,
+        "code": "price: priceDisplay.textContent,"
+      },
+      {
+        "lineNum": 286,
+        "code": "time: timeDisplay.textContent,"
+      },
+      {
+        "lineNum": 294,
+        "code": "price: priceDisplay.textContent,"
+      },
+      {
+        "lineNum": 295,
+        "code": "time: timeDisplay.textContent"
+      },
+      {
+        "lineNum": 306,
+        "code": "const case1Pass = c1.price.includes('5.500.000');"
+      },
+      {
+        "lineNum": 307,
+        "code": "const case2Pass = c2.price.includes('2.500.000');"
+      },
+      {
+        "lineNum": 308,
+        "code": "const case3Pass = c3.price.includes('23.750.000') && c3.time.includes('27');"
+      },
+      {
+        "lineNum": 309,
+        "code": "const case4Pass = c4.price.includes('2.500.000'); // Did not drop below baseline 2.5M"
+      },
+      {
+        "lineNum": 330,
+        "code": "const track = document.querySelector('.testimonial-track');"
+      },
+      {
+        "lineNum": 331,
+        "code": "const dots = Array.from(document.querySelectorAll('.carousel-dot'));"
+      },
+      {
+        "lineNum": 341,
+        "code": "const nextBtn = document.querySelector('.carousel-btn--next');"
+      },
+      {
+        "lineNum": 347,
+        "code": "const track = document.querySelector('.testimonial-track');"
+      },
+      {
+        "lineNum": 348,
+        "code": "const dots = Array.from(document.querySelectorAll('.carousel-dot'));"
+      },
+      {
+        "lineNum": 358,
+        "code": "const container = document.querySelector('.testimonial-carousel');"
+      },
+      {
+        "lineNum": 367,
+        "code": "const dots = Array.from(document.querySelectorAll('.carousel-dot'));"
+      },
+      {
+        "lineNum": 376,
+        "code": "const container = document.querySelector('.testimonial-carousel');"
+      },
+      {
+        "lineNum": 385,
+        "code": "const dots = Array.from(document.querySelectorAll('.carousel-dot'));"
+      },
+      {
+        "lineNum": 394,
+        "code": "const container = document.querySelector('.testimonial-carousel');"
+      },
+      {
+        "lineNum": 395,
+        "code": "const dotsBefore = Array.from(document.querySelectorAll('.carousel-dot')).findIndex(d => d.classList.contains('active'));"
+      },
+      {
+        "lineNum": 417,
+        "code": "const dotsAfter = Array.from(document.querySelectorAll('.carousel-dot')).findIndex(d => d.classList.contains('active'));"
+      },
+      {
+        "lineNum": 454,
+        "code": "const triggers = document.querySelectorAll('.faq-trigger');"
+      },
+      {
+        "lineNum": 482,
+        "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 484,
+        "code": "const panel = item.querySelector('.faq-panel');"
+      },
+      {
+        "lineNum": 485,
+        "code": "const trigger = item.querySelector('.faq-trigger');"
+      },
+      {
+        "lineNum": 489,
+        "code": "aria: trigger.getAttribute('aria-expanded'),"
+      },
+      {
+        "lineNum": 500,
+        "code": "const trigger1 = document.querySelectorAll('.faq-trigger')[1];"
+      },
+      {
+        "lineNum": 507,
+        "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 509,
+        "code": "const panel = item.querySelector('.faq-panel');"
+      },
+      {
+        "lineNum": 510,
+        "code": "const trigger = item.querySelector('.faq-trigger');"
+      },
+      {
+        "lineNum": 514,
+        "code": "aria: trigger.getAttribute('aria-expanded'),"
+      }
+    ]
+  },
+  {
+    "file": "tests\\challenger-m5-2-deep-verification.js",
+    "checks": [
+      {
+        "lineNum": 155,
+        "code": "const allElements = document.querySelectorAll('*');"
+      },
+      {
+        "lineNum": 159,
+        "code": "if (['SCRIPT', 'STYLE', 'META', 'LINK', 'NOSCRIPT'].includes(el.tagName)) continue;"
+      },
+      {
+        "lineNum": 185,
+        "code": "const calcBox = document.querySelector('.consultation-calculator-wrapper');"
+      },
+      {
+        "lineNum": 186,
+        "code": "const formBox = document.querySelector('.consultation-form-wrapper');"
+      },
+      {
+        "lineNum": 236,
+        "code": "const header = document.querySelector('header, .site-header, nav, #navbar');"
+      },
+      {
+        "lineNum": 237,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 266,
+        "code": "const toggle = document.querySelector('.navbar__toggle');"
+      },
+      {
+        "lineNum": 269,
+        "code": "const menuOpen = document.querySelector('.mobile-menu.is-open');"
+      },
+      {
+        "lineNum": 270,
+        "code": "const servicesLink = document.querySelector('.mobile-menu a[href*=\"services.html\"]');"
+      },
+      {
+        "lineNum": 274,
+        "code": "servicesHref: servicesLink.getAttribute('href')"
+      },
+      {
+        "lineNum": 304,
+        "code": "const btn = document.querySelector(`[data-filter=\"${key}\"]`);"
+      },
+      {
+        "lineNum": 314,
+        "code": "const allItems = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 319,
+        "code": "const activeBtn = document.querySelector('.filter-tab.is-active, [data-filter].is-active, [data-filter].active');"
+      },
+      {
+        "lineNum": 323,
+        "code": "activeFilterKey: activeBtn ? activeBtn.getAttribute('data-filter') : null"
+      },
+      {
+        "lineNum": 342,
+        "code": "const btn = document.querySelector(`[data-filter=\"${key}\"]`);"
+      },
+      {
+        "lineNum": 346,
+        "code": "const visible = Array.from(document.querySelectorAll('.portfolio-card')).filter(el => {"
+      },
+      {
+        "lineNum": 369,
+        "code": "const btn = document.querySelector(`[data-filter=\"${key}\"]`);"
+      },
+      {
+        "lineNum": 378,
+        "code": "const webappBtn = document.querySelector('[data-filter=\"webapp\"]');"
+      },
+      {
+        "lineNum": 382,
+        "code": "const allItems = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 384,
+        "code": "const activeBtn = document.querySelector('[data-filter].is-active, [data-filter].active');"
+      },
+      {
+        "lineNum": 389,
+        "code": "finalFilter: activeBtn ? activeBtn.getAttribute('data-filter') : null"
+      },
+      {
+        "lineNum": 400,
+        "code": "const allBtn = document.querySelector('[data-filter=\"all\"]');"
+      },
+      {
+        "lineNum": 419,
+        "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+      },
+      {
+        "lineNum": 420,
+        "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+      },
+      {
+        "lineNum": 426,
+        "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 427,
+        "code": "const isVisible = modal && (modal.getAttribute('aria-hidden') === 'false' || modal.classList.contains('is-active') || modal.classList.contains('open'));"
+      },
+      {
+        "lineNum": 429,
+        "code": "const titleEl = modal ? modal.querySelector('.modal-title, [data-modal-title]') : null;"
+      },
+      {
+        "lineNum": 435,
+        "code": "titleText: titleEl ? titleEl.textContent.trim() : '',"
+      },
+      {
+        "lineNum": 445,
+        "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 449,
+        "code": "const focusables = Array.from(modal.querySelectorAll(focusableSelector)).filter(el => {"
+      },
+      {
+        "lineNum": 492,
+        "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 493,
+        "code": "const dialog = modal ? modal.querySelector('.modal-dialog, .modal-card, .modal-content') : null;"
+      },
+      {
+        "lineNum": 498,
+        "code": "const stillVisible = modal.getAttribute('aria-hidden') === 'false' || modal.classList.contains('is-active') || modal.classList.contains('open');"
+      },
+      {
+        "lineNum": 506,
+        "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+      },
+      {
+        "lineNum": 507,
+        "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+      },
+      {
+        "lineNum": 508,
+        "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 521,
+        "code": "const isHidden = modal.getAttribute('aria-hidden') === 'true' || !modal.classList.contains('is-active');"
+      },
+      {
+        "lineNum": 538,
+        "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]') ||"
+      },
+      {
+        "lineNum": 539,
+        "code": "document.querySelector('[data-project-id=\"nexastore\"]');"
+      },
+      {
+        "lineNum": 540,
+        "code": "const modal = document.querySelector('#case-study-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 550,
+        "code": "const isHidden = modal.getAttribute('aria-hidden') === 'true' || !modal.classList.contains('is-active');"
+      },
+      {
+        "lineNum": 564,
+        "code": "const trigger = document.querySelector('.btn-service-modal');"
+      },
+      {
+        "lineNum": 570,
+        "code": "const modal = document.querySelector('#service-modal') || document.querySelector('.modal');"
+      },
+      {
+        "lineNum": 571,
+        "code": "const opened = modal && (modal.getAttribute('aria-hidden') === 'false' || modal.classList.contains('is-active'));"
+      },
+      {
+        "lineNum": 577,
+        "code": "const closed = modal && (modal.getAttribute('aria-hidden') === 'true' || !modal.classList.contains('is-active'));"
+      },
+      {
+        "lineNum": 611,
+        "code": "const errorEl = formGroup ? formGroup.querySelector('.error-message, .form-error, .invalid-feedback') : null;"
+      },
+      {
+        "lineNum": 614,
+        "code": "const errorText = errorEl ? errorEl.textContent.trim() : '';"
+      },
+      {
+        "lineNum": 700,
+        "code": "const form = document.querySelector('.contact-form, #consultation-form, form');"
+      },
+      {
+        "lineNum": 710,
+        "code": "const submitBtn = form.querySelector('button[type=\"submit\"]');"
+      },
+      {
+        "lineNum": 713,
+        "code": "const invalidInputs = form.querySelectorAll('.is-invalid, .error');"
+      },
+      {
+        "lineNum": 742,
+        "code": "const scripts = document.querySelectorAll('script');"
+      },
+      {
+        "lineNum": 743,
+        "code": "const hasInjectedScript = Array.from(scripts).some(s => s.textContent.includes('alert(\"XSS\")'));"
+      },
+      {
+        "lineNum": 757,
+        "code": "const floatBtn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, [class*=\"whatsapp-float\"]');"
+      },
+      {
+        "lineNum": 760,
+        "code": "const rippleEl = floatBtn.querySelector('.whatsapp-ripple, [class*=\"ripple\"]') || floatBtn;"
+      }
+    ]
+  },
+  {
+    "file": "tests\\challenger-m5-final-responsive.js",
+    "checks": [
+      {
+        "lineNum": 84,
+        "code": "const allElements = Array.from(document.querySelectorAll('body *'));"
+      },
+      {
+        "lineNum": 108,
+        "code": "const formBox = document.querySelector('.consultation-form-box');"
+      },
+      {
+        "lineNum": 152,
+        "code": "const tierCards = Array.from(calc.querySelectorAll('.tier-card'));"
+      },
+      {
+        "lineNum": 164,
+        "code": "const slider = calc.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 167,
+        "code": "const addons = Array.from(calc.querySelectorAll('.calc-addon-label, label:has(input[name=\"addon\"])'));"
+      },
+      {
+        "lineNum": 177,
+        "code": "const priceDisplay = calc.querySelector('#calc-total-price');"
+      },
+      {
+        "lineNum": 178,
+        "code": "const timeDisplay = calc.querySelector('#calc-total-timeline');"
+      },
+      {
+        "lineNum": 179,
+        "code": "const waBtn = calc.querySelector('#btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 195,
+        "code": "initialPrice: priceDisplay ? priceDisplay.textContent.trim() : null,"
+      },
+      {
+        "lineNum": 196,
+        "code": "initialTime: timeDisplay ? timeDisplay.textContent.trim() : null,"
+      },
+      {
+        "lineNum": 217,
+        "code": "const basicRadio = document.querySelector('input[name=\"tier\"][value=\"basic\"]');"
+      },
+      {
+        "lineNum": 222,
+        "code": "const slider = document.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 227,
+        "code": "const price = document.querySelector('#calc-total-price').textContent.trim();"
+      },
+      {
+        "lineNum": 228,
+        "code": "const time = document.querySelector('#calc-total-timeline').textContent.trim();"
+      },
+      {
+        "lineNum": 229,
+        "code": "const waHref = document.querySelector('#btn-calc-whatsapp').href;"
+      },
+      {
+        "lineNum": 232,
+        "code": "assert(testBasicBaseline.price.includes('2.500.000'), `Basic baseline (1 page) updates price to Rp 2.500.000 (Actual: ${testBasicBaseline.price})`);"
+      },
+      {
+        "lineNum": 233,
+        "code": "assert(testBasicBaseline.time.includes('7'), `Basic baseline timeline = 7 days (Actual: ${testBasicBaseline.time})`);"
+      },
+      {
+        "lineNum": 237,
+        "code": "const slider = document.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 242,
+        "code": "const price = document.querySelector('#calc-total-price').textContent.trim();"
+      },
+      {
+        "lineNum": 245,
+        "code": "assert(testBasic5Pages.price.includes('3.900.000'), `Basic with 5 pages (1 base + 4 extra) updates price to Rp 3.900.000 (Actual: ${testBasic5Pages.price})`);"
+      },
+      {
+        "lineNum": 249,
+        "code": "const entRadio = document.querySelector('input[name=\"tier\"][value=\"enterprise\"]');"
+      },
+      {
+        "lineNum": 254,
+        "code": "const slider = document.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 259,
+        "code": "const addons = Array.from(document.querySelectorAll('input[name=\"addon\"]'));"
+      },
+      {
+        "lineNum": 261,
+        "code": "if (cb.value === 'ecommerce' || cb.value === 'express') {"
+      },
+      {
+        "lineNum": 269,
+        "code": "const price = document.querySelector('#calc-total-price').textContent.trim();"
+      },
+      {
+        "lineNum": 270,
+        "code": "const time = document.querySelector('#calc-total-timeline').textContent.trim();"
+      },
+      {
+        "lineNum": 271,
+        "code": "const waHref = document.querySelector('#btn-calc-whatsapp').href;"
+      },
+      {
+        "lineNum": 276,
+        "code": "const entPricePass = testEnterpriseCustom.price.includes('18.750.000');"
+      },
+      {
+        "lineNum": 277,
+        "code": "const entTimePass = testEnterpriseCustom.time.includes('25');"
+      },
+      {
+        "lineNum": 280,
+        "code": "assert(testEnterpriseCustom.waHref.includes('wa.me') && testEnterpriseCustom.waHref.includes('18.750.000'), 'WhatsApp CTA pre-filled link synchronized with calculation');"
+      },
+      {
+        "lineNum": 284,
+        "code": "const packageSelect = document.querySelector('#package');"
+      },
+      {
+        "lineNum": 286,
+        "code": "const basicOption = Array.from(packageSelect.options).find(o => o.value.toLowerCase().includes('basic'));"
+      },
+      {
+        "lineNum": 292,
+        "code": "const basicRadio = document.querySelector('input[name=\"tier\"][value=\"basic\"]');"
+      },
+      {
+        "lineNum": 295,
+        "code": "priceAfterSync: document.querySelector('#calc-total-price').textContent.trim()"
+      },
+      {
+        "lineNum": 340,
+        "code": "const allElements = Array.from(document.querySelectorAll('body *'));"
+      },
+      {
+        "lineNum": 364,
+        "code": "const formBox = document.querySelector('.consultation-form-box');"
+      }
+    ]
+  },
+  {
+    "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+    "checks": [
+      {
+        "lineNum": 68,
+        "code": "const scripts = Array.from(document.querySelectorAll('script[src]')).map(s => s.getAttribute('src'));"
+      },
+      {
+        "lineNum": 69,
+        "code": "const inlineScripts = Array.from(document.querySelectorAll('script:not([src])')).map(s => s.textContent.trim());"
+      },
+      {
+        "lineNum": 72,
+        "code": "assert(servicesScripts.scripts.includes('js/interactions.js'), 'services.html correctly links js/interactions.js');"
+      },
+      {
+        "lineNum": 77,
+        "code": "const cards = Array.from(document.querySelectorAll('.card-tilt'));"
+      },
+      {
+        "lineNum": 100,
+        "code": "const matchTL = transformTL.match(/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/);"
+      },
+      {
+        "lineNum": 112,
+        "code": "const matchBR = transformBR.match(/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/);"
+      },
+      {
+        "lineNum": 146,
+        "code": "const hasTilt = c.transformTL.includes('perspective(1000px)') &&"
+      },
+      {
+        "lineNum": 147,
+        "code": "c.transformTL.includes('scale3d(1.02, 1.02, 1.02)') &&"
+      },
+      {
+        "lineNum": 151,
+        "code": "const resetOk = c.transformReset.includes('rotateX(0deg)') && c.transformReset.includes('rotateY(0deg)') && c.glowReset === '0';"
+      },
+      {
+        "lineNum": 161,
+        "code": "const btn = document.querySelector(`.btn-service-modal[data-service-id=\"${serviceId}\"]`);"
+      },
+      {
+        "lineNum": 167,
+        "code": "const ariaHidden = modal.getAttribute('aria-hidden');"
+      },
+      {
+        "lineNum": 170,
+        "code": "const tagText = document.getElementById('service-modal-tag')?.textContent || '';"
+      },
+      {
+        "lineNum": 171,
+        "code": "const titleText = document.getElementById('service-modal-title')?.textContent || '';"
+      },
+      {
+        "lineNum": 172,
+        "code": "const descText = document.getElementById('service-modal-desc')?.textContent || '';"
+      },
+      {
+        "lineNum": 173,
+        "code": "const deliverableItems = Array.from(document.querySelectorAll('#service-modal-deliverables li')).map(li => li.textContent.trim());"
+      },
+      {
+        "lineNum": 174,
+        "code": "const ctaHref = document.getElementById('service-modal-cta')?.getAttribute('href') || '';"
+      },
+      {
+        "lineNum": 179,
+        "code": "const ariaHiddenAfterEsc = modal.getAttribute('aria-hidden');"
+      },
+      {
+        "lineNum": 203,
+        "code": "assert(modalResult.ctaHref.includes(sId) || modalResult.ctaHref.includes('contact.html'), `Modal CTA links to contact page with package parameter: ${modalResult.ctaHref}`);"
+      },
+      {
+        "lineNum": 210,
+        "code": "const btn = document.querySelector('.btn-service-modal');"
+      },
+      {
+        "lineNum": 213,
+        "code": "const dialog = modal.querySelector('.modal-dialog');"
+      },
+      {
+        "lineNum": 236,
+        "code": "const scripts = Array.from(document.querySelectorAll('script[src]')).map(s => s.getAttribute('src'));"
+      },
+      {
+        "lineNum": 238,
+        "code": "hasInteractions: scripts.includes('js/interactions.js'),"
+      },
+      {
+        "lineNum": 239,
+        "code": "hasPortfolio: scripts.includes('js/portfolio.js'),"
+      },
+      {
+        "lineNum": 240,
+        "code": "hasMain: scripts.includes('js/main.js')"
+      },
+      {
+        "lineNum": 248,
+        "code": "const cards = Array.from(document.querySelectorAll('.card-tilt'));"
+      },
+      {
+        "lineNum": 252,
+        "code": "const cat = card.getAttribute('data-category');"
+      },
+      {
+        "lineNum": 253,
+        "code": "const title = card.querySelector('.portfolio-title, h3')?.textContent.trim() || `Card-${idx}`;"
+      },
+      {
+        "lineNum": 270,
+        "code": "const match = transform.match(/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/);"
+      },
+      {
+        "lineNum": 299,
+        "code": "const hasTilt = c.transform.includes('perspective(1000px)') &&"
+      },
+      {
+        "lineNum": 300,
+        "code": "c.transform.includes('scale3d(1.02, 1.02, 1.02)') &&"
+      },
+      {
+        "lineNum": 304,
+        "code": "const resetOk = c.transformReset.includes('rotateX(0deg)') && c.transformReset.includes('rotateY(0deg)') && c.glowReset === '0';"
+      },
+      {
+        "lineNum": 314,
+        "code": "const btn = document.querySelector(`[data-filter=\"${c}\"]`);"
+      },
+      {
+        "lineNum": 321,
+        "code": "return Array.from(document.querySelectorAll('.portfolio-card')).filter(card => {"
+      },
+      {
+        "lineNum": 335,
+        "code": "const allBtn = document.querySelector('[data-filter=\"all\"]');"
+      },
+      {
+        "lineNum": 340,
+        "code": "return Array.from(document.querySelectorAll('.portfolio-card')).filter(card => {"
+      },
+      {
+        "lineNum": 350,
+        "code": "const triggers = Array.from(document.querySelectorAll('.btn-case-study, [data-project-id]'));"
+      },
+      {
+        "lineNum": 354,
+        "code": "const projId = btn.getAttribute('data-project-id') || btn.getAttribute('data-case-study');"
+      },
+      {
+        "lineNum": 358,
+        "code": "const title = document.getElementById('modal-title')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 359,
+        "code": "const client = document.getElementById('modal-client')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 360,
+        "code": "const challenge = document.getElementById('modal-challenge')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 361,
+        "code": "const solution = document.getElementById('modal-solution')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 362,
+        "code": "const results = document.getElementById('modal-results')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 363,
+        "code": "const waLink = document.getElementById('modal-whatsapp-cta')?.getAttribute('href') || '';"
+      },
+      {
+        "lineNum": 378,
+        "code": "waLinkValid: waLink.includes('wa.me')"
+      },
+      {
+        "lineNum": 399,
+        "code": "const scripts = Array.from(document.querySelectorAll('script[src]')).map(s => s.getAttribute('src'));"
+      },
+      {
+        "lineNum": 401,
+        "code": "hasInteractions: scripts.includes('js/interactions.js'),"
+      },
+      {
+        "lineNum": 402,
+        "code": "hasContact: scripts.includes('js/contact.js'),"
+      },
+      {
+        "lineNum": 403,
+        "code": "hasMain: scripts.includes('js/main.js')"
+      },
+      {
+        "lineNum": 411,
+        "code": "const cards = Array.from(document.querySelectorAll('.card-tilt'));"
+      },
+      {
+        "lineNum": 415,
+        "code": "const heading = card.querySelector('h4, h3')?.textContent.trim() || `Card-${idx}`;"
+      },
+      {
+        "lineNum": 432,
+        "code": "const match = transform.match(/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/);"
+      },
+      {
+        "lineNum": 460,
+        "code": "const hasTilt = c.transform.includes('perspective(1000px)') &&"
+      },
+      {
+        "lineNum": 461,
+        "code": "c.transform.includes('scale3d(1.02, 1.02, 1.02)') &&"
+      },
+      {
+        "lineNum": 465,
+        "code": "const resetOk = c.transformReset.includes('rotateX(0deg)') && c.transformReset.includes('rotateY(0deg)') && c.glowReset === '0';"
+      },
+      {
+        "lineNum": 477,
+        "code": "const form = document.querySelector('.consultation-form, .contact-form, #contact-form');"
+      },
+      {
+        "lineNum": 478,
+        "code": "const nameInput = form.querySelector('#name, input[name=\"name\"], input[name=\"nama\"], #form-name');"
+      },
+      {
+        "lineNum": 479,
+        "code": "const emailInput = form.querySelector('#email, input[type=\"email\"], input[name=\"email\"], #form-email');"
+      },
+      {
+        "lineNum": 480,
+        "code": "const phoneInput = form.querySelector('#phone, input[type=\"tel\"], input[name=\"phone\"], #form-phone');"
+      },
+      {
+        "lineNum": 481,
+        "code": "const packageSelect = form.querySelector('#package, select[name=\"package\"], #form-package');"
+      },
+      {
+        "lineNum": 482,
+        "code": "const messageInput = form.querySelector('#message, textarea[name=\"message\"], #form-message');"
+      },
+      {
+        "lineNum": 483,
+        "code": "const submitBtn = form.querySelector('button[type=\"submit\"]');"
+      },
+      {
+        "lineNum": 487,
+        "code": "const activeErrors = Array.from(form.querySelectorAll('.is-invalid, [aria-invalid=\"true\"]'));"
+      },
+      {
+        "lineNum": 494,
+        "code": "const nameTooShortError = nameInput.getAttribute('aria-invalid') === 'true';"
+      },
+      {
+        "lineNum": 499,
+        "code": "const nameValid = nameInput.getAttribute('aria-invalid') !== 'true';"
+      },
+      {
+        "lineNum": 508,
+        "code": "if (emailInput.getAttribute('aria-invalid') !== 'true') {"
+      },
+      {
+        "lineNum": 516,
+        "code": "const validEmailAccepted = emailInput.getAttribute('aria-invalid') !== 'true';"
+      },
+      {
+        "lineNum": 525,
+        "code": "if (phoneInput.getAttribute('aria-invalid') !== 'true') {"
+      },
+      {
+        "lineNum": 536,
+        "code": "if (phoneInput.getAttribute('aria-invalid') === 'true') {"
+      },
+      {
+        "lineNum": 562,
+        "code": "const waLink = successBanner ? successBanner.querySelector('a')?.getAttribute('href') : '';"
+      },
+      {
+        "lineNum": 574,
+        "code": "waHrefValid: waLink ? (waLink.includes('wa.me') || waLink.includes('whatsapp.com')) : false"
+      },
+      {
+        "lineNum": 590,
+        "code": "const waBtn = document.querySelector('.floating-whatsapp-btn, .btn-floating-whatsapp');"
+      },
+      {
+        "lineNum": 596,
+        "code": "const ariaLabel = waBtn.getAttribute('aria-label');"
+      },
+      {
+        "lineNum": 597,
+        "code": "const href = waBtn.getAttribute('href');"
+      },
+      {
+        "lineNum": 611,
+        "code": "assert(rippleTestResult.ariaLabel && rippleTestResult.ariaLabel.includes('WhatsApp'), `Accessible aria-label contains 'WhatsApp': \"${rippleTestResult.ariaLabel}\"`);"
+      },
+      {
+        "lineNum": 612,
+        "code": "assert(rippleTestResult.href.includes('wa.me') || rippleTestResult.href.includes('whatsapp.com'), `Floating button links to official WhatsApp URL`);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+    "checks": [
+      {
+        "lineNum": 79,
+        "code": "const calcSection = document.getElementById('pricing-calculator') || document.getElementById('pricing') || document.querySelector('.pricing-section');"
+      },
+      {
+        "lineNum": 80,
+        "code": "const widget = document.querySelector('.pricing-calculator-widget, .calc-layout');"
+      },
+      {
+        "lineNum": 81,
+        "code": "const tierGroup = document.querySelector('.tier-cards-group, .tier-selector, .tier-options');"
+      },
+      {
+        "lineNum": 82,
+        "code": "const cards = Array.from(document.querySelectorAll('.tier-card'));"
+      },
+      {
+        "lineNum": 90,
+        "code": "const radio = c.querySelector('input[type=\"radio\"]');"
+      },
+      {
+        "lineNum": 91,
+        "code": "const inner = c.querySelector('.tier-card-inner');"
+      },
+      {
+        "lineNum": 299,
+        "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+      },
+      {
+        "lineNum": 300,
+        "code": "const tierRadios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+      },
+      {
+        "lineNum": 301,
+        "code": "const slider = calcSection.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 302,
+        "code": "const sliderDisplay = calcSection.querySelector('#pages-count-display');"
+      },
+      {
+        "lineNum": 303,
+        "code": "const addons = Array.from(calcSection.querySelectorAll('input[name=\"addon\"]'));"
+      },
+      {
+        "lineNum": 304,
+        "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+      },
+      {
+        "lineNum": 305,
+        "code": "const timeDisplay = calcSection.querySelector('#calc-total-timeline');"
+      },
+      {
+        "lineNum": 306,
+        "code": "const waBtn = calcSection.querySelector('#btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 309,
+        "code": "const targetRadio = tierRadios.find(r => r.value === scenario.tier);"
+      },
+      {
+        "lineNum": 323,
+        "code": "const isExp = cb.value === 'express' || cb.getAttribute('data-express') === 'true';"
+      },
+      {
+        "lineNum": 324,
+        "code": "const name = cb.getAttribute('data-name') || cb.value;"
+      },
+      {
+        "lineNum": 328,
+        "code": "const shouldCheck = scenario.addons.some(a => name.toLowerCase().includes(a.toLowerCase()));"
+      },
+      {
+        "lineNum": 337,
+        "code": "sliderDisplayText: sliderDisplay ? sliderDisplay.textContent : null,"
+      },
+      {
+        "lineNum": 338,
+        "code": "priceText: priceDisplay ? priceDisplay.textContent.trim() : null,"
+      },
+      {
+        "lineNum": 339,
+        "code": "timeText: timeDisplay ? timeDisplay.textContent.trim() : null,"
+      },
+      {
+        "lineNum": 348,
+        "code": "assert(execResult.timeText && execResult.timeText.includes(String(sc.expectedDaysMin)),"
+      },
+      {
+        "lineNum": 350,
+        "code": "assert(execResult.waHref && decodeURIComponent(execResult.waHref).includes(sc.expectedPrice),"
+      },
+      {
+        "lineNum": 364,
+        "code": "const calcSection = document.getElementById('pricing-calculator') || document.querySelector('.pricing-section');"
+      },
+      {
+        "lineNum": 365,
+        "code": "const cards = Array.from(calcSection.querySelectorAll('.tier-card'));"
+      },
+      {
+        "lineNum": 366,
+        "code": "const radios = Array.from(calcSection.querySelectorAll('input[name=\"tier\"]'));"
+      },
+      {
+        "lineNum": 367,
+        "code": "const priceDisplay = calcSection.querySelector('#calc-total-price');"
+      },
+      {
+        "lineNum": 397,
+        "code": "priceText: priceDisplay ? priceDisplay.textContent : null,"
+      },
+      {
+        "lineNum": 428,
+        "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+      },
+      {
+        "lineNum": 429,
+        "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 430,
+        "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+      },
+      {
+        "lineNum": 434,
+        "code": "const questionSpan = btn.querySelector('.faq-question');"
+      },
+      {
+        "lineNum": 436,
+        "code": "const iconSpan = btn.querySelector('.faq-icon');"
+      },
+      {
+        "lineNum": 442,
+        "code": "type: btn.getAttribute('type'),"
+      },
+      {
+        "lineNum": 454,
+        "code": "text: questionSpan ? questionSpan.textContent.trim().slice(0, 35) + '...' : null,"
+      },
+      {
+        "lineNum": 459,
+        "code": "text: iconSpan ? iconSpan.textContent.trim() : null,"
+      },
+      {
+        "lineNum": 474,
+        "code": "const isNotUserAgentGray = !info.backgroundColor.includes('240, 240, 240');"
+      },
+      {
+        "lineNum": 479,
+        "code": "const isLightTextColor = info.color === 'rgb(242, 242, 246)' || info.color.includes('242, 242, 246') || info.color === 'rgba(242, 242, 246, 1)';"
+      },
+      {
+        "lineNum": 498,
+        "code": "const faqSection = document.getElementById('faq') || document.querySelector('.faq-section');"
+      },
+      {
+        "lineNum": 499,
+        "code": "const items = Array.from(faqSection.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 500,
+        "code": "const triggers = Array.from(faqSection.querySelectorAll('.faq-trigger'));"
+      },
+      {
+        "lineNum": 511,
+        "code": "const content = item.querySelector('.faq-content, .faq-panel');"
+      },
+      {
+        "lineNum": 512,
+        "code": "const icon = item.querySelector('.faq-icon');"
+      },
+      {
+        "lineNum": 520,
+        "code": "btnAriaExpanded: btn.getAttribute('aria-expanded'),"
+      },
+      {
+        "lineNum": 545,
+        "code": "targetState.iconTransform.includes('0.7071') ||"
+      },
+      {
+        "lineNum": 546,
+        "code": "targetState.iconTransform.includes('matrix')"
+      },
+      {
+        "lineNum": 559,
+        "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+      },
+      {
+        "lineNum": 565,
+        "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 578,
+        "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+      },
+      {
+        "lineNum": 579,
+        "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 592,
+        "code": "const ariaExpandedItems = triggers.filter(btn => btn.getAttribute('aria-expanded') === 'true');"
+      },
+      {
+        "lineNum": 616,
+        "code": "const trigger = document.querySelectorAll('.faq-trigger')[0];"
+      },
+      {
+        "lineNum": 617,
+        "code": "const item = document.querySelectorAll('.faq-item')[0];"
+      }
+    ]
+  },
+  {
+    "file": "tests\\helpers\\browser-driver.js",
+    "checks": [
+      {
+        "lineNum": 307,
+        "code": "const el = document.querySelector(sel);"
+      },
+      {
+        "lineNum": 321,
+        "code": "const list = Array.from(document.querySelectorAll(sel));"
+      },
+      {
+        "lineNum": 333,
+        "code": "const el = document.querySelector(sel);"
+      },
+      {
+        "lineNum": 343,
+        "code": "const el = document.querySelector(sel);"
+      },
+      {
+        "lineNum": 397,
+        "code": "const el = document.querySelector(sel);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\helpers\\static-server.js",
+    "checks": []
+  },
+  {
+    "file": "tests\\helpers\\test-harness.js",
+    "checks": [
+      {
+        "lineNum": 25,
+        "code": "toBe(expected) {"
+      },
+      {
+        "lineNum": 32,
+        "code": "toEqual(expected) {"
+      },
+      {
+        "lineNum": 82,
+        "code": "toContain(itemOrSubstr) {"
+      },
+      {
+        "lineNum": 85,
+        "code": "this.actual.includes(itemOrSubstr),"
+      },
+      {
+        "lineNum": 90,
+        "code": "this.actual.includes(itemOrSubstr),"
+      },
+      {
+        "lineNum": 100,
+        "code": "this._test(re.test(String(this.actual)), `\"${this.actual}\" to match ${re}`);"
+      },
+      {
+        "lineNum": 194,
+        "code": "if (filter && !suite.name.toLowerCase().includes(filter.toLowerCase())) {"
+      }
+    ]
+  },
+  {
+    "file": "tests\\run-e2e.js",
+    "checks": []
+  },
+  {
+    "file": "tests\\stress-challenger-m5-2.js",
+    "checks": [
+      {
+        "lineNum": 109,
+        "code": "hasHeading: el ? !!el.querySelector('h3') : false,"
+      },
+      {
+        "lineNum": 110,
+        "code": "headingText: el && el.querySelector('h3') ? el.querySelector('h3').textContent.trim() : ''"
+      },
+      {
+        "lineNum": 127,
+        "code": "const badges = Array.from(card.querySelectorAll('.tech-badge')).map(b => b.textContent.trim());"
+      },
+      {
+        "lineNum": 128,
+        "code": "const deliverables = Array.from(card.querySelectorAll('ul li')).map(li => li.textContent.trim());"
+      },
+      {
+        "lineNum": 129,
+        "code": "const strongHeaders = Array.from(card.querySelectorAll('ul li strong')).map(s => s.textContent.trim());"
+      },
+      {
+        "lineNum": 158,
+        "code": "const steps = Array.from(container.querySelectorAll('.timeline-step, .workflow-step'));"
+      },
+      {
+        "lineNum": 160,
+        "code": "const number = step.querySelector('.step-number')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 161,
+        "code": "const tag = step.querySelector('.step-tag')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 162,
+        "code": "const title = step.querySelector('.step-title')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 163,
+        "code": "const deliverables = Array.from(step.querySelectorAll('ul li')).map(li => li.textContent.trim());"
+      },
+      {
+        "lineNum": 189,
+        "code": "const trigger = document.querySelector('.btn-service-modal[data-service-id=\"custom-web\"]');"
+      },
+      {
+        "lineNum": 195,
+        "code": "const isOpen = modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'false';"
+      },
+      {
+        "lineNum": 197,
+        "code": "const titleText = document.getElementById('service-modal-title')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 198,
+        "code": "const items = document.querySelectorAll('#service-modal-deliverables li').length;"
+      },
+      {
+        "lineNum": 202,
+        "code": "const isClosed = !modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'true';"
+      },
+      {
+        "lineNum": 229,
+        "code": "const btn = document.querySelector(`.btn-service-modal[data-service-id=\"${sid}\"]`);"
+      },
+      {
+        "lineNum": 235,
+        "code": "const title = document.getElementById('service-modal-title')?.textContent || '';"
+      },
+      {
+        "lineNum": 268,
+        "code": "const tabs = Array.from(document.querySelectorAll('.filter-btn, .portfolio-filter-btn')).map(b => ({"
+      },
+      {
+        "lineNum": 269,
+        "code": "filter: b.getAttribute('data-filter'),"
+      },
+      {
+        "lineNum": 270,
+        "code": "text: b.textContent.trim(),"
+      },
+      {
+        "lineNum": 271,
+        "code": "isSelected: b.getAttribute('aria-selected') === 'true' || b.classList.contains('is-active')"
+      },
+      {
+        "lineNum": 273,
+        "code": "const cards = Array.from(document.querySelectorAll('.portfolio-card')).map(c => ({"
+      },
+      {
+        "lineNum": 274,
+        "code": "category: c.getAttribute('data-category'),"
+      },
+      {
+        "lineNum": 275,
+        "code": "title: c.querySelector('.portfolio-title')?.textContent.trim() || '',"
+      },
+      {
+        "lineNum": 304,
+        "code": "const btn = document.querySelector(`[data-filter=\"${f}\"]`);"
+      },
+      {
+        "lineNum": 312,
+        "code": "const cards = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 317,
+        "code": "const activeBtn = document.querySelector(`[data-filter=\"${f}\"]`);"
+      },
+      {
+        "lineNum": 320,
+        "code": "btnSelected: activeBtn ? activeBtn.getAttribute('aria-selected') === 'true' : false"
+      },
+      {
+        "lineNum": 340,
+        "code": "const buttons = Array.from(document.querySelectorAll('[data-filter]'));"
+      },
+      {
+        "lineNum": 343,
+        "code": "const btn = buttons.find(b => b.getAttribute('data-filter') === f);"
+      },
+      {
+        "lineNum": 349,
+        "code": "const corpBtn = buttons.find(b => b.getAttribute('data-filter') === 'corporate');"
+      },
+      {
+        "lineNum": 353,
+        "code": "const allCards = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 359,
+        "code": "visibleCategories: visibleCards.map(c => c.getAttribute('data-category'))"
+      },
+      {
+        "lineNum": 376,
+        "code": "const buttons = Array.from(document.querySelectorAll('[data-filter]'));"
+      },
+      {
+        "lineNum": 380,
+        "code": "const btn = buttons.find(b => b.getAttribute('data-filter') === f);"
+      },
+      {
+        "lineNum": 389,
+        "code": "const allBtn = buttons.find(b => b.getAttribute('data-filter') === 'all');"
+      },
+      {
+        "lineNum": 393,
+        "code": "const allCards = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 415,
+        "code": "const cards = Array.from(document.querySelectorAll('.portfolio-card'));"
+      },
+      {
+        "lineNum": 417,
+        "code": "const modalBtn = c.querySelector('.btn-case-study, [data-project-id]');"
+      },
+      {
+        "lineNum": 418,
+        "code": "const previewLink = c.querySelector('a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 421,
+        "code": "projectId: modalBtn ? modalBtn.getAttribute('data-project-id') : null,"
+      },
+      {
+        "lineNum": 460,
+        "code": "const trigger = document.querySelector(`.btn-case-study[data-project-id=\"${pid}\"]`);"
+      },
+      {
+        "lineNum": 468,
+        "code": "const title = modal.querySelector('#modal-title')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 469,
+        "code": "const client = modal.querySelector('#modal-client')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 470,
+        "code": "const challenge = modal.querySelector('#modal-challenge')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 471,
+        "code": "const solution = modal.querySelector('#modal-solution')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 472,
+        "code": "const resultsText = modal.querySelector('#modal-results')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 473,
+        "code": "const tag = modal.querySelector('#modal-tag')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 474,
+        "code": "const imgSrc = modal.querySelector('#modal-img')?.getAttribute('src') || '';"
+      },
+      {
+        "lineNum": 475,
+        "code": "const waHref = modal.querySelector('#modal-whatsapp-cta')?.getAttribute('href') || '';"
+      },
+      {
+        "lineNum": 480,
+        "code": "const closeBtn = modal.querySelector('#modal-close-btn, .modal-close');"
+      },
+      {
+        "lineNum": 493,
+        "code": "hasImg: imgSrc.includes('assets/portfolio/'),"
+      },
+      {
+        "lineNum": 494,
+        "code": "waValid: waHref.includes('wa.me/6285280008984') && waHref.includes(encodeURIComponent(title))"
+      },
+      {
+        "lineNum": 524,
+        "code": "const title = modal.querySelector('#modal-title')?.textContent.trim() || '';"
+      },
+      {
+        "lineNum": 527,
+        "code": "const closeBtn = modal.querySelector('#modal-close-btn');"
+      },
+      {
+        "lineNum": 543,
+        "code": "const trigger = document.querySelector('.btn-case-study');"
+      },
+      {
+        "lineNum": 548,
+        "code": "const focusable = Array.from(modal.querySelectorAll('button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])'));"
+      },
+      {
+        "lineNum": 570,
+        "code": "const closeBtn = modal.querySelector('#modal-close-btn');"
+      },
+      {
+        "lineNum": 590,
+        "code": "const trigger = document.querySelector('.btn-case-study[data-project-id=\"nexastore\"]');"
+      },
+      {
+        "lineNum": 604,
+        "code": "const closedState = !modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'true';"
+      },
+      {
+        "lineNum": 627,
+        "code": "const dialog = modal.querySelector('.modal-dialog');"
+      },
+      {
+        "lineNum": 628,
+        "code": "const trigger = document.querySelector('.btn-case-study');"
+      },
+      {
+        "lineNum": 678,
+        "code": "const nameInvalid = document.getElementById('name').getAttribute('aria-invalid') === 'true';"
+      },
+      {
+        "lineNum": 679,
+        "code": "const emailInvalid = document.getElementById('email').getAttribute('aria-invalid') === 'true';"
+      },
+      {
+        "lineNum": 680,
+        "code": "const phoneInvalid = document.getElementById('phone').getAttribute('aria-invalid') === 'true';"
+      },
+      {
+        "lineNum": 681,
+        "code": "const msgInvalid = document.getElementById('message').getAttribute('aria-invalid') === 'true';"
+      },
+      {
+        "lineNum": 690,
+        "code": "const emailFormatError = emailError.textContent.trim();"
+      },
+      {
+        "lineNum": 691,
+        "code": "const phoneFormatError = phoneError.textContent.trim();"
+      },
+      {
+        "lineNum": 694,
+        "code": "nameErrorVisible: nameError && nameError.style.display !== 'none' && nameError.textContent.includes('minimal 3 karakter'),"
+      },
+      {
+        "lineNum": 697,
+        "code": "msgErrorVisible: msgError && msgError.style.display !== 'none' && msgError.textContent.includes('minimal 10 karakter'),"
+      },
+      {
+        "lineNum": 698,
+        "code": "emailFormatMsgValid: emailFormatError.includes('tidak valid'),"
+      },
+      {
+        "lineNum": 699,
+        "code": "phoneFormatMsgValid: phoneFormatError.includes('08'),"
+      },
+      {
+        "lineNum": 785,
+        "code": "return { isValid, isInvalid, errorText: err.textContent.trim() };"
+      },
+      {
+        "lineNum": 831,
+        "code": "return { isValid, isInvalid, errorText: err.textContent.trim() };"
+      },
+      {
+        "lineNum": 865,
+        "code": "const bannerRole = banner ? banner.getAttribute('role') : '';"
+      },
+      {
+        "lineNum": 881,
+        "code": "if (!decodedMsg.includes('Budi Wicaksono') || !decodedMsg.includes('PT Inovasi Cipta Digital') || !decodedMsg.includes('Paket Pro')) {"
+      },
+      {
+        "lineNum": 889,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .floating-whatsapp-btn');"
+      },
+      {
+        "lineNum": 931,
+        "code": "if (!rippleTest.animName.includes('ripple')) {"
+      }
+    ]
+  },
+  {
+    "file": "tests\\stress-interactions-empirical.js",
+    "checks": [
+      {
+        "lineNum": 41,
+        "code": "const card = document.querySelector('.card-tilt, .service-card');"
+      },
+      {
+        "lineNum": 67,
+        "code": "const rotXMatch = transform.match(/rotateX\\(([\\d.-]+)deg\\)/);"
+      },
+      {
+        "lineNum": 68,
+        "code": "const rotYMatch = transform.match(/rotateY\\(([\\d.-]+)deg\\)/);"
+      },
+      {
+        "lineNum": 82,
+        "code": "scaleOk: transform.includes('scale3d(1.02, 1.02, 1.02)')"
+      },
+      {
+        "lineNum": 110,
+        "code": "const resetOk = tiltStress.transformReset.includes('rotateX(0deg)') &&"
+      },
+      {
+        "lineNum": 111,
+        "code": "tiltStress.transitionReset.includes('cubic-bezier(0.16, 1, 0.3, 1)') &&"
+      },
+      {
+        "lineNum": 128,
+        "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+      },
+      {
+        "lineNum": 130,
+        "code": "target: s.getAttribute('data-counter-target'),"
+      },
+      {
+        "lineNum": 131,
+        "code": "text: s.textContent.trim(),"
+      },
+      {
+        "lineNum": 154,
+        "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+      },
+      {
+        "lineNum": 156,
+        "code": "const raw = s.textContent.trim().replace(/[^0-9.]/g, '');"
+      },
+      {
+        "lineNum": 167,
+        "code": "const stats = Array.from(document.querySelectorAll('.stat-number'));"
+      },
+      {
+        "lineNum": 169,
+        "code": "target: s.getAttribute('data-counter-target'),"
+      },
+      {
+        "lineNum": 170,
+        "code": "decimals: s.getAttribute('data-decimals'),"
+      },
+      {
+        "lineNum": 171,
+        "code": "suffix: s.getAttribute('data-suffix'),"
+      },
+      {
+        "lineNum": 172,
+        "code": "text: s.textContent.trim(),"
+      },
+      {
+        "lineNum": 218,
+        "code": "const first = document.querySelector('.stat-number');"
+      },
+      {
+        "lineNum": 219,
+        "code": "return first ? first.textContent.trim() : '';"
+      },
+      {
+        "lineNum": 221,
+        "code": "const immune = retriggerImmunity.includes('100%');"
+      },
+      {
+        "lineNum": 236,
+        "code": "const calc = document.querySelector('.pricing-calculator');"
+      },
+      {
+        "lineNum": 239,
+        "code": "const tierRadios = Array.from(calc.querySelectorAll('input[name=\"tier\"]'));"
+      },
+      {
+        "lineNum": 240,
+        "code": "const slider = calc.querySelector('#extra-pages');"
+      },
+      {
+        "lineNum": 241,
+        "code": "const addons = Array.from(calc.querySelectorAll('input[name=\"addon\"], .calc-addon'));"
+      },
+      {
+        "lineNum": 242,
+        "code": "const priceDisplay = calc.querySelector('#calc-total-price');"
+      },
+      {
+        "lineNum": 243,
+        "code": "const timelineDisplay = calc.querySelector('#calc-total-timeline');"
+      },
+      {
+        "lineNum": 244,
+        "code": "const waBtn = calc.querySelector('#btn-calc-whatsapp, a.btn-whatsapp');"
+      },
+      {
+        "lineNum": 245,
+        "code": "const packageDropdown = document.querySelector('#package');"
+      },
+      {
+        "lineNum": 248,
+        "code": "const radio = tierRadios.find(r => r.value === tierName);"
+      },
+      {
+        "lineNum": 258,
+        "code": "const isExpCb = cb.value === 'express' || cb.getAttribute('data-express') === 'true';"
+      },
+      {
+        "lineNum": 262,
+        "code": "cb.checked = activeAddonIndices.includes(idx);"
+      },
+      {
+        "lineNum": 268,
+        "code": "priceText: priceDisplay ? priceDisplay.textContent.trim() : '',"
+      },
+      {
+        "lineNum": 269,
+        "code": "timelineText: timelineDisplay ? timelineDisplay.textContent.trim() : '',"
+      },
+      {
+        "lineNum": 331,
+        "code": "const basicSelectedAfterSync = tierRadios.find(r => r.value === 'basic')?.checked;"
+      },
+      {
+        "lineNum": 351,
+        "code": "const priceOk = test.priceText.includes(test.expectedPrice);"
+      },
+      {
+        "lineNum": 352,
+        "code": "const daysOk = test.expectedDaysString ? test.timelineText.includes(test.expectedDaysString) : true;"
+      },
+      {
+        "lineNum": 353,
+        "code": "const waOk = test.waHref && test.waHref.includes('wa.me/6285280008984') && test.waHref.includes(encodeURIComponent(test.expectedPrice));"
+      },
+      {
+        "lineNum": 372,
+        "code": "const carousel = document.querySelector('.testimonial-carousel');"
+      },
+      {
+        "lineNum": 373,
+        "code": "const nextBtn = carousel.querySelector('.carousel-btn--next');"
+      },
+      {
+        "lineNum": 374,
+        "code": "const prevBtn = carousel.querySelector('.carousel-btn--prev');"
+      },
+      {
+        "lineNum": 375,
+        "code": "const dots = Array.from(carousel.querySelectorAll('.carousel-dot'));"
+      },
+      {
+        "lineNum": 376,
+        "code": "const track = carousel.querySelector('.testimonial-track');"
+      },
+      {
+        "lineNum": 462,
+        "code": "const items = Array.from(document.querySelectorAll('.faq-item'));"
+      },
+      {
+        "lineNum": 463,
+        "code": "const triggers = Array.from(document.querySelectorAll('.faq-trigger'));"
+      },
+      {
+        "lineNum": 466,
+        "code": "return items.filter(it => it.classList.contains('active') || it.classList.contains('is-open') || it.getAttribute('aria-expanded') === 'true').length;"
+      },
+      {
+        "lineNum": 502,
+        "code": "const triggers = document.querySelectorAll('.faq-trigger');"
+      },
+      {
+        "lineNum": 530,
+        "code": "const item0 = document.querySelectorAll('.faq-item')[0];"
+      },
+      {
+        "lineNum": 531,
+        "code": "const trigger = item0.querySelector('.faq-trigger');"
+      },
+      {
+        "lineNum": 532,
+        "code": "const panel = item0.querySelector('.faq-panel');"
+      },
+      {
+        "lineNum": 535,
+        "code": "ariaExpanded: trigger.getAttribute('aria-expanded'),"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-01-architecture-http.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "expect(docType).toBe('html');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(htmlLang).toBe('id');"
+      },
+      {
+        "lineNum": 12,
+        "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+      },
+      {
+        "lineNum": 13,
+        "code": "expect(driver.getNetworkErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 21,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 27,
+        "code": "const meta = document.querySelector('meta[name=\"viewport\"]');"
+      },
+      {
+        "lineNum": 28,
+        "code": "return !!meta && meta.content.includes('width=device-width');"
+      },
+      {
+        "lineNum": 31,
+        "code": "expect(hasViewport).toBe(true);"
+      },
+      {
+        "lineNum": 32,
+        "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+      },
+      {
+        "lineNum": 39,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 45,
+        "code": "const meta = document.querySelector('meta[name=\"viewport\"]');"
+      },
+      {
+        "lineNum": 46,
+        "code": "return !!meta && meta.content.includes('width=device-width');"
+      },
+      {
+        "lineNum": 49,
+        "code": "expect(hasViewport).toBe(true);"
+      },
+      {
+        "lineNum": 50,
+        "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+      },
+      {
+        "lineNum": 57,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 63,
+        "code": "const meta = document.querySelector('meta[name=\"viewport\"]');"
+      },
+      {
+        "lineNum": 64,
+        "code": "return !!meta && meta.content.includes('width=device-width');"
+      },
+      {
+        "lineNum": 67,
+        "code": "expect(hasViewport).toBe(true);"
+      },
+      {
+        "lineNum": 68,
+        "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+      },
+      {
+        "lineNum": 74,
+        "code": "return Array.from(document.querySelectorAll('link[rel=\"stylesheet\"]'))"
+      },
+      {
+        "lineNum": 75,
+        "code": ".map(l => l.getAttribute('href'))"
+      },
+      {
+        "lineNum": 76,
+        "code": ".filter(h => h && h.includes('css/'));"
+      },
+      {
+        "lineNum": 80,
+        "code": "const networkErrors = driver.getNetworkErrors().filter(e => e.url.includes('.css'));"
+      },
+      {
+        "lineNum": 81,
+        "code": "expect(networkErrors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-02-vanilla-stack.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "return Array.from(document.querySelectorAll('script[src]')).map(s => s.src.toLowerCase());"
+      },
+      {
+        "lineNum": 13,
+        "code": "expect(src.includes(kw)).toBe(false);"
+      },
+      {
+        "lineNum": 21,
+        "code": "return Array.from(document.querySelectorAll('link[rel=\"stylesheet\"]')).map(l => (l.href || '').toLowerCase());"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(href.includes(kw)).toBe(false);"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(globals.hasJQuery).toBe(false);"
+      },
+      {
+        "lineNum": 41,
+        "code": "expect(globals.hasReact).toBe(false);"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(globals.hasVue).toBe(false);"
+      },
+      {
+        "lineNum": 48,
+        "code": "expect(errors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-03-responsive-layout.test.js",
+    "checks": [
+      {
+        "lineNum": 14,
+        "code": "const calc = document.querySelector('.consultation-calculator-wrapper');"
+      },
+      {
+        "lineNum": 22,
+        "code": "expect(overflowData.scrollOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 23,
+        "code": "expect(overflowData.calcClipped).toBe(false);"
+      },
+      {
+        "lineNum": 35,
+        "code": "const calc = document.querySelector('.consultation-calculator-wrapper');"
+      },
+      {
+        "lineNum": 43,
+        "code": "expect(overflowData.scrollOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 44,
+        "code": "expect(overflowData.calcClipped).toBe(false);"
+      },
+      {
+        "lineNum": 61,
+        "code": "expect(overflowData.scrollOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 70,
+        "code": "const btn = document.querySelector('.navbar__toggle, .menu-toggle, .mobile-toggle, [aria-label*=\"menu\" i], [aria-label*=\"navigasi\" i]');"
+      },
+      {
+        "lineNum": 74,
+        "code": "expect(hasMobileToggle).toBe(true);"
+      },
+      {
+        "lineNum": 82,
+        "code": "const navLinks = document.querySelectorAll('header nav a, .floating-bottom-nav a, .navbar a');"
+      },
+      {
+        "lineNum": 86,
+        "code": "expect(hasDesktopNav).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const hero = document.querySelector('#hero, .hero-section');"
+      },
+      {
+        "lineNum": 14,
+        "code": "expect(heroInfo.exists).toBe(true);"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(heroInfo.tagName).toBe('section');"
+      },
+      {
+        "lineNum": 21,
+        "code": "const h1 = document.querySelector('#hero h1, .hero-section h1');"
+      },
+      {
+        "lineNum": 22,
+        "code": "return h1 ? h1.textContent.trim().toLowerCase() : '';"
+      },
+      {
+        "lineNum": 31,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 32,
+        "code": "return text.includes('garansi') || text.includes('kepuasan') || text.includes('100%');"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(hasGuarantee).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const ctas = Array.from(document.querySelectorAll('#hero a, .hero-section a'));"
+      },
+      {
+        "lineNum": 43,
+        "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+      },
+      {
+        "lineNum": 44,
+        "code": "const text = a.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 45,
+        "code": "return href.includes('wa.me') || href.includes('whatsapp') || href.includes('#contact') || text.includes('konsultasi') || text.includes('whatsapp');"
+      },
+      {
+        "lineNum": 49,
+        "code": "expect(hasWaCta).toBe(true);"
+      },
+      {
+        "lineNum": 55,
+        "code": "const ctas = Array.from(document.querySelectorAll('#hero a, .hero-section a'));"
+      },
+      {
+        "lineNum": 57,
+        "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+      },
+      {
+        "lineNum": 58,
+        "code": "const text = a.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 59,
+        "code": "return href.includes('portfolio') || href.includes('#portfolio') || text.includes('portofolio') || text.includes('portfolio');"
+      },
+      {
+        "lineNum": 63,
+        "code": "expect(hasPortfolioCta).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-05-custom-cursor.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const dot = document.querySelector('.cursor-dot, .custom-cursor, #cursor-dot, .cursor');"
+      },
+      {
+        "lineNum": 8,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, #cursor-follower');"
+      },
+      {
+        "lineNum": 12,
+        "code": "expect(cursorExists).toBe(true);"
+      },
+      {
+        "lineNum": 19,
+        "code": "const dot = document.querySelector('.cursor-dot, #cursor-dot');"
+      },
+      {
+        "lineNum": 22,
+        "code": "return transform.includes('250') && transform.includes('180');"
+      },
+      {
+        "lineNum": 25,
+        "code": "expect(moved).toBe(true);"
+      },
+      {
+        "lineNum": 31,
+        "code": "const btn = document.querySelector('a, button');"
+      },
+      {
+        "lineNum": 34,
+        "code": "const follower = document.querySelector('.cursor-follower, #cursor-follower');"
+      },
+      {
+        "lineNum": 38,
+        "code": "expect(hoverTriggered).toBe(true);"
+      },
+      {
+        "lineNum": 44,
+        "code": "const btn = document.querySelector('a, button');"
+      },
+      {
+        "lineNum": 47,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, .custom-cursor');"
+      },
+      {
+        "lineNum": 51,
+        "code": "expect(hoverRemoved).toBe(true);"
+      },
+      {
+        "lineNum": 59,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, .custom-cursor');"
+      },
+      {
+        "lineNum": 66,
+        "code": "expect(touchOperable).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services .card-tilt, #services article, #services .grid-col');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const badges = document.querySelectorAll('#services .tech-badge, #services .badge, #services .tag, #services [data-tech], #services span');"
+      },
+      {
+        "lineNum": 18,
+        "code": "const texts = Array.from(badges).map(b => b.textContent.toLowerCase());"
+      },
+      {
+        "lineNum": 19,
+        "code": "return texts.some(t => t.includes('html') || t.includes('laravel') || t.includes('php') || t.includes('api') || t.includes('css') || t.includes('js') || t.includes('react'));"
+      },
+      {
+        "lineNum": 22,
+        "code": "expect(techBadges).toBe(true);"
+      },
+      {
+        "lineNum": 28,
+        "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+      },
+      {
+        "lineNum": 29,
+        "code": "return Array.from(cards).every(c => c.textContent.trim().length > 30);"
+      },
+      {
+        "lineNum": 32,
+        "code": "expect(hasDescriptions).toBe(true);"
+      },
+      {
+        "lineNum": 38,
+        "code": "const triggers = document.querySelectorAll('#services a, #services button');"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(hasTriggers).toBe(true);"
+      },
+      {
+        "lineNum": 48,
+        "code": "const headings = document.querySelectorAll('#services h3, #services h4');"
+      },
+      {
+        "lineNum": 52,
+        "code": "expect(hasHeadings).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const cards = document.querySelectorAll('.card-tilt, .interactive-spotlight, [data-tilt], .service-card, .portfolio-card');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(cardExists).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 29,
+        "code": "return !!(varX || varY || transform.includes('rotate') || transform.includes('perspective'));"
+      },
+      {
+        "lineNum": 32,
+        "code": "expect(hasCoordinates).toBe(true);"
+      },
+      {
+        "lineNum": 38,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 47,
+        "code": "return transform.includes('perspective') && (transform.includes('rotateX') || transform.includes('rotateY'));"
+      },
+      {
+        "lineNum": 50,
+        "code": "expect(tiltTriggered).toBe(true);"
+      },
+      {
+        "lineNum": 56,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 60,
+        "code": "return transform.includes('rotateX(0deg)') || transform.includes('scale3d(1, 1, 1)');"
+      },
+      {
+        "lineNum": 63,
+        "code": "expect(resetOnLeave).toBe(true);"
+      },
+      {
+        "lineNum": 69,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 72,
+        "code": "return style.content !== 'none' || style.backgroundImage.includes('radial-gradient') || style.background.includes('radial-gradient');"
+      },
+      {
+        "lineNum": 75,
+        "code": "expect(hasGlow).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const el = document.querySelector('#why-us, .trust-section, #guarantee, .guarantees, #about');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(hasTrustSection).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 18,
+        "code": "return Array.from(counters).map(c => c.getAttribute('data-counter-target') || c.getAttribute('data-target') || c.textContent.trim());"
+      },
+      {
+        "lineNum": 27,
+        "code": "const statsSection = document.querySelector('.stats-cards-grid, #why-us, [data-counter-target], [data-target]');"
+      },
+      {
+        "lineNum": 37,
+        "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 38,
+        "code": "return el ? el.textContent.trim() : '';"
+      },
+      {
+        "lineNum": 47,
+        "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 55,
+        "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 57,
+        "code": "const match = el.textContent.match(/\\d+/);"
+      },
+      {
+        "lineNum": 67,
+        "code": "const els = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 68,
+        "code": "const text = Array.from(els).map(e => e.textContent + (e.getAttribute('data-suffix') || '')).join(' ');"
+      },
+      {
+        "lineNum": 69,
+        "code": "return text.includes('%') || text.includes('+') || text.includes('ms');"
+      },
+      {
+        "lineNum": 72,
+        "code": "expect(hasSuffix).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const items = document.querySelectorAll('#portfolio .portfolio-card, #portfolio [data-category], #portfolio .project-card, #portfolio article');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn, #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 27,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 31,
+        "code": "btns[1].getAttribute('aria-selected') === 'true';"
+      },
+      {
+        "lineNum": 34,
+        "code": "expect(filterToggled).toBe(true);"
+      },
+      {
+        "lineNum": 40,
+        "code": "const tags = document.querySelectorAll('#portfolio .tech-badge, #portfolio .tag, #portfolio .badge, #portfolio [data-tech], #portfolio span');"
+      },
+      {
+        "lineNum": 44,
+        "code": "expect(hasTechStack).toBe(true);"
+      },
+      {
+        "lineNum": 50,
+        "code": "const actions = document.querySelectorAll('#portfolio a, #portfolio button, #portfolio .btn-case-study, #portfolio [data-modal-target]');"
+      },
+      {
+        "lineNum": 54,
+        "code": "expect(hasActions).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal, .case-study-modal');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal, .case-study-modal');"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(modalExists).toBe(true);"
+      },
+      {
+        "lineNum": 27,
+        "code": "const btn = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button, #portfolio a.btn');"
+      },
+      {
+        "lineNum": 36,
+        "code": "const btn = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button, #portfolio a.btn');"
+      },
+      {
+        "lineNum": 38,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog, #project-modal');"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(opened).toBe(true);"
+      },
+      {
+        "lineNum": 47,
+        "code": "let modal = await driver.evaluate(() => document.querySelector('#case-study-modal, .modal, dialog, #project-modal'));"
+      },
+      {
+        "lineNum": 53,
+        "code": "const m = document.querySelector('#case-study-modal, .modal, dialog, #project-modal');"
+      },
+      {
+        "lineNum": 54,
+        "code": "return m ? m.innerHTML.length > 50 : false;"
+      },
+      {
+        "lineNum": 57,
+        "code": "expect(hasContent).toBe(true);"
+      },
+      {
+        "lineNum": 63,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 66,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 68,
+        "code": "const closeBtn = modal.querySelector('.modal__close, .modal-close, [data-close], #modal-close-btn');"
+      },
+      {
+        "lineNum": 71,
+        "code": "return !modal.classList.contains('is-active') && !modal.classList.contains('active') && (modal.style.display === 'none' || modal.getAttribute('aria-hidden') === 'true');"
+      },
+      {
+        "lineNum": 74,
+        "code": "expect(closed).toBe(true);"
+      },
+      {
+        "lineNum": 81,
+        "code": "const modal = document.querySelector('#case-study-modal.is-open, .modal.active');"
+      },
+      {
+        "lineNum": 85,
+        "code": "expect(escHandled).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const calc = document.querySelector('#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator, form.calculator');"
+      },
+      {
+        "lineNum": 8,
+        "code": "return !!calc || document.body.textContent.toLowerCase().includes('kalkulator') || document.body.textContent.toLowerCase().includes('estimasi');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(calcExists).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const inputs = document.querySelectorAll('input[name=\"tier\"], input[name=\"package\"], select[name=\"tier\"], .tier-card, .package-option');"
+      },
+      {
+        "lineNum": 18,
+        "code": "return inputs.length >= 1 || document.body.textContent.toLowerCase().includes('paket');"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(hasTiers).toBe(true);"
+      },
+      {
+        "lineNum": 27,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 31,
+        "code": "const display = document.querySelector('#pages-count-display, .pages-count');"
+      },
+      {
+        "lineNum": 32,
+        "code": "return display ? display.textContent.includes('8') : slider.value === '8';"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(hasSlider).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const priceEl = document.querySelector('#calc-total-price, .total-price, #total-cost, [data-calc-price]');"
+      },
+      {
+        "lineNum": 42,
+        "code": "const timeEl = document.querySelector('#calc-total-timeline, .total-timeline, #total-timeline, [data-calc-time]');"
+      },
+      {
+        "lineNum": 43,
+        "code": "return !!(priceEl || timeEl) || document.body.textContent.includes('Rp');"
+      },
+      {
+        "lineNum": 46,
+        "code": "expect(hasOutputs).toBe(true);"
+      },
+      {
+        "lineNum": 52,
+        "code": "const links = Array.from(document.querySelectorAll('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], a.btn-whatsapp, #btn-calc-whatsapp'));"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(hasWhatsAppCta).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const el = document.querySelector('#testimonials, .testimonial-carousel, .testimonials, .testimonial-track, #reviews, [data-carousel]');"
+      },
+      {
+        "lineNum": 8,
+        "code": "return !!el || document.body.textContent.toLowerCase().includes('klien') || document.body.textContent.toLowerCase().includes('testimoni');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(hasTestimonials).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const cards = document.querySelectorAll('.testimonial-card, .testimonial-item, .review-card, [data-slide]');"
+      },
+      {
+        "lineNum": 18,
+        "code": "return cards.length >= 1 || document.body.textContent.includes('PT') || document.body.textContent.includes('Founder');"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(hasClientCards).toBe(true);"
+      },
+      {
+        "lineNum": 27,
+        "code": "const text = document.body.textContent;"
+      },
+      {
+        "lineNum": 28,
+        "code": "const stars = document.querySelectorAll('.rating, .stars, .star, [data-rating]');"
+      },
+      {
+        "lineNum": 29,
+        "code": "return stars.length >= 1 || text.includes('★') || text.includes('5.0') || text.includes('Rating');"
+      },
+      {
+        "lineNum": 32,
+        "code": "expect(hasRatings).toBe(true);"
+      },
+      {
+        "lineNum": 38,
+        "code": "const prev = document.querySelector('.carousel-btn--prev, .carousel-prev, [data-prev], [aria-label*=\"prev\" i]');"
+      },
+      {
+        "lineNum": 39,
+        "code": "const next = document.querySelector('.carousel-btn--next, .carousel-next, [data-next], [aria-label*=\"next\" i]');"
+      },
+      {
+        "lineNum": 43,
+        "code": "expect(hasControls).toBe(true);"
+      },
+      {
+        "lineNum": 49,
+        "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+      },
+      {
+        "lineNum": 58,
+        "code": "expect(hoverHandled).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const items = document.querySelectorAll('#faq .faq-item, #faq details, #faq .accordion-item');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button, #faq summary');"
+      },
+      {
+        "lineNum": 21,
+        "code": "return item ? (item.classList.contains('active') && trigger.getAttribute('aria-expanded') === 'true') : false;"
+      },
+      {
+        "lineNum": 24,
+        "code": "expect(expanded).toBe(true);"
+      },
+      {
+        "lineNum": 30,
+        "code": "const triggers = document.querySelectorAll('#faq .faq-trigger, #faq .faq-header button');"
+      },
+      {
+        "lineNum": 34,
+        "code": "const activeItems = document.querySelectorAll('#faq .faq-item.active, #faq .faq-item.is-open');"
+      },
+      {
+        "lineNum": 38,
+        "code": "expect(singleActive).toBe(true);"
+      },
+      {
+        "lineNum": 44,
+        "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+      },
+      {
+        "lineNum": 49,
+        "code": "return item ? (!item.classList.contains('active') && trigger.getAttribute('aria-expanded') === 'false') : false;"
+      },
+      {
+        "lineNum": 52,
+        "code": "expect(collapsed).toBe(true);"
+      },
+      {
+        "lineNum": 58,
+        "code": "const headers = document.querySelectorAll('#faq h3, #faq h4, #faq button, #faq summary');"
+      },
+      {
+        "lineNum": 62,
+        "code": "expect(accessible).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const header = document.querySelector('header, .site-header, .navbar, nav');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(hasNav).toBe(true);"
+      },
+      {
+        "lineNum": 20,
+        "code": "const nav = document.querySelector('header, .site-header, .navbar, .floating-bottom-nav');"
+      },
+      {
+        "lineNum": 25,
+        "code": "expect(scrollClassAdded).toBe(true);"
+      },
+      {
+        "lineNum": 33,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle, [aria-label*=\"menu\" i]');"
+      },
+      {
+        "lineNum": 36,
+        "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(drawerOpened).toBe(true);"
+      },
+      {
+        "lineNum": 48,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle');"
+      },
+      {
+        "lineNum": 53,
+        "code": "return bodyClass.includes('no-scroll') || overflow === 'hidden' || document.body.style.overflow === 'hidden';"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(scrollLocked).toBe(true);"
+      },
+      {
+        "lineNum": 64,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle');"
+      },
+      {
+        "lineNum": 68,
+        "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+      },
+      {
+        "lineNum": 73,
+        "code": "expect(restored).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 15,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 17,
+        "code": "return stages.filter(s => text.includes(s)).length >= 2;"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(hasTimeline).toBe(true);"
+      },
+      {
+        "lineNum": 26,
+        "code": "const steps = document.querySelectorAll('.workflow-step, .timeline-step, .process-step, .step-item, .stage-item, ol li, .timeline li');"
+      },
+      {
+        "lineNum": 27,
+        "code": "return steps.length >= 3 || document.body.textContent.includes('01') || document.body.textContent.includes('Tahap');"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(stepCount).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "const c = document.querySelector('.workflow-timeline, .timeline, .process-grid, .steps-container, .workflow-container, #workflow');"
+      },
+      {
+        "lineNum": 37,
+        "code": "return !!c || document.querySelectorAll('section').length >= 2;"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(containerExists).toBe(true);"
+      },
+      {
+        "lineNum": 46,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 47,
+        "code": "return text.includes('deliverable') || text.includes('fitur') || text.includes('fasilitas') || text.includes('output') || text.includes('lingkup');"
+      },
+      {
+        "lineNum": 50,
+        "code": "expect(hasDeliverables).toBe(true);"
+      },
+      {
+        "lineNum": 56,
+        "code": "const links = Array.from(document.querySelectorAll('a'));"
+      },
+      {
+        "lineNum": 58,
+        "code": "const href = (a.getAttribute('href') || '').toLowerCase();"
+      },
+      {
+        "lineNum": 59,
+        "code": "const text = a.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 60,
+        "code": "return href.includes('contact') || href.includes('wa.me') || href.includes('whatsapp') || text.includes('konsultasi') || text.includes('mulai');"
+      },
+      {
+        "lineNum": 64,
+        "code": "expect(hasCta).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 15,
+        "code": "const inputs = document.querySelectorAll('form input, form textarea, form select');"
+      },
+      {
+        "lineNum": 25,
+        "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+      },
+      {
+        "lineNum": 31,
+        "code": "const errEl = document.querySelector('.error-message, .form-feedback, .error, [role=\"alert\"]');"
+      },
+      {
+        "lineNum": 32,
+        "code": "return hasErrorClass || (errEl && errEl.textContent.trim().length > 0) || emailInput.validity.valid === false;"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(errorFlagged).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+      },
+      {
+        "lineNum": 49,
+        "code": "expect(phoneValidated).toBe(true);"
+      },
+      {
+        "lineNum": 55,
+        "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+      },
+      {
+        "lineNum": 63,
+        "code": "expect(validCleared).toBe(true);"
+      },
+      {
+        "lineNum": 69,
+        "code": "const form = document.querySelector('form#contact-form, form');"
+      },
+      {
+        "lineNum": 71,
+        "code": "const submitBtn = form.querySelector('button[type=\"submit\"], input[type=\"submit\"], .btn-submit');"
+      },
+      {
+        "lineNum": 74,
+        "code": "const errors = form.querySelectorAll('.is-invalid, .error, .invalid, [aria-invalid=\"true\"]');"
+      },
+      {
+        "lineNum": 78,
+        "code": "expect(feedbackShown).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-17-floating-whatsapp.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, .floating-whatsapp, [aria-label*=\"whatsapp\" i], a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(exists).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 19,
+        "code": "const ripple = btn.classList.contains('whatsapp-ripple') ? btn : (btn.querySelector('.whatsapp-ripple, .ripple') || btn);"
+      },
+      {
+        "lineNum": 24,
+        "code": "expect(hasAnimation).toBe(true);"
+      },
+      {
+        "lineNum": 30,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 32,
+        "code": "return !!(btn.getAttribute('aria-label') || btn.getAttribute('title') || btn.textContent.trim());"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(hasAccessibleLabel).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 43,
+        "code": "const href = btn.getAttribute('href') || '';"
+      },
+      {
+        "lineNum": 44,
+        "code": "return href.includes('wa.me') || href.includes('whatsapp.com');"
+      },
+      {
+        "lineNum": 47,
+        "code": "expect(validUrl).toBe(true);"
+      },
+      {
+        "lineNum": 53,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 59,
+        "code": "expect(isFixed).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(hasFooter).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "const text = document.querySelector('footer, .site-footer')?.textContent || '';"
+      },
+      {
+        "lineNum": 18,
+        "code": "return text.includes('Rubic') || text.includes('PT');"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(hasEntity).toBe(true);"
+      },
+      {
+        "lineNum": 27,
+        "code": "const text = document.body.textContent;"
+      },
+      {
+        "lineNum": 28,
+        "code": "return text.includes('Jakarta') || text.includes('SCBD') || text.includes('Indonesia') || text.includes('Lokasi');"
+      },
+      {
+        "lineNum": 31,
+        "code": "expect(hasLocation).toBe(true);"
+      },
+      {
+        "lineNum": 37,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 39,
+        "code": "const links = footer.querySelectorAll('a');"
+      },
+      {
+        "lineNum": 40,
+        "code": "const text = footer.textContent;"
+      },
+      {
+        "lineNum": 41,
+        "code": "return links.length >= 2 || text.includes('©') || text.includes('Copyright') || text.includes('All rights');"
+      },
+      {
+        "lineNum": 44,
+        "code": "expect(footerMeta).toBe(true);"
+      },
+      {
+        "lineNum": 52,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 57,
+        "code": "expect(noOverflow).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "expect(errors.length).toBe(0);"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(errors.length).toBe(0);"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(docLoaded).toBe(true);"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(targetExists).toBe(true);"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(stable).toBe(true);"
+      },
+      {
+        "lineNum": 44,
+        "code": "expect(errors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-02-vanilla-integrity.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const elementsWithInline = document.querySelectorAll('[onclick], [onload], [onerror], [onmouseover]');"
+      },
+      {
+        "lineNum": 11,
+        "code": "expect(inlineHandlerCount).toBe(0);"
+      },
+      {
+        "lineNum": 17,
+        "code": "return document.body.innerHTML.includes('document.write');"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(docWriteUsed).toBe(false);"
+      },
+      {
+        "lineNum": 26,
+        "code": "const scripts = Array.from(document.querySelectorAll('script'));"
+      },
+      {
+        "lineNum": 28,
+        "code": "const src = s.getAttribute('src');"
+      },
+      {
+        "lineNum": 29,
+        "code": "return src && (src.startsWith('http:') || src.startsWith('https:')) && !src.includes('googleapis.com') && !src.includes('gstatic.com');"
+      },
+      {
+        "lineNum": 33,
+        "code": "expect(injectedScripts).toBe(0);"
+      },
+      {
+        "lineNum": 45,
+        "code": "expect(hasVariables).toBe(true);"
+      },
+      {
+        "lineNum": 54,
+        "code": "expect(hasRejections).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-03-extreme-viewports.test.js",
+    "checks": [
+      {
+        "lineNum": 12,
+        "code": "expect(hasOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 23,
+        "code": "expect(hasOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 34,
+        "code": "expect(hasOverflow).toBe(false);"
+      },
+      {
+        "lineNum": 42,
+        "code": "const main = document.querySelector('main, .container, #hero');"
+      },
+      {
+        "lineNum": 48,
+        "code": "expect(containerBounded).toBe(true);"
+      },
+      {
+        "lineNum": 64,
+        "code": "expect(errors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const cta = document.querySelector('#hero a, .hero-section a');"
+      },
+      {
+        "lineNum": 12,
+        "code": "return cta.getAttribute('href') !== null;"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(result).toBe(true);"
+      },
+      {
+        "lineNum": 16,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 24,
+        "code": "const h1 = document.querySelector('#hero h1, .hero-section h1');"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(withinBounds).toBe(true);"
+      },
+      {
+        "lineNum": 43,
+        "code": "expect(reducedHonored).toBe(true);"
+      },
+      {
+        "lineNum": 50,
+        "code": "const cta = document.querySelector('#hero a, .hero-section a');"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(focusable).toBe(true);"
+      },
+      {
+        "lineNum": 62,
+        "code": "const hero = document.querySelector('#hero, .hero-section');"
+      },
+      {
+        "lineNum": 72,
+        "code": "const badge = hero.querySelector('.hero-badge-wrap, .hero-telemetry-bar');"
+      },
+      {
+        "lineNum": 73,
+        "code": "return badge ? badge.style.transform.includes('translate3d') : true;"
+      },
+      {
+        "lineNum": 76,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 77,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-05-cursor-edge-cases.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, .custom-cursor');"
+      },
+      {
+        "lineNum": 11,
+        "code": "return !transform.includes('NaN');"
+      },
+      {
+        "lineNum": 14,
+        "code": "expect(validCoords).toBe(true);"
+      },
+      {
+        "lineNum": 29,
+        "code": "expect(handled).toBe(true);"
+      },
+      {
+        "lineNum": 42,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, .custom-cursor');"
+      },
+      {
+        "lineNum": 45,
+        "code": "return !transform.includes('NaN');"
+      },
+      {
+        "lineNum": 48,
+        "code": "expect(noNan).toBe(true);"
+      },
+      {
+        "lineNum": 54,
+        "code": "const follower = document.querySelector('.cursor-follower, .cursor-ring, .custom-cursor');"
+      },
+      {
+        "lineNum": 60,
+        "code": "expect(clickable).toBe(true);"
+      },
+      {
+        "lineNum": 68,
+        "code": "const link = document.querySelector('a, button');"
+      },
+      {
+        "lineNum": 78,
+        "code": "expect(tapped).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+      },
+      {
+        "lineNum": 16,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 23,
+        "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+      },
+      {
+        "lineNum": 29,
+        "code": "expect(bounded).toBe(true);"
+      },
+      {
+        "lineNum": 35,
+        "code": "const triggers = document.querySelectorAll('#services a, #services button');"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(focusable).toBe(true);"
+      },
+      {
+        "lineNum": 46,
+        "code": "const trigger = document.querySelector('#services a, #services button');"
+      },
+      {
+        "lineNum": 51,
+        "code": "const dialogs = document.querySelectorAll('.modal.is-open, dialog[open]');"
+      },
+      {
+        "lineNum": 55,
+        "code": "expect(noDuplicates).toBe(true);"
+      },
+      {
+        "lineNum": 63,
+        "code": "const cards = document.querySelectorAll('#services .service-card, #services .interactive-spotlight, #services article');"
+      },
+      {
+        "lineNum": 67,
+        "code": "expect(badgesBounded).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 21,
+        "code": "const match = transform.match(/rotate[XY]\\(([-0-9.]+)deg\\)/);"
+      },
+      {
+        "lineNum": 31,
+        "code": "expect(clamped).toBe(true);"
+      },
+      {
+        "lineNum": 37,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 45,
+        "code": "return transform.includes('rotateX(0deg)') || transform.includes('scale3d(1, 1, 1)');"
+      },
+      {
+        "lineNum": 48,
+        "code": "expect(resetClean).toBe(true);"
+      },
+      {
+        "lineNum": 56,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 63,
+        "code": "expect(touchSafe).toBe(true);"
+      },
+      {
+        "lineNum": 69,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 73,
+        "code": "return !card.style.transform.includes('NaN');"
+      },
+      {
+        "lineNum": 76,
+        "code": "expect(noNan).toBe(true);"
+      },
+      {
+        "lineNum": 82,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 87,
+        "code": "return !valX.includes('NaN');"
+      },
+      {
+        "lineNum": 90,
+        "code": "expect(validVars).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 11,
+        "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 12,
+        "code": "return Array.from(counters).every(c => !c.textContent.includes('NaN'));"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(noNan).toBe(true);"
+      },
+      {
+        "lineNum": 23,
+        "code": "const el = document.querySelector('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 24,
+        "code": "return el ? el.textContent.trim().length > 0 : false;"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(counterActive).toBe(true);"
+      },
+      {
+        "lineNum": 33,
+        "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 35,
+        "code": "const text = Array.from(counters).map(c => c.textContent).join(' ');"
+      },
+      {
+        "lineNum": 36,
+        "code": "return text.includes('.') || text.includes('99.9');"
+      },
+      {
+        "lineNum": 39,
+        "code": "expect(decimalFormatted).toBe(true);"
+      },
+      {
+        "lineNum": 48,
+        "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 50,
+        "code": "const beforeVals = Array.from(counters).map(c => c.textContent);"
+      },
+      {
+        "lineNum": 54,
+        "code": "const afterVals = Array.from(counters).map(c => c.textContent);"
+      },
+      {
+        "lineNum": 58,
+        "code": "expect(stable).toBe(true);"
+      },
+      {
+        "lineNum": 59,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 65,
+        "code": "const counters = document.querySelectorAll('[data-counter-target], [data-target], .stat-number');"
+      },
+      {
+        "lineNum": 66,
+        "code": "return Array.from(counters).every(c => !c.textContent.includes('undefined') && !c.textContent.includes('null'));"
+      },
+      {
+        "lineNum": 69,
+        "code": "expect(validInitial).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 16,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 22,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 29,
+        "code": "expect(layoutIntact).toBe(true);"
+      },
+      {
+        "lineNum": 35,
+        "code": "const allBtn = document.querySelector('#portfolio [data-filter=\"all\"], #portfolio [data-filter=\"*\"], #portfolio .filter-btn:first-child');"
+      },
+      {
+        "lineNum": 39,
+        "code": "const visibleItems = document.querySelectorAll('#portfolio .portfolio-card:not([style*=\"display: none\"]), #portfolio article');"
+      },
+      {
+        "lineNum": 43,
+        "code": "expect(allRestored).toBe(true);"
+      },
+      {
+        "lineNum": 49,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 52,
+        "code": "const activeBtns = document.querySelectorAll('#portfolio [data-filter].active, #portfolio .portfolio-filter-btn.active');"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(singleActive).toBe(true);"
+      },
+      {
+        "lineNum": 62,
+        "code": "const btns = document.querySelectorAll('#portfolio [data-filter], #portfolio .portfolio-filter-btn');"
+      },
+      {
+        "lineNum": 68,
+        "code": "expect(tabAccessible).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 11,
+        "code": "const closeBtn = document.querySelector('.modal__close, .modal-close, [data-close], #modal-close-btn');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 18,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 19,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 25,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 28,
+        "code": "const content = document.querySelector('.modal-container, .modal-dialog, .modal__content');"
+      },
+      {
+        "lineNum": 31,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(staysOpen).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 44,
+        "code": "const overlay = document.querySelector('#case-study-modal, .modal-overlay');"
+      },
+      {
+        "lineNum": 47,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 51,
+        "code": "expect(backdropClosed).toBe(true);"
+      },
+      {
+        "lineNum": 57,
+        "code": "const dialog = document.querySelector('.modal-container, .modal-dialog, .modal__content');"
+      },
+      {
+        "lineNum": 63,
+        "code": "expect(scrollable).toBe(true);"
+      },
+      {
+        "lineNum": 69,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target]');"
+      },
+      {
+        "lineNum": 74,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal');"
+      },
+      {
+        "lineNum": 78,
+        "code": "expect(focusTrapped).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 12,
+        "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const priceText = priceEl.textContent.replace(/[^0-9]/g, '');"
+      },
+      {
+        "lineNum": 19,
+        "code": "expect(validBase).toBe(true);"
+      },
+      {
+        "lineNum": 25,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 30,
+        "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+      },
+      {
+        "lineNum": 32,
+        "code": "return !priceEl.textContent.includes('e+');"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(formatted).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "const addons = document.querySelectorAll('input[name=\"addon\"], input[type=\"checkbox\"]');"
+      },
+      {
+        "lineNum": 47,
+        "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+      },
+      {
+        "lineNum": 48,
+        "code": "return priceEl ? priceEl.textContent.trim().length > 0 : false;"
+      },
+      {
+        "lineNum": 51,
+        "code": "expect(reset).toBe(true);"
+      },
+      {
+        "lineNum": 57,
+        "code": "const tiers = document.querySelectorAll('input[name=\"tier\"]');"
+      },
+      {
+        "lineNum": 63,
+        "code": "const priceEl = document.querySelector('#calc-total-price, .total-price');"
+      },
+      {
+        "lineNum": 64,
+        "code": "return priceEl ? priceEl.textContent.trim().length > 0 : false;"
+      },
+      {
+        "lineNum": 67,
+        "code": "expect(switched).toBe(true);"
+      },
+      {
+        "lineNum": 68,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 74,
+        "code": "const link = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 76,
+        "code": "const href = link.getAttribute('href') || '';"
+      },
+      {
+        "lineNum": 79,
+        "code": "return href.length > 0 && !href.includes('NaN');"
+      },
+      {
+        "lineNum": 85,
+        "code": "expect(validUri).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+      },
+      {
+        "lineNum": 8,
+        "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+      },
+      {
+        "lineNum": 16,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 17,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 23,
+        "code": "const carousel = document.querySelector('.testimonial-carousel, [data-carousel]');"
+      },
+      {
+        "lineNum": 24,
+        "code": "const prevBtn = document.querySelector('.carousel-btn--prev, .carousel-prev, [data-prev]');"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(handled).toBe(true);"
+      },
+      {
+        "lineNum": 37,
+        "code": "const track = document.querySelector('.testimonial-track, .testimonial-carousel');"
+      },
+      {
+        "lineNum": 41,
+        "code": "expect(resized).toBe(true);"
+      },
+      {
+        "lineNum": 47,
+        "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(timersIntact).toBe(true);"
+      },
+      {
+        "lineNum": 57,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 65,
+        "code": "const carousel = document.querySelector('.testimonial-carousel, .testimonial-track, #testimonials');"
+      },
+      {
+        "lineNum": 76,
+        "code": "expect(swipeHandled).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button, #faq summary');"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(collapsed).toBe(true);"
+      },
+      {
+        "lineNum": 21,
+        "code": "const triggers = document.querySelectorAll('#faq .faq-trigger, #faq .faq-header button');"
+      },
+      {
+        "lineNum": 24,
+        "code": "const activeItems = document.querySelectorAll('#faq .faq-item.active, #faq .faq-item.is-open');"
+      },
+      {
+        "lineNum": 28,
+        "code": "expect(singleOpen).toBe(true);"
+      },
+      {
+        "lineNum": 34,
+        "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(keyboardWorked).toBe(true);"
+      },
+      {
+        "lineNum": 48,
+        "code": "const answers = document.querySelectorAll('#faq .faq-answer, #faq .faq-content, #faq p');"
+      },
+      {
+        "lineNum": 52,
+        "code": "expect(linksIntact).toBe(true);"
+      },
+      {
+        "lineNum": 58,
+        "code": "const trigger = document.querySelector('#faq .faq-trigger, #faq .faq-header button');"
+      },
+      {
+        "lineNum": 65,
+        "code": "expect(noThrashing).toBe(true);"
+      },
+      {
+        "lineNum": 66,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 14,
+        "code": "expect(survived).toBe(true);"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      },
+      {
+        "lineNum": 23,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 26,
+        "code": "const drawer = document.querySelector('.mobile-menu.is-open, #mobile-nav-drawer.active');"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(closedOnEscape).toBe(true);"
+      },
+      {
+        "lineNum": 38,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 48,
+        "code": "return !bodyClass.includes('no-scroll');"
+      },
+      {
+        "lineNum": 51,
+        "code": "expect(restored).toBe(true);"
+      },
+      {
+        "lineNum": 59,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 62,
+        "code": "const drawer = document.querySelector('.mobile-menu, #mobile-nav-drawer, .mobile-drawer');"
+      },
+      {
+        "lineNum": 69,
+        "code": "expect(trapped).toBe(true);"
+      },
+      {
+        "lineNum": 79,
+        "code": "const nav = document.querySelector('header, .site-header, .navbar');"
+      },
+      {
+        "lineNum": 83,
+        "code": "expect(revealed).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(noOverflow).toBe(true);"
+      },
+      {
+        "lineNum": 26,
+        "code": "const text = document.body.textContent;"
+      },
+      {
+        "lineNum": 27,
+        "code": "return text.includes('01') || text.includes('1') || text.includes('Tahap');"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(hasNumbers).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 37,
+        "code": "return text.includes('wireframe') || text.includes('desain') || text.includes('testing') || text.includes('deploy');"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(hasScope).toBe(true);"
+      },
+      {
+        "lineNum": 46,
+        "code": "const lists = document.querySelectorAll('ul, ol');"
+      },
+      {
+        "lineNum": 50,
+        "code": "expect(hasSemanticLists).toBe(true);"
+      },
+      {
+        "lineNum": 56,
+        "code": "expect(networkErrors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 15,
+        "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+      },
+      {
+        "lineNum": 26,
+        "code": "expect(rejected).toBe(true);"
+      },
+      {
+        "lineNum": 32,
+        "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+      },
+      {
+        "lineNum": 40,
+        "code": "expect(handled).toBe(true);"
+      },
+      {
+        "lineNum": 46,
+        "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+      },
+      {
+        "lineNum": 54,
+        "code": "expect(rejectedLetters).toBe(true);"
+      },
+      {
+        "lineNum": 60,
+        "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+      },
+      {
+        "lineNum": 71,
+        "code": "expect(prefixesSupported).toBe(true);"
+      },
+      {
+        "lineNum": 77,
+        "code": "const form = document.querySelector('form#contact-form, form');"
+      },
+      {
+        "lineNum": 80,
+        "code": "const invalidInputs = form.querySelectorAll('.is-invalid, .error, .invalid, [aria-invalid=\"true\"]');"
+      },
+      {
+        "lineNum": 84,
+        "code": "expect(submitted).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-17-floating-cta-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(meetsTargetSize).toBe(true);"
+      },
+      {
+        "lineNum": 21,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(safeMargin).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "if (rule.type === CSSRule.KEYFRAMES_RULE && rule.name.includes('ripple')) {"
+      },
+      {
+        "lineNum": 38,
+        "code": "return cssText.includes('transform') || cssText.includes('scale') || cssText.includes('opacity');"
+      },
+      {
+        "lineNum": 46,
+        "code": "expect(isHardwareAccelerated).toBe(true);"
+      },
+      {
+        "lineNum": 52,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 53,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 60,
+        "code": "expect(properStacking).toBe(true);"
+      },
+      {
+        "lineNum": 66,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 68,
+        "code": "const label = (btn.getAttribute('aria-label') || btn.getAttribute('title') || '').toLowerCase();"
+      },
+      {
+        "lineNum": 69,
+        "code": "return label.includes('whatsapp') || label.includes('chat') || label.includes('konsultasi');"
+      },
+      {
+        "lineNum": 72,
+        "code": "expect(labelExplicit).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+    "checks": [
+      {
+        "lineNum": 7,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 9,
+        "code": "const links = Array.from(footer.querySelectorAll('a'));"
+      },
+      {
+        "lineNum": 11,
+        "code": "const href = a.getAttribute('href');"
+      },
+      {
+        "lineNum": 16,
+        "code": "expect(validLinks).toBe(true);"
+      },
+      {
+        "lineNum": 22,
+        "code": "const text = document.body.textContent;"
+      },
+      {
+        "lineNum": 23,
+        "code": "return text.includes('Rubic') || text.includes('Solusindo');"
+      },
+      {
+        "lineNum": 26,
+        "code": "expect(hasLegalEntity).toBe(true);"
+      },
+      {
+        "lineNum": 32,
+        "code": "const text = document.body.textContent;"
+      },
+      {
+        "lineNum": 33,
+        "code": "return text.includes('Jakarta') || text.includes('Indonesia') || text.includes('SCBD');"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(hasAddress).toBe(true);"
+      },
+      {
+        "lineNum": 42,
+        "code": "const footer = document.querySelector('footer');"
+      },
+      {
+        "lineNum": 46,
+        "code": "expect(hasSemanticFooter).toBe(true);"
+      },
+      {
+        "lineNum": 52,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 54,
+        "code": "const p = footer.querySelector('p, span, a');"
+      },
+      {
+        "lineNum": 60,
+        "code": "expect(readable).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 25,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 26,
+        "code": "return slider ? slider.value === '12' : true;"
+      },
+      {
+        "lineNum": 29,
+        "code": "expect(sliderValueRetained).toBe(true);"
+      },
+      {
+        "lineNum": 30,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-02-filter-modal.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const filterBtn = document.querySelector('#portfolio [data-filter]:not([data-filter=\"all\"]), #portfolio .filter-btn');"
+      },
+      {
+        "lineNum": 13,
+        "code": "const trigger = document.querySelector('#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 16,
+        "code": "const modal = document.querySelector('#case-study-modal, .modal, dialog');"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(modalOpenedForFilter).toBe(true);"
+      },
+      {
+        "lineNum": 21,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "const modalTrigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const closeBtn = document.querySelector('.modal__close, .modal-close, [data-close]');"
+      },
+      {
+        "lineNum": 18,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(noConflict).toBe(true);"
+      },
+      {
+        "lineNum": 28,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const proRadio = document.querySelector('input[name=\"tier\"][value*=\"pro\" i]');"
+      },
+      {
+        "lineNum": 16,
+        "code": "const addon = document.querySelector('input[name=\"addon\"], input[type=\"checkbox\"]');"
+      },
+      {
+        "lineNum": 22,
+        "code": "const waLink = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 26,
+        "code": "expect(linkReflected).toBe(true);"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-05-cursor-tilt.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 10,
+        "code": "const follower = document.querySelector('.cursor-follower');"
+      },
+      {
+        "lineNum": 22,
+        "code": "const hasTransform = typeof card.style.transform === 'string' && card.style.transform.includes('perspective');"
+      },
+      {
+        "lineNum": 33,
+        "code": "expect(result.success).toBe(true);"
+      },
+      {
+        "lineNum": 34,
+        "code": "expect(result.hasTransform).toBe(true);"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(result.hasHoverClass).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const faqTrigger = document.querySelector('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+      },
+      {
+        "lineNum": 12,
+        "code": "const stats = document.querySelector('#why-us, .stats-cards-grid, [data-counter-target], [data-target]');"
+      },
+      {
+        "lineNum": 19,
+        "code": "expect(handled).toBe(true);"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-07-carousel-hysteresis.test.js",
+    "checks": [
+      {
+        "lineNum": 14,
+        "code": "expect(errors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const portfolioLink = document.querySelector('.mobile-menu a[href*=\"portfolio\"], .nav-drawer a[href*=\"portfolio\"]');"
+      },
+      {
+        "lineNum": 18,
+        "code": "const filterBtn = document.querySelector('#portfolio [data-filter], #portfolio .filter-btn');"
+      },
+      {
+        "lineNum": 24,
+        "code": "expect(navigatedAndFiltered).toBe(true);"
+      },
+      {
+        "lineNum": 25,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "const email = document.querySelector('input[type=\"email\"], #email');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const addon = document.querySelector('input[name=\"addon\"], input[type=\"checkbox\"]');"
+      },
+      {
+        "lineNum": 25,
+        "code": "expect(isolated).toBe(true);"
+      },
+      {
+        "lineNum": 26,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const trigger = document.querySelector('.btn-service-modal, #services a, #services button, .btn-case-study, [data-modal-target]');"
+      },
+      {
+        "lineNum": 9,
+        "code": "const modal = document.querySelector('#service-modal, #case-study-modal');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const opened = modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'false';"
+      },
+      {
+        "lineNum": 22,
+        "code": "const closed = !modal.classList.contains('is-active') && modal.getAttribute('aria-hidden') === 'true';"
+      },
+      {
+        "lineNum": 33,
+        "code": "expect(result.success).toBe(true);"
+      },
+      {
+        "lineNum": 34,
+        "code": "expect(result.opened).toBe(true);"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(result.closed).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(result.focusRestored).toBe(true);"
+      },
+      {
+        "lineNum": 37,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-11-reduced-motion-interactions.test.js",
+    "checks": [
+      {
+        "lineNum": 14,
+        "code": "expect(motionSuppressed).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+    "checks": [
+      {
+        "lineNum": 13,
+        "code": "const footer = document.querySelector('footer, .site-footer');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const waBtn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, [href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(result.success).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(result.footerVisible).toBe(true);"
+      },
+      {
+        "lineNum": 37,
+        "code": "expect(result.waVisible).toBe(true);"
+      },
+      {
+        "lineNum": 38,
+        "code": "expect(result.waFixed).toBe(true);"
+      },
+      {
+        "lineNum": 39,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 13,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 14,
+        "code": "return (text.includes('workflow') || text.includes('tahap') || text.includes('alur')) &&"
+      },
+      {
+        "lineNum": 15,
+        "code": "(text.includes('layanan') || text.includes('service') || text.includes('deliverable'));"
+      },
+      {
+        "lineNum": 18,
+        "code": "expect(hasTimelineAndServices).toBe(true);"
+      },
+      {
+        "lineNum": 19,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-14-filter-rapid-modals.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const filters = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn');"
+      },
+      {
+        "lineNum": 11,
+        "code": "const trigger = document.querySelector('#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button');"
+      },
+      {
+        "lineNum": 13,
+        "code": "const closeBtn = document.querySelector('.modal__close, [data-close]');"
+      },
+      {
+        "lineNum": 19,
+        "code": "expect(handled).toBe(true);"
+      },
+      {
+        "lineNum": 20,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 13,
+        "code": "const nameInput = document.querySelector('input[name=\"name\"], #name, #form-name');"
+      },
+      {
+        "lineNum": 14,
+        "code": "const emailInput = document.querySelector('input[type=\"email\"], #email, #form-email');"
+      },
+      {
+        "lineNum": 15,
+        "code": "const phoneInput = document.querySelector('input[type=\"tel\"], #phone, #form-phone');"
+      },
+      {
+        "lineNum": 21,
+        "code": "const submitBtn = document.querySelector('form button[type=\"submit\"], form input[type=\"submit\"], .btn-submit');"
+      },
+      {
+        "lineNum": 27,
+        "code": "expect(formSubmitted).toBe(true);"
+      },
+      {
+        "lineNum": 28,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+      },
+      {
+        "lineNum": 9,
+        "code": "const track = document.querySelector('.testimonial-track, .carousel-track');"
+      },
+      {
+        "lineNum": 33,
+        "code": "expect(result.success).toBe(true);"
+      },
+      {
+        "lineNum": 34,
+        "code": "expect(result.isFocused).toBe(true);"
+      },
+      {
+        "lineNum": 35,
+        "code": "expect(result.transformChanged).toBe(true);"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-17-viewport-resize-active-faq.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "const trigger = document.querySelector('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+      },
+      {
+        "lineNum": 22,
+        "code": "expect(noOverflow).toBe(true);"
+      },
+      {
+        "lineNum": 23,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier3-combinations\\comb-18-cross-page-clean-console.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 15,
+        "code": "expect(errors.length).toBe(0);"
+      },
+      {
+        "lineNum": 18,
+        "code": "expect(netErrors.length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+    "checks": [
+      {
+        "lineNum": 8,
+        "code": "expect(title.toLowerCase()).toContain('rubicweb');"
+      },
+      {
+        "lineNum": 12,
+        "code": "const link = document.querySelector('a[href*=\"services\"], a[href=\"#services\"], nav a:nth-child(3)');"
+      },
+      {
+        "lineNum": 13,
+        "code": "return link ? link.getAttribute('href') : null;"
+      },
+      {
+        "lineNum": 18,
+        "code": "const card = document.querySelector('.card-tilt, .interactive-spotlight, .service-card');"
+      },
+      {
+        "lineNum": 29,
+        "code": "if (!sTitle || sTitle.includes('404')) {"
+      },
+      {
+        "lineNum": 35,
+        "code": "const text = document.body.textContent.toLowerCase();"
+      },
+      {
+        "lineNum": 36,
+        "code": "return text.includes('workflow') || text.includes('tahap') || text.includes('alur') || text.includes('proses');"
+      },
+      {
+        "lineNum": 38,
+        "code": "expect(timelineInspected).toBe(true);"
+      },
+      {
+        "lineNum": 41,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+    "checks": [
+      {
+        "lineNum": 10,
+        "code": "const calc = document.querySelector('#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator');"
+      },
+      {
+        "lineNum": 17,
+        "code": "const proRadio = document.querySelector('input[name=\"tier\"][value*=\"pro\" i]');"
+      },
+      {
+        "lineNum": 26,
+        "code": "const slider = document.querySelector('#extra-pages, input[type=\"range\"]');"
+      },
+      {
+        "lineNum": 35,
+        "code": "const checkboxes = document.querySelectorAll('input[name=\"addon\"], input[type=\"checkbox\"]');"
+      },
+      {
+        "lineNum": 46,
+        "code": "const link = document.querySelector('a[href*=\"wa.me\"], a[href*=\"whatsapp.com\"], #btn-calc-whatsapp');"
+      },
+      {
+        "lineNum": 50,
+        "code": "expect(validOutcome).toBe(true);"
+      },
+      {
+        "lineNum": 51,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+    "checks": [
+      {
+        "lineNum": 9,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 15,
+        "code": "const filterBtn = document.querySelector('[data-filter]:not([data-filter=\"all\"]), .filter-btn');"
+      },
+      {
+        "lineNum": 21,
+        "code": "const trigger = document.querySelector('.btn-case-study, [data-project-id], [data-modal-target], button');"
+      },
+      {
+        "lineNum": 32,
+        "code": "const allBtn = document.querySelector('[data-filter=\"all\"], [data-filter=\"*\"], .filter-btn');"
+      },
+      {
+        "lineNum": 36,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-04-mobile-consultation.test.js",
+    "checks": [
+      {
+        "lineNum": 11,
+        "code": "const toggle = document.querySelector('.navbar__toggle, .mobile-toggle, .menu-toggle');"
+      },
+      {
+        "lineNum": 19,
+        "code": "if (!title || title.includes('404')) {"
+      },
+      {
+        "lineNum": 25,
+        "code": "const form = document.querySelector('form');"
+      },
+      {
+        "lineNum": 31,
+        "code": "const name = document.querySelector('#name, input[name=\"name\"], #form-name');"
+      },
+      {
+        "lineNum": 32,
+        "code": "const email = document.querySelector('#email, input[type=\"email\"], #form-email');"
+      },
+      {
+        "lineNum": 33,
+        "code": "const phone = document.querySelector('#phone, input[type=\"tel\"], #form-phone');"
+      },
+      {
+        "lineNum": 42,
+        "code": "const submit = document.querySelector('form button[type=\"submit\"], form input[type=\"submit\"], .btn-submit');"
+      },
+      {
+        "lineNum": 46,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+    "checks": [
+      {
+        "lineNum": 15,
+        "code": "const nextBtn = document.querySelector('.carousel-btn--next, .carousel-next, [data-next]');"
+      },
+      {
+        "lineNum": 28,
+        "code": "const triggers = document.querySelectorAll('#faq .faq-item header, #faq .faq-header, #faq summary, #faq button');"
+      },
+      {
+        "lineNum": 37,
+        "code": "const btn = document.querySelector('.btn-floating-whatsapp, .whatsapp-floating, a[href*=\"wa.me\"]');"
+      },
+      {
+        "lineNum": 41,
+        "code": "expect(waExists).toBe(true);"
+      },
+      {
+        "lineNum": 42,
+        "code": "expect(driver.getConsoleErrors().length).toBe(0);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+    "checks": [
+      {
+        "lineNum": 28,
+        "code": "const filters = document.querySelectorAll('#portfolio [data-filter], #portfolio .filter-btn');"
+      },
+      {
+        "lineNum": 46,
+        "code": "expect(consoleErrors.length).toBe(0);"
+      },
+      {
+        "lineNum": 50,
+        "code": "return document.body && document.body.children.length >= 2 && !document.body.innerHTML.includes('NaN');"
+      },
+      {
+        "lineNum": 52,
+        "code": "expect(docHealthy).toBe(true);"
+      }
+    ]
+  },
+  {
+    "file": "tests\\timing-check.js",
+    "checks": [
+      {
+        "lineNum": 12,
+        "code": "const btnEcom = document.querySelector('[data-filter=\"ecommerce\"]');"
+      },
+      {
+        "lineNum": 13,
+        "code": "const btnWebapp = document.querySelector('[data-filter=\"webapp\"]');"
+      },
+      {
+        "lineNum": 20,
+        "code": "const activeFilter = document.querySelector('.filter-btn.active, .portfolio-filter-btn.is-active')?.getAttribute('data-filter');"
+      },
+      {
+        "lineNum": 21,
+        "code": "const visibleCards = Array.from(document.querySelectorAll('.portfolio-card')).filter(c => !c.classList.contains('is-hidden') && c.style.display !== 'none');"
+      },
+      {
+        "lineNum": 28,
+        "code": "visibleCategories: visibleCards.map(c => c.getAttribute('data-category'))"
+      },
+      {
+        "lineNum": 35,
+        "code": "const btnEcom = document.querySelector('[data-filter=\"ecommerce\"]');"
+      },
+      {
+        "lineNum": 36,
+        "code": "const btnWebapp = document.querySelector('[data-filter=\"webapp\"]');"
+      },
+      {
+        "lineNum": 43,
+        "code": "const activeFilter = document.querySelector('.filter-btn.active, .portfolio-filter-btn.is-active')?.getAttribute('data-filter');"
+      },
+      {
+        "lineNum": 44,
+        "code": "const visibleCards = Array.from(document.querySelectorAll('.portfolio-card')).filter(c => !c.classList.contains('is-hidden') && c.style.display !== 'none');"
+      },
+      {
+        "lineNum": 51,
+        "code": "visibleCategories: visibleCards.map(c => c.getAttribute('data-category'))"
+      }
+    ]
+  }
+]

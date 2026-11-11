@@ -1,0 +1,1530 @@
+{
+  "totalFiles": 72,
+  "allSelectors": [
+    "#about",
+    "#btn-calc-whatsapp",
+    "#calc-total-price",
+    "#calc-total-timeline",
+    "#calculator",
+    "#case-study-modal",
+    "#case-study-modal.is-open",
+    "#consultation-form",
+    "#contact-form",
+    "#cursor-dot",
+    "#cursor-follower",
+    "#extra-pages",
+    "#faq .accordion-item",
+    "#faq .faq-answer",
+    "#faq .faq-content",
+    "#faq .faq-header",
+    "#faq .faq-header button",
+    "#faq .faq-item",
+    "#faq .faq-item header",
+    "#faq .faq-item.active",
+    "#faq .faq-item.is-open",
+    "#faq .faq-trigger",
+    "#faq button",
+    "#faq details",
+    "#faq h3",
+    "#faq h4",
+    "#faq p",
+    "#faq summary",
+    "#guarantee",
+    "#hero",
+    "#hero a",
+    "#hero h1",
+    "#menu-toggle",
+    "#mobile-nav-drawer",
+    "#mobile-nav-drawer.active",
+    "#modal-challenge",
+    "#modal-client",
+    "#modal-close-btn",
+    "#modal-img",
+    "#modal-results",
+    "#modal-solution",
+    "#modal-tag",
+    "#modal-title",
+    "#modal-whatsapp-cta",
+    "#navbar",
+    "#package",
+    "#pages-count-display",
+    "#portfolio .badge",
+    "#portfolio .btn-case-study",
+    "#portfolio .filter-btn",
+    "#portfolio .portfolio-card",
+    "#portfolio .portfolio-filter-btn",
+    "#portfolio .portfolio-filter-btn.active",
+    "#portfolio .project-card",
+    "#portfolio .tag",
+    "#portfolio .tech-badge",
+    "#portfolio [data-category]",
+    "#portfolio [data-filter]",
+    "#portfolio [data-filter].active",
+    "#portfolio [data-modal-target]",
+    "#portfolio [data-tech]",
+    "#portfolio a",
+    "#portfolio a.btn",
+    "#portfolio article",
+    "#portfolio button",
+    "#portfolio span",
+    "#pricing",
+    "#pricing-calculator",
+    "#project-modal",
+    "#reviews",
+    "#service-modal",
+    "#service-modal-deliverables li",
+    "#services .badge",
+    "#services .card-tilt",
+    "#services .grid-col",
+    "#services .interactive-spotlight",
+    "#services .service-card",
+    "#services .tag",
+    "#services .tech-badge",
+    "#services [data-tech]",
+    "#services a",
+    "#services article",
+    "#services button",
+    "#services h3",
+    "#services h4",
+    "#services span",
+    "#testimonials",
+    "#total-cost",
+    "#total-timeline",
+    "#why-us",
+    "#workflow",
+    "*",
+    ".btn--primary",
+    ".btn-case-study",
+    ".btn-floating-whatsapp",
+    ".btn-service-modal",
+    ".calc-layout",
+    ".card-tilt",
+    ".carousel-btn--next",
+    ".carousel-btn--prev",
+    ".carousel-dot",
+    ".carousel-next",
+    ".carousel-prev",
+    ".carousel-track",
+    ".case-study-modal",
+    ".consultation-calculator-wrapper",
+    ".consultation-form",
+    ".consultation-form-box",
+    ".consultation-form-wrapper",
+    ".contact-form",
+    ".container",
+    ".cursor",
+    ".cursor-dot",
+    ".cursor-follower",
+    ".cursor-ring",
+    ".custom-cursor",
+    ".error",
+    ".error-message",
+    ".faq-content",
+    ".faq-icon",
+    ".faq-item",
+    ".faq-panel",
+    ".faq-question",
+    ".faq-section",
+    ".faq-trigger",
+    ".filter-btn",
+    ".filter-btn.active",
+    ".filter-tab.is-active",
+    ".floating-bottom-nav",
+    ".floating-bottom-nav a",
+    ".floating-whatsapp-btn",
+    ".form-error",
+    ".guarantees",
+    ".hero-badge-wrap",
+    ".hero-section",
+    ".hero-section a",
+    ".hero-section h1",
+    ".hero-telemetry-bar",
+    ".interactive-spotlight",
+    ".invalid-feedback",
+    ".is-invalid",
+    ".menu-toggle",
+    ".mobile-drawer",
+    ".mobile-menu",
+    ".mobile-menu.is-open",
+    ".mobile-toggle",
+    ".modal",
+    ".modal-card",
+    ".modal-close",
+    ".modal-container",
+    ".modal-content",
+    ".modal-dialog",
+    ".modal-overlay",
+    ".modal-title",
+    ".modal.active",
+    ".modal.is-open",
+    ".modal__close",
+    ".modal__content",
+    ".navbar",
+    ".navbar a",
+    ".navbar__toggle",
+    ".pages-count",
+    ".portfolio-card",
+    ".portfolio-filter-btn",
+    ".portfolio-filter-btn.is-active",
+    ".portfolio-title",
+    ".pricing-calculator",
+    ".pricing-calculator-widget",
+    ".pricing-section",
+    ".process-grid",
+    ".process-step",
+    ".rating",
+    ".review-card",
+    ".ripple",
+    ".service-card",
+    ".site-footer",
+    ".site-header",
+    ".stage-item",
+    ".star",
+    ".stars",
+    ".stat-number",
+    ".stats-cards-grid",
+    ".step-item",
+    ".step-number",
+    ".step-tag",
+    ".step-title",
+    ".steps-container",
+    ".tech-badge",
+    ".testimonial-card",
+    ".testimonial-carousel",
+    ".testimonial-item",
+    ".testimonial-track",
+    ".testimonials",
+    ".tier-card",
+    ".tier-card-inner",
+    ".tier-cards-group",
+    ".tier-options",
+    ".tier-selector",
+    ".timeline",
+    ".timeline li",
+    ".timeline-step",
+    ".total-price",
+    ".total-timeline",
+    ".trust-section",
+    ".whatsapp-ripple",
+    ".workflow-container",
+    ".workflow-step",
+    ".workflow-timeline",
+    "[data-calc-price]",
+    "[data-calc-time]",
+    "[data-carousel]",
+    "[data-close]",
+    "[data-counter-target]",
+    "[data-filter]",
+    "[data-filter].active",
+    "[data-filter].is-active",
+    "[data-modal-target]",
+    "[data-modal-title]",
+    "[data-next]",
+    "[data-prev]",
+    "[data-project-id]",
+    "[data-rating]",
+    "[data-slide]",
+    "[data-target]",
+    "[data-tilt]",
+    "[onclick]",
+    "[onerror]",
+    "[onload]",
+    "[onmouseover]",
+    "a",
+    "a.btn-whatsapp",
+    "body *",
+    "button",
+    "dialog",
+    "dialog[open]",
+    "footer",
+    "form",
+    "form input",
+    "form select",
+    "form textarea",
+    "form#contact-form",
+    "form.calculator",
+    "h3",
+    "h4",
+    "header",
+    "header nav a",
+    "main",
+    "nav",
+    "ol",
+    "ol li",
+    "p",
+    "script",
+    "script:not([src])",
+    "script[src]",
+    "section",
+    "span",
+    "ul",
+    "ul li",
+    "ul li strong"
+  ],
+  "allIncludes": [
+    "#contact",
+    "#portfolio",
+    "%",
+    "+",
+    ".",
+    ".css",
+    "0.7071",
+    "01",
+    "08",
+    "1",
+    "100%",
+    "18.750.000",
+    "180",
+    "2.500.000",
+    "23.750.000",
+    "240, 240, 240",
+    "242, 242, 246",
+    "25",
+    "250",
+    "27",
+    "3.900.000",
+    "404",
+    "5.0",
+    "5.500.000",
+    "7",
+    "8",
+    "99.9",
+    "All rights",
+    "Budi Wicaksono",
+    "Copyright",
+    "Founder",
+    "Indonesia",
+    "Jakarta",
+    "Lokasi",
+    "NaN",
+    "PT",
+    "PT Inovasi Cipta Digital",
+    "Paket Pro",
+    "Rating",
+    "Rp",
+    "Rubic",
+    "SCBD",
+    "Solusindo",
+    "Tahap",
+    "WhatsApp",
+    "alur",
+    "api",
+    "assets/portfolio/",
+    "basic",
+    "chat",
+    "contact",
+    "contact.html",
+    "css",
+    "css/",
+    "cubic-bezier(0.16, 1, 0.3, 1)",
+    "deliverable",
+    "deploy",
+    "desain",
+    "document.write",
+    "e+",
+    "estimasi",
+    "fasilitas",
+    "fitur",
+    "garansi",
+    "googleapis.com",
+    "gstatic.com",
+    "html",
+    "js",
+    "js/contact.js",
+    "js/interactions.js",
+    "js/main.js",
+    "js/portfolio.js",
+    "kalkulator",
+    "kepuasan",
+    "klien",
+    "konsultasi",
+    "laravel",
+    "layanan",
+    "lingkup",
+    "matrix",
+    "minimal 10 karakter",
+    "minimal 3 karakter",
+    "ms",
+    "mulai",
+    "no-scroll",
+    "null",
+    "opacity",
+    "output",
+    "paket",
+    "perspective",
+    "perspective(1000px)",
+    "php",
+    "portfolio",
+    "portofolio",
+    "proses",
+    "radial-gradient",
+    "react",
+    "ripple",
+    "rotate",
+    "rotateX",
+    "rotateX(0deg)",
+    "rotateY",
+    "rotateY(0deg)",
+    "scale",
+    "scale3d(1, 1, 1)",
+    "scale3d(1.02, 1.02, 1.02)",
+    "service",
+    "tahap",
+    "testimoni",
+    "testing",
+    "tidak valid",
+    "transform",
+    "translate3d",
+    "undefined",
+    "wa.me",
+    "wa.me/6285280008984",
+    "whatsapp",
+    "whatsapp.com",
+    "width=device-width",
+    "wireframe",
+    "workflow",
+    "©",
+    "★"
+  ],
+  "allAttributes": [
+    "aria-expanded",
+    "aria-hidden",
+    "aria-invalid",
+    "aria-label",
+    "aria-selected",
+    "data-case-study",
+    "data-category",
+    "data-counter-target",
+    "data-decimals",
+    "data-express",
+    "data-filter",
+    "data-name",
+    "data-project-id",
+    "data-suffix",
+    "data-target",
+    "href",
+    "role",
+    "src",
+    "title",
+    "type"
+  ],
+  "allRegexes": [
+    "/\\d+/",
+    "/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/",
+    "/rotateX\\(([\\d.-]+)deg\\)/",
+    "/rotateX\\(([\\d.-]+)deg\\)\\s+rotateY\\(([\\d.-]+)deg\\)/",
+    "/rotateY\\(([\\d.-]+)deg\\)/",
+    "/rotate[XY]\\(([-0-9.]+)deg\\)/",
+    "/translate3d\\(([\\d.-]+)px,\\s*([\\d.-]+)px/"
+  ],
+  "files": [
+    {
+      "file": "tests\\adversarial-m5-verification.js",
+      "selectors": [
+        ".cursor-dot",
+        ".cursor-follower",
+        ".btn--primary",
+        ".card-tilt, .service-card",
+        ".stat-number",
+        "#extra-pages",
+        "#calc-total-price",
+        "#calc-total-timeline",
+        "#btn-calc-whatsapp",
+        ".testimonial-track",
+        ".carousel-dot",
+        ".carousel-btn--next",
+        ".testimonial-carousel",
+        ".faq-trigger",
+        ".faq-item",
+        ".faq-panel"
+      ],
+      "includes": [
+        "cubic-bezier(0.16, 1, 0.3, 1)",
+        "5.500.000",
+        "2.500.000",
+        "23.750.000",
+        "27"
+      ],
+      "attributes": [
+        "data-counter-target",
+        "data-suffix",
+        "data-express",
+        "aria-expanded"
+      ],
+      "regexes": [
+        "/translate3d\\(([\\d.-]+)px,\\s*([\\d.-]+)px/",
+        "/rotateX\\(([\\d.-]+)deg\\)\\s+rotateY\\(([\\d.-]+)deg\\)/"
+      ]
+    },
+    {
+      "file": "tests\\challenger-m5-2-deep-verification.js",
+      "selectors": [
+        "*",
+        ".consultation-calculator-wrapper",
+        ".consultation-form-wrapper",
+        "header, .site-header, nav, #navbar",
+        "footer, .site-footer",
+        ".navbar__toggle",
+        ".mobile-menu.is-open",
+        ".portfolio-card",
+        ".filter-tab.is-active, [data-filter].is-active, [data-filter].active",
+        "[data-filter].is-active, [data-filter].active",
+        "#case-study-modal",
+        ".modal",
+        ".modal-title, [data-modal-title]",
+        ".modal-dialog, .modal-card, .modal-content",
+        ".btn-service-modal",
+        "#service-modal",
+        ".error-message, .form-error, .invalid-feedback",
+        ".contact-form, #consultation-form, form",
+        ".is-invalid, .error",
+        "script"
+      ],
+      "includes": [],
+      "attributes": [
+        "href",
+        "data-filter",
+        "aria-hidden"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\challenger-m5-final-responsive.js",
+      "selectors": [
+        "body *",
+        ".consultation-form-box",
+        ".tier-card",
+        "#extra-pages",
+        "#calc-total-price",
+        "#calc-total-timeline",
+        "#btn-calc-whatsapp",
+        "#package"
+      ],
+      "includes": [
+        "2.500.000",
+        "7",
+        "3.900.000",
+        "18.750.000",
+        "25",
+        "wa.me",
+        "basic"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\challenger-m5-subpages-tilt-stress.js",
+      "selectors": [
+        "script[src]",
+        "script:not([src])",
+        ".card-tilt",
+        "#service-modal-deliverables li",
+        ".btn-service-modal",
+        ".modal-dialog",
+        ".portfolio-title, h3",
+        ".portfolio-card",
+        ".btn-case-study, [data-project-id]",
+        "h4, h3",
+        ".consultation-form, .contact-form, #contact-form",
+        "a",
+        ".floating-whatsapp-btn, .btn-floating-whatsapp"
+      ],
+      "includes": [
+        "js/interactions.js",
+        "perspective(1000px)",
+        "scale3d(1.02, 1.02, 1.02)",
+        "rotateX(0deg)",
+        "rotateY(0deg)",
+        "contact.html",
+        "js/portfolio.js",
+        "js/main.js",
+        "wa.me",
+        "js/contact.js",
+        "whatsapp.com",
+        "WhatsApp"
+      ],
+      "attributes": [
+        "src",
+        "aria-hidden",
+        "href",
+        "data-category",
+        "data-project-id",
+        "data-case-study",
+        "aria-invalid",
+        "aria-label"
+      ],
+      "regexes": [
+        "/rotateX\\(([-\\d.]+)deg\\)\\s*rotateY\\(([-\\d.]+)deg\\)/"
+      ]
+    },
+    {
+      "file": "tests\\challenger-m6-2-pricing-faq-stress.js",
+      "selectors": [
+        ".pricing-section",
+        ".pricing-calculator-widget, .calc-layout",
+        ".tier-cards-group, .tier-selector, .tier-options",
+        ".tier-card",
+        ".tier-card-inner",
+        "#extra-pages",
+        "#pages-count-display",
+        "#calc-total-price",
+        "#calc-total-timeline",
+        "#btn-calc-whatsapp",
+        ".faq-section",
+        ".faq-item",
+        ".faq-trigger",
+        ".faq-question",
+        ".faq-icon",
+        ".faq-content, .faq-panel"
+      ],
+      "includes": [
+        "240, 240, 240",
+        "242, 242, 246",
+        "0.7071",
+        "matrix"
+      ],
+      "attributes": [
+        "data-express",
+        "data-name",
+        "type",
+        "aria-expanded"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\helpers\\browser-driver.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\helpers\\static-server.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\helpers\\test-harness.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\run-e2e.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\stress-challenger-m5-2.js",
+      "selectors": [
+        "h3",
+        ".tech-badge",
+        "ul li",
+        "ul li strong",
+        ".timeline-step, .workflow-step",
+        ".step-number",
+        ".step-tag",
+        ".step-title",
+        "#service-modal-deliverables li",
+        ".filter-btn, .portfolio-filter-btn",
+        ".portfolio-card",
+        ".portfolio-title",
+        "[data-filter]",
+        ".btn-case-study, [data-project-id]",
+        "#modal-title",
+        "#modal-client",
+        "#modal-challenge",
+        "#modal-solution",
+        "#modal-results",
+        "#modal-tag",
+        "#modal-img",
+        "#modal-whatsapp-cta",
+        "#modal-close-btn, .modal-close",
+        "#modal-close-btn",
+        ".btn-case-study",
+        ".modal-dialog",
+        ".btn-floating-whatsapp, .floating-whatsapp-btn"
+      ],
+      "includes": [
+        "assets/portfolio/",
+        "wa.me/6285280008984",
+        "minimal 3 karakter",
+        "minimal 10 karakter",
+        "tidak valid",
+        "08",
+        "Budi Wicaksono",
+        "PT Inovasi Cipta Digital",
+        "Paket Pro",
+        "ripple"
+      ],
+      "attributes": [
+        "aria-hidden",
+        "data-filter",
+        "aria-selected",
+        "data-category",
+        "data-project-id",
+        "src",
+        "href",
+        "aria-invalid",
+        "role"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\stress-interactions-empirical.js",
+      "selectors": [
+        ".card-tilt, .service-card",
+        ".stat-number",
+        ".pricing-calculator",
+        "#extra-pages",
+        "#calc-total-price",
+        "#calc-total-timeline",
+        "#btn-calc-whatsapp, a.btn-whatsapp",
+        "#package",
+        ".testimonial-carousel",
+        ".carousel-btn--next",
+        ".carousel-btn--prev",
+        ".carousel-dot",
+        ".testimonial-track",
+        ".faq-item",
+        ".faq-trigger",
+        ".faq-panel"
+      ],
+      "includes": [
+        "scale3d(1.02, 1.02, 1.02)",
+        "rotateX(0deg)",
+        "cubic-bezier(0.16, 1, 0.3, 1)",
+        "100%",
+        "wa.me/6285280008984"
+      ],
+      "attributes": [
+        "data-counter-target",
+        "data-decimals",
+        "data-suffix",
+        "data-express",
+        "aria-expanded"
+      ],
+      "regexes": [
+        "/rotateX\\(([\\d.-]+)deg\\)/",
+        "/rotateY\\(([\\d.-]+)deg\\)/"
+      ]
+    },
+    {
+      "file": "tests\\tier1-features\\feat-01-architecture-http.test.js",
+      "selectors": [],
+      "includes": [
+        "404",
+        "width=device-width",
+        "css/",
+        ".css"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-02-vanilla-stack.test.js",
+      "selectors": [
+        "script[src]"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-03-responsive-layout.test.js",
+      "selectors": [
+        ".consultation-calculator-wrapper",
+        "header nav a, .floating-bottom-nav a, .navbar a"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-04-hero-section.test.js",
+      "selectors": [
+        "#hero, .hero-section",
+        "#hero h1, .hero-section h1",
+        "#hero a, .hero-section a"
+      ],
+      "includes": [
+        "garansi",
+        "kepuasan",
+        "100%",
+        "wa.me",
+        "whatsapp",
+        "#contact",
+        "konsultasi",
+        "portfolio",
+        "#portfolio",
+        "portofolio"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-05-custom-cursor.test.js",
+      "selectors": [
+        ".cursor-dot, .custom-cursor, #cursor-dot, .cursor",
+        ".cursor-follower, .cursor-ring, #cursor-follower",
+        ".cursor-dot, #cursor-dot",
+        "a, button",
+        ".cursor-follower, #cursor-follower",
+        ".cursor-follower, .cursor-ring, .custom-cursor"
+      ],
+      "includes": [
+        "250",
+        "180"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-06-core-services.test.js",
+      "selectors": [
+        "#services .service-card, #services .interactive-spotlight, #services .card-tilt, #services article, #services .grid-col",
+        "#services .tech-badge, #services .badge, #services .tag, #services [data-tech], #services span",
+        "#services .service-card, #services .interactive-spotlight, #services article",
+        "#services a, #services button",
+        "#services h3, #services h4"
+      ],
+      "includes": [
+        "html",
+        "laravel",
+        "php",
+        "api",
+        "css",
+        "js",
+        "react"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-07-3d-tilt-cards.test.js",
+      "selectors": [
+        ".card-tilt, .interactive-spotlight, [data-tilt], .service-card, .portfolio-card",
+        ".card-tilt, .interactive-spotlight, .service-card"
+      ],
+      "includes": [
+        "rotate",
+        "perspective",
+        "rotateX",
+        "rotateY",
+        "rotateX(0deg)",
+        "scale3d(1, 1, 1)",
+        "radial-gradient"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-08-trust-stats.test.js",
+      "selectors": [
+        "#why-us, .trust-section, #guarantee, .guarantees, #about",
+        "[data-counter-target], [data-target], .stat-number",
+        ".stats-cards-grid, #why-us, [data-counter-target], [data-target]"
+      ],
+      "includes": [
+        "%",
+        "+",
+        "ms"
+      ],
+      "attributes": [
+        "data-counter-target",
+        "data-target",
+        "data-suffix"
+      ],
+      "regexes": [
+        "/\\d+/"
+      ]
+    },
+    {
+      "file": "tests\\tier1-features\\feat-09-portfolio-gallery.test.js",
+      "selectors": [
+        "#portfolio .portfolio-card, #portfolio [data-category], #portfolio .project-card, #portfolio article",
+        "#portfolio [data-filter], #portfolio .filter-btn, #portfolio .portfolio-filter-btn",
+        "#portfolio [data-filter], #portfolio .portfolio-filter-btn",
+        "#portfolio .tech-badge, #portfolio .tag, #portfolio .badge, #portfolio [data-tech], #portfolio span",
+        "#portfolio a, #portfolio button, #portfolio .btn-case-study, #portfolio [data-modal-target]"
+      ],
+      "includes": [],
+      "attributes": [
+        "aria-selected"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-10-case-study-modals.test.js",
+      "selectors": [
+        "#case-study-modal, .modal, dialog, #project-modal, .case-study-modal",
+        ".btn-case-study, [data-project-id], [data-modal-target], #portfolio button, #portfolio a.btn",
+        "#case-study-modal, .modal, dialog, #project-modal",
+        ".btn-case-study, [data-project-id], [data-modal-target], #portfolio button",
+        "#case-study-modal, .modal, dialog",
+        ".modal__close, .modal-close, [data-close], #modal-close-btn",
+        "#case-study-modal.is-open, .modal.active"
+      ],
+      "includes": [],
+      "attributes": [
+        "aria-hidden"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-11-pricing-calculator.test.js",
+      "selectors": [
+        "#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator, form.calculator",
+        "#pages-count-display, .pages-count",
+        "#calc-total-price, .total-price, #total-cost, [data-calc-price]",
+        "#calc-total-timeline, .total-timeline, #total-timeline, [data-calc-time]"
+      ],
+      "includes": [
+        "kalkulator",
+        "estimasi",
+        "paket",
+        "8",
+        "Rp"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-12-testimonial-carousel.test.js",
+      "selectors": [
+        "#testimonials, .testimonial-carousel, .testimonials, .testimonial-track, #reviews, [data-carousel]",
+        ".testimonial-card, .testimonial-item, .review-card, [data-slide]",
+        ".rating, .stars, .star, [data-rating]",
+        ".testimonial-carousel, .testimonial-track, #testimonials"
+      ],
+      "includes": [
+        "klien",
+        "testimoni",
+        "PT",
+        "Founder",
+        "★",
+        "5.0",
+        "Rating"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-13-faq-accordion.test.js",
+      "selectors": [
+        "#faq .faq-item, #faq details, #faq .accordion-item",
+        "#faq .faq-trigger, #faq .faq-header button, #faq summary",
+        "#faq .faq-trigger, #faq .faq-header button",
+        "#faq .faq-item.active, #faq .faq-item.is-open",
+        "#faq h3, #faq h4, #faq button, #faq summary"
+      ],
+      "includes": [],
+      "attributes": [
+        "aria-expanded"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-14-navbar-mobile-drawer.test.js",
+      "selectors": [
+        "header, .site-header, .navbar, nav",
+        "header, .site-header, .navbar, .floating-bottom-nav",
+        ".mobile-menu, #mobile-nav-drawer, .mobile-drawer",
+        ".navbar__toggle, .mobile-toggle, .menu-toggle, #menu-toggle"
+      ],
+      "includes": [
+        "no-scroll"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-15-workflow-timeline.test.js",
+      "selectors": [
+        ".workflow-step, .timeline-step, .process-step, .step-item, .stage-item, ol li, .timeline li",
+        ".workflow-timeline, .timeline, .process-grid, .steps-container, .workflow-container, #workflow",
+        "section",
+        "a"
+      ],
+      "includes": [
+        "404",
+        "01",
+        "Tahap",
+        "deliverable",
+        "fitur",
+        "fasilitas",
+        "output",
+        "lingkup",
+        "contact",
+        "wa.me",
+        "whatsapp",
+        "konsultasi",
+        "mulai"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-16-contact-form-validation.test.js",
+      "selectors": [
+        "form input, form textarea, form select",
+        "form#contact-form, form"
+      ],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-17-floating-whatsapp.test.js",
+      "selectors": [
+        ".whatsapp-ripple, .ripple"
+      ],
+      "includes": [
+        "wa.me",
+        "whatsapp.com"
+      ],
+      "attributes": [
+        "aria-label",
+        "title",
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier1-features\\feat-18-footer-legal.test.js",
+      "selectors": [
+        "footer, .site-footer",
+        "a"
+      ],
+      "includes": [
+        "Rubic",
+        "PT",
+        "Jakarta",
+        "SCBD",
+        "Indonesia",
+        "Lokasi",
+        "©",
+        "Copyright",
+        "All rights"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-01-navigation-routing.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-02-vanilla-integrity.test.js",
+      "selectors": [
+        "[onclick], [onload], [onerror], [onmouseover]",
+        "script"
+      ],
+      "includes": [
+        "document.write",
+        "googleapis.com",
+        "gstatic.com"
+      ],
+      "attributes": [
+        "src"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-03-extreme-viewports.test.js",
+      "selectors": [
+        "main, .container, #hero"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-04-hero-interactions.test.js",
+      "selectors": [
+        "#hero a, .hero-section a",
+        "#hero h1, .hero-section h1",
+        "#hero, .hero-section",
+        ".hero-badge-wrap, .hero-telemetry-bar"
+      ],
+      "includes": [
+        "translate3d"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-05-cursor-edge-cases.test.js",
+      "selectors": [
+        ".cursor-follower, .cursor-ring, .custom-cursor",
+        "a, button"
+      ],
+      "includes": [
+        "NaN"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-06-service-cards-boundary.test.js",
+      "selectors": [
+        "#services .service-card, #services .interactive-spotlight, #services article",
+        "#services a, #services button",
+        ".modal.is-open, dialog[open]"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-07-3d-tilt-physics.test.js",
+      "selectors": [
+        ".card-tilt, .interactive-spotlight, .service-card"
+      ],
+      "includes": [
+        "rotateX(0deg)",
+        "scale3d(1, 1, 1)",
+        "NaN"
+      ],
+      "attributes": [],
+      "regexes": [
+        "/rotate[XY]\\(([-0-9.]+)deg\\)/"
+      ]
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-08-stats-observer-boundaries.test.js",
+      "selectors": [
+        "[data-counter-target], [data-target], .stat-number"
+      ],
+      "includes": [
+        "NaN",
+        ".",
+        "99.9",
+        "undefined",
+        "null"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-09-portfolio-filtering-edge.test.js",
+      "selectors": [
+        "#portfolio [data-filter], #portfolio .portfolio-filter-btn",
+        "#portfolio [data-filter].active, #portfolio .portfolio-filter-btn.active"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-10-case-study-modal-boundaries.test.js",
+      "selectors": [
+        ".btn-case-study, [data-project-id], [data-modal-target], #portfolio button",
+        ".modal__close, .modal-close, [data-close], #modal-close-btn",
+        "#case-study-modal, .modal, dialog",
+        ".modal-container, .modal-dialog, .modal__content",
+        "#case-study-modal, .modal-overlay",
+        ".btn-case-study, [data-project-id], [data-modal-target]",
+        "#case-study-modal, .modal"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-11-calculator-edge-cases.test.js",
+      "selectors": [
+        "#calc-total-price, .total-price"
+      ],
+      "includes": [
+        "e+",
+        "NaN"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-12-carousel-navigation-edge.test.js",
+      "selectors": [
+        ".testimonial-carousel, [data-carousel]",
+        ".carousel-btn--next, .carousel-next, [data-next]",
+        ".carousel-btn--prev, .carousel-prev, [data-prev]",
+        ".testimonial-track, .testimonial-carousel",
+        ".testimonial-carousel, .testimonial-track, #testimonials"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-13-faq-accordion-boundaries.test.js",
+      "selectors": [
+        "#faq .faq-trigger, #faq .faq-header button, #faq summary",
+        "#faq .faq-trigger, #faq .faq-header button",
+        "#faq .faq-item.active, #faq .faq-item.is-open",
+        "#faq .faq-answer, #faq .faq-content, #faq p"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-14-navbar-hysteresis-boundaries.test.js",
+      "selectors": [
+        ".navbar__toggle, .mobile-toggle, .menu-toggle",
+        ".mobile-menu.is-open, #mobile-nav-drawer.active",
+        ".mobile-menu, #mobile-nav-drawer, .mobile-drawer",
+        "header, .site-header, .navbar"
+      ],
+      "includes": [
+        "no-scroll"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-15-workflow-timeline-boundaries.test.js",
+      "selectors": [
+        "ul, ol"
+      ],
+      "includes": [
+        "404",
+        "01",
+        "1",
+        "Tahap",
+        "wireframe",
+        "desain",
+        "testing",
+        "deploy"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-16-form-validation-regex-edge.test.js",
+      "selectors": [
+        "form#contact-form, form"
+      ],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-17-floating-cta-boundaries.test.js",
+      "selectors": [
+        "#case-study-modal, .modal, dialog"
+      ],
+      "includes": [
+        "ripple",
+        "transform",
+        "scale",
+        "opacity",
+        "whatsapp",
+        "chat",
+        "konsultasi"
+      ],
+      "attributes": [
+        "aria-label",
+        "title"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier2-boundaries\\bnd-18-footer-accessibility-boundaries.test.js",
+      "selectors": [
+        "footer, .site-footer",
+        "a",
+        "footer",
+        "p, span, a"
+      ],
+      "includes": [
+        "Rubic",
+        "Solusindo",
+        "Jakarta",
+        "Indonesia",
+        "SCBD"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-01-navbar-calculator.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-02-filter-modal.test.js",
+      "selectors": [
+        "#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button",
+        "#case-study-modal, .modal, dialog"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-03-modal-drawer-lock.test.js",
+      "selectors": [
+        ".btn-case-study, [data-project-id], [data-modal-target], #portfolio button",
+        ".modal__close, .modal-close, [data-close]",
+        ".navbar__toggle, .mobile-toggle, .menu-toggle"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-04-calc-whatsapp.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-05-cursor-tilt.test.js",
+      "selectors": [
+        ".card-tilt, .interactive-spotlight, .service-card",
+        ".cursor-follower"
+      ],
+      "includes": [
+        "perspective"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-06-faq-stats-scroll.test.js",
+      "selectors": [
+        "#faq .faq-item header, #faq .faq-header, #faq summary, #faq button",
+        "#why-us, .stats-cards-grid, [data-counter-target], [data-target]"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-07-carousel-hysteresis.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-08-drawer-hash-navigation.test.js",
+      "selectors": [
+        ".navbar__toggle, .mobile-toggle, .menu-toggle",
+        "#portfolio [data-filter], #portfolio .filter-btn"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-09-form-calc-sync.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-10-service-modal-focus.test.js",
+      "selectors": [
+        ".btn-service-modal, #services a, #services button, .btn-case-study, [data-modal-target]",
+        "#service-modal, #case-study-modal"
+      ],
+      "includes": [],
+      "attributes": [
+        "aria-hidden"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-11-reduced-motion-interactions.test.js",
+      "selectors": [],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-12-floating-whatsapp-footer.test.js",
+      "selectors": [
+        "footer, .site-footer"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-13-services-timeline-navigation.test.js",
+      "selectors": [],
+      "includes": [
+        "404",
+        "workflow",
+        "tahap",
+        "alur",
+        "layanan",
+        "service",
+        "deliverable"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-14-filter-rapid-modals.test.js",
+      "selectors": [
+        "#portfolio [data-filter], #portfolio .filter-btn",
+        "#portfolio .btn-case-study, #portfolio [data-modal-target], #portfolio button",
+        ".modal__close, [data-close]"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-15-form-valid-submit-cta.test.js",
+      "selectors": [],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-16-carousel-keyboard-controls.test.js",
+      "selectors": [
+        ".carousel-btn--next, .carousel-next, [data-next]",
+        ".testimonial-track, .carousel-track"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-17-viewport-resize-active-faq.test.js",
+      "selectors": [
+        "#faq .faq-item header, #faq .faq-header, #faq summary, #faq button"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier3-combinations\\comb-18-cross-page-clean-console.test.js",
+      "selectors": [],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-01-discovery-to-workflow.test.js",
+      "selectors": [
+        ".card-tilt, .interactive-spotlight, .service-card"
+      ],
+      "includes": [
+        "404",
+        "workflow",
+        "tahap",
+        "alur",
+        "proses"
+      ],
+      "attributes": [
+        "href"
+      ],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-02-calculator-to-whatsapp.test.js",
+      "selectors": [
+        "#pricing, #calculator, .pricing-calculator, .pricing-section, #pricing-calculator"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-03-portfolio-deep-dive.test.js",
+      "selectors": [
+        ".btn-case-study, [data-project-id], [data-modal-target], button"
+      ],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-04-mobile-consultation.test.js",
+      "selectors": [
+        ".navbar__toggle, .mobile-toggle, .menu-toggle",
+        "form"
+      ],
+      "includes": [
+        "404"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-05-mobile-exploration-faq.test.js",
+      "selectors": [
+        ".carousel-btn--next, .carousel-next, [data-next]",
+        "#faq .faq-item header, #faq .faq-header, #faq summary, #faq button"
+      ],
+      "includes": [],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\tier4-scenarios\\scen-06-stress-performance-audit.test.js",
+      "selectors": [
+        "#portfolio [data-filter], #portfolio .filter-btn"
+      ],
+      "includes": [
+        "NaN"
+      ],
+      "attributes": [],
+      "regexes": []
+    },
+    {
+      "file": "tests\\timing-check.js",
+      "selectors": [
+        ".filter-btn.active, .portfolio-filter-btn.is-active",
+        ".portfolio-card"
+      ],
+      "includes": [],
+      "attributes": [
+        "data-filter",
+        "data-category"
+      ],
+      "regexes": []
+    }
+  ]
+}

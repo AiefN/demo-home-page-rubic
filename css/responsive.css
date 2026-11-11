@@ -11,7 +11,7 @@
   :root {
     --container-max: 1280px;
     --gutter: 32px;
-    --section-spacing: 130px;
+    --section-spacing: 120px;
   }
 
   .hero-headline,
@@ -45,7 +45,7 @@
   :root {
     --container-max: 1200px;
     --gutter: 32px;
-    --section-spacing: 105px;
+    --section-spacing: 100px;
   }
 
   .services-grid,
@@ -77,7 +77,7 @@
 @media (max-width: 1023px) {
   :root {
     --gutter: 24px;
-    --section-spacing: 85px;
+    --section-spacing: 80px;
   }
 
   /* Typography Fluid Fallback */
@@ -164,7 +164,7 @@
 @media (max-width: 767px) {
   :root {
     --gutter: 18px;
-    --section-spacing: 65px;
+    --section-spacing: 60px;
   }
 
   /* Typography */
@@ -476,7 +476,7 @@
 @media (max-width: 380px) {
   :root {
     --gutter: 14px;
-    --section-spacing: 50px;
+    --section-spacing: 48px;
   }
 
   h1, .hero-headline, .hero-title {
