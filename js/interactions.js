@@ -571,6 +571,11 @@
     const modal = document.getElementById('service-modal');
     if (!modal) return;
 
+    // Defensive initialization: ensure service modal is strictly hidden on boot
+    modal.classList.remove('is-active', 'active', 'is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.style.display = 'none';
+
     const serviceData = {
       'custom-web': {
         tag: 'SERVICE 01 • CUSTOM ARCHITECTURE',
@@ -651,8 +656,9 @@
         ctaEl.href = 'contact.html?package=' + encodeURIComponent(id);
       }
 
-      modal.classList.add('is-active');
+      modal.classList.add('is-active', 'active', 'is-open');
       modal.setAttribute('aria-hidden', 'false');
+      modal.style.display = 'flex';
       document.body.classList.add('no-scroll');
       document.body.style.overflow = 'hidden';
 
@@ -661,8 +667,9 @@
     }
 
     function closeModal() {
-      modal.classList.remove('is-active');
+      modal.classList.remove('is-active', 'active', 'is-open');
       modal.setAttribute('aria-hidden', 'true');
+      modal.style.display = 'none';
       document.body.classList.remove('no-scroll');
       document.body.style.overflow = '';
       if (lastFocused && typeof lastFocused.focus === 'function') {

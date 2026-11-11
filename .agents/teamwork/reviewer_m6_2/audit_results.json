@@ -1,0 +1,292 @@
+{
+  "viewports": {
+    "1920px_hero": {
+      "containerWidth": 1280,
+      "leftMargin": 313,
+      "rightMargin": 328,
+      "isCentered": false,
+      "leftColWidth": 667,
+      "rightColWidth": 493,
+      "hasShowcaseCard": true
+    }
+  },
+  "modalStateAudit": {
+    "initial": {
+      "display": "none",
+      "visibility": "hidden",
+      "opacity": "0",
+      "pointerEvents": "none",
+      "isHidden": true
+    },
+    "opened": {
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "dialogWidth": 820,
+      "dialogHeight": 810,
+      "isOpen": true
+    },
+    "closed": {
+      "display": "none",
+      "visibility": "hidden",
+      "opacity": "0",
+      "bodyScrollUnlocked": true,
+      "isClosed": true
+    }
+  },
+  "dockHysteresisAudit": {
+    "scrollY0": {
+      "dockVisible": true,
+      "dockTop": 834,
+      "dockBottom": 876,
+      "headingTop": 928,
+      "isCleared": true
+    },
+    "scrollDown600": {
+      "hasHiddenClass": true,
+      "opacity": "0.278612",
+      "pointerEvents": "none"
+    },
+    "scrollUp200": {
+      "hasHiddenClass": false,
+      "opacity": "0.964987",
+      "pointerEvents": "auto"
+    }
+  },
+  "calculatorInteractionAudit": {
+    "desktop1440": {
+      "cardCount": 3,
+      "widths": [
+        217,
+        217,
+        217
+      ],
+      "heights": [
+        154,
+        154,
+        154
+      ],
+      "allOnSameRow": true,
+      "allWideEnough": true
+    },
+    "mobile375": {
+      "widths": [
+        336,
+        336,
+        336
+      ],
+      "isStackedVertically": true,
+      "allFullWidth": true
+    }
+  },
+  "faqInteractionAudit": {
+    "faqItem1Opened": {
+      "item0Open": true,
+      "gridRows": "102.328px"
+    },
+    "faqItem2OpenedItem1Collapsed": {
+      "item0Open": false,
+      "item1Open": true,
+      "mutexMaintained": true
+    }
+  },
+  "overflowAudit": [
+    {
+      "page": "index.html",
+      "viewport": "320px_se",
+      "expectedWidth": 320,
+      "scrollWidth": 369,
+      "hasOverflow": true
+    },
+    {
+      "page": "services.html",
+      "viewport": "320px_se",
+      "expectedWidth": 320,
+      "scrollWidth": 320,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "320px_se",
+      "expectedWidth": 320,
+      "scrollWidth": 320,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "320px_se",
+      "expectedWidth": 320,
+      "scrollWidth": 320,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "375px_mobile",
+      "expectedWidth": 375,
+      "scrollWidth": 375,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "375px_mobile",
+      "expectedWidth": 375,
+      "scrollWidth": 375,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "375px_mobile",
+      "expectedWidth": 375,
+      "scrollWidth": 375,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "375px_mobile",
+      "expectedWidth": 375,
+      "scrollWidth": 375,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "768px_tablet",
+      "expectedWidth": 768,
+      "scrollWidth": 753,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "768px_tablet",
+      "expectedWidth": 768,
+      "scrollWidth": 753,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "768px_tablet",
+      "expectedWidth": 768,
+      "scrollWidth": 753,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "768px_tablet",
+      "expectedWidth": 768,
+      "scrollWidth": 753,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "1024px_desktop",
+      "expectedWidth": 1024,
+      "scrollWidth": 1009,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "1024px_desktop",
+      "expectedWidth": 1024,
+      "scrollWidth": 1009,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "1024px_desktop",
+      "expectedWidth": 1024,
+      "scrollWidth": 1009,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "1024px_desktop",
+      "expectedWidth": 1024,
+      "scrollWidth": 1009,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "1280px_standard",
+      "expectedWidth": 1280,
+      "scrollWidth": 1265,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "1280px_standard",
+      "expectedWidth": 1280,
+      "scrollWidth": 1265,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "1280px_standard",
+      "expectedWidth": 1280,
+      "scrollWidth": 1265,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "1280px_standard",
+      "expectedWidth": 1280,
+      "scrollWidth": 1265,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "1440px_wide",
+      "expectedWidth": 1440,
+      "scrollWidth": 1425,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "1440px_wide",
+      "expectedWidth": 1440,
+      "scrollWidth": 1425,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "1440px_wide",
+      "expectedWidth": 1440,
+      "scrollWidth": 1425,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "1440px_wide",
+      "expectedWidth": 1440,
+      "scrollWidth": 1425,
+      "hasOverflow": false
+    },
+    {
+      "page": "index.html",
+      "viewport": "1920px_ultrawide",
+      "expectedWidth": 1920,
+      "scrollWidth": 1905,
+      "hasOverflow": false
+    },
+    {
+      "page": "services.html",
+      "viewport": "1920px_ultrawide",
+      "expectedWidth": 1920,
+      "scrollWidth": 1905,
+      "hasOverflow": false
+    },
+    {
+      "page": "portfolio.html",
+      "viewport": "1920px_ultrawide",
+      "expectedWidth": 1920,
+      "scrollWidth": 1905,
+      "hasOverflow": false
+    },
+    {
+      "page": "contact.html",
+      "viewport": "1920px_ultrawide",
+      "expectedWidth": 1920,
+      "scrollWidth": 1905,
+      "hasOverflow": false
+    }
+  ]
+}

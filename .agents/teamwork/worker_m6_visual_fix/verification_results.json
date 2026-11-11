@@ -1,0 +1,63 @@
+{
+  "desktop1440": {
+    "hero": {
+      "containerWidth": 1280,
+      "leftColWidth": 667,
+      "rightColWidth": 493,
+      "hasShowcaseCard": true,
+      "isBalancedTwoColumn": true
+    },
+    "modalInitialState": {
+      "computedDisplay": "none",
+      "computedVisibility": "hidden",
+      "computedOpacity": "0",
+      "pointerEvents": "none",
+      "isHidden": true
+    },
+    "dockClearanceAtScrollY0": {
+      "dockTop": 834,
+      "dockBottom": 876,
+      "servicesTitleTop": 928,
+      "servicesTitleBottom": 1070,
+      "isPushedBelowFold": true,
+      "dockCollidesTitle": false
+    },
+    "pricingCalculator": {
+      "tierCardCount": 3,
+      "tierCardWidths": [
+        217,
+        217,
+        217
+      ],
+      "allCardsWide": true,
+      "isNotCollapsed": true
+    },
+    "faqAccordion": {
+      "btnBg": "rgba(0, 0, 0, 0)",
+      "btnColor": "rgb(242, 242, 246)",
+      "btnBorder": "0px none rgb(242, 242, 246)",
+      "questionBg": "rgba(0, 0, 0, 0)",
+      "questionColor": "rgb(242, 242, 246)",
+      "isTransparentDarkTheme": true
+    }
+  },
+  "mobile375": {
+    "tierWidths": [
+      336,
+      336,
+      336
+    ],
+    "isStackedSingleColumn": true,
+    "dockHiddenOnMobile": true
+  },
+  "servicesPageModal": {
+    "display": "none",
+    "visibility": "hidden",
+    "isHidden": true
+  },
+  "portfolioPageModal": {
+    "display": "none",
+    "visibility": "hidden",
+    "isHidden": true
+  }
+}

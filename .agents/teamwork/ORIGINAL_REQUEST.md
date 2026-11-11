@@ -110,3 +110,19 @@ Mohon periksa status, perbarui gerbang Milestone 2 ke PASS, dan langsung lanjutk
 Worker M3 (worker_m3_interactions) dan Worker M4 (worker_m4_subpages) telah menyelesaikan tugasnya dan menyerahkan handoff.md dengan 204/204 test pass. Seluruh 4 halaman utama (index.html, services.html, portfolio.html, contact.html) dan 4 mesin JS (main.js, interactions.js, portfolio.js, contact.js) telah terpasang dan lolos seluruh suite pengujian E2E.
 
 Silakan Orchestrator melanjutkan ke verifikasi akhir dan final victory report.
+
+
+## Follow-up — 2026-11-10T11:49:52Z
+
+[Rubicweb — High-Performance Web Engineering & World-Class Design](http://127.0.0.1:5500/index.html)
+
+sudah apanya masih banyak yang eror dengan penempatan nya
+
+ kanan kirinya ini kosong /learn 
+
+[User attached 3 screenshots illustrating visual layout defects]:
+1. Wide desktop layout is unbalanced with excessive empty void on the right and awkward left alignment in Hero.
+2. Case study modal ("Tantangan Teknis", "Solusi Rekayasa Rubicweb", "Hasil Terukur") is visible statically in the top-left corner, covering index.html content.
+3. Floating bottom pill dock overlaps and obscures section headings ("Solusi Rekayasa...").
+4. Pricing calculator package selector cards ("Paket Basic", "Paket Pro", "Paket Enterprise") collapsed into thin vertical slivers on the left with misaligned text.
+5. FAQ accordion questions have unstyled white background boxes around text.

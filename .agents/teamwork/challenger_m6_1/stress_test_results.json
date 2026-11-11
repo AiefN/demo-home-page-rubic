@@ -1,0 +1,672 @@
+{
+  "passed": 27,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Case study modal computed display:none and visibility:hidden at page load (index.html)",
+      "success": true,
+      "details": {
+        "exists": true,
+        "display": "none",
+        "visibility": "hidden",
+        "opacity": "0",
+        "pointerEvents": "none",
+        "ariaHidden": "true",
+        "inlineDisplay": "none"
+      }
+    },
+    {
+      "name": "Case study button click opens modal (display:flex, opacity:1, visibility:visible, body locked)",
+      "success": true,
+      "details": {
+        "isActive": true,
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "pointerEvents": "auto",
+        "ariaHidden": "false",
+        "bodyOverflow": "hidden",
+        "hasNoScroll": true
+      }
+    },
+    {
+      "name": "Trigger close via close button (&times;) closes modal (display:none, body unlocked)",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": "",
+        "ariaHidden": "true"
+      }
+    },
+    {
+      "name": "Reopen and trigger close via Escape key press closes modal (display:none, body unlocked)",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": "",
+        "ariaHidden": "true"
+      }
+    },
+    {
+      "name": "Reopen and trigger close via backdrop click closes modal (display:none, body unlocked)",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": "",
+        "ariaHidden": "true"
+      }
+    },
+    {
+      "name": "Rapidly click open/close 10 times in succession on case-study-modal (no stuck overlay, clean teardown)",
+      "success": true,
+      "details": {
+        "cycles": [
+          {
+            "cycle": 1,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 2,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 3,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 4,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 5,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 6,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 7,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 8,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 9,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 10,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          }
+        ],
+        "finalDisplay": "none",
+        "finalVisibility": "hidden",
+        "finalIsActive": false,
+        "bodyOverflow": "",
+        "noScrollPresent": false
+      }
+    },
+    {
+      "name": "Service modal computed display:none and visibility:hidden at page load (services.html)",
+      "success": true,
+      "details": {
+        "exists": true,
+        "display": "none",
+        "visibility": "hidden",
+        "opacity": "0",
+        "pointerEvents": "none",
+        "ariaHidden": "true"
+      }
+    },
+    {
+      "name": "Service button click opens #service-modal (display:flex, visibility:visible, title populated)",
+      "success": true,
+      "details": {
+        "isActive": true,
+        "display": "flex",
+        "visibility": "visible",
+        "ariaHidden": "false",
+        "title": "Custom Web Development — Rekayasa Kode Kustom Tanpa Template",
+        "bodyOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Trigger close via #service-modal-close (&times;) closes service modal",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": ""
+      }
+    },
+    {
+      "name": "Reopen and trigger close via Escape key press closes service modal",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": ""
+      }
+    },
+    {
+      "name": "Reopen and trigger close via backdrop click closes service modal",
+      "success": true,
+      "details": {
+        "isActive": false,
+        "display": "none",
+        "visibility": "hidden",
+        "bodyOverflow": ""
+      }
+    },
+    {
+      "name": "Rapidly click open/close 10 times in succession on service-modal (no stuck overlay, clean teardown)",
+      "success": true,
+      "details": {
+        "cycles": [
+          {
+            "cycle": 1,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 2,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 3,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 4,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 5,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 6,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 7,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 8,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 9,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          },
+          {
+            "cycle": 10,
+            "openDisplay": "flex",
+            "closeDisplay": "none"
+          }
+        ],
+        "finalDisplay": "none",
+        "finalVisibility": "hidden",
+        "finalIsActive": false,
+        "bodyOverflow": ""
+      }
+    },
+    {
+      "name": "Hero showcase card exists and receives 3D tilt perspective transforms",
+      "success": true,
+      "details": {
+        "exists": true,
+        "steps": [
+          {
+            "label": "Center (0, 0)",
+            "transform": "perspective(1000px) rotateX(0.04deg) rotateY(0deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          },
+          {
+            "label": "Top-Left Corner",
+            "transform": "perspective(1000px) rotateX(9.8deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          },
+          {
+            "label": "Top-Right Corner",
+            "transform": "perspective(1000px) rotateX(9.8deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          },
+          {
+            "label": "Bottom-Left Corner",
+            "transform": "perspective(1000px) rotateX(-9.77deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          },
+          {
+            "label": "Bottom-Right Corner",
+            "transform": "perspective(1000px) rotateX(-9.77deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          },
+          {
+            "label": "Beyond Bounds (Clamping Test)",
+            "transform": "perspective(1000px) rotateX(-10deg) rotateY(10deg) scale3d(1.02, 1.02, 1.02)",
+            "scrollWidth": 1425,
+            "innerWidth": 1440,
+            "hasOverflow": false,
+            "scrollX": 0,
+            "cardRight": 1321
+          }
+        ],
+        "resetTransform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
+        "allZeroOverflow": true
+      }
+    },
+    {
+      "name": "3D tilt across extreme corner coordinates causes ZERO horizontal overflow (scrollWidth <= innerWidth)",
+      "success": true,
+      "details": [
+        {
+          "label": "Center (0, 0)",
+          "transform": "perspective(1000px) rotateX(0.04deg) rotateY(0deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        },
+        {
+          "label": "Top-Left Corner",
+          "transform": "perspective(1000px) rotateX(9.8deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        },
+        {
+          "label": "Top-Right Corner",
+          "transform": "perspective(1000px) rotateX(9.8deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        },
+        {
+          "label": "Bottom-Left Corner",
+          "transform": "perspective(1000px) rotateX(-9.77deg) rotateY(-9.82deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        },
+        {
+          "label": "Bottom-Right Corner",
+          "transform": "perspective(1000px) rotateX(-9.77deg) rotateY(9.78deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        },
+        {
+          "label": "Beyond Bounds (Clamping Test)",
+          "transform": "perspective(1000px) rotateX(-10deg) rotateY(10deg) scale3d(1.02, 1.02, 1.02)",
+          "scrollWidth": 1425,
+          "innerWidth": 1440,
+          "hasOverflow": false,
+          "scrollX": 0,
+          "cardRight": 1321
+        }
+      ]
+    },
+    {
+      "name": "Mouseleave resets Hero showcase card tilt to identity transform",
+      "success": true,
+      "details": {
+        "resetTransform": "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1280x720",
+      "success": true,
+      "details": {
+        "viewport": "1280x720",
+        "viewportHeight": 720,
+        "dock": {
+          "top": 654,
+          "bottom": 696,
+          "left": 319,
+          "right": 946,
+          "height": 42
+        },
+        "title": {
+          "top": 1023,
+          "bottom": 1091,
+          "left": 32,
+          "right": 1233,
+          "height": 68
+        },
+        "verticalGap": 327,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1280x800",
+      "success": true,
+      "details": {
+        "viewport": "1280x800",
+        "viewportHeight": 800,
+        "dock": {
+          "top": 734,
+          "bottom": 776,
+          "left": 319,
+          "right": 946,
+          "height": 42
+        },
+        "title": {
+          "top": 1023,
+          "bottom": 1091,
+          "left": 32,
+          "right": 1233,
+          "height": 68
+        },
+        "verticalGap": 247,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1280x900",
+      "success": true,
+      "details": {
+        "viewport": "1280x900",
+        "viewportHeight": 900,
+        "dock": {
+          "top": 834,
+          "bottom": 876,
+          "left": 319,
+          "right": 946,
+          "height": 42
+        },
+        "title": {
+          "top": 1023,
+          "bottom": 1091,
+          "left": 32,
+          "right": 1233,
+          "height": 68
+        },
+        "verticalGap": 147,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1280x1024",
+      "success": true,
+      "details": {
+        "viewport": "1280x1024",
+        "viewportHeight": 1024,
+        "dock": {
+          "top": 958,
+          "bottom": 1000,
+          "left": 319,
+          "right": 946,
+          "height": 42
+        },
+        "title": {
+          "top": 1048,
+          "bottom": 1116,
+          "left": 32,
+          "right": 1233,
+          "height": 68
+        },
+        "verticalGap": 48,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1440x900",
+      "success": true,
+      "details": {
+        "viewport": "1440x900",
+        "viewportHeight": 900,
+        "dock": {
+          "top": 834,
+          "bottom": 876,
+          "left": 399,
+          "right": 1026,
+          "height": 42
+        },
+        "title": {
+          "top": 928,
+          "bottom": 1070,
+          "left": 105,
+          "right": 1321,
+          "height": 142
+        },
+        "verticalGap": 52,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1440x1080",
+      "success": true,
+      "details": {
+        "viewport": "1440x1080",
+        "viewportHeight": 1080,
+        "dock": {
+          "top": 1014,
+          "bottom": 1056,
+          "left": 399,
+          "right": 1026,
+          "height": 42
+        },
+        "title": {
+          "top": 1104,
+          "bottom": 1246,
+          "left": 105,
+          "right": 1321,
+          "height": 142
+        },
+        "verticalGap": 48,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1920x1080",
+      "success": true,
+      "details": {
+        "viewport": "1920x1080",
+        "viewportHeight": 1080,
+        "dock": {
+          "top": 1010,
+          "bottom": 1056,
+          "left": 639,
+          "right": 1266,
+          "height": 46
+        },
+        "title": {
+          "top": 1108,
+          "bottom": 1249,
+          "left": 345,
+          "right": 1561,
+          "height": 142
+        },
+        "verticalGap": 52,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock does NOT intersect Section 2 title at scrollY=0 on viewport 1920x1200",
+      "success": true,
+      "details": {
+        "viewport": "1920x1200",
+        "viewportHeight": 1200,
+        "dock": {
+          "top": 1130,
+          "bottom": 1176,
+          "left": 639,
+          "right": 1266,
+          "height": 46
+        },
+        "title": {
+          "top": 1228,
+          "bottom": 1369,
+          "left": 345,
+          "right": 1561,
+          "height": 142
+        },
+        "verticalGap": 52,
+        "intersects": false,
+        "titleIsBelowFold": true
+      }
+    },
+    {
+      "name": "Floating dock initially visible at scrollY = 0 (no nav-dock--hidden class)",
+      "success": true,
+      "details": {
+        "hasHiddenClass": false,
+        "computedOpacity": "1",
+        "computedTransform": "matrix(1, 0, 0, 1, -313.5, 0)"
+      }
+    },
+    {
+      "name": "Rapid scroll-down past 400px adds .nav-dock--hidden (hides dock with opacity:0, pointer-events:none)",
+      "success": true,
+      "details": {
+        "scrollY": 750,
+        "hasHiddenClass": true,
+        "computedOpacity": "0",
+        "numericOpacity": 0,
+        "pointerEvents": "none",
+        "transform": "matrix(1, 0, 0, 1, -313.5, 59.3906)"
+      }
+    },
+    {
+      "name": "Upward scroll delta removes .nav-dock--hidden (reveals dock smoothly without jumping)",
+      "success": true,
+      "details": {
+        "scrollY": 500,
+        "hasHiddenClass": false,
+        "computedOpacity": "1",
+        "numericOpacity": 1,
+        "pointerEvents": "auto",
+        "transform": "matrix(1, 0, 0, 1, -313.5, 0)"
+      }
+    },
+    {
+      "name": "10x rapid alternating scroll down/up hysteresis cycles execute deterministically without lockup or flicker",
+      "success": true,
+      "details": {
+        "states": [
+          {
+            "cycle": 1,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 2,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 3,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 4,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 5,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 6,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 7,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 8,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 9,
+            "downHidden": true,
+            "upHidden": false
+          },
+          {
+            "cycle": 10,
+            "downHidden": true,
+            "upHidden": false
+          }
+        ],
+        "finalHidden": false,
+        "finalOpacity": "1",
+        "consistentTransitions": true
+      }
+    }
+  ],
+  "metrics": {}
+}

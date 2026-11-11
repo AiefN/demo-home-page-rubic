@@ -138,45 +138,92 @@
          ------------------------------------------------------------------------ -->
     <section class="hero-section" id="hero">
       <div class="container hero-container">
-        <!-- Guarantee Pill Badge -->
-        <div class="hero-badge-wrap">
-          <div class="guarantee-badge pill-badge">
-            <span class="badge-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </span>
-            <span class="badge-text">Garansi 100% Kepuasan / Uang Kembali</span>
+        <!-- LEFT COLUMN: EDITORIAL COPY, CTAS & TELEMETRY -->
+        <div class="hero-content-col">
+          <!-- Guarantee Pill Badge -->
+          <div class="hero-badge-wrap">
+            <div class="guarantee-badge pill-badge">
+              <span class="badge-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <span class="badge-text">Garansi 100% Kepuasan / Uang Kembali</span>
+            </div>
+          </div>
+
+          <!-- Editorial Display H1 -->
+          <h1 class="hero-title">Membangun Website <span class="accent">Berkinerja Tinggi</span> &amp; Desain Kelas Dunia</h1>
+
+          <!-- Agency Narrative Subheadline -->
+          <p class="hero-subheadline body-copy">
+            Rubicweb merekayasa website kustom dan aplikasi web enterprise dengan performa ultra-cepat, arsitektur kode bersih (clean code), dan pengalaman visual imersif tanpa kompromi untuk mempercepat pertumbuhan bisnis Anda.
+          </p>
+
+          <!-- Call-to-Action Group -->
+          <div class="hero-actions hero-ctas">
+            <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Konsultasi Gratis via WhatsApp</a>
+            <a href="#portfolio" class="btn btn--secondary btn--lg">Jelajahi Portofolio</a>
+          </div>
+
+          <!-- Hero Telemetry Metrics Bar -->
+          <div class="hero-telemetry-bar">
+            <div class="telemetry-item">
+              <span class="telemetry-value font-mono">95+</span>
+              <span class="telemetry-label">Google PageSpeed</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-value font-mono">&lt; 1.0s</span>
+              <span class="telemetry-label">First Contentful Paint</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-value font-mono">100%</span>
+              <span class="telemetry-label">Source Code Ownership</span>
+            </div>
           </div>
         </div>
 
-        <!-- Editorial Display H1 -->
-        <h1 class="hero-title">Membangun Website Berkinerja Tinggi &amp; Desain Kelas Dunia</h1>
-
-        <!-- Agency Narrative Subheadline -->
-        <p class="hero-subheadline body-copy">
-          Rubicweb merekayasa website kustom dan aplikasi web enterprise dengan performa ultra-cepat, arsitektur kode bersih (clean code), dan pengalaman visual imersif tanpa kompromi untuk mempercepat pertumbuhan bisnis Anda.
-        </p>
-
-        <!-- Call-to-Action Group -->
-        <div class="hero-actions hero-ctas">
-          <a href="https://wa.me/6285280008984?text=Halo%20Rubicweb,%20saya%20ingin%20konsultasi%20pembuatan%20website%20berkinerja%20tinggi." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Konsultasi Gratis via WhatsApp</a>
-          <a href="#portfolio" class="btn btn--secondary btn--lg">Jelajahi Portofolio</a>
-        </div>
-
-        <!-- Hero Telemetry Metrics Bar -->
-        <div class="hero-telemetry-bar">
-          <div class="telemetry-item">
-            <span class="telemetry-value font-mono">95+</span>
-            <span class="telemetry-label">Google PageSpeed</span>
-          </div>
-          <div class="telemetry-divider"></div>
-          <div class="telemetry-item">
-            <span class="telemetry-value font-mono">&lt; 1.0s</span>
-            <span class="telemetry-label">First Contentful Paint</span>
-          </div>
-          <div class="telemetry-divider"></div>
-          <div class="telemetry-item">
-            <span class="telemetry-value font-mono">100%</span>
-            <span class="telemetry-label">Source Code Ownership</span>
+        <!-- RIGHT COLUMN: INTERACTIVE ARCHITECTURAL SHOWCASE CARD -->
+        <div class="hero-showcase-col">
+          <div class="hero-showcase-card card-tilt interactive-card">
+            <div class="showcase-window-header">
+              <div class="window-controls">
+                <span class="win-dot dot-red"></span>
+                <span class="win-dot dot-yellow"></span>
+                <span class="win-dot dot-green"></span>
+              </div>
+              <span class="window-filename font-mono">rubicweb.engine.config.ts</span>
+              <span class="window-badge font-mono">
+                <span class="badge-pulse-dot"></span> PRODUCTION READY
+              </span>
+            </div>
+            <div class="showcase-code-body">
+              <pre><code><span class="token-keyword">export const</span> <span class="token-variable">rubicwebStack</span> = {
+  <span class="token-property">architecture</span>: <span class="token-string">"High-Performance Clean Code"</span>,
+  <span class="token-property">frameworks</span>: <span class="token-string">"Zero-Dependency / Pure Vanilla"</span>,
+  <span class="token-property">telemetry</span>: {
+    <span class="token-property">pageSpeed</span>: <span class="token-number">99</span>,
+    <span class="token-property">firstContentfulPaint</span>: <span class="token-string">"0.7s"</span>,
+    <span class="token-property">uptimeSLA</span>: <span class="token-string">"99.9%"</span>
+  },
+  <span class="token-property">ownership</span>: <span class="token-string">"100% Full Source Code"</span>,
+  <span class="token-property">guarantee</span>: <span class="token-string">"Money-Back Warranty"</span>
+};</code></pre>
+            </div>
+            <div class="showcase-telemetry-grid">
+              <div class="showcase-metric-tile">
+                <div class="metric-num font-mono text-lime">99/100</div>
+                <div class="metric-caption">PageSpeed</div>
+              </div>
+              <div class="showcase-metric-tile">
+                <div class="metric-num font-mono text-cyan">60 fps</div>
+                <div class="metric-caption">Animations</div>
+              </div>
+              <div class="showcase-metric-tile">
+                <div class="metric-num font-mono text-gold">100%</div>
+                <div class="metric-caption">Ownership</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -381,11 +428,11 @@
         </div>
 
         <!-- Category Filter Tabs -->
-        <div class="portfolio-filters">
-          <button type="button" class="portfolio-filter-btn is-active active" data-filter="all" aria-selected="true">Semua Proyek</button>
-          <button type="button" class="portfolio-filter-btn" data-filter="ecommerce" aria-selected="false">E-Commerce</button>
-          <button type="button" class="portfolio-filter-btn" data-filter="corporate" aria-selected="false">Company Profile</button>
-          <button type="button" class="portfolio-filter-btn" data-filter="webapp" aria-selected="false">Web App &amp; Portal</button>
+        <div class="portfolio-filters filter-tabs" role="tablist" aria-label="Filter Kategori Proyek">
+          <div role="tab" tabindex="0" class="filter-btn portfolio-filter-btn is-active active" data-filter="all" aria-selected="true">Semua Proyek</div>
+          <div role="tab" tabindex="0" class="filter-btn portfolio-filter-btn" data-filter="ecommerce" aria-selected="false">E-Commerce</div>
+          <div role="tab" tabindex="0" class="filter-btn portfolio-filter-btn" data-filter="corporate" aria-selected="false">Company Profile</div>
+          <div role="tab" tabindex="0" class="filter-btn portfolio-filter-btn" data-filter="webapp" aria-selected="false">Web App &amp; Portal</div>
         </div>
 
         <!-- Project Cards Grid -->
@@ -496,9 +543,9 @@
     <!-- ------------------------------------------------------------------------
          MODAL: CASE STUDY PREVIEW DIALOG
          ------------------------------------------------------------------------ -->
-    <div class="modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true" aria-hidden="true" style="display: none;">
       <div class="modal-dialog">
-        <button type="button" class="modal__close modal-close-btn" aria-label="Tutup studi kasus">&times;</button>
+        <button type="button" class="modal-close modal__close modal-close-btn" id="modal-close-btn" aria-label="Tutup studi kasus">&times;</button>
         <div class="modal-header">
           <span class="modal-tag font-mono" id="modal-tag">KATEGORI PROYEK</span>
           <h3 class="modal-title" id="modal-title">Judul Studi Kasus</h3>
@@ -543,12 +590,12 @@
           </p>
         </div>
 
-        <div class="pricing-calculator-widget">
+        <div class="pricing-calculator-widget calc-layout pricing-calculator-grid">
           <!-- Left Column: Inputs & Toggles -->
           <div class="calc-config-col">
             <div class="calc-group">
               <label class="calc-label">1. Pilih Paket Dasar Website</label>
-              <div class="tier-cards-group">
+              <div class="tier-cards-group tier-selector tier-options">
                 <label class="tier-card">
                   <input type="radio" name="tier" value="basic">
                   <div class="tier-card-inner">

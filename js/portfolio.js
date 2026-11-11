@@ -183,6 +183,11 @@
     const modal = document.getElementById('case-study-modal');
     if (!modal) return;
 
+    // Defensive initialization: ensure modal overlay is strictly hidden on boot
+    modal.classList.remove('is-active', 'active', 'is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.style.display = 'none';
+
     const closeButtons = modal.querySelectorAll('.modal-close, .modal__close, [data-close], .btn-close');
     let lastFocusedElement = null;
 

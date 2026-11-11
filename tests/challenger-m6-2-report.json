@@ -1,0 +1,887 @@
+{
+  "timestamp": "2026-11-10T13:00:21.996Z",
+  "baseUrl": "http://127.0.0.1:8123",
+  "verdict": "APPROVE",
+  "pricingCalculator": {
+    "passed": true,
+    "failures": [],
+    "geometry": {
+      "desktop": {
+        "sectionExists": true,
+        "widgetWidth": 1216,
+        "groupWidth": 684,
+        "cardsCount": 3,
+        "cards": [
+          {
+            "index": 0,
+            "value": "basic",
+            "rect": {
+              "x": 146,
+              "y": 4672,
+              "top": 4672,
+              "right": 363,
+              "bottom": 4826,
+              "left": 146,
+              "width": 217,
+              "height": 154
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 187,
+              "height": 79
+            }
+          },
+          {
+            "index": 1,
+            "value": "pro",
+            "rect": {
+              "x": 379,
+              "y": 4672,
+              "top": 4672,
+              "right": 596,
+              "bottom": 4826,
+              "left": 379,
+              "width": 217,
+              "height": 154
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 187,
+              "height": 108
+            }
+          },
+          {
+            "index": 2,
+            "value": "enterprise",
+            "rect": {
+              "x": 612,
+              "y": 4672,
+              "top": 4672,
+              "right": 829,
+              "bottom": 4826,
+              "left": 612,
+              "width": 217,
+              "height": 154
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 187,
+              "height": 79
+            }
+          }
+        ],
+        "overlaps": [
+          {
+            "i": 0,
+            "j": 1,
+            "xOverlap": 0,
+            "yOverlap": 154,
+            "overlapArea": 0
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "xOverlap": 0,
+            "yOverlap": 154,
+            "overlapArea": 0
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "xOverlap": 0,
+            "yOverlap": 154,
+            "overlapArea": 0
+          }
+        ],
+        "hasHorizontalScroll": false,
+        "docScrollWidth": 1425,
+        "docClientWidth": 1425
+      },
+      "tablet": {
+        "sectionExists": true,
+        "widgetWidth": 689,
+        "groupWidth": 607,
+        "cardsCount": 3,
+        "cards": [
+          {
+            "index": 0,
+            "value": "basic",
+            "rect": {
+              "x": 73,
+              "y": 4982,
+              "top": 4982,
+              "right": 265,
+              "bottom": 5154,
+              "left": 73,
+              "width": 192,
+              "height": 172
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 162,
+              "height": 79
+            }
+          },
+          {
+            "index": 1,
+            "value": "pro",
+            "rect": {
+              "x": 281,
+              "y": 4982,
+              "top": 4982,
+              "right": 472,
+              "bottom": 5154,
+              "left": 281,
+              "width": 192,
+              "height": 172
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 162,
+              "height": 126
+            }
+          },
+          {
+            "index": 2,
+            "value": "enterprise",
+            "rect": {
+              "x": 488,
+              "y": 4982,
+              "top": 4982,
+              "right": 680,
+              "bottom": 5154,
+              "left": 488,
+              "width": 192,
+              "height": 172
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 162,
+              "height": 79
+            }
+          }
+        ],
+        "overlaps": [
+          {
+            "i": 0,
+            "j": 1,
+            "xOverlap": 0,
+            "yOverlap": 172,
+            "overlapArea": 0
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "xOverlap": 0,
+            "yOverlap": 172,
+            "overlapArea": 0
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "xOverlap": 0,
+            "yOverlap": 172,
+            "overlapArea": 0
+          }
+        ],
+        "hasHorizontalScroll": false,
+        "docScrollWidth": 753,
+        "docClientWidth": 753
+      },
+      "mobile": {
+        "sectionExists": true,
+        "widgetWidth": 332,
+        "groupWidth": 336,
+        "cardsCount": 3,
+        "cards": [
+          {
+            "index": 0,
+            "value": "basic",
+            "rect": {
+              "x": 33,
+              "y": 7390,
+              "top": 7390,
+              "right": 369,
+              "bottom": 7515,
+              "left": 33,
+              "width": 336,
+              "height": 125
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 306,
+              "height": 79
+            }
+          },
+          {
+            "index": 1,
+            "value": "pro",
+            "rect": {
+              "x": 33,
+              "y": 7527,
+              "top": 7527,
+              "right": 369,
+              "bottom": 7681,
+              "left": 33,
+              "width": 336,
+              "height": 154
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 306,
+              "height": 108
+            }
+          },
+          {
+            "index": 2,
+            "value": "enterprise",
+            "rect": {
+              "x": 33,
+              "y": 7693,
+              "top": 7693,
+              "right": 369,
+              "bottom": 7818,
+              "left": 33,
+              "width": 336,
+              "height": 125
+            },
+            "display": "flex",
+            "flexDirection": "column",
+            "boxSizing": "border-box",
+            "hasInner": true,
+            "innerRect": {
+              "width": 306,
+              "height": 79
+            }
+          }
+        ],
+        "overlaps": [
+          {
+            "i": 0,
+            "j": 1,
+            "xOverlap": 336,
+            "yOverlap": 0,
+            "overlapArea": 0
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "xOverlap": 336,
+            "yOverlap": 0,
+            "overlapArea": 0
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "xOverlap": 336,
+            "yOverlap": 0,
+            "overlapArea": 0
+          }
+        ],
+        "hasHorizontalScroll": false,
+        "docScrollWidth": 360,
+        "docClientWidth": 360
+      }
+    },
+    "functionalCycle": {
+      "Baseline Pro (Default: 5 pages, 0 addons, no express)": {
+        "currentTierChecked": "pro",
+        "sliderValue": "5",
+        "sliderDisplayText": "5 Halaman",
+        "priceText": "Rp 5.500.000",
+        "timeText": "± 18 - 22 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Pro%20(Business%20%26%20Corporate)%20(5%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%205.500.000%20(18%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Basic Tier (1 page, 0 addons, no express)": {
+        "currentTierChecked": "basic",
+        "sliderValue": "1",
+        "sliderDisplayText": "1 Halaman",
+        "priceText": "Rp 2.500.000",
+        "timeText": "± 7 - 11 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Basic%20(Landing%20Page)%20(1%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%202.500.000%20(7%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Basic Tier + 5 Pages (+4 extra * 350k = +1.4M)": {
+        "currentTierChecked": "basic",
+        "sliderValue": "5",
+        "sliderDisplayText": "5 Halaman",
+        "priceText": "Rp 3.900.000",
+        "timeText": "± 9 - 13 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Basic%20(Landing%20Page)%20(5%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%203.900.000%20(9%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Pro Tier + 10 Pages (+5 extra * 350k = +1.75M) + E-Commerce (+2M, +5d)": {
+        "currentTierChecked": "pro",
+        "sliderValue": "10",
+        "sliderDisplayText": "10 Halaman",
+        "priceText": "Rp 9.250.000",
+        "timeText": "± 26 - 30 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Pro%20(Business%20%26%20Corporate)%20(10%20Halaman).%20Fitur%3A%20E-Commerce%20Catalog.%20Estimasi%20kalkulator%3A%20Rp%209.250.000%20(26%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Pro Tier + E-Commerce + Payment Gateway (+1.5M, +3d)": {
+        "currentTierChecked": "pro",
+        "sliderValue": "5",
+        "sliderDisplayText": "5 Halaman",
+        "priceText": "Rp 9.000.000",
+        "timeText": "± 26 - 30 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Pro%20(Business%20%26%20Corporate)%20(5%20Halaman).%20Fitur%3A%20E-Commerce%20Catalog%2C%20Payment%20Gateway%20Midtrans.%20Estimasi%20kalkulator%3A%20Rp%209.000.000%20(26%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Enterprise Tier (10 pages base, 0 addons)": {
+        "currentTierChecked": "enterprise",
+        "sliderValue": "10",
+        "sliderDisplayText": "10 Halaman",
+        "priceText": "Rp 12.000.000",
+        "timeText": "± 35 - 39 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Enterprise%20(Custom%20Web%20App)%20(10%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%2012.000.000%20(35%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Enterprise Tier + 20 Pages (+10 extra * 500k = +5M) + All Addons + Express Priority": {
+        "currentTierChecked": "enterprise",
+        "sliderValue": "20",
+        "sliderDisplayText": "20 Halaman",
+        "priceText": "Rp 27.125.000",
+        "timeText": "± 31 - 35 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Enterprise%20(Custom%20Web%20App)%20(20%20Halaman).%20Fitur%3A%20E-Commerce%20Catalog%2C%20Payment%20Gateway%20Midtrans%2C%20Multi-Bahasa%20(Bilingual).%20Estimasi%20kalkulator%3A%20Rp%2027.125.000%20(31%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      },
+      "Boundary: Basic Tier with 1 page slider boundary": {
+        "currentTierChecked": "basic",
+        "sliderValue": "1",
+        "sliderDisplayText": "1 Halaman",
+        "priceText": "Rp 2.500.000",
+        "timeText": "± 7 - 11 Hari Kerja",
+        "waHref": "https://wa.me/6285280008984?text=Halo%20Rubicweb%2C%20saya%20tertarik%20mendiskusikan%20Paket%20Basic%20(Landing%20Page)%20(1%20Halaman).%20Fitur%3A%20Fitur%20Standar.%20Estimasi%20kalkulator%3A%20Rp%202.500.000%20(7%20hari%20kerja).%20Mohon%20info%20konsultasi%20lebih%20lanjut."
+      }
+    },
+    "rapidBurstStress": {
+      "burstRounds": 60,
+      "checkedRadiosCount": 1,
+      "finalCheckedTier": "basic",
+      "activeCardsCount": 1,
+      "priceText": "Rp 2.500.000",
+      "radiosState": [
+        {
+          "value": "basic",
+          "checked": true
+        },
+        {
+          "value": "pro",
+          "checked": false
+        },
+        {
+          "value": "enterprise",
+          "checked": false
+        }
+      ]
+    }
+  },
+  "faqAccordion": {
+    "passed": true,
+    "failures": [],
+    "computedStyles": [
+      {
+        "index": 0,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Apakah saya mendapatkan 100% hak mi...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      },
+      {
+        "index": 1,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Bagaimana mekanisme Garansi 100% Ke...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      },
+      {
+        "index": 2,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Mengapa Rubicweb memilih pendekatan...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      },
+      {
+        "index": 3,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Berapa lama estimasi pengerjaan web...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      },
+      {
+        "index": 4,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Apakah Rubicweb menyediakan layanan...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      },
+      {
+        "index": 5,
+        "tagName": "button",
+        "type": "button",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(242, 242, 246)",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "outline": "rgb(242, 242, 246) none 3px",
+        "appearance": "none",
+        "cursor": "pointer",
+        "fontFamily": "\"Space Grotesk\", \"Plus Jakarta Sans\", sans-serif",
+        "fontSize": "18.4px",
+        "fontWeight": "700",
+        "question": {
+          "text": "Bagaimana alur pembayaran dan tata ...",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(242, 242, 246)"
+        },
+        "icon": {
+          "text": "+",
+          "transform": "none",
+          "color": "rgb(210, 254, 113)"
+        }
+      }
+    ],
+    "expansionCycle": [
+      {
+        "targetIndex": 0,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          },
+          {
+            "index": 1,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 2,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 3,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 4,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 5,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          }
+        ]
+      },
+      {
+        "targetIndex": 1,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 1,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          },
+          {
+            "index": 2,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 3,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 4,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 5,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          }
+        ]
+      },
+      {
+        "targetIndex": 2,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 1,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "matrix(1, 7.21331e-09, -7.21331e-09, 1, 0, 0)"
+          },
+          {
+            "index": 2,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          },
+          {
+            "index": 3,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 4,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 5,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          }
+        ]
+      },
+      {
+        "targetIndex": 3,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 1,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 2,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 3,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          },
+          {
+            "index": 4,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 5,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          }
+        ]
+      },
+      {
+        "targetIndex": 4,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 1,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 2,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 3,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "matrix(1, 1.77059e-08, -1.77059e-08, 1, 0, 0)"
+          },
+          {
+            "index": 4,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          },
+          {
+            "index": 5,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          }
+        ]
+      },
+      {
+        "targetIndex": 5,
+        "itemStates": [
+          {
+            "index": 0,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 1,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 2,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 3,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 4,
+            "isActiveClass": false,
+            "btnAriaExpanded": "false",
+            "contentHeight": 0,
+            "gridTemplateRows": "0px",
+            "iconTransform": "none"
+          },
+          {
+            "index": 5,
+            "isActiveClass": true,
+            "btnAriaExpanded": "true",
+            "contentHeight": 102,
+            "gridTemplateRows": "102.328px",
+            "iconTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "rapidToggleStress": {
+      "toggleRounds": 40,
+      "activeItemsCount": 1,
+      "ariaExpandedCount": 1,
+      "activeIndices": [
+        1
+      ]
+    },
+    "keyboardStress": {
+      "openAfterEnter": true,
+      "closedAfterSpace": true
+    }
+  },
+  "consoleErrors": []
+}

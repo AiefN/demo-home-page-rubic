@@ -1,30 +1,33 @@
-# Dispatch: Reviewer 1 (Milestone 5)
+# Task Assignment: reviewer_m5_1
 
-## Objective
-Perform comprehensive code review and automated test verification for Milestone 5 (Final Integration & Site Verification).
+## Context & Objectives
+You are the primary Reviewer for the final verification gate of the Rubicweb Redesign project.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\
 
-## Scope & Inputs
-- Original Request: `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`
-- Project Architecture & Scope: `c:\pkl\PKL\PROJECT.md` and `c:\pkl\PKL\.agents\teamwork\orchestrator_gen2\SCOPE.md`
-- Test Ready Report: `c:\pkl\PKL\TEST_READY.md`
-- Source files: `c:\pkl\PKL\index.html`, `c:\pkl\PKL\services.html`, `c:\pkl\PKL\portfolio.html`, `c:\pkl\PKL\contact.html`, `c:\pkl\PKL\css\style.css`, `c:\pkl\PKL\css\animations.css`, `c:\pkl\PKL\css\responsive.css`, `c:\pkl\PKL\js\main.js`, `c:\pkl\PKL\js\interactions.js`, `c:\pkl\PKL\js\portfolio.js`, `c:\pkl\PKL\js\contact.js`.
+## Mandatory References
+You MUST read the following files before starting your work:
+- `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md` (authoritative user requirements & acceptance criteria)
+- `c:\pkl\PKL\PROJECT.md` (project architecture, feature inventory, code layout, interface contracts)
+- `c:\pkl\PKL\TEST_READY.md` (E2E test suite overview)
+- `c:\pkl\PKL\.agents\teamwork\worker_m5_responsive_fix\handoff.md` (most recent worker changes & responsive fixes)
 
-## Tasks
-1. Read `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`.
-2. Run test verification: `node tests/run-e2e.js`. Verify all 204 tests pass.
-3. Review all 4 HTML pages and stylesheets/scripts against Requirements R1 to R4:
-   - File structure and semantic HTML5.
-   - Room & Pillar visual aesthetics + Rubicweb copy and guarantees.
-   - Interactive components: custom cursor, 3D tilt, stats counters, portfolio filter, pricing calculator, carousel, accordion, subpages.
-   - Zero console errors and zero external frameworks.
-4. Write `handoff.md` in your state folder (`c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\`) with explicit verdict: `APPROVE` or `REQUEST_CHANGES`.
+## Instructions
+1. Execute the full test suite via `node tests/run-e2e.js` and verify that all 204 tests pass with 0 failures and 0 console errors.
+2. Independently verify all requirements (R1, R2, R3, R4) and the full checklist in `ORIGINAL_REQUEST.md § Acceptance Criteria`:
+   - Site architecture & file completeness (index.html, services.html, portfolio.html, contact.html, css/style.css, animations.css, responsive.css, js/main.js, interactions.js, portfolio.js, contact.js)
+   - Zero external CSS/JS frameworks (no React, Vue, Tailwind, Bootstrap, jQuery)
+   - All specified sections on index.html, services.html, portfolio.html, contact.html
+   - Micro-interactions: custom cursor, 3D card tilt, stats counter via IntersectionObserver, portfolio filter & modals, pricing calculator, testimonials carousel, single-active FAQ accordion, navbar scroll shrink/hysteresis, mobile drawer, floating WhatsApp ripple
+   - Responsive design across 320px, 768px, 1440px
+3. Document your detailed findings, verified command outputs, and final verdict (`APPROVE` or `REQUEST_CHANGES`) in `c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\handoff.md`.
+4. Send a message to the orchestrator with your verdict and handoff summary.
 
 
-## 2026-11-10T07:34:52Z
-You are Reviewer 1 for Milestone 5 (Final Integration & Site Verification).
-Read your dispatch instructions at: c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\DISPATCH.md
-Read the original request at: c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md
-Your state folder is: c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\
-
-Execute test verification by running `node tests/run-e2e.js`, inspect all 4 HTML pages and stylesheets/scripts against Requirements R1 to R4, verify zero console errors and zero external frameworks, and write your 5-component handoff report to `c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\handoff.md` with an explicit verdict: APPROVE or REQUEST_CHANGES.
-Notify the orchestrator with send_message when complete.
+## 2026-11-10T10:58:41Z
+You are reviewer_m5_1.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\
+Read c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\DISPATCH.md and c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md.
+Conduct a comprehensive review of the Rubicweb Redesign implementation against all acceptance criteria (R1, R2, R3, R4) and run the full E2E test suite (node tests/run-e2e.js).
+Write your findings and explicit verdict (APPROVE or REQUEST_CHANGES) to c:\pkl\PKL\.agents\teamwork\reviewer_m5_1\handoff.md and send a message with your verdict.

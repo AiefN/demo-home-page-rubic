@@ -19,6 +19,7 @@
 
   function initApp() {
     initNavigation();
+    initFloatingBottomNav();
     initSmoothAnchors();
     initBackToTop();
   }
@@ -163,6 +164,39 @@
         }
       }, { passive: true });
     }
+  }
+
+  /* --------------------------------------------------------------------------
+   * FLOATING BOTTOM NAV ENGINE (Scroll Hysteresis & Heading Clearance)
+   * -------------------------------------------------------------------------- */
+  function initFloatingBottomNav() {
+    const floatingNav = document.querySelector('.floating-bottom-nav');
+    if (!floatingNav) return;
+
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function onScroll() {
+      const currentY = window.scrollY;
+      const deltaY = currentY - lastScrollY;
+
+      // Fast scroll down past hero: hide dock to prevent any heading occlusion
+      if (currentY > 400 && deltaY > 15) {
+        floatingNav.classList.add('nav-dock--hidden');
+      } else if (deltaY < -8 || currentY <= 300) {
+        floatingNav.classList.remove('nav-dock--hidden');
+      }
+
+      lastScrollY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
   }
 
   /* --------------------------------------------------------------------------

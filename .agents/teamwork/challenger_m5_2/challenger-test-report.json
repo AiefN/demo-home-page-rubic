@@ -1,130 +1,1073 @@
 {
-  "timestamp": "2026-11-10T08:23:40.746Z",
-  "totalTests": 20,
-  "passedTests": 20,
-  "failedTests": 0,
-  "durationSeconds": 7.49,
-  "verdict": "APPROVE",
-  "results": [
-    {
-      "suite": "Suite 1: services.html & Workflow Timeline",
-      "testName": "1.1 services.html renders exactly 4 core service articles with valid IDs",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 1: services.html & Workflow Timeline",
-      "testName": "1.2 Each service card contains tech badges and at least 5 structured deliverables",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 1: services.html & Workflow Timeline",
-      "testName": "1.3 6-Stage Development Workflow timeline has stages 01 through 06 in order",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 1: services.html & Workflow Timeline",
-      "testName": "1.4 Service modal opens on trigger click, populates data, locks scroll, and dismisses via Escape",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 1: services.html & Workflow Timeline",
-      "testName": "1.5 Rapid successive open/close across all 4 service modals executes cleanly",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 2: portfolio.html Filtering & DOM Stability",
-      "testName": "2.1 Initial load renders 4 category tabs and 7 projects in Semua Proyek",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 2: portfolio.html Filtering & DOM Stability",
-      "testName": "2.2 Category filtering displays correct card counts per category",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 2: portfolio.html Filtering & DOM Stability",
-      "testName": "2.3 Rapid category tab switching maintains DOM integrity, visual stability, and zero console errors",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 2: portfolio.html Filtering & DOM Stability",
-      "testName": "2.4 All 7 portfolio cards contain action buttons for modal and live preview",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 3: Case Study Modals Accessibility & Dynamic Population",
-      "testName": "3.1 Modal dynamically populates all fields (client, challenge, solution, results, WhatsApp CTA) for all 7 projects",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 3: Case Study Modals Accessibility & Dynamic Population",
-      "testName": "3.2 Triggering modal with unknown project ID falls back gracefully to default case study",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 3: Case Study Modals Accessibility & Dynamic Population",
-      "testName": "3.3 Keyboard Tab navigation traps focus within modal dialog",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 3: Case Study Modals Accessibility & Dynamic Population",
-      "testName": "3.4 Pressing Escape key dismisses modal and restores keyboard focus to origin button",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 3: Case Study Modals Accessibility & Dynamic Population",
-      "testName": "3.5 Clicking backdrop dismisses modal, while clicking inside dialog does not",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.1 Empty form submission triggers inline visual errors in Indonesian and focuses first invalid field",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.2 Name field rejects short/whitespace inputs and safely handles XSS/SQLi vectors",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.3 RFC 5322 email regex strictly discriminates invalid and valid addresses",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.4 Indonesian phone validator enforces national mobile formats (+62, 08, 628) and rejects invalid patterns",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.5 Valid form submission displays success banner and synthesizes accurate WhatsApp deep-link URL",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "suite": "Suite 4: contact.html Inline Validation & WhatsApp Ripple",
-      "testName": "4.6 Floating WhatsApp button features continuous ripple keyframe animation across pages",
-      "status": "PASS",
-      "detail": ""
-    }
-  ]
+  "timestamp": "2026-11-10T11:13:06.172Z",
+  "summary": {
+    "total": 80,
+    "passed": 80,
+    "failed": 0
+  },
+  "sections": {
+    "1. Responsive Layout Geometry": [
+      {
+        "testName": "index.html @ 280px viewport (scrollWidth=265px, innerWidth=280px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 280,
+          "innerW": 280,
+          "clientW": 265,
+          "scrollW": 265,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 320px viewport (scrollWidth=305px, innerWidth=320px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 320,
+          "innerW": 320,
+          "clientW": 305,
+          "scrollW": 305,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 375px viewport (scrollWidth=360px, innerWidth=375px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 375,
+          "innerW": 375,
+          "clientW": 360,
+          "scrollW": 360,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 768px viewport (scrollWidth=753px, innerWidth=768px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 768,
+          "innerW": 768,
+          "clientW": 753,
+          "scrollW": 753,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 1024px viewport (scrollWidth=1009px, innerWidth=1024px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 1024,
+          "innerW": 1024,
+          "clientW": 1009,
+          "scrollW": 1009,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 1440px viewport (scrollWidth=1425px, innerWidth=1440px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 1440,
+          "innerW": 1440,
+          "clientW": 1425,
+          "scrollW": 1425,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "index.html @ 2560px viewport (scrollWidth=2545px, innerWidth=2560px)",
+        "passed": true,
+        "details": {
+          "page": "/index.html",
+          "viewportWidth": 2560,
+          "innerW": 2560,
+          "clientW": 2545,
+          "scrollW": 2545,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 280px viewport (scrollWidth=265px, innerWidth=280px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 280,
+          "innerW": 280,
+          "clientW": 265,
+          "scrollW": 265,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 320px viewport (scrollWidth=305px, innerWidth=320px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 320,
+          "innerW": 320,
+          "clientW": 305,
+          "scrollW": 305,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 375px viewport (scrollWidth=360px, innerWidth=375px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 375,
+          "innerW": 375,
+          "clientW": 360,
+          "scrollW": 360,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 768px viewport (scrollWidth=753px, innerWidth=768px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 768,
+          "innerW": 768,
+          "clientW": 753,
+          "scrollW": 753,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 1024px viewport (scrollWidth=1009px, innerWidth=1024px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 1024,
+          "innerW": 1024,
+          "clientW": 1009,
+          "scrollW": 1009,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 1440px viewport (scrollWidth=1425px, innerWidth=1440px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 1440,
+          "innerW": 1440,
+          "clientW": 1425,
+          "scrollW": 1425,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "services.html @ 2560px viewport (scrollWidth=2545px, innerWidth=2560px)",
+        "passed": true,
+        "details": {
+          "page": "/services.html",
+          "viewportWidth": 2560,
+          "innerW": 2560,
+          "clientW": 2545,
+          "scrollW": 2545,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 280px viewport (scrollWidth=265px, innerWidth=280px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 280,
+          "innerW": 280,
+          "clientW": 265,
+          "scrollW": 265,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 320px viewport (scrollWidth=305px, innerWidth=320px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 320,
+          "innerW": 320,
+          "clientW": 305,
+          "scrollW": 305,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 375px viewport (scrollWidth=360px, innerWidth=375px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 375,
+          "innerW": 375,
+          "clientW": 360,
+          "scrollW": 360,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 768px viewport (scrollWidth=753px, innerWidth=768px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 768,
+          "innerW": 768,
+          "clientW": 753,
+          "scrollW": 753,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 1024px viewport (scrollWidth=1009px, innerWidth=1024px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 1024,
+          "innerW": 1024,
+          "clientW": 1009,
+          "scrollW": 1009,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 1440px viewport (scrollWidth=1425px, innerWidth=1440px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 1440,
+          "innerW": 1440,
+          "clientW": 1425,
+          "scrollW": 1425,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "portfolio.html @ 2560px viewport (scrollWidth=2545px, innerWidth=2560px)",
+        "passed": true,
+        "details": {
+          "page": "/portfolio.html",
+          "viewportWidth": 2560,
+          "innerW": 2560,
+          "clientW": 2545,
+          "scrollW": 2545,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": null,
+          "formRight": null
+        }
+      },
+      {
+        "testName": "contact.html @ 280px viewport (scrollWidth=274px, innerWidth=280px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 280,
+          "innerW": 280,
+          "clientW": 265,
+          "scrollW": 274,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 251,
+          "formRight": 251
+        }
+      },
+      {
+        "testName": "contact.html @ 320px viewport (scrollWidth=305px, innerWidth=320px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 320,
+          "innerW": 320,
+          "clientW": 305,
+          "scrollW": 305,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 291,
+          "formRight": 291
+        }
+      },
+      {
+        "testName": "contact.html @ 375px viewport (scrollWidth=360px, innerWidth=375px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 375,
+          "innerW": 375,
+          "clientW": 360,
+          "scrollW": 360,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 346,
+          "formRight": 346
+        }
+      },
+      {
+        "testName": "contact.html @ 768px viewport (scrollWidth=753px, innerWidth=768px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 768,
+          "innerW": 768,
+          "clientW": 753,
+          "scrollW": 753,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 729,
+          "formRight": 729
+        }
+      },
+      {
+        "testName": "contact.html @ 1024px viewport (scrollWidth=1009px, innerWidth=1024px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 1024,
+          "innerW": 1024,
+          "clientW": 1009,
+          "scrollW": 1009,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 977,
+          "formRight": 529.75
+        }
+      },
+      {
+        "testName": "contact.html @ 1440px viewport (scrollWidth=1425px, innerWidth=1440px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 1440,
+          "innerW": 1440,
+          "clientW": 1425,
+          "scrollW": 1425,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 1372.5,
+          "formRight": 756.5
+        }
+      },
+      {
+        "testName": "contact.html @ 2560px viewport (scrollWidth=2545px, innerWidth=2560px)",
+        "passed": true,
+        "details": {
+          "page": "/contact.html",
+          "viewportWidth": 2560,
+          "innerW": 2560,
+          "clientW": 2545,
+          "scrollW": 2545,
+          "hasHorizontalScroll": false,
+          "overflowCount": 0,
+          "overflowSamples": [],
+          "calcRight": 1932.5,
+          "formRight": 1316.5
+        }
+      }
+    ],
+    "2. Multi-Page Navigation Transitions": [
+      {
+        "testName": "Transition to index.html (Title: \"Rubicweb — High-Performance Web Engineering & World-Class Design\", 0 errors)",
+        "passed": true,
+        "details": {
+          "pathname": "/index.html",
+          "title": "Rubicweb — High-Performance Web Engineering & World-Class Design",
+          "hasHeaderOrNav": true,
+          "hasFooter": true,
+          "bodyChildCount": 14,
+          "readyState": "complete",
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Transition to services.html (Title: \"Layanan & Workflow Rekayasa Web — Rubicweb\", 0 errors)",
+        "passed": true,
+        "details": {
+          "pathname": "/services.html",
+          "title": "Layanan & Workflow Rekayasa Web — Rubicweb",
+          "hasHeaderOrNav": true,
+          "hasFooter": true,
+          "bodyChildCount": 14,
+          "readyState": "complete",
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Transition to portfolio.html (Title: \"Portofolio Proyek & Studi Kasus Rekayasa Web — Rubicweb\", 0 errors)",
+        "passed": true,
+        "details": {
+          "pathname": "/portfolio.html",
+          "title": "Portofolio Proyek & Studi Kasus Rekayasa Web — Rubicweb",
+          "hasHeaderOrNav": true,
+          "hasFooter": true,
+          "bodyChildCount": 14,
+          "readyState": "complete",
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Transition to contact.html (Title: \"Kontak & Konsultasi Rekayasa Web — Rubicweb\", 0 errors)",
+        "passed": true,
+        "details": {
+          "pathname": "/contact.html",
+          "title": "Kontak & Konsultasi Rekayasa Web — Rubicweb",
+          "hasHeaderOrNav": true,
+          "hasFooter": true,
+          "bodyChildCount": 13,
+          "readyState": "complete",
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Transition to index.html (Title: \"Rubicweb — High-Performance Web Engineering & World-Class Design\", 0 errors)",
+        "passed": true,
+        "details": {
+          "pathname": "/index.html",
+          "title": "Rubicweb — High-Performance Web Engineering & World-Class Design",
+          "hasHeaderOrNav": true,
+          "hasFooter": true,
+          "bodyChildCount": 14,
+          "readyState": "complete",
+          "newErrors": []
+        }
+      },
+      {
+        "testName": "Mobile drawer navigation toggle & link presence",
+        "passed": true,
+        "details": {
+          "menuOpened": true,
+          "servicesHref": "services.html"
+        }
+      }
+    ],
+    "3. Rapid Category Filter Switching": [
+      {
+        "testName": "Category filter \"all\" displays exactly 7 projects",
+        "passed": true,
+        "details": {
+          "expected": 7,
+          "totalCards": 7,
+          "visibleCount": 7,
+          "activeFilterKey": "all"
+        }
+      },
+      {
+        "testName": "Category filter \"ecommerce\" displays exactly 2 projects",
+        "passed": true,
+        "details": {
+          "expected": 2,
+          "totalCards": 7,
+          "visibleCount": 2,
+          "activeFilterKey": "ecommerce"
+        }
+      },
+      {
+        "testName": "Category filter \"corporate\" displays exactly 3 projects",
+        "passed": true,
+        "details": {
+          "expected": 3,
+          "totalCards": 7,
+          "visibleCount": 3,
+          "activeFilterKey": "corporate"
+        }
+      },
+      {
+        "testName": "Category filter \"webapp\" displays exactly 2 projects",
+        "passed": true,
+        "details": {
+          "expected": 2,
+          "totalCards": 7,
+          "visibleCount": 2,
+          "activeFilterKey": "webapp"
+        }
+      },
+      {
+        "testName": "Rapid 260ms sequential switching cycles accurately across all categories",
+        "passed": true,
+        "details": {
+          "history": [
+            {
+              "key": "all",
+              "visible": 7
+            },
+            {
+              "key": "ecommerce",
+              "visible": 2
+            },
+            {
+              "key": "corporate",
+              "visible": 3
+            },
+            {
+              "key": "webapp",
+              "visible": 2
+            },
+            {
+              "key": "all",
+              "visible": 7
+            }
+          ]
+        }
+      },
+      {
+        "testName": "Sub-250ms burst clicks handle transition lock gracefully and settle properly",
+        "passed": true,
+        "details": {
+          "domIntegrityOk": true,
+          "visibleCount": 2,
+          "finalFilter": "webapp"
+        }
+      }
+    ],
+    "4. Modal Focus Management & Accessibility": [
+      {
+        "testName": "Case study modal opens with dynamic data and locks body scroll",
+        "passed": true,
+        "details": {
+          "modalFound": true,
+          "isVisible": true,
+          "bodyLocked": true,
+          "titleText": "NexaStore Luxury Goods",
+          "triggerWasActive": true
+        }
+      },
+      {
+        "testName": "Modal focus trap handles keyboard navigation events",
+        "passed": true,
+        "details": {
+          "focusableCount": 3,
+          "hasMultipleFocusables": true,
+          "tabOnLastPreventedOrWrapped": true,
+          "shiftTabOnFirstPreventedOrWrapped": true
+        }
+      },
+      {
+        "testName": "Clicking inside modal content does NOT dismiss modal",
+        "passed": true,
+        "details": {
+          "stillVisible": true
+        }
+      },
+      {
+        "testName": "Escape key dismisses modal and restores body scroll",
+        "passed": true,
+        "details": {
+          "isHidden": true,
+          "bodyUnlocked": true,
+          "focusRestored": true,
+          "activeTag": "BUTTON"
+        }
+      },
+      {
+        "testName": "Backdrop click dismisses modal and restores scroll lock",
+        "passed": true,
+        "details": {
+          "isHidden": true,
+          "bodyUnlocked": true
+        }
+      },
+      {
+        "testName": "Service detail modal on services.html opens and closes properly",
+        "passed": true,
+        "details": {
+          "opened": true,
+          "closed": true,
+          "focusRestored": false
+        }
+      }
+    ],
+    "5. Consultation Form Edge Regex Validation": [
+      {
+        "testName": "Valid email accepted: \"client@rubicweb.co.id\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "client@rubicweb.co.id",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid email accepted: \"john.doe+engineering@subdomain.tech.io\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "john.doe+engineering@subdomain.tech.io",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid email accepted: \"a.b.c@corporate-agency.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "a.b.c@corporate-agency.com",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid email accepted: \"founder_123@agency.id\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "founder_123@agency.id",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"(empty)\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email wajib diisi."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"missingat.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "missingat.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"@nodomain.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "@nodomain.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"user@.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "user@.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"user@domain\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "user@domain",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"user space@domain.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "user space@domain.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"user@domain..com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "user@domain..com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"<script>alert(1)</script>@test.com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "<script>alert(1)</script>@test.com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Invalid email rejected with error: \"user@domain,com\"",
+        "passed": true,
+        "details": {
+          "fid": "email",
+          "val": "user@domain,com",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Alamat email tidak valid (contoh: info@perusahaan.co.id)."
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"+628123456789\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "+628123456789",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"6281234567890\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "6281234567890",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"08123456789\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "08123456789",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"+62 812 3456 7890\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "+62 812 3456 7890",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"0856-7890-1234\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "0856-7890-1234",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"087812345678\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "087812345678",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"089612345678\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "089612345678",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Valid Indonesian WhatsApp phone accepted: \"+6285123456789\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "+6285123456789",
+          "isInvalid": false,
+          "isValid": true,
+          "errorVisible": false,
+          "errorText": ""
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"(empty)\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp wajib diisi."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"0712345678\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "0712345678",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"0801234567\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "0801234567",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"08123\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "08123",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"08123456789012345\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "08123456789012345",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"+18005550199\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "+18005550199",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"08123abc456\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "08123abc456",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"' OR 1=1 --\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "' OR 1=1 --",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Invalid phone rejected with error: \"<script>081234567890</script>\"",
+        "passed": true,
+        "details": {
+          "fid": "phone",
+          "val": "<script>081234567890</script>",
+          "isInvalid": true,
+          "isValid": false,
+          "errorVisible": true,
+          "errorText": "Nomor WhatsApp tidak valid (format: 08... atau +628..., minimal 10 digit)."
+        }
+      },
+      {
+        "testName": "Empty form submit triggers validation on required fields",
+        "passed": true,
+        "details": {
+          "formFound": true,
+          "invalidCount": 4,
+          "hasValidationErrors": true
+        }
+      },
+      {
+        "testName": "Malicious injection strings (XSS/SQLi) safely sanitized without execution",
+        "passed": true,
+        "details": {
+          "hasInjectedScript": false,
+          "nameVal": "admin' OR '1'='1' --",
+          "msgVal": "<img src=x onerror=alert(\"XSS\")>"
+        }
+      },
+      {
+        "testName": "Floating WhatsApp button features active continuous ripple animation",
+        "passed": true,
+        "details": {
+          "btnFound": true,
+          "animationName": "ripple",
+          "afterAnimationName": "none",
+          "beforeAnimationName": "none",
+          "hasContinuousAnimation": true
+        }
+      }
+    ],
+    "6. Console Cleanliness & Unhandled Exceptions": [
+      {
+        "testName": "Total console runtime exceptions and error entries: 0",
+        "passed": true,
+        "details": {
+          "errors": []
+        }
+      }
+    ]
+  },
+  "consoleErrors": [],
+  "verdict": "APPROVE"
 }

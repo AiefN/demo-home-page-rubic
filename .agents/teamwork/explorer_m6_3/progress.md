@@ -1,0 +1,22 @@
+# Progress Log - Explorer 3
+
+- **Last visited**: 2026-11-10T12:08:30Z
+- **Current status**: Investigation complete for Defect 4 and Defect 5. Empirical evidence gathered via headless CDP browser tests and code inspection. Preparing final handoff report and briefing update.
+- **Tasks**:
+  - [x] Initialize BRIEFING.md, DISPATCH.md, progress.md (2026-11-10T11:55:20Z)
+  - [x] Read ORIGINAL_REQUEST.md and PROJECT.md (2026-11-10T11:55:35Z)
+  - [x] Investigate Defect 4: Pricing Calculator Card Compression (2026-11-10T12:03:00Z)
+    - [x] DOM structure inspection in `index.html` (lines 534-660) vs `contact.html` (lines 284-340)
+    - [x] CSS rules analysis in `css/style.css` (lines 1184-1270) and `css/responsive.css` (lines 68-71, 118-122, 338-342)
+    - [x] Empirical browser simulation: reproduced the 53px-wide sliver compression condition under constrained parent width / lack of min-width: 0 / column squeeze
+    - [x] Discovered class naming mismatch: HTML uses `tier-cards-group` and `pricing-calculator-widget`, while CSS targets `.tier-selector, .tier-options` and `.calc-layout, .pricing-calculator-grid`
+    - [x] Identified inline `<label>` tag default causing vertical card overlap and unstyled `.tier-badge` / `.tier-scope` spans
+  - [x] Investigate Defect 5: FAQ Accordion Text Background Bug (2026-11-10T12:06:50Z)
+    - [x] DOM structure inspection in `index.html` (lines 781-880)
+    - [x] CSS rules analysis in `css/style.css` (lines 1534-1640) and `css/responsive.css` (lines 374-380)
+    - [x] Computed styles verification via CDP: `<button class="faq-trigger">` receives browser default user-agent styles (`background-color: rgb(240, 240, 240)`, `border: 2px outset`, `color: rgb(0, 0, 0)`, `font-family: Arial`)
+    - [x] Discovered missing `.faq-trigger` / `.faq-question` CSS rules (styles were applied to parent `<header class="faq-header">` instead of the button)
+    - [x] Formulated exact dark editorial Room & Pillar styling matching `#111216` obsidian palette with seamless backgrounds and verified 45deg rotation / grid height transitions
+  - [ ] Update BRIEFING.md
+  - [ ] Write 5-component handoff.md in state folder
+  - [ ] Send coordination message to orchestrator

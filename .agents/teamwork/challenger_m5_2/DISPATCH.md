@@ -1,33 +1,31 @@
-# Dispatch: Challenger 2 (Milestone 5)
+# Task Assignment: challenger_m5_2
 
-## Objective
-Empirically stress-test dedicated subpages (`services.html`, `portfolio.html`, `contact.html`), form validation logic, case study modal accessibility, and edge-case behavior.
+## Context & Objectives
+You are the secondary Challenger (`teamwork_challenger`) for the final verification gate of the Rubicweb Redesign project.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\challenger_m5_2\
 
-## Scope & Inputs
-- Original Request: `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`
-- Project Architecture & Scope: `c:\pkl\PKL\PROJECT.md`
-- Source files: `c:\pkl\PKL\services.html`, `c:\pkl\PKL\portfolio.html`, `c:\pkl\PKL\contact.html`, `c:\pkl\PKL\js\portfolio.js`, `c:\pkl\PKL\js\contact.js`.
+## Mandatory References
+You MUST read the following files before starting your work:
+- `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md` (authoritative user requirements & acceptance criteria)
+- `c:\pkl\PKL\PROJECT.md` (project architecture, feature inventory, code layout, interface contracts)
+- `c:\pkl\PKL\TEST_READY.md` (E2E test suite overview)
+- `c:\pkl\PKL\.agents\teamwork\worker_m5_responsive_fix\handoff.md` (worker responsive fixes)
 
-## Tasks
-1. Read `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`.
-2. Empirically verify:
-   - `services.html`: 4 core services with technical deliverables and 6-stage development timeline. Click-to-expand modal functionality.
-   - `portfolio.html`: Rapid category filter switching (Semua, E-Commerce, Company Profile, Web App), verify zero-reload smooth transitions and DOM stability.
-   - Case study modals: Dynamic content population (client, challenge, architecture, metrics), focus trapping, Escape key dismissal, backdrop click dismissal, body scroll lock.
-   - `contact.html`: Real-time inline form validation against malicious/invalid inputs, RFC 5322 email regex, Indonesian phone formatting (`+62`, `08`, `628`), instant visual error feedback in Indonesian, floating WhatsApp continuous ripple animation.
-3. Write `handoff.md` in your state folder (`c:\pkl\PKL\.agents\teamwork\challenger_m5_2\`) detailing empirical findings and overall verdict: `APPROVE` or `REQUEST_CHANGES`.
+## Instructions
+1. Empirically verify responsiveness, extreme viewports, and edge cases:
+   - Run viewport geometry checks across all 4 pages (`index.html`, `services.html`, `portfolio.html`, `contact.html`) at 320px, 768px, 1440px (and extreme viewports like 280px and 2560px), verifying `scrollWidth <= clientWidth` and no elements overflow.
+   - Test rapid filter switching in `portfolio.html` and modal open/close cycles (Escape key, backdrop click, focus trap).
+   - Test inline consultation form validation in `contact.html` with invalid and valid inputs (regex matching for email and Indonesian WhatsApp phone numbers).
+   - Verify zero console errors and zero unhandled rejections during stress interactions.
+2. Document verified command outputs and state your verdict (`APPROVE` or `REQUEST_CHANGES`) in `c:\pkl\PKL\.agents\teamwork\challenger_m5_2\handoff.md`.
+3. Send a message to the orchestrator with your verdict.
 
 
-## 2026-11-10T07:35:07Z
-You are Challenger 2 for Milestone 5 (Empirical Stress Testing of Subpages, Modals & Validation).
-Read your dispatch instructions at: c:\pkl\PKL\.agents\teamwork\challenger_m5_2\DISPATCH.md
-Read the original request at: c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md
-Your state folder is: c:\pkl\PKL\.agents\teamwork\challenger_m5_2\
-
-Empirically verify and stress-test:
-1. `services.html`: 4 core services, technical deliverables, and 6-stage development timeline.
-2. `portfolio.html`: Rapid category tab switching (Semua, E-Commerce, Company Profile, Web App) and DOM stability.
-3. Case study modals: Dynamic content population, focus trapping, Escape key dismissal, backdrop click dismissal, body scroll lock.
-4. `contact.html`: Real-time inline form validation against malicious/invalid inputs, RFC 5322 email regex, Indonesian phone formatting, visual error feedback, and floating WhatsApp button continuous ripple animation.
-Write your handoff report to `c:\pkl\PKL\.agents\teamwork\challenger_m5_2\handoff.md` with an explicit verdict: APPROVE or REQUEST_CHANGES.
-Notify the orchestrator with send_message when complete.
+## 2026-11-10T10:58:41Z
+[Message] timestamp=2026-11-10T10:58:41Z sender=f25fec37-65d0-4c8c-aaec-a523231d2812 priority=MESSAGE_PRIORITY_HIGH content=You are challenger_m5_2.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\challenger_m5_2\
+Read c:\pkl\PKL\.agents\teamwork\challenger_m5_2\DISPATCH.md and c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md.
+Empirically verify responsive layout geometry (280px, 320px, 375px, 768px, 1024px, 1440px, 2560px), multi-page transitions, rapid category filter switching, modal focus management, and consultation form regex validation under edge inputs. Verify zero console errors and zero clipping.
+Write your findings and explicit verdict (APPROVE or REQUEST_CHANGES) to c:\pkl\PKL\.agents\teamwork\challenger_m5_2\handoff.md and send a message with your verdict.

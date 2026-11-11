@@ -1,0 +1,245 @@
+{
+  "timestamp": "2026-11-10T12:42:50.865Z",
+  "viewportsTested": [
+    "ultrawide_1920",
+    "desktop_1440",
+    "tablet_landscape_1024",
+    "mobile_375"
+  ],
+  "defects": {
+    "defect1_hero_balance": {
+      "ultrawide_1920": {
+        "containerWidth": 1280,
+        "clientWidth": 1905,
+        "leftMargin": 313,
+        "rightMargin": 313,
+        "isCentered": true,
+        "leftColWidth": 667,
+        "rightColWidth": 493,
+        "hasShowcaseCard": true,
+        "telemetryTileCount": 3,
+        "hasHorizontalOverflow": false
+      },
+      "desktop_1440": {
+        "containerWidth": 1280,
+        "clientWidth": 1425,
+        "leftMargin": 73,
+        "rightMargin": 73,
+        "isCentered": true,
+        "leftColWidth": 667,
+        "rightColWidth": 493,
+        "hasShowcaseCard": true,
+        "telemetryTileCount": 3,
+        "hasHorizontalOverflow": false
+      },
+      "tablet_landscape_1024": {
+        "containerWidth": 1009,
+        "clientWidth": 1009,
+        "leftMargin": 0,
+        "rightMargin": 0,
+        "isCentered": true,
+        "leftColWidth": 520,
+        "rightColWidth": 384,
+        "hasShowcaseCard": true,
+        "telemetryTileCount": 3,
+        "hasHorizontalOverflow": false
+      },
+      "mobile_375": {
+        "containerWidth": 360,
+        "clientWidth": 360,
+        "leftMargin": 0,
+        "rightMargin": 0,
+        "isCentered": true,
+        "leftColWidth": 332,
+        "rightColWidth": 332,
+        "hasShowcaseCard": true,
+        "telemetryTileCount": 3,
+        "hasHorizontalOverflow": false
+      }
+    },
+    "defect2_modal_overlay": {
+      "indexModalInitial": {
+        "exists": true,
+        "display": "none",
+        "visibility": "hidden",
+        "opacity": "0",
+        "pointerEvents": "none",
+        "zIndex": "10000",
+        "rectWidth": 0,
+        "rectHeight": 0,
+        "dialogTransform": "none",
+        "isStaticallyVisible": false
+      },
+      "openIndexModal": {
+        "btnFound": true,
+        "displayAfterOpen": "flex",
+        "visibilityAfterOpen": "visible",
+        "opacityAfterOpen": "1",
+        "isOpen": true
+      },
+      "closeIndexModal": {
+        "closeBtnFound": true,
+        "displayAfterClose": "none",
+        "isClosed": true
+      },
+      "servicesModalState": {
+        "exists": true,
+        "display": "none",
+        "visibility": "hidden",
+        "isHidden": true
+      },
+      "portfolioModalState": {
+        "exists": true,
+        "display": "none",
+        "visibility": "hidden",
+        "isHidden": true
+      }
+    },
+    "defect3_floating_dock": {
+      "dockClearanceAtScrollY0": {
+        "dockRect": {
+          "top": 834,
+          "bottom": 876,
+          "height": 42
+        },
+        "sec2Top": 904,
+        "titleTop": 928,
+        "viewportHeight": 900,
+        "isSec2BelowFold": true,
+        "isTitleBelowFold": true,
+        "dockCollidesSection2Title": false
+      },
+      "scrollHysteresis": {
+        "dockFound": true,
+        "isHiddenOnScrollDown": true,
+        "isRevealedOnScrollUp": true,
+        "isVisibleAtTop": true
+      }
+    },
+    "defect4_pricing_compression": {
+      "desktop": {
+        "cardCount": 3,
+        "cardRects": [
+          {
+            "width": 217,
+            "height": 154,
+            "top": 4672,
+            "left": 146
+          },
+          {
+            "width": 217,
+            "height": 154,
+            "top": 4672,
+            "left": 379
+          },
+          {
+            "width": 217,
+            "height": 154,
+            "top": 4672,
+            "left": 612
+          }
+        ],
+        "allCardsAdequateWidth": true,
+        "cardsNotThinSlivers": true,
+        "isThreeColumnsOnDesktop": true,
+        "priceTextAfterProClick": "Rp 5.500.000"
+      },
+      "mobile": {
+        "widths": [
+          336,
+          336,
+          336
+        ],
+        "isStackedSingleColumn": true
+      }
+    },
+    "defect5_faq_accordion": {
+      "triggerCount": 6,
+      "initialStyles": [
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        },
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        },
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        },
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        },
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        },
+        {
+          "btnBg": "rgba(0, 0, 0, 0)",
+          "btnColor": "rgb(242, 242, 246)",
+          "btnBorder": "0px none rgb(242, 242, 246)",
+          "btnOutline": "rgb(242, 242, 246) none 3px",
+          "questionBg": "rgba(0, 0, 0, 0)",
+          "isUserAgentGray": false,
+          "isBlackText": false
+        }
+      ],
+      "interaction": {
+        "item0Active": true,
+        "icon0Transform": "matrix(0.798985, 0.601351, -0.601351, 0.798985, 0, 0)",
+        "item0CollapsedAfterItem1Clicked": true,
+        "item1Active": true,
+        "singleActiveItemEnforced": true
+      }
+    }
+  },
+  "integrity": {
+    "hardcodedOutputs": false,
+    "dummyFacades": false,
+    "externalLibraries": false,
+    "details": [],
+    "windowEnv": {
+      "hasJQuery": false,
+      "hasReact": false,
+      "hasVue": false,
+      "hasBootstrap": false,
+      "hasTailwind": false
+    }
+  },
+  "verdict": "APPROVE",
+  "findings": [],
+  "defectSummary": {
+    "defect1_hero_balance_passed": true,
+    "defect2_modal_overlay_passed": true,
+    "defect3_floating_dock_passed": true,
+    "defect4_pricing_compression_passed": true,
+    "defect5_faq_accordion_passed": true
+  }
+}

@@ -1,37 +1,34 @@
-# Dispatch: Challenger 1 (Milestone 5)
+# Task Assignment: challenger_m5_1
 
-## Objective
-Empirically stress-test interactive mechanisms on `index.html` and verify mathematical correctness of client-side algorithms.
+## Context & Objectives
+You are the primary Challenger (`teamwork_challenger`) for the final verification gate of the Rubicweb Redesign project.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\challenger_m5_1\
 
-## Scope & Inputs
-- Original Request: `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`
-- Project Architecture & Scope: `c:\pkl\PKL\PROJECT.md`
-- Source files: `c:\pkl\PKL\index.html`, `c:\pkl\PKL\js\interactions.js`, `c:\pkl\PKL\js\contact.js`.
+## Mandatory References
+You MUST read the following files before starting your work:
+- `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md` (authoritative user requirements & acceptance criteria)
+- `c:\pkl\PKL\PROJECT.md` (project architecture, feature inventory, code layout, interface contracts)
+- `c:\pkl\PKL\TEST_READY.md` (E2E test suite overview)
+- `c:\pkl\PKL\.agents\teamwork\worker_m5_responsive_fix\handoff.md` (worker responsive fixes)
 
-## Tasks
-1. Read `c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md`.
-2. Empirically verify:
-   - Custom cursor: LERP interpolation ($\lambda = 0.16$), RAF ticking, hover expansion on interactive elements, touch screen suppression.
-   - 3D perspective tilt: Normalized coordinate calculation, clamp to max $10^\circ$, specular radial highlight CSS variables (`--mouse-x`, `--mouse-y`), smooth cubic-bezier reset.
-   - Stats counters: IntersectionObserver threshold, easeOutExpo curve, number formatting and suffixes (`%`, `+`).
-   - Dynamic pricing estimator: Mathematical formula (Base tier + extra pages + addons + priority multiplier), edge values, zero/negative bounds, delivery timeline calculations.
-   - Testimonial carousel: 5s autoplay, hover/focus pause, touch swipe delta calculation.
-   - FAQ accordion: Single active item constraint, 0fr->1fr CSS grid row transition, 45-degree icon rotation.
-3. Write `handoff.md` in your state folder (`c:\pkl\PKL\.agents\teamwork\challenger_m5_1\`) detailing empirical findings and overall verdict: `APPROVE` or `REQUEST_CHANGES`.
+## Instructions
+1. Empirically verify the interaction systems and stress-test them:
+   - Run the existing adversarial verification script: `node tests/adversarial-m5-verification.js`.
+   - Perform empirical CDP browser checks on interactive systems:
+     - 3D card tilt angle clamping and reset transition
+     - Stats counter interpolation with easeOutExpo and IntersectionObserver trigger
+     - Dynamic pricing calculator bounds (edge values, add-ons, timeline calculations)
+     - Testimonial carousel autoplay, pause-on-hover, next/prev controls, and touch swipe
+     - Single-active FAQ accordion behavior under rapid toggling
+2. Document verified command outputs and state your verdict (`APPROVE` or `REQUEST_CHANGES`) in `c:\pkl\PKL\.agents\teamwork\challenger_m5_1\handoff.md`.
+3. Send a message to the orchestrator with your verdict.
 
 
-## 2026-11-10T07:35:01Z
-You are Challenger 1 for Milestone 5 (Empirical Stress Testing of Homepage Micro-Interactions).
-Read your dispatch instructions at: c:\pkl\PKL\.agents\teamwork\challenger_m5_1\DISPATCH.md
-Read the original request at: c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md
-Your state folder is: c:\pkl\PKL\.agents\teamwork\challenger_m5_1\
-
-Empirically verify and stress-test the mathematical models and interaction states of:
-1. Custom trailing cursor (LERP lambda = 0.16, RAF, hover expansion, coarse pointer suppression)
-2. 3D card tilt & radial specular highlight CSS variables
-3. Stats counter easeOutExpo curve and IntersectionObserver thresholds
-4. Dynamic pricing estimator calculation bounds and timeline math
-5. Testimonial carousel autoplay and pause on hover/focus
-6. Single active FAQ accordion with CSS Grid 0fr->1fr height transition
-Write your handoff report to `c:\pkl\PKL\.agents\teamwork\challenger_m5_1\handoff.md` with an explicit verdict: APPROVE or REQUEST_CHANGES.
-Notify the orchestrator with send_message when complete.
+## 2026-11-10T10:58:41Z
+You are challenger_m5_1.
+Working directory: c:\pkl\PKL
+State folder: c:\pkl\PKL\.agents\teamwork\challenger_m5_1\
+Read c:\pkl\PKL\.agents\teamwork\challenger_m5_1\DISPATCH.md and c:\pkl\PKL\.agents\teamwork\ORIGINAL_REQUEST.md.
+Empirically stress-test the interaction systems: run node tests/adversarial-m5-verification.js and verify 3D card tilt physics, stats counter easing, pricing calculator bounds, carousel autoplay/pause/touch, and single-active FAQ accordion behavior under stress.
+Write your findings and explicit verdict (APPROVE or REQUEST_CHANGES) to c:\pkl\PKL\.agents\teamwork\challenger_m5_1\handoff.md and send a message with your verdict.
